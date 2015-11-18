@@ -13,10 +13,10 @@
    
 	<item>
 	  <title>Hello</title>
-	  <link>//hello</link>
+	  <link>/hello</link>
 	  <author>PixelZerg</author>
 	  <pubDate>2015-11-18T09:40:23+00:00</pubDate>
-	  <guid>//hello</guid>
+	  <guid>/hello</guid>
 	  <description><![CDATA[
 	     <p>This is my 2nd ever proper website.  I have never before done much HTML coding at all. This is my first time using <code>Ruby</code> too. This website was created with  <code>Jekyll</code> . <strong>x_x</strong></p>
 
