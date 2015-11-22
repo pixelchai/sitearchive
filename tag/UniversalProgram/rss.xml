@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>pixelzerg.github.io</title>
+   
+   <link>http://pixelzerg.github.io/</link>
+   <description>A website of games, code, how tos, language, music, 3D modeling and animating, general art, literature, etc. Anything that I, and hopefully you, find interesting.</description>
+   <language>en-uk</language>
+   <managingEditor> PixelZerg</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Universal Program - Briefing</title>
+	  <link>/universalprogrambriefing</link>
+	  <author>PixelZerg</author>
+	  <pubDate>2015-11-22T03:17:29+00:00</pubDate>
+	  <guid>/universalprogrambriefing</guid>
+	  <description><![CDATA[
+	     <p>Here&#39;s a cool project i&#39;m starting. The aim is to port a single program into every coding language that I know. This is basically to familiarize myself with coding languages that I haven&#39;t done in a long time. I might even learn new coding languages just for this project. This is going to be great! But first, we must decide what the program must actually be.</p>
+
+<h3><u>Stuff That Must be Included</u></h3>
+
+<h5>Menu</h5>
+
+<p>The program must contain a menu of some description with a list to select stuff included in the program. The user must be able to interact with the list and select items.
+<ul><li>Orginisation</li><li>User Input</li><li>Printing</li><li>Basic Stuff</li></ul></p>
+
+<hr>
+
+<h5>Loading</h5>
+
+<p>The program must display a loading animation. The loading percentage is also included in the console window&#39;s title.
+<ul><li>Sleeping the Thread</li><li>Displaying Animation</li><li>Basic Text Stuff</li><li>Changing title</li></ul></p>
+
+<hr>
+
+<h5>Hangman</h5>
+
+<p>There is a VERY BASIC hangman game included.
+<ul><li>List/Array stuff<br><ul><li>Check if List Contains Item</li><li>Make a list</li></ul></li>
+<li>Looks cool</li><li>Escaping text</li></ul></p>
+
+<hr>
+
+<h5>Higher or Lower Game</h5>
+
+<p>A simple game. A random number is selected and the user must try to guess it. The program tells the user if they got the number right or it will tell them if the number they guessed was too high or too low.
+<ul><li>Number Stuff</li><li>Checking if a number is greater than another number</li><li>parsing string into integer</li></ul></p>
+
+<hr>
+
+<h5>Rectangle Drawer</h5>
+
+<p>The user will input X, Y co-ordinates and also Width and Height. The program will draw a rectangle.
+<ul><li>graphics stuff</li><li>Getting User Input</li><li>While loops</li></ul></p>
+
+<hr>
+
+<h5>Libs</h5>
+
+<p>The program asks the user for some words by their type (verb, adjective, noun, etc) and will then incorporate them into a story. This usually makes funny results. You can also save the generated story as a .txt file or other formats.
+<ul><li>writing to a file</li><li>basic variable usage</li></ul></p>
+
+<hr>
+
+<h3>NB</h3>
+
+<p>Note that not all of these features will be able to be implemented due to restrictions of the coding language itself and other restrictions. You may notice that the functionality of certain features vary in different coding languages due to said restrictions.</p>
+
+<hr>
+
+<!-- footer -->
+
+<p>Source/Download Link: (coming soon!)</p>
+
+<p>Time taken to write: 30 or so min.</p>
+
+<hr>
+
+<!-- Ack -->
+
+<p><small><small><small><a href="https://www.flickr.com/photos/wneuheisel/5256103622">Cover Image</a> by William Neuheisel. It has not been edited.</small></small></small></p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>
