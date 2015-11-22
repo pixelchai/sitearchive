@@ -13,10 +13,10 @@
    
 	<item>
 	  <title>Batch to C# - Info</title>
-	  <link>/foo</link>
+	  <link>/batch2csharp</link>
 	  <author>PixelZerg</author>
 	  <pubDate>2015-10-29T03:50:29+00:00</pubDate>
-	  <guid>/foo</guid>
+	  <guid>/batch2csharp</guid>
 	  <description><![CDATA[
 	     <p>My first ever coding language was BATCH. Yes, the coding language for MS-DOS. I used it to make some really interesting things!</p>
 
@@ -299,7 +299,8 @@ Time taken to write: 4-5h</p>
 
 <!-- Ack -->
 
-<p><small><small><small><a href="https://en.wikipedia.org/wiki/Colossal_Cave_Adventure#/media/File:Colossal_Cave_Adventure_on_VT100_terminal.jpg">Cover Image</a> by Autopilot. Has not been edited.</small></small></small></p>
+<p><small><small><small><a href="https://en.wikipedia.org/wiki/Colossal_Cave_Adventure#/media/File:Colossal_Cave_Adventure_on_VT100_terminal.jpg">Cover Image</a> by Autopilot. Has not been edited.</small></small></small>
+\ No newline at end of file</p>
 
 	  ]]></description>
 	</item>
