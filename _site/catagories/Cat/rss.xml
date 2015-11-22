@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>pixelzerg.github.io</title>
+   
+   <link>http://pixelzerg.github.io/</link>
+   <description>A website of games, code, how tos, language, music, 3D modeling and animating, general art, literature, etc. Anything that I, and hopefully you, find interesting.</description>
+   <language>en-uk</language>
+   <managingEditor> PixelZerg</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>BATCH to C#</title>
+	  <link>/foo</link>
+	  <author>PixelZerg</author>
+	  <pubDate>2015-10-29T03:50:29+00:00</pubDate>
+	  <guid>/foo</guid>
+	  <description><![CDATA[
+	     <p>My first ever coding language was BATCH. Yes, the coding language for MS-DOS. I used it to make some really interesting things!</p>
+
+<p>I once found myself browsing through the archives of my old computer and found some of my old BATCH files. The finding inspired me to make this program, a BATCH to C# converter.</p>
+
+<p>I remember thinking to myself, you can pretty much do everything in BATCH with C#. Let&#39;s find out if I was right!</p>
+
+<p>The program is written in a way such that the code can be translated into any other coding language, as long as there is a specific compiler for it. (modular format)</p>
+
+<p>There is a central &quot;coding language&quot;, which basically contains all of the data you will need to do the conversion. Visibility of classes, code&#39;s function(to print text/pause/get user input/etc), methodnames, etc.</p>
+
+<p>This batch to C# converter, however, is direct because I made the scripts for it before thinking of making the program modular.</p>
+
+<hr>
+
+<h3><u>Screenshots</u></h3>
+
+<p>Here&#39;s what the UI looks like:
+<img src="/assets/poststuff/1/1.jpg" alt="UI">
+The comboboxes at the top are currently empty because the program isn&#39;t FULLY modular. Wouldn&#39;t be that hard to complete the modular system, though.</p>
+
+<p>Let&#39;s run the code. Try and spot the difference between the C# output and BATCH outputt:
+<img src="/assets/poststuff/1/2.jpg" alt="BATCH">
+<img src="/assets/poststuff/1/3.jpg" alt="C#"></p>
+
+<p>The first one is BATCH, the second one is C#.</p>
+
+<p>You may have noticed, you can compile the C# script right from within the program. This is using the csc.exe file. You will be asked to navigate to it. It is usually in <pre>(drive [normally &quot;c&quot;]):\windows\Microsoft.NET\Framework\v(version)\csc.exe</pre>
+This is, providing you have .net framework installed.</p>
+
+<hr>
+
+<h3><u>Batch's "method" execution system.</u></h3>
+
+<p>Batch&#39;s methods are executed in a much more different way to C#&#39;s.
+For example:
+<pre>@echo off
+echo foooo:
+:foo
+    echo Hello
+    goto loo
+:joo
+    echo joo
+:loo
+    echo World
+:noo
+    echo !!!!!
+    pause</pre>
+Will have the output:
+<pre>foooo:
+Hello
+World
+!!!!!
+Press any key to continue . . .</pre></p>
+
+<p>Notice how the &quot;loo&quot; method goes directly to &quot;noo&quot; once it has finished executing.
+Notice how the &quot;goto&quot; to &quot;loo&quot; doesn&#39;t return, rather it continues on to &quot;noo&quot;.</p>
+
+<p>Let&#39;s imagine that the &quot;:&quot; defines a method. A port of the above code, in C# will look like:
+<pre>
+using System;</p>
+
+<p>public class Program
+{
+    public static void Main()
+    {Console.WriteLine(@&quot;foooo:&quot;);}
+    public static void foo()
+    {
+        Console.WriteLine(&quot;Hello&quot;);
+    }
+    public static void joo()
+    {
+        Console.WriteLine(@&quot;joo&quot;);
+    }
+    public static void loo()
+    {
+        Console.WriteLine(@&quot;World&quot;);
+    }
+    public static void noo()
+    {
+        Console.WriteLine(@&quot;!!!!!&quot;);
+        Console.WriteLine(&quot;Press any key to continue...&quot;); Console.ReadKey();
+    }
+}
+</pre></p>
+
+<p>The execution order here is definitely not the same. Here&#39;s the output:
+<pre>foooo:</pre></p>
+
+<hr>
+
+<h3><u>Simulating this Execution Order in C#</u></h3>
+
+<p>This is quite easy, all you have to do is make a list of all of the methods that you have in the batch script, in the order that they appear.</p>
+
+<p>Then, when converting to C#, add a little line of code at the end which calls the next method. If there isnt a &quot;next method&quot;, then you know it must be the exit point of the application.</p>
+
+<p>Here&#39;s what the compiler gives as output now:</p>
+
+<figure class="highlight"><pre><code class="language-batch" data-lang="batch">using System;
+
+public class Program
+{
+    public static void Main()
+    {
+        Console.Clear(); //required line of code
+        //echo is off from this point onwards!
+        Console.WriteLine(@"foooo:");
+            foo(); //proceed to next method
+    }
+    public static void foo()
+    {
+        Console.WriteLine(@"Hello");
+        loo();
+    }
+    public static void joo()
+    {
+        Console.WriteLine(@"joo");
+            loo(); //proceed to next method
+    }
+    public static void loo()
+    {
+        Console.WriteLine(@"World");
+            noo(); //proceed to next method
+    }
+    public static void noo()
+    {
+        Console.WriteLine(@"!!!!!");
+        Console.WriteLine("Press any key to continue..."); Console.ReadKey();
+        Environment.Exit(0); //end of program
+    }
+}</code></pre></figure>
+
+<hr>
+
+<h3><u>Individual Line Handling</u></h3>
+
+<h5>Console Output</h5>
+
+<p>This is probably harder than what you might have expected at first.
+<code>@echo foo</code> -&gt; <code>Console.WriteLine(&quot;foo&quot;);</code>
+Simple as that!... right?</p>
+
+<p>nope, we need to consider <var>all</var> of the scenarios. Here&#39;s what would currently happen in some scenarios:
+<table><tbody>
+<tr><th>Batch</th><th>C#</th><th>Output Batch</th><th>Output C#</th></tr>
+<tr><td><code>@echo &quot;hello&quot;</code></td><td><code>Console.WriteLine(&quot;&quot;hello&quot;&quot;);</code></td><td>&quot;hello&quot;</td><td>Does Not Compile</td></tr>
+<tr><td><code>@echo %moo%</code></td><td><code>Console.WriteLine(&quot;%moo%&quot;);</code></td><td>vardata</td><td>%moo%</td></tr>
+</tbody></table></p>
+
+<p>The first issue is quite easy to solve, you just have to turn the string into a literal string <strong>or</strong> you can add the correct escape sequence.</p>
+
+<p>The second issue will need some parsing.
+Let&#39;s look at it again:
+<code>@echo %moo%</code>
+<ol>
+<li>Get the position of the first &quot;%&quot;, done using string.instanceOf();</li>
+<li>Get the position of the second &quot;%&quot;, done by converting string into char array and cycling through</li>
+<li>Get the variable name by using substring.</li>
+</ol></p>
+
+<p>And now that you have the variable name, in the C# version you must remember to:
+<ol>
+<li>Add an ending quotation mark</li>
+<li>Add a plus symbol</li>
+<li>Add the variable name</li>
+<li>Add another plus symbol</li>
+<li>Add the literal string identifier &quot;@&quot;</li>
+<li>Add a starting quotation mark</li>
+</ol>
+That&#39;s one way of doing it.
+Another way of doing it, and perhaps a more efficient way of doing it is that you just replace the two &quot;%&quot; symbols with a quotation mark and a plus or a plus then a quotation mark respectively.</p>
+
+<p>So now the C# version is:
+<code>Console.WriteLine(@&quot;&quot;+moo+@&quot;&quot;);</code></p>
+
+<p>Great, it&#39;s done!
+Nope... we still have not done every scenario.</p>
+
+<p>What would happen in this scenario:</p>
+
+<p><code>@echo var</code> -&gt; <code>Console.WriteLine(@&quot;&quot;+var+@&quot;&quot;);</code></p>
+
+<p>Most of you can probably immediately see that this is wrong.
+&quot;var&quot; can&#39;t be set as a variable name in C# because the compiler will think your using it as a type.</p>
+
+<p>Solution?
+All variables that are defined or called must have a &quot;@&quot; symbol in front of them.</p>
+
+<p>Now the C# version is:
+<code>Console.WriteLine(@&quot;&quot;+@moo+@&quot;&quot;);</code>
+Great! I&#39;m satisfied!</p>
+
+<h5>Colour</h5>
+
+<p>AKA &quot;color&quot;...
+This command in cmd paints the background a specific colour.
+The first letter/number corresponds to the foreground, the second corresponds to the background.
+Implementing that is not that hard at all. All you really need is a <code>dictionary</code> with <code>keys</code> of the letters and <code>values</code> of <code>consolecolor</code> values.</p>
+
+<p>Then you could just simply do <code>Console.ForegroundColour = dictionary[string[0]];Console.BackgroundColour = dictionary[string[1]];</code></p>
+
+<p>Notice anything missing?
+When the color command is called in cmd, the console&#39;s entire background/foreground gets repainted as that colour.
+Let&#39;s implement that then!</p>
+
+<p>Here&#39;s what the program outputs when <code>@color AE</code> is inputted:
+<pre>using System;</p>
+
+<p>public class Program
+{
+    public static void Main()
+    {
+        Console.BackgroundColor = ConsoleColor.Green;</p>
+<div class="highlight"><pre><code class="language-" data-lang="">        int KXLXFHICTGUWIDTQQGWJJ = 0;int RVBABPYMZLKWVTNYAFGQPFE = Console.CursorLeft;int ODYYECCLDAQMQOVPMXFJKY = Console.CursorTop;while (KXLXFHICTGUWIDTQQGWJJ != Console.WindowHeight)
+        {int KROYBEJQZZQLDWEBMNRA = 0;while (KROYBEJQZZQLDWEBMNRA != Console.WindowWidth){Console.Write(" ");KROYBEJQZZQLDWEBMNRA++;}KXLXFHICTGUWIDTQQGWJJ++;}Console.SetCursorPosition(RVBABPYMZLKWVTNYAFGQPFE, ODYYECCLDAQMQOVPMXFJKY);
+</code></pre></div>
+<p>Console.ForegroundColor = ConsoleColor.Yellow;
+        Environment.Exit(0); //end of program
+    }
+}</pre></p>
+
+<p>It&#39;s just a basic implementation of repainting the console background by filling it in with empty space.
+The variable names that are required to do this are randomly generated.</p>
+
+<p>There is one problem with this, however, any text that was on the screen before is going to be shifted up and off the console window.
+There is a way to fix this, by repainting all the text on too, by storing all the text in a string builder and then setting console&#39;s cursor position to the top left corner of the console, then re-printing the words and then setting the cursor position back to normal.
+This project, at the time of writing, has been deprecated long ago so I haven&#39;t implemented that.</p>
+
+<p>This will do for now!</p>
+
+<h5>pause</h5>
+
+<p>The program converts the pause command to:
+<code>Console.WriteLine(&quot;Press any key to continue...&quot;); Console.ReadKey();</code>
+Pretty self-explanatory...</p>
+
+<h5>ECHO</h5>
+
+<p>In batch, when you run a command, the command is echoed in the console and then executed:</p>
+
+<p><code>Console.WriteLine(System.Environment.CurrentDirectory+&quot;&gt;SET /p var=&quot;); //echo is on so printing command</code></p>
+
+<p>This has been simulated in this program. The program also recognises <code>@echo off</code> and <code>@echo on</code> commands.
+The program will not print the command if <code>echo</code> is off or if the line of code has a &quot;@&quot; before it (just like batch).</p>
+
+<p>My aim is for the output to look exactly the same for both scripts. It wouldn&#39;t really look the same if the <code>echo</code> features were not implemented.</p>
+
+<p>The only thing that makes it look slightly different is the thing with the color command.</p>
+
+<h5>Variable Setting</h5>
+
+<p>This is pretty self-explanatory:
+<table>
+<tbody>
+<tr><th>Batch</th><th>C#</th></tr>
+<tr><td><code>SET /p var=</code></td><td><code>var @var = Console.ReadLine();</code></td></tr>
+</tbody>
+</table></p>
+
+<p><strong>There is no arithmetic support! :(</strong></p>
+
+<h5>Title</h5>
+
+<p>This is rather straight forward.
+<code>@title banana</code> -&gt; <code>Console.Title = @&quot;banana&quot;;</code></p>
+
+<hr>
+
+<h6>Many batch features are supported. Many were probably not even mentioned here. At the end of the day, this is just proof of concept! Give the program a go if you want. The source is also available.</h6>
+
+<hr>
+
+<!-- footer -->
+
+<p>Source/Download Link: (coming soon!)
+Time taken to write: 4-5h</p>
+
+<hr>
+
+<!-- Ack -->
+
+<p><small><small><small><a href="https://en.wikipedia.org/wiki/Colossal_Cave_Adventure#/media/File:Colossal_Cave_Adventure_on_VT100_terminal.jpg">Cover Image</a> by Autopilot. Has not been edited.</small></small></small></p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>

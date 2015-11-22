@@ -1,0 +1,65 @@
+---
+layout: default
+cover: 'assets/images/cover4.jpg'
+class: 'author-template'
+navigation: True
+label: Author
+logo: 'assets/images/G1BigF2BasicShade2RS.png'
+current: author
+---
+<!-- < default}} -->
+<!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
+
+<!-- The big featured header -->
+
+<!-- Everything inside the #author tags pulls data from the author -->
+<!-- #author  -->
+    <header class="main-header author-head {% if page.cover %}" style="background-image: url({{ site.baseurl }}/{{ page.cover }}) {% else %}no-cover{% endif %}">
+        <nav class="main-nav overlay clearfix">
+            {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}/index.html"><img src="{{ site.baseurl }}/{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
+            {% if page.navigation %}
+                <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+            {% endif %}
+        </nav>
+    </header>
+
+    <section class="author-profile inner">
+        {% if site.image %}
+        <figure class="author-image">
+            <div class="img" style="background-image: url({{ site.baseurl }}{{ site.image }})"><span class="hidden">{{ site.author }}'s Picture</span></div>
+        </figure>
+        {% endif %}
+        <h1 class="author-title">{{ page.catagories }}</h1>
+        <div class="author-meta">
+<!-------------------desc---------------------------------------------------------------------------------------------------------------->
+		{% if page.catagories == 'PixelZer' %}
+			<p>this is a test cat</p>
+		{% endif %}
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+        </div>
+    </section>
+<!-- /author -->
+
+<!-- The main content area on the homepage -->
+<main id="content" class="content" role="main">
+
+<div class="extra-pagination inner">{% include author_pagination.html %}</div>
+
+<!--------------------links-------------------------------------------------------------------------------------------------------------->
+<ul>
+  {% if page.catagories == 'PixelZer' %}
+	<article class="post">
+        <header class="post-header">
+			<h2 class="post-title"><a href="{{ site.baseurl }}/tag/dotnet">.Net Framework</a></h2>
+        </header>
+		<footer>
+			C#, F#, VB.NET, .NET FRAMEWORK! This is my strongest coding language so brace yourself!
+		</footer>
+    </article>
+	{% endif %}
+</ul>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+{% include author_pagination.html %}
+
+</main>

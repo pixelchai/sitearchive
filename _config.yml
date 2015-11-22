@@ -1,0 +1,42 @@
+# Jykell configuration
+markdown: redcarpet
+highlighter: rouge
+paginate: 5
+#paginate_path: "/Cat/page:num/"
+language: 'en-uk'
+
+# Website info
+name: 'PixelZerg'
+description: "A website of games, code, how tos, language, music, 3D modeling and animating, general art, literature, etc. Anything that I, and hopefully you, find interesting."
+
+# Author's info
+author: 'PixelZerg'
+# edit 'categories' in the front matter of every post to match this username
+username: pixelzerg
+bio: 'Hello! Welcome to my website! I like to code and talk about all sorts of cool things.'
+location: 'England, UK'
+url: 'http://pixelzerg.github.io/'
+
+short_url: 'pixelzerg.github.io'
+google_analytics: UA-70240671-1
+disqus: username
+# edit baseurl to simply '/' if using as your personal page (instead of a project page)
+baseurl:
+
+# Permalinks
+permalink: /:title
+# permalink: /author/:username
+# permalink: /tag/:tag
+
+
+# gems and other configs
+gems: [jekyll-paginate]
+exclude: [vendor]
+
+# Additional settings available on the front-matter
+# Site logo in the index.html (as in demo.ghost.io)
+# Author's page cover in _layouts/author.html
+# The same for page.html and tag.html layouts
+# Post's page cover as a per-post basis _posts/...
+# Disqus comments as a per-post basis
+# ...
