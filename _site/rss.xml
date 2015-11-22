@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  <channel>
+    <title>PixelZerg</title>
+    <link>http://pixelzerg.github.io/</link>
+    <description>A website of games, code, how tos, language, music, 3D modeling and animating, general art, literature, etc. Anything that I, and hopefully you, find interesting.</description>
+    <pubDate>Thu, 29 Oct 2015 03:50:29 +0000</pubDate>
+    <item>
+      <title>Batch to C# - Info</title>
+      <link>http://pixelzerg.github.io//foo</link>
+      <description>&lt;p&gt;My first ever coding language was BATCH. Yes, the coding language for MS-DOS. I used it to make some really interesting things!&lt;/p&gt;
+</description>
+      <pubDate>Thu, 29 Oct 2015 03:50:29 +0000</pubDate>
+      <dc:date>2015-10-29T03:50:29+00:00</dc:date>
+    </item>
+    <dc:date>2015-10-29T03:50:29+00:00</dc:date>
+  </channel>
+</rss>
