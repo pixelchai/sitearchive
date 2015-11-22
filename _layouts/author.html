@@ -32,8 +32,8 @@ current: author
         <h1 class="author-title">{{ page.catagories }}</h1>
         <div class="author-meta">
 <!-------------------desc---------------------------------------------------------------------------------------------------------------->
-		{% if page.catagories == 'PixelZer' %}
-			<p>this is a test cat</p>
+		{% if page.catagories == 'dotnet' %}
+			C#, F#, VB.NET, .NET FRAMEWORK! This is my strongest coding language so brace yourself!
 		{% endif %}
 <!--------------------------------------------------------------------------------------------------------------------------------------->
         </div>
@@ -47,13 +47,13 @@ current: author
 
 <!--------------------links-------------------------------------------------------------------------------------------------------------->
 <ul>
-  {% if page.catagories == 'PixelZer' %}
+  {% if page.catagories == 'dotnet' %}
 	<article class="post">
         <header class="post-header">
-			<h2 class="post-title"><a href="{{ site.baseurl }}/tag/dotnet">.Net Framework</a></h2>
+			<h2 class="post-title"><a href="{{ site.baseurl }}/tag/Batch2CSharp">Batch to C#</a></h2>
         </header>
 		<footer>
-			C#, F#, VB.NET, .NET FRAMEWORK! This is my strongest coding language so brace yourself!
+			A program that can convert MS-DOS BATCH programs into C#!
 		</footer>
     </article>
 	{% endif %}
