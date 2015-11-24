@@ -8,23 +8,40 @@
     <title>PixelZerg</title>
     <link>http://pixelzerg.github.io/</link>
     <description>A website of games, code, how tos, language, music, 3D modeling and animating, general art, literature, etc. Anything that I, and hopefully you, find interesting.</description>
-    <pubDate>Sun, 22 Nov 2015 03:17:29 +0000</pubDate>
+    <pubDate>Tue, 24 Nov 2015 06:42:45 +0000</pubDate>
+    <item>
+      <title>CodeComplexifier - Complex Booleans</title>
+      <link>http://pixelzerg.github.io//Cmplxfr1</link>
+      <description>&lt;p&gt;A new project that I am asynchronously starting with my &lt;a href=&quot;/tag/UniversalProgram&quot;&gt;Universal Program&lt;/a&gt; project!
+This project is going to, essentially, be a code complexifier. Probably wouldn&amp;#39;t exactly be obfuscation, but it will generate code that will most likely be unreadable to the untrained eye.&lt;/p&gt;
+</description>
+      <pubDate>Tue, 24 Nov 2015 06:42:45 +0000</pubDate>
+      <dc:date>2015-11-24T06:42:45+00:00</dc:date>
+    </item>
     <item>
       <title>Universal Program - Briefing</title>
-      <link>http://pixelzerg.github.io//universalprogrambriefing</link>
+      <link>http://pixelzerg.github.io//UniversalProgramBriefing</link>
       <description>&lt;p&gt;Here&amp;#39;s a cool project i&amp;#39;m starting. The aim is to port a single program into every coding language that I know. This is basically to familiarize myself with coding languages that I haven&amp;#39;t done in a long time. I might even learn new coding languages just for this project. This is going to be great! But first, we must decide what the program must actually be.&lt;/p&gt;
 </description>
       <pubDate>Sun, 22 Nov 2015 03:17:29 +0000</pubDate>
       <dc:date>2015-11-22T03:17:29+00:00</dc:date>
     </item>
     <item>
+      <title>Hello</title>
+      <link>http://pixelzerg.github.io//Hello</link>
+      <description>&lt;p&gt;This is my 2nd ever proper website.  I have never before done much HTML coding at all. This is my first time using &lt;code&gt;Ruby&lt;/code&gt; too. This website was created with  &lt;code&gt;Jekyll&lt;/code&gt; . &lt;strong&gt;x_x&lt;/strong&gt;&lt;/p&gt;
+</description>
+      <pubDate>Wed, 18 Nov 2015 09:40:23 +0000</pubDate>
+      <dc:date>2015-11-18T09:40:23+00:00</dc:date>
+    </item>
+    <item>
       <title>Batch to C# - Info</title>
-      <link>http://pixelzerg.github.io//batch2csharp</link>
+      <link>http://pixelzerg.github.io//Batch2Csharp</link>
       <description>&lt;p&gt;My first ever coding language was BATCH. Yes, the coding language for MS-DOS. I used it to make some really interesting things!&lt;/p&gt;
 </description>
       <pubDate>Thu, 29 Oct 2015 03:50:29 +0000</pubDate>
       <dc:date>2015-10-29T03:50:29+00:00</dc:date>
     </item>
-    <dc:date>2015-11-22T03:17:29+00:00</dc:date>
+    <dc:date>2015-11-24T06:42:45+00:00</dc:date>
   </channel>
 </rss>
