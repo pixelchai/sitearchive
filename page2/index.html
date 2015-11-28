@@ -52,7 +52,7 @@
     <link rel="alternate" type="application/rss+xml" title="PixelZerg" href="/rss.xml" />
 
 </head>
-<body class="tag-template nav-closed">
+<body class="paged archive-template nav-closed">
 
     <div class="nav">
     <h3 class="nav-title">Menu</h3>
@@ -60,7 +60,7 @@
         <span class="hidden">Close</span>
     </a>
     <ul>
-        <li class="nav-home " role="presentation"><a href="/index.html">Home</a></li>
+        <li class="nav-home  nav-current" role="presentation"><a href="/index.html">Home</a></li>
         <li class="nav-about " role="presentation"><a href="/about.html">About</a></li>
 		<!--
         <li class="nav-fables " role="presentation"><a href="tag/fables/">Fables</a></li>
@@ -83,38 +83,25 @@
     <div class="site-wrapper">
 
         <!-- [[! Everything else gets inserted here ]] -->
-        <!-- < dynamically overriding backgrounds for tags as well as descriptions -->
-
-
-<!-- < default}} -->
+        <!-- < default -->
 <!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 
-<!-- If we have a tag cover, display that - else blog cover - else nothing -->
-<header class="main-header tag-head " style="background-image: url(/assets/images/MSDOS.jpg) ">
-	<!--
-	    <link rel="stylesheet" type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700'>
-    <link rel="stylesheet" href="/assets/css/ghost.min.css" />-->
-	
+<!-- The big featured header  -->
+<header class="main-header "
+        style="background-image: url(/assets/images/cover1.jpg) ">
     <nav class="main-nav overlay clearfix">
-        <a class="blog-logo" href="/index.html"><img src="/assets/images/G1BigF2BasicShade2RS.png" alt="Blog Logo" /></a>
+        <a class="blog-logo" href="/"><img src="/assets/images/G1BigF2BasicShade2RS.png" alt="Blog Logo" /></a>
         
             <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
         
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">
-            <h1 class="page-title">Ascomputingexercises</h1>
-            <h2 class="page-description">
-            
-                Working through an AS Level textbook for computing
-            
-            </h2>
-			<div class="author-meta">
-            <span class="author-link icon-link"><a href="https://github.com/PixelZerg/ASComputingExercises">Source Code</a></span>
-        </div>
+            <h1 class="page-title">PixelZerg</h1>
+            <h2 class="page-description">A website of games, code, how tos, language, music, 3D modeling and animating, general art, literature, etc. Anything that I, and hopefully you, find interesting.</h2>
         </div>
     </div>
-	
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
 <!-- The main content area on the homepage -->
@@ -126,7 +113,11 @@
         
             <nav class="pagination" role="pagination">
     
-    <span class="page-number"> Page 1 of 1 </span>
+        
+            <a class="newer-posts" href="/" title="Previous Page">&laquo; Newer Posts</a>
+        
+    
+    <span class="page-number"> Page 2 of 2 </span>
      
 </nav>
         
@@ -136,10 +127,10 @@
     
     <article class="post">
         <header class="post-header">
-            <h2 class="post-title"><a href="/AScompexs21p36">s2.1p36 - Money Algorithm!</a></h2>
+            <h2 class="post-title"><a href="/Batch2Csharp">Batch to C# - Info</a></h2>
         </header>
         <section class="post-excerpt">
-            <p><p>This chapter seems to talk about basic stuff like what algorithms are and operators. This reminds me of when I was first scratching the surface of... <a class="read-more" href="/AScompexs21p36">&raquo;</a></p>
+            <p><p>My first ever coding language was BATCH. Yes, the coding language for MS-DOS. I used it to make some really interesting things!</p> <p>I once found myself... <a class="read-more" href="/Batch2Csharp">&raquo;</a></p>
         </section>
         <footer class="post-meta">
             
@@ -150,35 +141,11 @@
                 on 
                 
                     
-                       <a href='/tag/ASComputingExercises'>Ascomputingexercises</a>
+                       <a href='/tag/Batch2CSharp'>Batch2csharp</a>
                        
                 
             
-            <time class="post-date" datetime="2015-11-28">28 Nov 2015</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/ASComputingExercises">ASComputingExercises - Introduction</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><p>So here&#39;s an explanation of what these posts are all about and why I made them.</p> <p>All of posts in this section will be my answers... <a class="read-more" href="/ASComputingExercises">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            
-            <!-- author -->
-            <a href='/author/pixelzerg'>PixelZerg</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/tag/ASComputingExercises'>Ascomputingexercises</a>
-                       
-                
-            
-            <time class="post-date" datetime="2015-11-28">28 Nov 2015</time>
+            <time class="post-date" datetime="2015-10-29">29 Oct 2015</time>
         </footer>
     </article>
     
@@ -187,13 +154,18 @@
     
         <nav class="pagination" role="pagination">
     
-    <span class="page-number"> Page 1 of 1 </span>
+        
+            <a class="newer-posts" href="/" title="Previous Page">&laquo; Newer Posts</a>
+        
+    
+    <span class="page-number"> Page 2 of 2 </span>
      
 </nav>
     
 
 
 </main>
+
 
         <footer class="site-footer clearfix">
           <section class="copyright"><a href="/">PixelZerg</a> &copy; 2015</section>
