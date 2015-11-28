@@ -12,6 +12,53 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>ASComputingExercises - Introduction</title>
+	  <link>/ASComputingExercises</link>
+	  <author>PixelZerg</author>
+	  <pubDate>2015-11-28T12:05:47+00:00</pubDate>
+	  <guid>/ASComputingExercises</guid>
+	  <description><![CDATA[
+	     <p>So here&#39;s an explanation of what these posts are all about and why I made them.</p>
+
+<p>All of posts in this section will be my answers to exercises from a textbook:</p>
+
+<blockquote>
+<p>AQA Computing AS level - Kerboodle by Sylvia Langfield and Kevin Bond</p>
+</blockquote>
+
+<p>The book, I feel, teaches a much more basic level of computing knowledge than that I already own and the exercises are similar to the stuff I was making nore than 3 years ago, when my computing knowledge was much more limited. Even so, I will work through the book because I have never really looked at coding/computing in an acadamic sense before - I learnt all the knowledge I have about coding today from making random projects and experimenting a lot. I did coding simply because I thought it was very interesting and fun. Another reason for going through this book anyway would be because I was not able to find any higher level books in my school library, from which I got this book.</p>
+
+<p>In all of the exercises that I do complete in this book, I aim to write appropriate comments and give appropriate names to variables. Since I learnt coding just by experimenting, I don&#39;t usually write comments and I often use variablenames that other coders may not understand. I will make it so that the code for these exercises are easily understandable by other coders and I will refrain from using confusing indentations. i.e, no more of this (not that it is in my coding that much anyway):</p>
+
+<pre>
+Console.WriteLine(
+new foo((
+banana+1)/(
+(moo)-(noo)).method(banana,(foo/loo),gaaaaa)
+).Get()
+)
+</pre>
+
+<p>In adition, I shall make the programs that I make in this section as efficient as possible, which has never been THAT high of a priority for me (it was prioritised, just not as the <em>highest</em> priority).</p>
+
+<p>NB: The answers to the exercises will be completed in <strong>C#</strong></p>
+
+<hr>
+
+<!-- footer -->
+
+<p>Time taken to write: 30 or so min.</p>
+
+<hr>
+
+<!-- Ack -->
+
+<p><small><small><small><a href="https://www.flickr.com/photos/wneuheisel/5256103622">Cover Image</a> by William Neuheisel. It has not been edited.</small></small></small></p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>CodeComplexifier - Complex Booleans</title>
 	  <link>/Cmplxfr1</link>
 	  <author>PixelZerg</author>

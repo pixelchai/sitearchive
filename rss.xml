@@ -8,7 +8,15 @@
     <title>PixelZerg</title>
     <link>http://pixelzerg.github.io/</link>
     <description>A website of games, code, how tos, language, music, 3D modeling and animating, general art, literature, etc. Anything that I, and hopefully you, find interesting.</description>
-    <pubDate>Tue, 24 Nov 2015 06:42:45 +0000</pubDate>
+    <pubDate>Sat, 28 Nov 2015 12:05:47 +0000</pubDate>
+    <item>
+      <title>ASComputingExercises - Introduction</title>
+      <link>http://pixelzerg.github.io//ASComputingExercises</link>
+      <description>&lt;p&gt;So here&amp;#39;s an explanation of what these posts are all about and why I made them.&lt;/p&gt;
+</description>
+      <pubDate>Sat, 28 Nov 2015 12:05:47 +0000</pubDate>
+      <dc:date>2015-11-28T12:05:47+00:00</dc:date>
+    </item>
     <item>
       <title>CodeComplexifier - Complex Booleans</title>
       <link>http://pixelzerg.github.io//Cmplxfr1</link>
@@ -42,6 +50,6 @@ This project is going to, essentially, be a code complexifier. Probably wouldn&a
       <pubDate>Thu, 29 Oct 2015 03:50:29 +0000</pubDate>
       <dc:date>2015-10-29T03:50:29+00:00</dc:date>
     </item>
-    <dc:date>2015-11-24T06:42:45+00:00</dc:date>
+    <dc:date>2015-11-28T12:05:47+00:00</dc:date>
   </channel>
 </rss>
