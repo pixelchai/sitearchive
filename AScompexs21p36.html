@@ -123,7 +123,9 @@
 
         <section class="post-content">
             
-            <p>This chapter seems to talk about basic stuff like what algorithms are and operators. This reminds me of when I was first scratching the surface of C# 4 years ago. Back then, I was messing around a lot with Unity - the 3D game engine. Unity uses a mono runtime so I was slowly learning C# from my own accord. Little did how know just how extensive and awesome C# was. I remember Unity also had a javascript API called unityscript. I remember I used to use that a lot before learning C#. In fact, I may have never even started using C# if it wasn&#39;t for something that happened out of the blue, I&#39;ll make a post on it later.</p>
+            <p><img src="/assets/poststuff/2/1.PNG" alt=""></p>
+
+<p>This chapter seems to talk about basic stuff like what algorithms are and operators. This reminds me of when I was first scratching the surface of C# 4 years ago. Back then, I was messing around a lot with Unity - the 3D game engine. Unity uses a mono runtime so I was slowly learning C# from my own accord. Little did how know just how extensive and awesome C# was. I remember Unity also had a javascript API called unityscript. I remember I used to use that a lot before learning C#. In fact, I may have never even started using C# if it wasn&#39;t for something that happened out of the blue, I&#39;ll make a post on it later.</p>
 
 <p>Anyway, this chapter is about stuff like operators and printing to the console and whatnot - basic stuff.</p>
 
@@ -190,6 +192,9 @@ Console.Write(Environment.NewLine); //print line ending (add new line)
 t.Suspend(); //suspend animation thread
 Console.Clear();</pre></p>
 
+<p>Output:
+<img src="https://i.gyazo.com/ce2341c37c46493c5d7ac2d3895c8fe2.gif" alt="Fancy Hello World"></p>
+
 <hr>
 
 <h3>Displaying two messages</h3>
@@ -208,6 +213,9 @@ t = new System.Threading.Thread(() =&gt; Anim(&quot;Do you like food?&quot; +
 Environment.NewLine + Environment.NewLine + &quot;I like food&quot;)); t.Start();
 Console.ReadKey(); animrun = false; t.Suspend();
 Console.Clear();</pre></p>
+
+<p>Output:
+<img src="https://i.gyazo.com/803f07d64c61a05587d9b92afc405a69.gif" alt=""></p>
 
 <hr>
 
@@ -286,6 +294,9 @@ numbers.Sum());
 Console.ReadKey();
 Console.Clear();</pre></p>
 
+<p>Output:
+<img src="https://i.gyazo.com/7316b0a74eb135a094d2ab92101e81c6.gif" alt=""></p>
+
 <hr>
 
 <h3>Modulo Operator</h3>
@@ -342,6 +353,9 @@ Console.WriteLine(rawin);
 }
 return integer;
 }</pre></p>
+
+<p>Output:
+<img src="https://i.gyazo.com/e4a868c1a8ea98f39855729d5494b918.gif" alt=""></p>
 
 <hr>
 
@@ -405,7 +419,66 @@ This is easy, you just need to convert the value and everything to integers and 
  MoneyAlgorithm(rem);
 }</pre></p>
 
-<p>This post is a draft, wip.</p>
+<p>Here&#39;s how to use the methods:
+<pre>
+decimal money = ReadDecimal(&quot;Enter an amount of money. e.g 5.37 = five pounds and thrity seven pence&quot;);
+Console.Clear();
+Console.WriteLine(&quot;Make that value with:&quot;);
+string[] written = new string[] { &quot;Most Efficient Combination&quot;, &quot;1p coin(s)&quot;
+,&quot;2p coin(s)&quot;, &quot;5p coin(s)&quot;, &quot;10p coin(s)&quot;, &quot;20p coin(s)&quot;, &quot;50p coin(s)&quot;, &quot;£1 coin(s)&quot;
+,&quot;£2 coin(s)&quot;, &quot;£5 note(s)&quot;, &quot;£10 note(s)&quot;, &quot;£20 note(s)&quot; };
+switch (MenuChoose(written))
+{
+case 0:
+Console.Clear();
+Console.WriteLine(&quot;How to make £&quot; + money + &quot; with conventional brittish money:&quot;);
+MoneyAlgorithm(money);
+break;
+case 1:
+MoneyAlgorithm(money, 0.01m, written[1]);
+break;
+case 2:
+MoneyAlgorithm(money, 0.02m, written[2]);
+break;
+case 3:
+MoneyAlgorithm(money, 0.05m, written[3]);
+break;
+case 4:
+MoneyAlgorithm(money, 0.1m, written[4]);
+break;
+case 5:
+MoneyAlgorithm(money, 0.2m, written[5]);
+break;
+case 6:
+MoneyAlgorithm(money, 0.5m, written[6]);
+break;
+case 7:
+MoneyAlgorithm(money, 1m, written[7]);
+break;
+case 8:
+MoneyAlgorithm(money, 2, written[8]);
+break;
+case 9:
+MoneyAlgorithm(money, 5, written[9]);
+break;
+case 10:
+MoneyAlgorithm(money, 10, written[10]);
+break;
+case 11:
+MoneyAlgorithm(money, 20m, written[11]);
+break;
+}
+Console.ReadKey();
+Console.Clear();
+</pre></p>
+
+<p>As you can see in that code, a method <code>Menu Choose</code> is used. This is a method that was taken from one of my previous projects, actually, - <a href="/tag/UniversalProgram">The Universal Program</a></p>
+
+<p>Output:
+<img src="https://i.gyazo.com/68b3a128684587b2ead5b3fef82c907b.gif" alt=""></p>
+
+<p>Look how awesome it looks seeing the algorithm work out how to make up money:
+<img src="https://i.gyazo.com/0684b2ec4d5f32e8540ff0b1c38da931.gif" alt=""></p>
 
 <hr>
 
@@ -475,7 +548,7 @@ This is easy, you just need to convert the value and everything to integers and 
     <!-- [[! /next_post ]] -->
     <!-- [[! prev_post ]] -->
     
-        <a class="read-next-story prev " style="background-image: url(assets/images/MSDOS.jpg)" href="/ASComputingExercises">
+        <a class="read-next-story prev " style="background-image: url(assets/images/Bokeh.jpg)" href="/ASComputingExercises">
             <section class="post">
                 <h2>ASComputingExercises - Introduction</h2>
                 <p><p>So here&#39;s an explanation of what these posts are all about and why I made...</p>
