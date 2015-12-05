@@ -19,6 +19,8 @@
 <!--    <link rel="stylesheet" type="text/css"href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />-->
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <!--	<link rel="stylesheet" type="text/css" href="/assets/css/main.css"/>-->
+<!--	parallax-->
+	<link rel="stylesheet" type="text/css" href="/assets/css/parallax.css" />
     
     <!-- [[! Ghost outputs important style and meta data with this tag ]] -->
         <link rel="canonical" href="/" />
@@ -91,6 +93,8 @@
 <!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 
 <!-- If we have a tag cover, display that - else blog cover - else nothing -->
+<div class="parallax"><div id="group1" class="parallax__group">
+		<div class="parallax__layer parallax__layer--back" style="transform: translateZ(-300px)scaleX(2)scaleY(2) translateY(-99px);">
 <header class="main-header tag-head " style="background-image: url(/assets/images/bokeh.jpg) ">
 	<!--
 	    <link rel="stylesheet" type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700'>
@@ -117,7 +121,8 @@
     </div>
 	
 </header>
-
+	</div>
+	<div class="parallax__layer parallax__layer--base" style="transform: translateY(-050px)">
 <!-- The main content area on the homepage -->
 <main id="content" class="content" role="main">
 
@@ -171,6 +176,7 @@
 
 
 </main>
+	</div></div></div>
 
         <footer class="site-footer clearfix">
           <section class="copyright"><a href="/">PixelZerg</a> &copy; 2015</section>

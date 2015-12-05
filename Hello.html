@@ -19,6 +19,8 @@
 <!--    <link rel="stylesheet" type="text/css"href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />-->
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <!--	<link rel="stylesheet" type="text/css" href="/assets/css/main.css"/>-->
+<!--	parallax-->
+	<link rel="stylesheet" type="text/css" href="/assets/css/parallax.css" />
     
     <!-- [[! Ghost outputs important style and meta data with this tag ]] -->
         <link rel="canonical" href="/" />
@@ -91,7 +93,9 @@
 
 <!-- Everything inside the #post tags pulls data from the post -->
 <!-- #post -->
-
+<div class="parallax">
+	<div id="group1" class="parallax__group">
+	<div class="parallax__layer parallax__layer--back" style="transform: translateZ(-300px)scaleX(2)scaleY(2) translateY(-58px);">
 <header class="main-header post-head " style="background-image: url(assets/images/cover1.jpg) ">
     <nav class="main-nav  overlay  clearfix">
         <a class="blog-logo" href="/index.html"><img src="assets/images/G1BigF2BasicShade2RS.png" alt="Blog Logo" /></a>
@@ -99,8 +103,8 @@
             <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
         
     </nav>
-</header>
-
+			</header></div>
+<div class="parallax__layer parallax__layer--base" style="transform: translateY(-50px)">
 <main class="content" role="main">
 
     <article class="post tag-messages">
@@ -189,7 +193,7 @@
 
     </article>
 
-</main>
+	</main></div>
 
 <aside class="read-next">
 
@@ -216,7 +220,7 @@
 </aside>
 
 <!-- /post -->
-
+	</div></div>
 
         <footer class="site-footer clearfix">
           <section class="copyright"><a href="/">PixelZerg</a> &copy; 2015</section>

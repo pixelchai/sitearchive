@@ -270,7 +270,7 @@ h4, h5, h6 {
     -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-        color: #45747F;
+    color: #0B1A3B;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
     font-family: "Open Sans", sans-serif;
@@ -305,12 +305,12 @@ h6 {
 }
 
 a {
-    color: #45747F;
-    transition: color 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
+    color: #0B1A3B;
+    transition: color 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 a:hover {
-    color: #111;
+    color: #45747F;
 }
 
 p, ul, ol, dl {
@@ -571,7 +571,7 @@ body.nav-opened .site-wrapper {
     width: 100%;
     height: 100vh;
     margin-bottom: 5rem;
-    text-align: center;
+/*    text-align: center;*/
     background: rgba(17, 17, 17, 0.93) no-repeat center center;
     background-size: cover;
     overflow: hidden;
@@ -1225,6 +1225,9 @@ body:not(.post-template) .post-title {
 
 .author-meta a {
     color: #9EABB3;
+    border: whitesmoke;
+    border-width: thick;
+    font-weight: 800;
 }
 .author-meta a:hover {
     color: #111;
@@ -1397,7 +1400,7 @@ body:not(.post-template) .post-title {
     word-wrap: break-word;
 }
 .author-meta a {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /* Turn off meta for page2+ to make room for extra

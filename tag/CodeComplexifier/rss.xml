@@ -30,22 +30,22 @@ This project is going to, essentially, be a code complexifier. Probably wouldn&#
 <p>Whenever you do a condition, the condition always has to be a boolean.
 In while loops, if statements, etc.
 Say, for example, you have a condition <code>no != 10</code>. You might be using it in a while loop, for example:
-<pre>
+<pre><code class="hljs csharp">
 int no = 0;
 while(no != 10)
 {
     no++;
 }
-</pre></p>
+</code></pre></p>
 
 <p>Since the condition is a boolean, you can easily add <code>== true</code> to the end without it affecting the code. After all, the condition is just the short-hand way of writing that.
-<pre>
+<pre><code class="hljs csharp">
 int no = 0;
 while(no != 10 == true)
 {
     no++;
 }
-</pre></p>
+</code></pre></p>
 
 <p>Now, there are many ways we could say <code>true</code>. If we felt particularly groovy that day, we could write <code>no != 10 == !false</code> because !false = true.</p>
 
@@ -65,7 +65,7 @@ Like I mentioned earlier, we can always add <code>== true</code> to any conditio
 <p>Since my method replaces EVERY instance of <code>true</code> found with a random way of expressing <code>true</code>, the complexity will actually increase exponentially.</p>
 
 <p>Here&#39;s the method:
-<pre>public string complexifyCondition(string cond, int times)
+<pre><code class="hljs csharp">public string complexifyCondition(string cond, int times)
         {
             Console.Write(&quot;complexifying...&quot;);
             string[] trues = new string[] { &quot;!true == !true&quot;, &quot;true != !true&quot;+Environment.NewLine, &quot;!!!true != !!true&quot;, &quot;!false != !true&quot;+Environment.NewLine, &quot;!!false != true != !false == !true&quot;
@@ -90,7 +90,7 @@ Like I mentioned earlier, we can always add <code>== true</code> to any conditio
             }
             System.Windows.Forms.Clipboard.SetText(ret);
             return ret;
-        }</pre></p>
+        }</code></pre></p>
 
 <p>Let&#39;s give it a spin!
 Let&#39;s input our example condition <code>no != 10</code>:
@@ -129,17 +129,17 @@ And the complexity was only set to 19... </p>
 <h3><u>What my initial intentions were</u></h3>
 
 <p>I initially intended to make an algorithm that would do the following:
-<pre>
+<pre><code class="hljs csharp">
 int no = 0;
 while(no != 10)
 {
     no++;
 }</p>
 
-<h2></pre></h2>
+<h2></code></pre></h2>
 
 <p>Converted to:
-<pre>
+<pre><code class="hljs csharp">
 private int Do(int no){
 return no+=1;
 }
@@ -152,11 +152,11 @@ no = Do(no);
 if(!Check(no)){
 goto foo;
 }
-</pre></p>
+</code></pre></p>
 
 <p>Notice how the code is now suddenly more complex. Making that code is quite complex, though, because you will need to work out which variables to pass etc etc. I somehow started experimenting with bools and now this happened.
 I also made a method to actually parse the condition from a loop/statement:
-<pre>public string GetBoolfloop(string lname, params string[]raw)
+<pre><code class="hljs csharp">public string GetBoolfloop(string lname, params string[]raw)
         {
             foreach (var loc in raw)
             {
@@ -181,7 +181,7 @@ I also made a method to actually parse the condition from a loop/statement:
                 }
             }
             return &quot;&quot;;
-        }</pre>
+        }</code></pre>
 And a method to get the code within the loop/statement:</p>
 
 <figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="kt">string</span> <span class="nf">GetCodefbrackets</span><span class="p">(</span><span class="kt">string</span> <span class="n">sbracket</span><span class="p">,</span><span class="kt">string</span> <span class="n">ebracket</span><span class="p">,</span> <span class="k">params</span> <span class="kt">string</span><span class="p">[]</span> <span class="n">code</span><span class="p">)</span>

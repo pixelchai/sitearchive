@@ -19,6 +19,8 @@
 <!--    <link rel="stylesheet" type="text/css"href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />-->
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <!--	<link rel="stylesheet" type="text/css" href="/assets/css/main.css"/>-->
+<!--	parallax-->
+	<link rel="stylesheet" type="text/css" href="/assets/css/parallax.css" />
     
     <!-- [[! Ghost outputs important style and meta data with this tag ]] -->
         <link rel="canonical" href="/" />
@@ -91,7 +93,9 @@
 
 <!-- Everything inside the #post tags pulls data from the post -->
 <!-- #post -->
-
+<div class="parallax">
+	<div id="group1" class="parallax__group">
+	<div class="parallax__layer parallax__layer--back" style="transform: translateZ(-300px)scaleX(2)scaleY(2) translateY(-58px);">
 <header class="main-header post-head " style="background-image: url(assets/images/MSDOS.jpg) ">
     <nav class="main-nav  overlay  clearfix">
         <a class="blog-logo" href="/index.html"><img src="assets/images/G1BigF2BasicShade2RS.png" alt="Blog Logo" /></a>
@@ -99,8 +103,8 @@
             <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
         
     </nav>
-</header>
-
+			</header></div>
+<div class="parallax__layer parallax__layer--base" style="transform: translateY(-50px)">
 <main class="content" role="main">
 
     <article class="post tag-Batch2CSharp">
@@ -150,7 +154,7 @@ The comboboxes at the top are currently empty because the program isn&#39;t FULL
 
 <p>The first one is BATCH, the second one is C#.</p>
 
-<p>You may have noticed, you can compile the C# script right from within the program. This is using the csc.exe file. You will be asked to navigate to it. It is usually in <pre>(drive [normally &quot;c&quot;]):\windows\Microsoft.NET\Framework\v(version)\csc.exe</pre>
+<p>You may have noticed, you can compile the C# script right from within the program. This is using the csc.exe file. You will be asked to navigate to it. It is usually in <pre><code class="hljs csharp">(drive [normally &quot;c&quot;]):\windows\Microsoft.NET\Framework\v(version)\csc.exe</code></pre>
 This is, providing you have .net framework installed.</p>
 
 <hr>
@@ -159,7 +163,7 @@ This is, providing you have .net framework installed.</p>
 
 <p>Batch&#39;s methods are executed in a much more different way to C#&#39;s.
 For example:
-<pre>@echo off
+<pre><code class="hljs csharp">@echo off
 echo foooo:
 :foo
     echo Hello
@@ -170,19 +174,19 @@ echo foooo:
     echo World
 :noo
     echo !!!!!
-    pause</pre>
+    pause</code></pre>
 Will have the output:
-<pre>foooo:
+<pre><code class="hljs csharp">foooo:
 Hello
 World
 !!!!!
-Press any key to continue . . .</pre></p>
+Press any key to continue . . .</code></pre></p>
 
 <p>Notice how the &quot;loo&quot; method goes directly to &quot;noo&quot; once it has finished executing.
 Notice how the &quot;goto&quot; to &quot;loo&quot; doesn&#39;t return, rather it continues on to &quot;noo&quot;.</p>
 
 <p>Let&#39;s imagine that the &quot;:&quot; defines a method. A port of the above code, in C# will look like:
-<pre>
+<pre><code class="hljs csharp">
 using System;</p>
 
 <p>public class Program
@@ -207,10 +211,10 @@ using System;</p>
         Console.WriteLine(&quot;Press any key to continue...&quot;); Console.ReadKey();
     }
 }
-</pre></p>
+</code></pre></p>
 
 <p>The execution order here is definitely not the same. Here&#39;s the output:
-<pre>foooo:</pre></p>
+<pre><code class="hljs csharp">foooo:</code></pre></p>
 
 <hr>
 
@@ -220,43 +224,43 @@ using System;</p>
 
 <p>Then, when converting to C#, add a little line of code at the end which calls the next method. If there isnt a &quot;next method&quot;, then you know it must be the exit point of the application.</p>
 
-<p>Here&#39;s what the compiler gives as output now:</p>
+<p>Here&#39;s what the compiler gives as output now:
+<pre><code class="hljs csharp">
+using System;</p>
 
-<figure class="highlight"><pre><code class="language-batch" data-lang="batch">using System;
-
-public class Program
+<p>public class Program
 {
     public static void Main()
     {
         Console.Clear(); //required line of code
         //echo is off from this point onwards!
-        Console.WriteLine(@"foooo:");
+        Console.WriteLine(@&quot;foooo:&quot;);
             foo(); //proceed to next method
     }
     public static void foo()
     {
-        Console.WriteLine(@"Hello");
+        Console.WriteLine(@&quot;Hello&quot;);
         loo();
     }
     public static void joo()
     {
-        Console.WriteLine(@"joo");
+        Console.WriteLine(@&quot;joo&quot;);
             loo(); //proceed to next method
     }
     public static void loo()
     {
-        Console.WriteLine(@"World");
+        Console.WriteLine(@&quot;World&quot;);
             noo(); //proceed to next method
     }
     public static void noo()
     {
-        Console.WriteLine(@"!!!!!");
-        Console.WriteLine("Press any key to continue..."); Console.ReadKey();
+        Console.WriteLine(@&quot;!!!!!&quot;);
+        Console.WriteLine(&quot;Press any key to continue...&quot;); Console.ReadKey();
         Environment.Exit(0); //end of program
     }
-}</code></pre></figure>
+}</p>
 
-<hr>
+<h2></code></pre></h2>
 
 <h3><u>Individual Line Handling</u></h3>
 
@@ -323,14 +327,15 @@ This command in cmd paints the background a specific colour.
 The first letter/number corresponds to the foreground, the second corresponds to the background.
 Implementing that is not that hard at all. All you really need is a <code>dictionary</code> with <code>keys</code> of the letters and <code>values</code> of <code>consolecolor</code> values.</p>
 
-<p>Then you could just simply do <code>Console.ForegroundColour = dictionary[string[0]];Console.BackgroundColour = dictionary[string[1]];</code></p>
+<p>Then you could just simply do <pre><code class="hljs csharp">Console.ForegroundColour =dictionary[string[0]];
+Console.BackgroundColour = dictionary[string[1]];</code></pre></p>
 
 <p>Notice anything missing?
 When the color command is called in cmd, the console&#39;s entire background/foreground gets repainted as that colour.
 Let&#39;s implement that then!</p>
 
 <p>Here&#39;s what the program outputs when <code>@color AE</code> is inputted:
-<pre>using System;</p>
+<pre><code class="hljs csharp">using System;</p>
 
 <p>public class Program
 {
@@ -343,7 +348,7 @@ Let&#39;s implement that then!</p>
 <p>Console.ForegroundColor = ConsoleColor.Yellow;
         Environment.Exit(0); //end of program
     }
-}</pre></p>
+}</code></pre></p>
 
 <p>It&#39;s just a basic implementation of repainting the console background by filling it in with empty space.
 The variable names that are required to do this are randomly generated.</p>
@@ -357,14 +362,14 @@ This project, at the time of writing, has been deprecated long ago so I haven&#3
 <h5>pause</h5>
 
 <p>The program converts the pause command to:
-<code>Console.WriteLine(&quot;Press any key to continue...&quot;); Console.ReadKey();</code>
+<pre><code class="hljs csharp">Console.WriteLine(&quot;Press any key to continue...&quot;); Console.ReadKey();</code></pre>
 Pretty self-explanatory...</p>
 
 <h5>ECHO</h5>
 
 <p>In batch, when you run a command, the command is echoed in the console and then executed:</p>
 
-<p><code>Console.WriteLine(System.Environment.CurrentDirectory+&quot;&gt;SET /p var=&quot;); //echo is on so printing command</code></p>
+<pre><code class="hljs csharp">Console.WriteLine(System.Environment.CurrentDirectory+">SET /p var="); //echo is on so printing command</code></pre>
 
 <p>This has been simulated in this program. The program also recognises <code>@echo off</code> and <code>@echo on</code> commands.
 The program will not print the command if <code>echo</code> is off or if the line of code has a &quot;@&quot; before it (just like batch).</p>
@@ -388,7 +393,7 @@ The program will not print the command if <code>echo</code> is off or if the lin
 <h5>Title</h5>
 
 <p>This is rather straight forward.
-<code>@title banana</code> -&gt; <code>Console.Title = @&quot;banana&quot;;</code></p>
+<pre><code class="hljs csharp">@title banana<code>-&gt;</code>Console.Title = @&quot;banana&quot;;</code></pre></p>
 
 <hr>
 
@@ -453,7 +458,7 @@ The program will not print the command if <code>echo</code> is off or if the lin
 
     </article>
 
-</main>
+	</main></div>
 
 <aside class="read-next">
 
@@ -473,7 +478,7 @@ The program will not print the command if <code>echo</code> is off or if the lin
 </aside>
 
 <!-- /post -->
-
+	</div></div>
 
         <footer class="site-footer clearfix">
           <section class="copyright"><a href="/">PixelZerg</a> &copy; 2015</section>

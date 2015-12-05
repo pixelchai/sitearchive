@@ -19,6 +19,8 @@
 <!--    <link rel="stylesheet" type="text/css"href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />-->
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <!--	<link rel="stylesheet" type="text/css" href="/assets/css/main.css"/>-->
+<!--	parallax-->
+	<link rel="stylesheet" type="text/css" href="/assets/css/parallax.css" />
     
     <!-- [[! Ghost outputs important style and meta data with this tag ]] -->
         <link rel="canonical" href="/" />
@@ -88,8 +90,12 @@
 <!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 
 <!-- The big featured header  -->
-<header class="main-header "
-        style="background-image: url(/assets/images/cover1.jpg) ">
+<div class="parallax">
+	<div id="group1" class="parallax__group">
+	<div class="parallax__layer parallax__layer--back" style="transform: translateZ(-300px)scaleX(2)scaleY(2) translateY(0px);">
+<header class="main-header "style="background-image: url(/assets/images/Night/5.jpg) ">
+<!--	style="background-image: url(/assets/images/Night/5.jpg) { else %no-cover{ endif %">-->
+	
     <nav class="main-nav overlay clearfix">
         <a class="blog-logo" href="/"><img src="/assets/images/G1BigF2BasicShade2RS.png" alt="Blog Logo" /></a>
         
@@ -102,10 +108,12 @@
             <h2 class="page-description">A website of games, code, how tos, language, music, 3D modeling and animating, general art, literature, etc. Anything that I, and hopefully you, find interesting.</h2>
         </div>
     </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
-</header>
+<!--    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>-->
+		</header>
+		</div>
 
 <!-- The main content area on the homepage -->
+<div class="parallax__layer parallax__layer--base" style="transform: translateY(-045px)">
 <main id="content" class="content" role="main">
 
     <!-- The tag below includes the post loop - partials/loop.hbs -->
@@ -166,7 +174,9 @@
 
 
 </main>
-
+		</div>
+	</div>
+</div>
 
         <footer class="site-footer clearfix">
           <section class="copyright"><a href="/">PixelZerg</a> &copy; 2015</section>

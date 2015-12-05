@@ -19,6 +19,8 @@
 <!--    <link rel="stylesheet" type="text/css"href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />-->
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <!--	<link rel="stylesheet" type="text/css" href="/assets/css/main.css"/>-->
+<!--	parallax-->
+	<link rel="stylesheet" type="text/css" href="/assets/css/parallax.css" />
     
     <!-- [[! Ghost outputs important style and meta data with this tag ]] -->
         <link rel="canonical" href="/" />
@@ -91,7 +93,9 @@
 
 <!-- Everything inside the #post tags pulls data from the post -->
 <!-- #post -->
-
+<div class="parallax">
+	<div id="group1" class="parallax__group">
+	<div class="parallax__layer parallax__layer--back" style="transform: translateZ(-300px)scaleX(2)scaleY(2) translateY(-58px);">
 <header class="main-header post-head " style="background-image: url(assets/images/Bokeh.jpg) ">
     <nav class="main-nav  overlay  clearfix">
         <a class="blog-logo" href="/index.html"><img src="assets/images/G1BigF2BasicShade2RS.png" alt="Blog Logo" /></a>
@@ -99,8 +103,8 @@
             <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
         
     </nav>
-</header>
-
+			</header></div>
+<div class="parallax__layer parallax__layer--base" style="transform: translateY(-50px)">
 <main class="content" role="main">
 
     <article class="post tag-ASComputingExercises">
@@ -136,14 +140,14 @@
 
 <p>In all of the exercises that I do complete in this book, I aim to write appropriate comments and give appropriate names to variables. Since I learnt coding just by experimenting, I don&#39;t usually write comments and I often use variablenames that other coders may not understand. I will make it so that the code for these exercises are easily understandable by other coders and I will refrain from using confusing indentations. i.e, no more of this (not that it is in my coding that much anyway):</p>
 
-<pre>
+<pre><code class="hljs csharp">
 Console.WriteLine(
 new foo((
 banana+1)/(
 (moo)-(noo)).method(banana,(foo/loo),gaaaaa)
 ).Get()
 )
-</pre>
+</code></pre>
 
 <p>In adition, I shall make the programs that I make in this section as efficient as possible, which has never been THAT high of a priority for me (it was prioritised, just not as the <em>highest</em> priority).</p>
 
@@ -208,7 +212,7 @@ banana+1)/(
 
     </article>
 
-</main>
+	</main></div>
 
 <aside class="read-next">
 
@@ -235,7 +239,7 @@ banana+1)/(
 </aside>
 
 <!-- /post -->
-
+	</div></div>
 
         <footer class="site-footer clearfix">
           <section class="copyright"><a href="/">PixelZerg</a> &copy; 2015</section>

@@ -411,14 +411,14 @@ Console.Clear();
 
 <p>In all of the exercises that I do complete in this book, I aim to write appropriate comments and give appropriate names to variables. Since I learnt coding just by experimenting, I don&#39;t usually write comments and I often use variablenames that other coders may not understand. I will make it so that the code for these exercises are easily understandable by other coders and I will refrain from using confusing indentations. i.e, no more of this (not that it is in my coding that much anyway):</p>
 
-<pre>
+<pre><code class="hljs csharp">
 Console.WriteLine(
 new foo((
 banana+1)/(
 (moo)-(noo)).method(banana,(foo/loo),gaaaaa)
 ).Get()
 )
-</pre>
+</code></pre>
 
 <p>In adition, I shall make the programs that I make in this section as efficient as possible, which has never been THAT high of a priority for me (it was prioritised, just not as the <em>highest</em> priority).</p>
 

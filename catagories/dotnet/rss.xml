@@ -411,14 +411,14 @@ Console.Clear();
 
 <p>In all of the exercises that I do complete in this book, I aim to write appropriate comments and give appropriate names to variables. Since I learnt coding just by experimenting, I don&#39;t usually write comments and I often use variablenames that other coders may not understand. I will make it so that the code for these exercises are easily understandable by other coders and I will refrain from using confusing indentations. i.e, no more of this (not that it is in my coding that much anyway):</p>
 
-<pre>
+<pre><code class="hljs csharp">
 Console.WriteLine(
 new foo((
 banana+1)/(
 (moo)-(noo)).method(banana,(foo/loo),gaaaaa)
 ).Get()
 )
-</pre>
+</code></pre>
 
 <p>In adition, I shall make the programs that I make in this section as efficient as possible, which has never been THAT high of a priority for me (it was prioritised, just not as the <em>highest</em> priority).</p>
 
@@ -458,22 +458,22 @@ This project is going to, essentially, be a code complexifier. Probably wouldn&#
 <p>Whenever you do a condition, the condition always has to be a boolean.
 In while loops, if statements, etc.
 Say, for example, you have a condition <code>no != 10</code>. You might be using it in a while loop, for example:
-<pre>
+<pre><code class="hljs csharp">
 int no = 0;
 while(no != 10)
 {
     no++;
 }
-</pre></p>
+</code></pre></p>
 
 <p>Since the condition is a boolean, you can easily add <code>== true</code> to the end without it affecting the code. After all, the condition is just the short-hand way of writing that.
-<pre>
+<pre><code class="hljs csharp">
 int no = 0;
 while(no != 10 == true)
 {
     no++;
 }
-</pre></p>
+</code></pre></p>
 
 <p>Now, there are many ways we could say <code>true</code>. If we felt particularly groovy that day, we could write <code>no != 10 == !false</code> because !false = true.</p>
 
@@ -493,7 +493,7 @@ Like I mentioned earlier, we can always add <code>== true</code> to any conditio
 <p>Since my method replaces EVERY instance of <code>true</code> found with a random way of expressing <code>true</code>, the complexity will actually increase exponentially.</p>
 
 <p>Here&#39;s the method:
-<pre>public string complexifyCondition(string cond, int times)
+<pre><code class="hljs csharp">public string complexifyCondition(string cond, int times)
         {
             Console.Write(&quot;complexifying...&quot;);
             string[] trues = new string[] { &quot;!true == !true&quot;, &quot;true != !true&quot;+Environment.NewLine, &quot;!!!true != !!true&quot;, &quot;!false != !true&quot;+Environment.NewLine, &quot;!!false != true != !false == !true&quot;
@@ -518,7 +518,7 @@ Like I mentioned earlier, we can always add <code>== true</code> to any conditio
             }
             System.Windows.Forms.Clipboard.SetText(ret);
             return ret;
-        }</pre></p>
+        }</code></pre></p>
 
 <p>Let&#39;s give it a spin!
 Let&#39;s input our example condition <code>no != 10</code>:
@@ -557,17 +557,17 @@ And the complexity was only set to 19... </p>
 <h3><u>What my initial intentions were</u></h3>
 
 <p>I initially intended to make an algorithm that would do the following:
-<pre>
+<pre><code class="hljs csharp">
 int no = 0;
 while(no != 10)
 {
     no++;
 }</p>
 
-<h2></pre></h2>
+<h2></code></pre></h2>
 
 <p>Converted to:
-<pre>
+<pre><code class="hljs csharp">
 private int Do(int no){
 return no+=1;
 }
@@ -580,11 +580,11 @@ no = Do(no);
 if(!Check(no)){
 goto foo;
 }
-</pre></p>
+</code></pre></p>
 
 <p>Notice how the code is now suddenly more complex. Making that code is quite complex, though, because you will need to work out which variables to pass etc etc. I somehow started experimenting with bools and now this happened.
 I also made a method to actually parse the condition from a loop/statement:
-<pre>public string GetBoolfloop(string lname, params string[]raw)
+<pre><code class="hljs csharp">public string GetBoolfloop(string lname, params string[]raw)
         {
             foreach (var loc in raw)
             {
@@ -609,7 +609,7 @@ I also made a method to actually parse the condition from a loop/statement:
                 }
             }
             return &quot;&quot;;
-        }</pre>
+        }</code></pre>
 And a method to get the code within the loop/statement:</p>
 
 <figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="kt">string</span> <span class="nf">GetCodefbrackets</span><span class="p">(</span><span class="kt">string</span> <span class="n">sbracket</span><span class="p">,</span><span class="kt">string</span> <span class="n">ebracket</span><span class="p">,</span> <span class="k">params</span> <span class="kt">string</span><span class="p">[]</span> <span class="n">code</span><span class="p">)</span>
@@ -760,7 +760,7 @@ The comboboxes at the top are currently empty because the program isn&#39;t FULL
 
 <p>The first one is BATCH, the second one is C#.</p>
 
-<p>You may have noticed, you can compile the C# script right from within the program. This is using the csc.exe file. You will be asked to navigate to it. It is usually in <pre>(drive [normally &quot;c&quot;]):\windows\Microsoft.NET\Framework\v(version)\csc.exe</pre>
+<p>You may have noticed, you can compile the C# script right from within the program. This is using the csc.exe file. You will be asked to navigate to it. It is usually in <pre><code class="hljs csharp">(drive [normally &quot;c&quot;]):\windows\Microsoft.NET\Framework\v(version)\csc.exe</code></pre>
 This is, providing you have .net framework installed.</p>
 
 <hr>
@@ -769,7 +769,7 @@ This is, providing you have .net framework installed.</p>
 
 <p>Batch&#39;s methods are executed in a much more different way to C#&#39;s.
 For example:
-<pre>@echo off
+<pre><code class="hljs csharp">@echo off
 echo foooo:
 :foo
     echo Hello
@@ -780,19 +780,19 @@ echo foooo:
     echo World
 :noo
     echo !!!!!
-    pause</pre>
+    pause</code></pre>
 Will have the output:
-<pre>foooo:
+<pre><code class="hljs csharp">foooo:
 Hello
 World
 !!!!!
-Press any key to continue . . .</pre></p>
+Press any key to continue . . .</code></pre></p>
 
 <p>Notice how the &quot;loo&quot; method goes directly to &quot;noo&quot; once it has finished executing.
 Notice how the &quot;goto&quot; to &quot;loo&quot; doesn&#39;t return, rather it continues on to &quot;noo&quot;.</p>
 
 <p>Let&#39;s imagine that the &quot;:&quot; defines a method. A port of the above code, in C# will look like:
-<pre>
+<pre><code class="hljs csharp">
 using System;</p>
 
 <p>public class Program
@@ -817,10 +817,10 @@ using System;</p>
         Console.WriteLine(&quot;Press any key to continue...&quot;); Console.ReadKey();
     }
 }
-</pre></p>
+</code></pre></p>
 
 <p>The execution order here is definitely not the same. Here&#39;s the output:
-<pre>foooo:</pre></p>
+<pre><code class="hljs csharp">foooo:</code></pre></p>
 
 <hr>
 
@@ -830,43 +830,43 @@ using System;</p>
 
 <p>Then, when converting to C#, add a little line of code at the end which calls the next method. If there isnt a &quot;next method&quot;, then you know it must be the exit point of the application.</p>
 
-<p>Here&#39;s what the compiler gives as output now:</p>
+<p>Here&#39;s what the compiler gives as output now:
+<pre><code class="hljs csharp">
+using System;</p>
 
-<figure class="highlight"><pre><code class="language-batch" data-lang="batch">using System;
-
-public class Program
+<p>public class Program
 {
     public static void Main()
     {
         Console.Clear(); //required line of code
         //echo is off from this point onwards!
-        Console.WriteLine(@"foooo:");
+        Console.WriteLine(@&quot;foooo:&quot;);
             foo(); //proceed to next method
     }
     public static void foo()
     {
-        Console.WriteLine(@"Hello");
+        Console.WriteLine(@&quot;Hello&quot;);
         loo();
     }
     public static void joo()
     {
-        Console.WriteLine(@"joo");
+        Console.WriteLine(@&quot;joo&quot;);
             loo(); //proceed to next method
     }
     public static void loo()
     {
-        Console.WriteLine(@"World");
+        Console.WriteLine(@&quot;World&quot;);
             noo(); //proceed to next method
     }
     public static void noo()
     {
-        Console.WriteLine(@"!!!!!");
-        Console.WriteLine("Press any key to continue..."); Console.ReadKey();
+        Console.WriteLine(@&quot;!!!!!&quot;);
+        Console.WriteLine(&quot;Press any key to continue...&quot;); Console.ReadKey();
         Environment.Exit(0); //end of program
     }
-}</code></pre></figure>
+}</p>
 
-<hr>
+<h2></code></pre></h2>
 
 <h3><u>Individual Line Handling</u></h3>
 
@@ -933,14 +933,15 @@ This command in cmd paints the background a specific colour.
 The first letter/number corresponds to the foreground, the second corresponds to the background.
 Implementing that is not that hard at all. All you really need is a <code>dictionary</code> with <code>keys</code> of the letters and <code>values</code> of <code>consolecolor</code> values.</p>
 
-<p>Then you could just simply do <code>Console.ForegroundColour = dictionary[string[0]];Console.BackgroundColour = dictionary[string[1]];</code></p>
+<p>Then you could just simply do <pre><code class="hljs csharp">Console.ForegroundColour =dictionary[string[0]];
+Console.BackgroundColour = dictionary[string[1]];</code></pre></p>
 
 <p>Notice anything missing?
 When the color command is called in cmd, the console&#39;s entire background/foreground gets repainted as that colour.
 Let&#39;s implement that then!</p>
 
 <p>Here&#39;s what the program outputs when <code>@color AE</code> is inputted:
-<pre>using System;</p>
+<pre><code class="hljs csharp">using System;</p>
 
 <p>public class Program
 {
@@ -953,7 +954,7 @@ Let&#39;s implement that then!</p>
 <p>Console.ForegroundColor = ConsoleColor.Yellow;
         Environment.Exit(0); //end of program
     }
-}</pre></p>
+}</code></pre></p>
 
 <p>It&#39;s just a basic implementation of repainting the console background by filling it in with empty space.
 The variable names that are required to do this are randomly generated.</p>
@@ -967,14 +968,14 @@ This project, at the time of writing, has been deprecated long ago so I haven&#3
 <h5>pause</h5>
 
 <p>The program converts the pause command to:
-<code>Console.WriteLine(&quot;Press any key to continue...&quot;); Console.ReadKey();</code>
+<pre><code class="hljs csharp">Console.WriteLine(&quot;Press any key to continue...&quot;); Console.ReadKey();</code></pre>
 Pretty self-explanatory...</p>
 
 <h5>ECHO</h5>
 
 <p>In batch, when you run a command, the command is echoed in the console and then executed:</p>
 
-<p><code>Console.WriteLine(System.Environment.CurrentDirectory+&quot;&gt;SET /p var=&quot;); //echo is on so printing command</code></p>
+<pre><code class="hljs csharp">Console.WriteLine(System.Environment.CurrentDirectory+">SET /p var="); //echo is on so printing command</code></pre>
 
 <p>This has been simulated in this program. The program also recognises <code>@echo off</code> and <code>@echo on</code> commands.
 The program will not print the command if <code>echo</code> is off or if the line of code has a &quot;@&quot; before it (just like batch).</p>
@@ -998,7 +999,7 @@ The program will not print the command if <code>echo</code> is off or if the lin
 <h5>Title</h5>
 
 <p>This is rather straight forward.
-<code>@title banana</code> -&gt; <code>Console.Title = @&quot;banana&quot;;</code></p>
+<pre><code class="hljs csharp">@title banana<code>-&gt;</code>Console.Title = @&quot;banana&quot;;</code></pre></p>
 
 <hr>
 
