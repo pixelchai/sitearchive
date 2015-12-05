@@ -15,9 +15,9 @@
     <link rel="shortcut icon" href="/ssets/images/favicon.ico" >
 
     <!-- [[! Styles'n'Scripts ]] -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
-    <link rel="stylesheet" type="text/css"
-          href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+<!--    <link rel="stylesheet" type="text/css"href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />-->
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     
     <!-- [[! Ghost outputs important style and meta data with this tag ]] -->
         <link rel="canonical" href="/" />
@@ -137,9 +137,9 @@
 If only I read this book 4 years ago... no wait, I take that back. Learning everything by yourself is much better, I think, than having it be told to you. Much more in-depth. The only thing is that it takes a longer time to do.</p>
 
 <p>So as you may already know, here&#39;s how to print to the console:
-<pre>
+<pre><code class="hljs csharp">
 Console.WriteLine(&quot;Hello World&quot;);
-</pre></p>
+</pre></code></p>
 
 <p>Well, I thought this was a bit boring so let&#39;s give it a cool animation <strong>MULTITHREADING TIME</strong> :)</p>
 
@@ -150,18 +150,19 @@ You might want to also make the thread sleep with <code>System.Threading.Thread.
 
 <p>You probably don&#39;t want loads of dots filling the console so reset the <var>counter</var> every 3 or so goes.
 You can do this with:
-<pre>
+<pre><code class="hljs csharp">
 if(counter == 3)counter=0;
-</pre>
+</pre></code>
 or if you are feeling fancy:
-<pre>
+<pre><code class="hljs csharp">
 if(counter %3 == 0)counter=0;
-</pre></p>
+</pre></code></p>
 
 <p>I was feeling fancy today :p</p>
 
 <p>So here&#39;s the method:
-<pre>
+<pre><code class="hljs csharp">
+<pre><code class="hljs csharp">
 private static void Anim(string txt)
 {
      int no = 0; //counter
@@ -182,15 +183,16 @@ private static void Anim(string txt)
 }
 </code></pre></div>
 <p>}
-</pre></p>
+</pre></code>
+</pre></code></p>
 
 <p>You use the method like this:
-<pre>System.Threading.Thread t = new System.Threading.Thread(() =&gt; Anim(&quot;Hello World&quot;));
+<pre><code class="hljs csharp">System.Threading.Thread t = new System.Threading.Thread(() =&gt; Anim(&quot;Hello World&quot;));
 t.Start();//print hello world (q1)
 Console.ReadKey(); animrun = false; //after pressed a key, halt anim thread
 Console.Write(Environment.NewLine); //print line ending (add new line)
 t.Suspend(); //suspend animation thread
-Console.Clear();</pre></p>
+Console.Clear();</pre></code></p>
 
 <p>Output:
 <img src="https://i.gyazo.com/ce2341c37c46493c5d7ac2d3895c8fe2.gif" alt="Fancy Hello World"></p>
@@ -208,11 +210,11 @@ Console.Clear();</pre></p>
 <p>You know, if I was actually learning C# for the first time whilst reading this book, I bet you I would have done my own message for exercise 1 because <em>imma rebel</em>. Probably something like <code>Hello World - PixelZerg is awesome</code> or like <code>Hello World - If you don&#39;t eat food you will die</code>.</p>
 
 <p>But this question allows you to do just that. This is simple enough, using the method we previously made, we can easily complete the exercise by doing:
-<pre>animrun = true;
+<pre><code class="hljs csharp">animrun = true;
 t = new System.Threading.Thread(() =&gt; Anim(&quot;Do you like food?&quot; + 
 Environment.NewLine + Environment.NewLine + &quot;I like food&quot;)); t.Start();
 Console.ReadKey(); animrun = false; t.Suspend();
-Console.Clear();</pre></p>
+Console.Clear();</pre></code></p>
 
 <p>Output:
 <img src="https://i.gyazo.com/803f07d64c61a05587d9b92afc405a69.gif" alt=""></p>
@@ -239,19 +241,19 @@ It...
 <li>defines variables at the start for no reason - they are never used anywhere else</li>
 <li>supports only 2 numbers</li>
 <li>is very manual and not flexible</li>
-<li>uses <code>System.Convert.ToDouble()</code> rather than a cast or a conversion like  <code>Double.Parse()</code> and uses up space for no reason</li>
+<li>uses <pre><code class="hljs csharp">System.Convert.ToDouble()</pre></code> rather than a cast or a conversion like  <pre><code class="hljs csharp">Double.Parse()</pre></code> and uses up space for no reason</li>
 <li>is doing everything right in the Main method</li>
-<li>has <code>string[] args</code> as a parameter for the Main method but not actually using it</li>
+<li>has <pre><code class="hljs csharp">string[] args</pre></code> as a parameter for the Main method but not actually using it</li>
 <li>is declared that it is using certain namespaces but they aren&#39;t used in the code at all</li>
 <li>is not surrounded with try/catch</li>
 </ul></p>
 
 <p>Here&#39;s me replicating the code <strong>in one line of code</strong>:
-<pre>Console.WriteLine(&quot;Average = &quot;+(double.Parse(Console.ReadLine()) + double.Parse(Console.ReadLine())) / 2);</pre>
+<pre><code class="hljs csharp">Console.WriteLine(&quot;Average = &quot;+(double.Parse(Console.ReadLine()) + double.Parse(Console.ReadLine())) / 2);</pre></code>
 Boom!</p>
 
 <p>But anyway, like I said, the code in the book isn&#39;t very flexible at all. The question says to make a program that displays the sum and average of 3 numbers, but <em>imma rebel</em> so let&#39;s make it so that our method can do an unlimited amount of numbers.
-<pre>private static decimal GetAverage(params decimal[] numbers)
+<pre><code class="hljs csharp">private static decimal GetAverage(params decimal[] numbers)
         {
             decimal sum = 0;
             foreach (decimal number in numbers)
@@ -259,7 +261,7 @@ Boom!</p>
                 sum += number; //find sum
             }
             return sum / numbers.Length; //divide sum by no of numbers
-        }</pre></p>
+        }</pre></code></p>
 
 <p>There&#39;s the method I made. That&#39;s all there is to it! Funny thing is, this method is still way shorter than the algorithm in the book.
 I suppose the algorithm is good for complete beginners at C# but c&#39;mon dude...</p>
@@ -267,9 +269,9 @@ I suppose the algorithm is good for complete beginners at C# but c&#39;mon dude.
 <p>So, as you can see, in my method, I use an array then find the sum of that array then find the sum of the numbers in the array then divide it by the amount of items in the array (which is how you find averages). Awesome right?</p>
 
 <p>Nope! That was a trick question, it&#39;s not awesome! You can reduce that method down to <strong>one</strong> line of code:
-<pre>private static decimal GetAverage(params decimal[] numbers){
+<pre><code class="hljs csharp">private static decimal GetAverage(params decimal[] numbers){
 return numbers.Sum() / numbers.Length;
-}</pre></p>
+}</pre></code></p>
 
 <p>(and yes, that <em>is</em> one line of code because you can do this: <code>private static decimal GetAverage(params decimal[] numbers){return numbers.Sum() / numbers.Length;}</code>)</p>
 
@@ -277,7 +279,7 @@ return numbers.Sum() / numbers.Length;
 
 <p>Anyway, let&#39;s try not to get <em>too</em> heated over the example and continue.
 Here&#39;s how you use my method:
-<pre>
+<pre><code class="hljs csharp">
 Console.WriteLine(&quot;Enter some numbers to find the average&quot;);
 List<decimal> numbers = new List<decimal>();
 bool done = false;
@@ -292,7 +294,7 @@ Console.WriteLine(&quot;The average of those numbers is: &quot; +
 GetAverage(numbers.ToArray()) + &quot; and the sum is &quot; +
 numbers.Sum());
 Console.ReadKey();
-Console.Clear();</pre></p>
+Console.Clear();</pre></code></p>
 
 <p>Output:
 <img src="https://i.gyazo.com/7316b0a74eb135a094d2ab92101e81c6.gif" alt=""></p>
@@ -306,16 +308,16 @@ Console.Clear();</pre></p>
 </blockquote>
 
 <p>This exercise is very basic and I couldn&#39;t find a way of making it more interesting like I did with exercise 1 so I guess i&#39;ll just do it:
-<pre>int num1 = ReadInt(&quot;Enter x where x/y=output&quot;);
+<pre><code class="hljs csharp">int num1 = ReadInt(&quot;Enter x where x/y=output&quot;);
 int num2 = ReadInt(&quot;Enter y where x/y=ouput&quot;);
 Console.WriteLine(&quot;output = &quot; + num1 / num2 + &quot; remainder &quot; + num1 % num2 
 + Environment.NewLine + &quot;i.e: &quot; + num1 / num2 + &quot; &quot; + num2 + &quot;s go into &quot; 
 + num1 + &quot; with a remainder of &quot; + num1 % num2);
-Console.ReadKey();//wait for keypress
-Console.Clear();</pre></p>
+Console.ReadKey();//wait for keycodess
+Console.Clear();</pre></code></p>
 
 <p>Oh yeah, I forgot to mention, I also made a method <code>ReadInt()</code> that gets input from the console, but only integers. It has cool features e.g it doesn&#39;t allow you to type any non-numeric characters or go over the maximum value that an integer can store. Here it is (the indentation weird because I want it to fit on the screen):
-<pre>private static int ReadInt(string prompt)
+<pre><code class="hljs csharp">private static int ReadInt(string prompt)
 {
 Console.Clear();
 Console.WriteLine(prompt);
@@ -352,7 +354,7 @@ Console.WriteLine(prompt);
 Console.WriteLine(rawin);
 }
 return integer;
-}</pre></p>
+}</pre></code></p>
 
 <p>Output:
 <img src="https://i.gyazo.com/e4a868c1a8ea98f39855729d5494b918.gif" alt=""></p>
@@ -368,7 +370,7 @@ return integer;
 <p>Making this method was the most interesting of all of the methods so far. But this is only because again, me being such a <em>rebel</em> I decided to allow the user to input not whole numbers, i.e pennies are supported to.</p>
 
 <p>First of all, I made this primitive algorithm for working out which different coins/notes to use to make up the inputed value. (If you look on github, I have commented all of the code in this post)
-<pre>private static void MoneyAlgorithm(decimal money)
+<pre><code class="hljs csharp">private static void MoneyAlgorithm(decimal money)
 {
 money = Math.Round(money, 2);
 decimal[] coinvalues = new decimal[] 
@@ -403,13 +405,13 @@ found = true;
 }
 }
 }
-}</pre></p>
+}</pre></code></p>
 
 <p>Now, we need to find how many £20, £10, etc do you need to make the given value.
 This is easy, you just need to convert the value and everything to integers and then finding the answer using integer division and modulo. Converting directly to integer is lossy in this case so I first multiply the numbers by 100 (to retain 2 decimal points).</p>
 
 <p>Once I had the integer division value, I just input the remainder into the MoneyAlgorithm. Simple as this:
-<pre>private static void MoneyAlgorithm(decimal money, decimal val, string valname)
+<pre><code class="hljs csharp">private static void MoneyAlgorithm(decimal money, decimal val, string valname)
 {
  Console.Clear();
  int times = (int)Math.Truncate(money * 100) / (int)Math.Truncate(val * 100);
@@ -417,10 +419,10 @@ This is easy, you just need to convert the value and everything to integers and 
  Console.WriteLine(times + &quot; &quot; + valname + Environment.NewLine 
 + &quot;Plus an aditional &quot;+rem+&quot; which is made with:&quot;);
  MoneyAlgorithm(rem);
-}</pre></p>
+}</pre></code></p>
 
 <p>Here&#39;s how to use the methods:
-<pre>
+<pre><code class="hljs csharp">
 decimal money = ReadDecimal(&quot;Enter an amount of money. e.g 5.37 = five pounds and thrity seven pence&quot;);
 Console.Clear();
 Console.WriteLine(&quot;Make that value with:&quot;);
@@ -470,7 +472,7 @@ break;
 }
 Console.ReadKey();
 Console.Clear();
-</pre></p>
+</pre></code></p>
 
 <p>As you can see in that code, a method <code>Menu Choose</code> is used. This is a method that was taken from one of my previous projects, actually, - <a href="/tag/UniversalProgram">The Universal Program</a></p>
 
@@ -572,6 +574,10 @@ Console.Clear();
     <!-- [[! The main JavaScript file for Casper ]] -->
     <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="/assets/js/index.js"></script>
+			<!-- syntax hi-->
+			<link rel="stylesheet" href="/assets/css/syntax/railscasts.css">
+<script src="/assets/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
     <!-- Add Google Analytics  -->
         <!-- Google Analytics Tracking code -->
