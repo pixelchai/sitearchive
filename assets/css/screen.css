@@ -25,6 +25,67 @@
    0. Normalize.css v2.1.3 | MIT License | git.io/normalize | (minified)
    ========================================================================== */
 
+/*
+	Top Bar
+
+	By default, top navigation bar uses "fixed" position
+*/
+/*
+#section-topbar ul#nav {
+	display: inline-block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+
+	border-right: 1px solid #222;
+
+	 For IE, the outcast 
+	zoom:1;
+	*display: inline;
+}
+
+#section-topbar ul#nav > li {
+	display: block;
+    float: left;
+    padding: 0;
+	background-color: black;
+}
+
+
+#section-topbar ul#nav a {
+  display: block;
+  font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  padding: 18px 20px 18px 20px;
+  border-left: 1px solid #222;
+	background-color: black;
+}
+
+	#section-topbar ul#nav a:hover {
+	  background: #222;
+	  text-decoration: none;
+	  border-left: 1px solid #111;
+		background-color: black;
+	}
+
+	#section-topbar ul#nav .active a {
+		background: #44bbaa;
+		border-left: 1px solid #111;
+		background-color: black;
+	}
+
+		#section-topbar ul#nav .active a:hover {
+			background: #44bbaa;
+			background-color: black;
+		}
+#section-topbar i {
+	font-size: 25px;
+	background-color: black;
+}
+*/
+/*continue:::*/
+
 article, aside, details,
 figcaption, figure,
 footer, header, hgroup,
@@ -37,8 +98,9 @@ html {
     font-family: 'Raleway', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+/*	background: black;*/
 }
-body { margin: 0; }
+body { margin: 0;}
 a { background: transparent; }
 a:focus { outline: thin dotted; }
 a:active, a:hover { outline: 0; }
@@ -49,11 +111,10 @@ dfn { font-style: italic; }
 hr {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
-    height: 0;
 }
 mark { background: #FF0; color: #000; }
 code, kbd, pre,
-samp { font-family: 'Raleway', sans-serif; font-size: 1em; }
+samp { font-family: 'Consolas', sans-serif; font-size: 1em; }
 pre { white-space: pre-wrap; }
 q { quotes: "\201C" "\201D" "\2018" "\2019"; }
 small { font-size: 80%; }
@@ -106,12 +167,12 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* Import the font file with the icons in it */
 @font-face {
-    font-family: "casper-icons"
-    src:url("../fonts/casper-icons.eot?v=1");
-    src:url("../fonts/casper-icons.eot?v=1#iefix") format("embedded-opentype"),
-    url("../fonts/casper-icons.woff?v=1") format("woff"),
-    url("../fonts/casper-icons.ttf?v=1") format("truetype"),
-    url("../fonts/casper-icons.svg?v=1#icons") format("svg");
+    font-family: "casper-icons";
+    src:url("../fonts/casper-icons.eot?v=2");
+    src:url("../fonts/casper-icons.eot?v=2#iefix") format("embedded-opentype"),
+    url("../fonts/casper-icons.woff?v=2") format("woff"),
+    url("../fonts/casper-icons.ttf?v=2") format("truetype"),
+    url("../fonts/casper-icons.svg?v=2#icons") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -186,10 +247,10 @@ body {
     height: 100%;
     max-height: 100%;
     font-family: 'Raleway', sans-serif;
-    letter-spacing: 0.01rem;
+    letter-spacing: 0.02rem;
     font-size: 1.8rem;
-    line-height: 1.75em;
-    color: #3A4145;
+    line-height: 1.55em;
+    color: #4A4A4A;
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
     -o-font-feature-settings: 'kern' 1;
@@ -209,7 +270,7 @@ h4, h5, h6 {
     -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-    color: #2E2E2E;
+        color: #45747F;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
     font-family: "Open Sans", sans-serif;
@@ -244,8 +305,8 @@ h6 {
 }
 
 a {
-    color: #4A4A4A;
-    transition: color 0.3s ease;
+    color: #45747F;
+    transition: color 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 a:hover {
@@ -299,7 +360,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: #EFEFEF 1px solid;
+    border-top: #737375 2px solid;
     margin: 3.2em 0;
     padding: 0;
 }
@@ -481,8 +542,11 @@ margin on the iframe, cause it breaks stuff. */
     position: relative;
     z-index: 10;
     min-height: 100%;
-    background: #fff;
-    -webkit-transition: -webkit-transform 0.5s ease;
+    background: whitesmoke;
+    -webkit-transition: 
+    
+    
+    -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
 }
 
@@ -508,7 +572,7 @@ body.nav-opened .site-wrapper {
     height: 100vh;
     margin-bottom: 5rem;
     text-align: center;
-    background: #222 no-repeat center center;
+    background: rgba(17, 17, 17, 0.93) no-repeat center center;
     background-size: cover;
     overflow: hidden;
 }
@@ -741,7 +805,18 @@ body.nav-opened .nav {
     -webkit-animation: none;
     animation: none;
 }
-
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "casper-icons", "Open Sans", sans-serif;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    text-decoration: none !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 /* Put a semi-opaque radial gradient behind the icon to make it more visible
    on photos which happen to have a light background. */
 .home-template .main-header:after {
@@ -2067,5 +2142,5 @@ body:not(.post-template) .post-title {
 
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
-   below this point, or it will probably fuck everything up.
+   below this point, or it will probably mess everything up.
    ========================================================================== */
