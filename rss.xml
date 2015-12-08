@@ -8,7 +8,15 @@
     <title>PixelZerg</title>
     <link>http://pixelzerg.github.io/</link>
     <description>A website of games, code, how tos, language, music, 3D modeling and animating, general art, literature, etc. Anything that I, and hopefully you, find interesting.</description>
-    <pubDate>Sat, 28 Nov 2015 15:49:08 +0000</pubDate>
+    <pubDate>Tue, 08 Dec 2015 08:23:01 +0000</pubDate>
+    <item>
+      <title>Focus</title>
+      <link>http://pixelzerg.github.io//Focus</link>
+      <description>&lt;p&gt;So many projects yet so little time.&lt;/p&gt;
+</description>
+      <pubDate>Tue, 08 Dec 2015 08:23:01 +0000</pubDate>
+      <dc:date>2015-12-08T08:23:01+00:00</dc:date>
+    </item>
     <item>
       <title>s2.1p36 - Money Algorithm!</title>
       <link>http://pixelzerg.github.io//AScompexs21p36</link>
@@ -58,6 +66,6 @@ This project is going to, essentially, be a code complexifier. Probably wouldn&a
       <pubDate>Thu, 29 Oct 2015 03:50:29 +0000</pubDate>
       <dc:date>2015-10-29T03:50:29+00:00</dc:date>
     </item>
-    <dc:date>2015-11-28T15:49:08+00:00</dc:date>
+    <dc:date>2015-12-08T08:23:01+00:00</dc:date>
   </channel>
 </rss>
