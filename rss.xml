@@ -8,7 +8,16 @@
     <title>PixelZerg</title>
     <link>http://pixelzerg.github.io/</link>
     <description>A website of games, code, how tos, language, music, 3D modeling and animating, general art, literature, etc. Anything that I, and hopefully you, find interesting.</description>
-    <pubDate>Tue, 08 Dec 2015 08:23:01 +0000</pubDate>
+    <pubDate>Fri, 11 Dec 2015 06:49:48 +0000</pubDate>
+    <item>
+      <title>OneStepAtATime</title>
+      <link>http://pixelzerg.github.io//OneStepAtATime</link>
+      <description>&lt;p&gt;Like I mentioned in a previous post, I&amp;#39;m actually going to do this project sireously now.
+First of all, let&amp;#39;s start by taking things one step at a time. As it stands, I&amp;#39;m probably not going to be able to do a wide a range of coding languages that I intended to.&lt;/p&gt;
+</description>
+      <pubDate>Fri, 11 Dec 2015 06:49:48 +0000</pubDate>
+      <dc:date>2015-12-11T06:49:48+00:00</dc:date>
+    </item>
     <item>
       <title>Focus</title>
       <link>http://pixelzerg.github.io//Focus</link>
@@ -36,7 +45,7 @@
     <item>
       <title>CodeComplexifier - Complex Booleans</title>
       <link>http://pixelzerg.github.io//Cmplxfr1</link>
-      <description>&lt;p&gt;A new project that I am asynchronously starting with my &lt;a href=&quot;/tag/UniversalProgram&quot;&gt;Universal Program&lt;/a&gt; project!
+      <description>&lt;p&gt;A new project that I am stating alongside my &lt;a href=&quot;/tag/UniversalProgram&quot;&gt;Universal Program&lt;/a&gt; project!
 This project is going to, essentially, be a code complexifier. Probably wouldn&amp;#39;t exactly be obfuscation, but it will generate code that will most likely be unreadable to the untrained eye.&lt;/p&gt;
 </description>
       <pubDate>Tue, 24 Nov 2015 06:42:45 +0000</pubDate>
@@ -66,6 +75,6 @@ This project is going to, essentially, be a code complexifier. Probably wouldn&a
       <pubDate>Thu, 29 Oct 2015 03:50:29 +0000</pubDate>
       <dc:date>2015-10-29T03:50:29+00:00</dc:date>
     </item>
-    <dc:date>2015-12-08T08:23:01+00:00</dc:date>
+    <dc:date>2015-12-11T06:49:48+00:00</dc:date>
   </channel>
 </rss>

@@ -12,6 +12,62 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>OneStepAtATime</title>
+	  <link>/OneStepAtATime</link>
+	  <author>PixelZerg</author>
+	  <pubDate>2015-12-11T06:49:48+00:00</pubDate>
+	  <guid>/OneStepAtATime</guid>
+	  <description><![CDATA[
+	     <p>Like I mentioned in a previous post, I&#39;m actually going to do this project sireously now.
+First of all, let&#39;s start by taking things one step at a time. As it stands, I&#39;m probably not going to be able to do a wide a range of coding languages that I intended to.</p>
+
+<p>Let&#39;s start with one basic program, such as a <code>Hello World</code> program for all of the coding languages I wan&#39;t to try first, and then we&#39;ll expand from there.</p>
+
+<p>Most programmers will make a <code>Hello World</code> application. I&#39;m not &quot;most programmers&quot;. So let&#39;s come up with a &quot;first program&quot; of our own:</p>
+
+<h3>The Higher or Lower Game</h3>
+
+<p>This is going to be my &quot;first program&quot;. It has the same real-world use as a <code>Hello World</code> program, but it&#39;s just slightly more interesting.</p>
+
+<p>You&#39;ve probably heard of or played this game before, but just in case, here&#39;s how it works:</p>
+
+<p>A random number is generated.
+User tries to guess the number.
+Computer tells user if they were too high or too low.
+Keep guessing untill they get the number...</p>
+
+<h3>Pseudocode</h3>
+
+<p>Here&#39;s a basic implementation of it in pseudocode:
+<pre><code>
+set num = Rand.Next(0, 1000);
+set done = false;
+do
+{
+input = GetInput().ToInteger();
+    if(input Equals num)
+    {
+    set done = true
+    print(&quot;Cngrtz&quot;)
+    break
+    }
+    if input greater than num
+    {
+    print(&quot;Too high&quot;)
+    }
+    if input less than num
+    {
+    print(&quot;Too Low&quot;)
+    }</p>
+
+<p>}
+while(not done);
+</code></pre></p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Focus</title>
 	  <link>/Focus</link>
 	  <author>PixelZerg</author>
@@ -503,7 +559,7 @@ banana+1)/(
 	  <pubDate>2015-11-24T06:42:45+00:00</pubDate>
 	  <guid>/Cmplxfr1</guid>
 	  <description><![CDATA[
-	     <p>A new project that I am asynchronously starting with my <a href="/tag/UniversalProgram">Universal Program</a> project!
+	     <p>A new project that I am stating alongside my <a href="/tag/UniversalProgram">Universal Program</a> project!
 This project is going to, essentially, be a code complexifier. Probably wouldn&#39;t exactly be obfuscation, but it will generate code that will most likely be unreadable to the untrained eye.</p>
 
 <p>This program rewrites your code, but using the most complex and ineficient ways of doing things. I don&#39;t really see why anyone will need this, but it is cool nonetheless.</p>
