@@ -1,0 +1,610 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>s2.1p36 - Money Algorithm! &#8211; PixelZerg</title>
+<meta name="description" content="A website of games, code, how tos, language, music, 3D modeling and animating, general art, literature, etc. Anything that I, and hopefully you, find interesting.">
+<meta name="keywords" content="ASComputingExercises">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="/images/PZ/bokeh.jpg">
+
+<meta name="twitter:title" content="s2.1p36 - Money Algorithm!">
+<meta name="twitter:description" content="A website of games, code, how tos, language, music, 3D modeling and animating, general art, literature, etc. Anything that I, and hopefully you, find interesting.">
+<meta name="twitter:creator" content="@pixelzerg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="s2.1p36 - Money Algorithm!">
+<meta property="og:description" content="A website of games, code, how tos, language, music, 3D modeling and animating, general art, literature, etc. Anything that I, and hopefully you, find interesting.">
+<meta property="og:url" content="/categories/dotnet/AScompexs21p36/">
+<meta property="og:site_name" content="PixelZerg">
+
+
+
+
+
+<link rel="canonical" href="/categories/dotnet/AScompexs21p36/">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="PixelZerg Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<!-- Webfonts -->
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
+
+
+
+</head>
+
+<body id="post" class="feature">
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="/">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="/images/PZ/BasicShade2RS.png" alt="PixelZerg photo" class="author-photo">
+					<h4>PixelZerg</h4>
+					<p>cat ducks eat duck cats</p>
+				</li>
+				<li><a href="/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+				<li>
+					<a href="mailto:abhinavbhandari4@gmail.com"><i class="fa fa-fw fa-envelope"></i> Email</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/pixelzerg"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
+				</li>
+				
+				<li>
+					<a href="https://google.com/+pixelzerg"><i class="fa fa-fw fa-google-plus"></i> Google+</a>
+				</li>
+				
+				<li>
+					<a href="https://github.com/pixelzerg"><i class="fa fa-fw fa-github"></i> GitHub</a>
+				</li>
+				<li>
+					<a href="pixelzerg"><i class="fa fa-fw fa-stack-exchange"></i> Stackexchange</a>
+				</li>
+				<li>
+					<a href="https://instagram.com/pixelzerg"><i class="fa fa-fw fa-instagram"></i> Instagram</a>
+				</li>
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="/posts/">All Posts</a></li>
+				<li><a href="/tags/">All Tags</a></li>
+			</ul>
+		</li>
+<!-- 		<li>
+			<a href="#">MOOO</a>
+			<ul class="dl-submenu">
+				<li><a href="">MOO</a></li>
+			</ul>
+		</li> -->
+<!-- 		
+<li>
+  <a href="#">ASComputingExercises</a>
+  <ul class="dl-submenu">
+    
+      <li><a href="/categories/dotnet/AScompexs21p36/">s2.1p36 - Money Algorithm!</a></li>
+    
+      <li><a href="/categories/dotnet/ASComputingExercises/">ASComputingExercises - Introduction</a></li>
+    
+  </ul>
+</li>
+ -->
+
+		<!-- fmoofomeofmoewmfomew -->
+		
+	    
+	        
+	    
+	    <li><a href="/theme-setup/" >Theme Setup</a></li>
+	  
+	    
+	        
+	        
+	    <li><a href="http://mademistakes.com" target="_blank">External Link</a></li>
+	  
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+
+<div class="entry-header">
+  <div class="image-credit">Image source: <a href="https://www.flickr.com/photos/wneuheisel/5256103622">William Neuheisel</a></div><!-- /.image-credit -->
+  <div class="entry-image">
+    <img src="/images/PZ/bokeh.jpg" alt="s2.1p36 - Money Algorithm!">
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="/categories/dotnet/AScompexs21p36/" rel="bookmark" title="s2.1p36 - Money Algorithm!">s2.1p36 - Money Algorithm!</a></h1>
+        
+        <h2><span class="entry-date date published"><time datetime="2015-11-28T15:49:08+00:00">November 28, 2015</time></span></h2>
+        
+        <p class="entry-reading-time">
+          <i class="fa fa-clock-o"></i>
+          
+Reading time ~9 minutes
+        </p><!-- /.entry-reading-time -->
+        
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      <p><img src="/assets/poststuff/2/1.PNG" alt="" /></p>
+
+<p>This chapter seems to talk about basic stuff like what algorithms are and operators. This reminds me of when I was first scratching the surface of C# 4 years ago. Back then, I was messing around a lot with Unity - the 3D game engine. Unity uses a mono runtime so I was slowly learning C# from my own accord. Little did how know just how extensive and awesome C# was. I remember Unity also had a javascript API called unityscript. I remember I used to use that a lot before learning C#. In fact, I may have never even started using C# if it wasn’t for something that happened out of the blue, I’ll make a post on it later.</p>
+
+<p>Anyway, this chapter is about stuff like operators and printing to the console and whatnot - basic stuff.</p>
+
+<hr />
+<h3>Hello World</h3>
+<p>The first question makes me display “Hello World” on the screen. That’s how basic this book is :p
+If only I read this book 4 years ago… no wait, I take that back. Learning everything by yourself is much better, I think, than having it be told to you. Much more in-depth. The only thing is that it takes a longer time to do.</p>
+
+<p>So as you may already know, here’s how to print to the console:</p>
+
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Hello World&quot;</span><span class="p">);</span></code></pre></div>
+
+<p>Well, I thought this was a bit boring so let’s give it a cool animation <strong>MULTITHREADING TIME</strong> :)</p>
+
+<p>Ok, so this is pretty easy to do. All you have to do is make a method that will print some dots to the console.
+Include a while loop in the method with a <var>counter</var> variable (an integer which shows keeps track of how many times you have looped).
+Print <var>counter</var> amount of dots every time you loop.
+You might want to also make the thread sleep with <code>System.Threading.Thread.Sleep(x)</code> while you are at it.</p>
+
+<p>You probably don’t want loads of dots filling the console so reset the <var>counter</var> every 3 or so goes.
+You can do this with:</p>
+
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">if</span><span class="p">(</span><span class="n">counter</span> <span class="p">==</span> <span class="m">3</span><span class="p">)</span><span class="n">counter</span><span class="p">=</span><span class="m">0</span><span class="p">;</span></code></pre></div>
+
+<p>or if you are feeling fancy:</p>
+
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">if</span><span class="p">(</span><span class="n">counter</span> <span class="p">%</span><span class="m">3</span> <span class="p">==</span> <span class="m">0</span><span class="p">)</span><span class="n">counter</span><span class="p">=</span><span class="m">0</span><span class="p">;</span></code></pre></div>
+
+<p>I was feeling fancy today :p</p>
+
+<p>So here’s the method:</p>
+
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">private</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Anim</span><span class="p">(</span><span class="kt">string</span> <span class="n">txt</span><span class="p">)</span>
+<span class="p">{</span>
+     <span class="kt">int</span> <span class="n">no</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="c1">//counter</span>
+     <span class="k">while</span> <span class="p">(</span><span class="n">animrun</span><span class="p">)</span>
+     <span class="p">{</span>
+     <span class="n">Console</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span>
+     <span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="n">txt</span><span class="p">);</span>
+
+     <span class="n">StringBuilder</span> <span class="n">sb</span> <span class="p">=</span> <span class="k">new</span> <span class="n">StringBuilder</span><span class="p">();</span> <span class="c1">//do the dots</span>
+     <span class="n">sb</span><span class="p">.</span><span class="n">Append</span><span class="p">(</span><span class="sc">&#39;.&#39;</span><span class="p">,</span> <span class="n">no</span><span class="p">);</span>
+     <span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="n">sb</span><span class="p">.</span><span class="n">ToString</span><span class="p">());</span>
+
+     <span class="n">System</span><span class="p">.</span><span class="n">Threading</span><span class="p">.</span><span class="n">Thread</span><span class="p">.</span><span class="n">Sleep</span><span class="p">(</span><span class="m">300</span><span class="p">);</span> <span class="c1">//wait</span>
+     <span class="k">if</span> <span class="p">(</span><span class="n">no</span> <span class="p">%</span> <span class="m">3</span> <span class="p">==</span> <span class="m">0</span><span class="p">)</span> <span class="c1">//if no is fully divisible by 3</span>
+     <span class="p">{</span>
+        <span class="n">no</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="c1">//reset</span>
+     <span class="p">}</span>
+     <span class="n">no</span><span class="p">++;</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>You use the method like this:</p>
+
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="n">System</span><span class="p">.</span><span class="n">Threading</span><span class="p">.</span><span class="n">Thread</span> <span class="n">t</span> <span class="p">=</span> <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">Threading</span><span class="p">.</span><span class="n">Thread</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="n">Anim</span><span class="p">(</span><span class="s">&quot;Hello World&quot;</span><span class="p">));</span>
+<span class="n">t</span><span class="p">.</span><span class="n">Start</span><span class="p">();</span><span class="c1">//print hello world (q1)</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();</span> <span class="n">animrun</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span> <span class="c1">//after pressed a key, halt anim thread</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="n">Environment</span><span class="p">.</span><span class="n">NewLine</span><span class="p">);</span> <span class="c1">//print line ending (add new line)</span>
+<span class="n">t</span><span class="p">.</span><span class="n">Suspend</span><span class="p">();</span> <span class="c1">//suspend animation thread</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span></code></pre></div>
+
+<p>Output:
+<img src="https://i.gyazo.com/ce2341c37c46493c5d7ac2d3895c8fe2.gif" alt="Fancy Hello World" /></p>
+
+<hr />
+<h3>Displaying two messages</h3>
+<p>Ok so the next exercise is to:
+&gt;Display two messages of your choice on the screen, seperated by an empty line</p>
+
+<p>You know, if I was actually learning C# for the first time whilst reading this book, I bet you I would have done my own message for exercise 1 because <em>imma rebel</em>. Probably something like <code>Hello World - PixelZerg is awesome</code> or like <code>Hello World - If you don't eat food you will die</code>.</p>
+
+<p>But this question allows you to do just that. This is simple enough, using the method we previously made, we can easily complete the exercise by doing:</p>
+
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="n">animrun</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+<span class="n">t</span> <span class="p">=</span> <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">Threading</span><span class="p">.</span><span class="n">Thread</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="n">Anim</span><span class="p">(</span><span class="s">&quot;Do you like food?&quot;</span> <span class="p">+</span> 
+<span class="n">Environment</span><span class="p">.</span><span class="n">NewLine</span> <span class="p">+</span> <span class="n">Environment</span><span class="p">.</span><span class="n">NewLine</span> <span class="p">+</span> <span class="s">&quot;I like food&quot;</span><span class="p">));</span> <span class="n">t</span><span class="p">.</span><span class="n">Start</span><span class="p">();</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();</span> <span class="n">animrun</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span> <span class="n">t</span><span class="p">.</span><span class="n">Suspend</span><span class="p">();</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span></code></pre></div>
+
+<p>Output:
+<img src="https://i.gyazo.com/803f07d64c61a05587d9b92afc405a69.gif" alt="" /></p>
+
+<hr />
+<h3>Average Algorithm</h3>
+<blockquote>
+  <p>Display the sum and average of three numbers entered at the keyboard.</p>
+</blockquote>
+
+<p>hmm… that question doesn’t seem to be in English. Let’s translate it:
+&gt;Display the sum and average of three numbers entered with the keyboard.</p>
+
+<p>Oh ok, that makes more sense. jk…</p>
+
+<p>The chapter had an example for an algorithm that found the average of two numbers. I am not satisfied with the algorithm at all.
+It…</p>
+<ul>
+<li>defines variables at the start for no reason - they are never used anywhere else</li>
+<li>supports only 2 numbers</li>
+<li>is very manual and not flexible</li>
+<li>uses `System.Convert.ToDouble()` rather than a cast or a conversion like  `Double.Parse()` and uses up space for no reason</li>
+<li>is doing everything right in the Main method</li>
+<li>has `string[] args` as a parameter for the Main method but not actually using it</li>
+<li>is declared that it is using certain namespaces but they aren't used in the code at all</li>
+<li>is not surrounded with try/catch</li>
+</ul>
+
+<p>Here’s me replicating the code <strong>in one line of code</strong>:</p>
+
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Average = &quot;</span><span class="p">+(</span><span class="kt">double</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">())</span> <span class="p">+</span> <span class="kt">double</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">()))</span> <span class="p">/</span> <span class="m">2</span><span class="p">);</span></code></pre></div>
+
+<p>Boom!</p>
+
+<p>But anyway, like I said, the code in the book isn’t very flexible at all. The question says to make a program that displays the sum and average of 3 numbers, but <em>imma rebel</em> so let’s make it so that our method can do an unlimited amount of numbers.</p>
+
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">private</span> <span class="k">static</span> <span class="kt">decimal</span> <span class="nf">GetAverage</span><span class="p">(</span><span class="k">params</span> <span class="kt">decimal</span><span class="p">[]</span> <span class="n">numbers</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="kt">decimal</span> <span class="n">sum</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+            <span class="k">foreach</span> <span class="p">(</span><span class="kt">decimal</span> <span class="n">number</span> <span class="k">in</span> <span class="n">numbers</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">sum</span> <span class="p">+=</span> <span class="n">number</span><span class="p">;</span> <span class="c1">//find sum</span>
+            <span class="p">}</span>
+            <span class="k">return</span> <span class="n">sum</span> <span class="p">/</span> <span class="n">numbers</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="c1">//divide sum by no of numbers</span>
+        <span class="p">}</span></code></pre></div>
+
+<p>There’s the method I made. That’s all there is to it! Funny thing is, this method is still way shorter than the algorithm in the book.
+I suppose the algorithm is good for complete beginners at C# but c’mon dude…</p>
+
+<p>So, as you can see, in my method, I use an array then find the sum of that array then find the sum of the numbers in the array then divide it by the amount of items in the array (which is how you find averages). Awesome right?</p>
+
+<p>Nope! That was a trick question, it’s not awesome! You can reduce that method down to <strong>one</strong> line of code:</p>
+
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">private</span> <span class="k">static</span> <span class="kt">decimal</span> <span class="nf">GetAverage</span><span class="p">(</span><span class="k">params</span> <span class="kt">decimal</span><span class="p">[]</span> <span class="n">numbers</span><span class="p">){</span>
+<span class="k">return</span> <span class="n">numbers</span><span class="p">.</span><span class="n">Sum</span><span class="p">()</span> <span class="p">/</span> <span class="n">numbers</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<p>(and yes, that <em>is</em> one line of code because you can do this: <code>private static decimal GetAverage(params decimal[] numbers){return numbers.Sum() / numbers.Length;}</code>)</p>
+
+<p>You can probably imagine just how bad the code in the book was now. You don’t really need me to show you the code…</p>
+
+<p>Anyway, let’s try not to get <em>too</em> heated over the example and continue.
+Here’s how you use my method:</p>
+
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Enter some numbers to find the average&quot;</span><span class="p">);</span>
+<span class="n">List</span><span class="p">&lt;</span><span class="kt">decimal</span><span class="p">&gt;</span> <span class="n">numbers</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="kt">decimal</span><span class="p">&gt;();</span>
+<span class="kt">bool</span> <span class="n">done</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(!</span><span class="n">done</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">numbers</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">ReadDecimal</span><span class="p">(</span><span class="s">&quot;Enter a number&quot;</span><span class="p">));</span>
+  <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Add more numbers? (y/n)&quot;</span><span class="p">);</span>
+  <span class="n">done</span> <span class="p">=</span> <span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">().</span><span class="n">Key</span> <span class="p">!=</span> <span class="n">ConsoleKey</span><span class="p">.</span><span class="n">Y</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;The average of those numbers is: &quot;</span> <span class="p">+</span>
+<span class="n">GetAverage</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="n">ToArray</span><span class="p">())</span> <span class="p">+</span> <span class="s">&quot; and the sum is &quot;</span> <span class="p">+</span>
+<span class="n">numbers</span><span class="p">.</span><span class="n">Sum</span><span class="p">());</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span></code></pre></div>
+
+<p>Output:
+<img src="https://i.gyazo.com/7316b0a74eb135a094d2ab92101e81c6.gif" alt="" /></p>
+
+<hr />
+<h3>Modulo Operator</h3>
+<blockquote>
+  <p>Read in two integers and display how many times the first integer divides into the second integer (using integer division). Display the remainder from this division. Hint: use the modulo operation.</p>
+</blockquote>
+
+<p>This exercise is very basic and I couldn’t find a way of making it more interesting like I did with exercise 1 so I guess i’ll just do it:</p>
+
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="kt">int</span> <span class="n">num1</span> <span class="p">=</span> <span class="n">ReadInt</span><span class="p">(</span><span class="s">&quot;Enter x where x/y=output&quot;</span><span class="p">);</span>
+<span class="kt">int</span> <span class="n">num2</span> <span class="p">=</span> <span class="n">ReadInt</span><span class="p">(</span><span class="s">&quot;Enter y where x/y=ouput&quot;</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;output = &quot;</span> <span class="p">+</span> <span class="n">num1</span> <span class="p">/</span> <span class="n">num2</span> <span class="p">+</span> <span class="s">&quot; remainder &quot;</span> <span class="p">+</span> <span class="n">num1</span> <span class="p">%</span> <span class="n">num2</span> 
+<span class="p">+</span> <span class="n">Environment</span><span class="p">.</span><span class="n">NewLine</span> <span class="p">+</span> <span class="s">&quot;i.e: &quot;</span> <span class="p">+</span> <span class="n">num1</span> <span class="p">/</span> <span class="n">num2</span> <span class="p">+</span> <span class="s">&quot; &quot;</span> <span class="p">+</span> <span class="n">num2</span> <span class="p">+</span> <span class="s">&quot;s go into &quot;</span> 
+<span class="p">+</span> <span class="n">num1</span> <span class="p">+</span> <span class="s">&quot; with a remainder of &quot;</span> <span class="p">+</span> <span class="n">num1</span> <span class="p">%</span> <span class="n">num2</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();</span><span class="c1">//wait for keycodess</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span></code></pre></div>
+
+<p>Oh yeah, I forgot to mention, I also made a method <code>ReadInt()</code> that gets input from the console, but only integers. It has cool features e.g it doesn’t allow you to type any non-numeric characters or go over the maximum value that an integer can store. Here it is (the indentation weird because I want it to fit on the screen):</p>
+
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">private</span> <span class="k">static</span> <span class="kt">int</span> <span class="nf">ReadInt</span><span class="p">(</span><span class="kt">string</span> <span class="n">prompt</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">prompt</span><span class="p">);</span>
+<span class="kt">string</span> <span class="n">rawin</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">integer</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+<span class="n">Regex</span> <span class="n">numpattern</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Regex</span><span class="p">(</span><span class="s">&quot;^[0-9]*$&quot;</span><span class="p">);</span>
+<span class="kt">bool</span> <span class="n">done</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(!</span><span class="n">done</span><span class="p">)</span>
+<span class="p">{</span>
+ <span class="n">ConsoleKeyInfo</span> <span class="n">k</span> <span class="p">=</span> <span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();</span> <span class="c1">//read a key</span>
+ <span class="k">if</span> <span class="p">(</span><span class="n">k</span><span class="p">.</span><span class="n">Key</span> <span class="p">==</span> <span class="n">ConsoleKey</span><span class="p">.</span><span class="n">Enter</span><span class="p">)</span> <span class="c1">//enter means done</span>
+ <span class="p">{</span>
+  <span class="n">done</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+ <span class="p">}</span>
+ <span class="k">if</span> <span class="p">(</span><span class="n">k</span><span class="p">.</span><span class="n">Key</span> <span class="p">==</span> <span class="n">ConsoleKey</span><span class="p">.</span><span class="n">Backspace</span><span class="p">)</span>
+ <span class="p">{</span>
+  <span class="k">try</span>
+  <span class="p">{</span>
+   <span class="n">rawin</span> <span class="p">=</span> <span class="n">rawin</span><span class="p">.</span><span class="n">Substring</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="n">rawin</span><span class="p">.</span><span class="n">Length</span> <span class="p">-</span> <span class="m">1</span><span class="p">);</span>
+  <span class="p">}</span>
+ <span class="k">catch</span> <span class="p">{</span> <span class="p">}</span>
+ <span class="p">}</span>
+<span class="p">{</span>
+ <span class="k">if</span> <span class="p">(</span><span class="n">numpattern</span><span class="p">.</span><span class="n">IsMatch</span><span class="p">(</span><span class="n">k</span><span class="p">.</span><span class="n">KeyChar</span><span class="p">.</span><span class="n">ToString</span><span class="p">()))</span>
+ <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">Int32</span><span class="p">.</span><span class="n">TryParse</span><span class="p">(</span><span class="n">rawin</span> <span class="p">+</span> <span class="n">k</span><span class="p">.</span><span class="n">KeyChar</span><span class="p">,</span> <span class="k">out</span> <span class="n">integer</span><span class="p">))</span>
+  <span class="p">{</span>
+   <span class="n">rawin</span> <span class="p">+=</span> <span class="n">k</span><span class="p">.</span><span class="n">KeyChar</span><span class="p">;</span>
+  <span class="p">}</span>
+ <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">prompt</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">rawin</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">return</span> <span class="n">integer</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<p>Output:
+<img src="https://i.gyazo.com/e4a868c1a8ea98f39855729d5494b918.gif" alt="" /></p>
+
+<hr />
+<h3>Money Algorithm</h3>
+<blockquote>
+  <p>The user enters an amount of money as a whole number. The program should calculate and display how many £20, £10 and £5 and £2 and £1 coins are needed to make up this amount of money.</p>
+</blockquote>
+
+<p>Making this method was the most interesting of all of the methods so far. But this is only because again, me being such a <em>rebel</em> I decided to allow the user to input not whole numbers, i.e pennies are supported to.</p>
+
+<p>First of all, I made this primitive algorithm for working out which different coins/notes to use to make up the inputed value. (If you look on github, I have commented all of the code in this post)</p>
+
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">private</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">MoneyAlgorithm</span><span class="p">(</span><span class="kt">decimal</span> <span class="n">money</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="n">money</span> <span class="p">=</span> <span class="n">Math</span><span class="p">.</span><span class="n">Round</span><span class="p">(</span><span class="n">money</span><span class="p">,</span> <span class="m">2</span><span class="p">);</span>
+<span class="kt">decimal</span><span class="p">[]</span> <span class="n">coinvalues</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">decimal</span><span class="p">[]</span> 
+<span class="p">{</span> <span class="m">20</span><span class="n">m</span><span class="p">,</span> <span class="m">10</span><span class="n">m</span><span class="p">,</span> <span class="m">5</span><span class="n">m</span><span class="p">,</span> <span class="m">2</span><span class="n">m</span><span class="p">,</span> <span class="m">1</span><span class="n">m</span><span class="p">,</span> <span class="m">0.5</span><span class="n">m</span><span class="p">,</span> <span class="m">0.2</span><span class="n">m</span><span class="p">,</span> <span class="m">0.1</span><span class="n">m</span><span class="p">,</span> <span class="m">0.05</span><span class="n">m</span><span class="p">,</span> <span class="m">0.02</span><span class="n">m</span><span class="p">,</span> <span class="m">0.01</span><span class="n">m</span> <span class="p">};</span>
+<span class="kt">decimal</span> <span class="n">curval</span> <span class="p">=</span> <span class="n">money</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">curval</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kt">bool</span> <span class="n">found</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">no</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">no</span> <span class="p">!=</span> <span class="n">coinvalues</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">no</span><span class="p">++)</span>
+<span class="p">{</span>
+<span class="k">if</span> <span class="p">((</span><span class="n">curval</span> <span class="p">-</span> <span class="n">coinvalues</span><span class="p">[</span><span class="n">no</span><span class="p">])</span> <span class="p">&gt;=</span> <span class="m">0</span> <span class="p">&amp;&amp;</span> <span class="p">!</span><span class="n">found</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="n">curval</span> <span class="p">-=</span> <span class="n">coinvalues</span><span class="p">[</span><span class="n">no</span><span class="p">];</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">coinvalues</span><span class="p">[</span><span class="n">no</span><span class="p">]</span> <span class="p">&lt;</span> <span class="m">1</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="n">Truncate</span><span class="p">(</span><span class="n">coinvalues</span><span class="p">[</span><span class="n">no</span><span class="p">]</span> <span class="p">*</span> <span class="m">100</span><span class="p">)</span> <span class="p">+</span> <span class="s">&quot;p coin&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;£&quot;</span> <span class="p">+</span> <span class="n">coinvalues</span><span class="p">[</span><span class="n">no</span><span class="p">]);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">coinvalues</span><span class="p">[</span><span class="n">no</span><span class="p">]</span> <span class="p">==</span> <span class="m">2</span><span class="n">m</span> <span class="p">||</span> <span class="n">coinvalues</span><span class="p">[</span><span class="n">no</span><span class="p">]</span> <span class="p">==</span> <span class="m">1</span><span class="n">m</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot; coin&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot; note&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="n">Environment</span><span class="p">.</span><span class="n">NewLine</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="n">found</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">}</span>
+<span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>Now, we need to find how many £20, £10, etc do you need to make the given value.
+This is easy, you just need to convert the value and everything to integers and then finding the answer using integer division and modulo. Converting directly to integer is lossy in this case so I first multiply the numbers by 100 (to retain 2 decimal points).</p>
+
+<p>Once I had the integer division value, I just input the remainder into the MoneyAlgorithm. Simple as this:</p>
+
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">private</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">MoneyAlgorithm</span><span class="p">(</span><span class="kt">decimal</span> <span class="n">money</span><span class="p">,</span> <span class="kt">decimal</span> <span class="n">val</span><span class="p">,</span> <span class="kt">string</span> <span class="n">valname</span><span class="p">)</span>
+<span class="p">{</span>
+ <span class="n">Console</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span>
+ <span class="kt">int</span> <span class="n">times</span> <span class="p">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">Math</span><span class="p">.</span><span class="n">Truncate</span><span class="p">(</span><span class="n">money</span> <span class="p">*</span> <span class="m">100</span><span class="p">)</span> <span class="p">/</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">Math</span><span class="p">.</span><span class="n">Truncate</span><span class="p">(</span><span class="n">val</span> <span class="p">*</span> <span class="m">100</span><span class="p">);</span>
+ <span class="kt">decimal</span> <span class="n">rem</span> <span class="p">=</span> <span class="n">money</span> <span class="p">%</span> <span class="n">val</span><span class="p">;</span><span class="c1">//find remainder</span>
+ <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">times</span> <span class="p">+</span> <span class="s">&quot; &quot;</span> <span class="p">+</span> <span class="n">valname</span> <span class="p">+</span> <span class="n">Environment</span><span class="p">.</span><span class="n">NewLine</span> 
+<span class="p">+</span> <span class="s">&quot;Plus an aditional &quot;</span><span class="p">+</span><span class="n">rem</span><span class="p">+</span><span class="s">&quot; which is made with:&quot;</span><span class="p">);</span>
+ <span class="n">MoneyAlgorithm</span><span class="p">(</span><span class="n">rem</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+
+<p>Here’s how to use the methods:</p>
+
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="kt">decimal</span> <span class="n">money</span> <span class="p">=</span> <span class="n">ReadDecimal</span><span class="p">(</span><span class="s">&quot;Enter an amount of money. e.g 5.37 = five pounds and thrity seven pence&quot;</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Make that value with:&quot;</span><span class="p">);</span>
+<span class="kt">string</span><span class="p">[]</span> <span class="n">written</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">string</span><span class="p">[]</span> <span class="p">{</span> <span class="s">&quot;Most Efficient Combination&quot;</span><span class="p">,</span> <span class="s">&quot;1p coin(s)&quot;</span>
+<span class="p">,</span><span class="s">&quot;2p coin(s)&quot;</span><span class="p">,</span> <span class="s">&quot;5p coin(s)&quot;</span><span class="p">,</span> <span class="s">&quot;10p coin(s)&quot;</span><span class="p">,</span> <span class="s">&quot;20p coin(s)&quot;</span><span class="p">,</span> <span class="s">&quot;50p coin(s)&quot;</span><span class="p">,</span> <span class="s">&quot;£1 coin(s)&quot;</span>
+<span class="p">,</span><span class="s">&quot;£2 coin(s)&quot;</span><span class="p">,</span> <span class="s">&quot;£5 note(s)&quot;</span><span class="p">,</span> <span class="s">&quot;£10 note(s)&quot;</span><span class="p">,</span> <span class="s">&quot;£20 note(s)&quot;</span> <span class="p">};</span>
+<span class="k">switch</span> <span class="p">(</span><span class="n">MenuChoose</span><span class="p">(</span><span class="n">written</span><span class="p">))</span>
+<span class="p">{</span>
+<span class="k">case</span> <span class="m">0</span><span class="p">:</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;How to make £&quot;</span> <span class="p">+</span> <span class="n">money</span> <span class="p">+</span> <span class="s">&quot; with conventional brittish money:&quot;</span><span class="p">);</span>
+<span class="n">MoneyAlgorithm</span><span class="p">(</span><span class="n">money</span><span class="p">);</span>
+<span class="k">break</span><span class="p">;</span>
+<span class="k">case</span> <span class="m">1</span><span class="p">:</span>
+<span class="n">MoneyAlgorithm</span><span class="p">(</span><span class="n">money</span><span class="p">,</span> <span class="m">0.01</span><span class="n">m</span><span class="p">,</span> <span class="n">written</span><span class="p">[</span><span class="m">1</span><span class="p">]);</span>
+<span class="k">break</span><span class="p">;</span>
+<span class="k">case</span> <span class="m">2</span><span class="p">:</span>
+<span class="n">MoneyAlgorithm</span><span class="p">(</span><span class="n">money</span><span class="p">,</span> <span class="m">0.02</span><span class="n">m</span><span class="p">,</span> <span class="n">written</span><span class="p">[</span><span class="m">2</span><span class="p">]);</span>
+<span class="k">break</span><span class="p">;</span>
+<span class="k">case</span> <span class="m">3</span><span class="p">:</span>
+<span class="n">MoneyAlgorithm</span><span class="p">(</span><span class="n">money</span><span class="p">,</span> <span class="m">0.05</span><span class="n">m</span><span class="p">,</span> <span class="n">written</span><span class="p">[</span><span class="m">3</span><span class="p">]);</span>
+<span class="k">break</span><span class="p">;</span>
+<span class="k">case</span> <span class="m">4</span><span class="p">:</span>
+<span class="n">MoneyAlgorithm</span><span class="p">(</span><span class="n">money</span><span class="p">,</span> <span class="m">0.1</span><span class="n">m</span><span class="p">,</span> <span class="n">written</span><span class="p">[</span><span class="m">4</span><span class="p">]);</span>
+<span class="k">break</span><span class="p">;</span>
+<span class="k">case</span> <span class="m">5</span><span class="p">:</span>
+<span class="n">MoneyAlgorithm</span><span class="p">(</span><span class="n">money</span><span class="p">,</span> <span class="m">0.2</span><span class="n">m</span><span class="p">,</span> <span class="n">written</span><span class="p">[</span><span class="m">5</span><span class="p">]);</span>
+<span class="k">break</span><span class="p">;</span>
+<span class="k">case</span> <span class="m">6</span><span class="p">:</span>
+<span class="n">MoneyAlgorithm</span><span class="p">(</span><span class="n">money</span><span class="p">,</span> <span class="m">0.5</span><span class="n">m</span><span class="p">,</span> <span class="n">written</span><span class="p">[</span><span class="m">6</span><span class="p">]);</span>
+<span class="k">break</span><span class="p">;</span>
+<span class="k">case</span> <span class="m">7</span><span class="p">:</span>
+<span class="n">MoneyAlgorithm</span><span class="p">(</span><span class="n">money</span><span class="p">,</span> <span class="m">1</span><span class="n">m</span><span class="p">,</span> <span class="n">written</span><span class="p">[</span><span class="m">7</span><span class="p">]);</span>
+<span class="k">break</span><span class="p">;</span>
+<span class="k">case</span> <span class="m">8</span><span class="p">:</span>
+<span class="n">MoneyAlgorithm</span><span class="p">(</span><span class="n">money</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="n">written</span><span class="p">[</span><span class="m">8</span><span class="p">]);</span>
+<span class="k">break</span><span class="p">;</span>
+<span class="k">case</span> <span class="m">9</span><span class="p">:</span>
+<span class="n">MoneyAlgorithm</span><span class="p">(</span><span class="n">money</span><span class="p">,</span> <span class="m">5</span><span class="p">,</span> <span class="n">written</span><span class="p">[</span><span class="m">9</span><span class="p">]);</span>
+<span class="k">break</span><span class="p">;</span>
+<span class="k">case</span> <span class="m">10</span><span class="p">:</span>
+<span class="n">MoneyAlgorithm</span><span class="p">(</span><span class="n">money</span><span class="p">,</span> <span class="m">10</span><span class="p">,</span> <span class="n">written</span><span class="p">[</span><span class="m">10</span><span class="p">]);</span>
+<span class="k">break</span><span class="p">;</span>
+<span class="k">case</span> <span class="m">11</span><span class="p">:</span>
+<span class="n">MoneyAlgorithm</span><span class="p">(</span><span class="n">money</span><span class="p">,</span> <span class="m">20</span><span class="n">m</span><span class="p">,</span> <span class="n">written</span><span class="p">[</span><span class="m">11</span><span class="p">]);</span>
+<span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span></code></pre></div>
+
+<p>As you can see in that code, a method <code>Menu Choose</code> is used. This is a method that was taken from one of my previous projects, actually, - <a href="/tag/UniversalProgram">The Universal Program</a></p>
+
+<p>Output:
+<img src="https://i.gyazo.com/68b3a128684587b2ead5b3fef82c907b.gif" alt="" /></p>
+
+<p>Look how awesome it looks seeing the algorithm work out how to make up money:
+<img src="https://i.gyazo.com/0684b2ec4d5f32e8540ff0b1c38da931.gif" alt="" /></p>
+
+<hr />
+<!-- footer -->
+
+<p>Time taken to write: 2 or so hr.</p>
+
+<hr />
+<!-- Ack -->
+<p><small><small><small><a href="https://www.flickr.com/photos/wneuheisel/5256103622">Cover Image</a> by William Neuheisel. It has not been edited.</small></small></small></p>
+
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="/tags/#ASComputingExercises" title="Pages tagged ASComputingExercises" class="tag"><span class="term">ASComputingExercises</span></a></span>
+        
+        <div class="social-share">
+  <ul class="socialcount socialcount-small inline-list">
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=/categories/dotnet/AScompexs21p36/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=/categories/dotnet/AScompexs21p36/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=/categories/dotnet/AScompexs21p36/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+  </ul>
+</div><!-- /.social-share -->
+      </footer>
+    </div><!-- /.entry-content -->
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+    <div class="read-more">
+  
+    <div class="read-more-header">
+      <a href="/categories/dotnet/ASComputingExercises/" class="read-more-btn">Read More</a>
+    </div><!-- /.read-more-header -->
+    <div class="read-more-content">
+      <h3><a href="/categories/dotnet/ppop/OneStepAtATime/" title="OneStepAtATime">OneStepAtATime</a></h3>
+      <p>I'm actually going to do the `UniversalProgram` project sireously now - but let's start by taking things one step at a time. As it stands...&hellip; <a href="/categories/dotnet/ppop/OneStepAtATime/">Continue reading</a></p>
+    </div><!-- /.read-more-content -->
+  
+  <div class="read-more-list">
+    
+      <div class="list-item">
+        <h4><a href="/categories/dotnet/ASComputingExercises/" title="ASComputingExercises - Introduction">ASComputingExercises - Introduction</a></h4>
+        <span>Published on November 28, 2015</span>
+      </div><!-- /.list-item -->
+    
+      <div class="list-item">
+        <h4><a href="/categories/dotnet/Cmplxfr1/" title="CodeComplexifier - Complex Booleans">CodeComplexifier - Complex Booleans</a></h4>
+        <span>Published on November 24, 2015</span>
+      </div><!-- /.list-item -->
+    
+  </div><!-- /.read-more-list -->
+</div><!-- /.read-more -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <small><span>&copy; 2015 PixelZerg. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span></small>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+
+
+
+
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'hpstrtheme'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	        
+
+</body>
+</html>
