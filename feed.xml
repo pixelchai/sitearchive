@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2015-12-20T17:48:33+00:00</updated>
+<updated>2015-12-22T13:02:57+00:00</updated>
 <id>/</id>
 <author>
   <name>PixelZerg</name>
@@ -25,107 +25,63 @@
     <email>abhinavbhandari4@gmail.com</email>
   </author>
   <content type="html">
-    &lt;p&gt;Like I mentioned in a previous post, I’m actually going to do this project sireously now.
-First of all, let’s start by taking things one step at a time. As it stands, I’m probably not going to be able to do a wide a range of coding languages that I intended to.&lt;/p&gt;
+    &lt;p&gt;I’m actually going to do the &lt;code&gt;UniversalProgram&lt;/code&gt; project sireously now - but let’s start by taking things one step at a time. As it stands, I’m probably not going to be able to do a wide a range of coding languages that I intended to because I am trying to implement way too many things at once.&lt;/p&gt;
 
-&lt;p&gt;Let’s start with one basic program, such as a &lt;code&gt;Hello World&lt;/code&gt; program for all of the coding languages I wan’t to try first, and then we’ll expand from there.&lt;/p&gt;
+&lt;p&gt;First, let’s start with one basic program - such as a &lt;code&gt;Hello World&lt;/code&gt; program - and port it to all of the coding languages I want to try and we’ll expand from there.&lt;/p&gt;
 
-&lt;p&gt;Most programmers will make a &lt;code&gt;Hello World&lt;/code&gt; application. I’m not “most programmers”. So let’s come up with a “first program” of our own:&lt;/p&gt;
+&lt;p&gt;Most programmers will make a &lt;code&gt;Hello World&lt;/code&gt; as their first program. I’m not “most programmers”. So let’s come up with a “first program” of our own:&lt;/p&gt;
 
 &lt;h3&gt;The Higher or Lower Game&lt;/h3&gt;
-&lt;p&gt;This is going to be my “first program”. It has the same real-world use as a &lt;code&gt;Hello World&lt;/code&gt; program, but it’s just slightly more interesting.&lt;/p&gt;
+&lt;p&gt;This is going to be the first program to be ported into every coding language. It has about the same real-world use as a &lt;code&gt;Hello World&lt;/code&gt; program, but it’s just slightly more interesting to make.&lt;/p&gt;
 
 &lt;p&gt;You’ve probably heard of or played this game before, but just in case, here’s how it works:&lt;/p&gt;
 
-&lt;p&gt;A random number is generated.
-User tries to guess the number.
-Computer tells user if they were too high or too low.
-Keep guessing untill they get the number…&lt;/p&gt;
+&lt;p&gt;A random number is generated.&lt;br /&gt;
+User tries to guess the number.&lt;br /&gt;
+Computer tells user if they were too high or too low.&lt;br /&gt;
+Keep guessing untill they get the number…&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3&gt;Pseudocode&lt;/h3&gt;
 &lt;p&gt;Here’s a basic implementation of it in pseudocode:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Rand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;n&quot;&gt;again&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Rand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;false&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GetInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ToInteger&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GetInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ToInteger&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;greater&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;than&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;9000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;That&amp;#39;s over NINE THOUSAAANNNDD!&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Equals&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 	&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;true&lt;/span&gt;
 	&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Cngrtz&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 	&lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
 	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;greater&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;than&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;greater&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;than&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 	&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Too high&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;less&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;than&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;less&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;than&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 	&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Too Low&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 	
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Play again? (y/n)&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GetInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;y&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;goto&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;again&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Press any key to continue...&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;GetInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
     &lt;p&gt;&lt;a href=&quot;/categories/dotnet/ppop/OneStepAtATime/&quot;&gt;OneStepAtATime&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on December 11, 2015.&lt;/p&gt;
-  </content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Focus]]></title>
- <link rel="alternate" type="text/html" href="/categories/dotnet/Focus/" />
-  <id>/categories/dotnet/Focus</id>
-  <published>2015-12-08T08:23:01+00:00</published>
-  <updated>2015-12-08T08:23:01+00:00</updated>
-  <author>
-    <name>PixelZerg</name>
-    <uri></uri>
-    <email>abhinavbhandari4@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;So many projects yet so little time.&lt;/p&gt;
-
-&lt;p&gt;Ok, so the amount of projects I am simultaneously doing is getting quite crazy now:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Universal Program&lt;/li&gt;
-&lt;li&gt;MATH calculator&lt;/li&gt;
-&lt;li&gt;Jeff2&lt;/li&gt;
-&lt;li&gt;Code Complexifier&lt;/li&gt;
-&lt;li&gt;AS Computing Exercises&lt;/li&gt;
-&lt;li&gt;PixelOS&lt;/li&gt;
-&lt;li&gt;Various stuff on this website (parallax, syntax highlighting, css, etc)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;(These are the projects that I have worked on for &amp;gt;5 hours in the past few days - so not including stuff like Dungeon Notif, VTPX, Poem Editor, Batch to C#, etc, etc)&lt;/p&gt;
-
-&lt;p&gt;School is busy as ever and I really can’t do so many things at once. Let’s choose one program and work on only one.
-Rather than leaving them unfinished and moving on to newer projects - let’s see how long I can keep at it and how awesome I can make it.&lt;/p&gt;
-
-&lt;h3&gt;Pick a project, any project&lt;/h3&gt;
-&lt;p&gt;Which one shall we choose?&lt;/p&gt;
-&lt;h4&gt;Jeff2&lt;/h4&gt;
-&lt;p&gt;Jeff2 isn’t looking that good at the moment. While it is working great and has great potential and looks good, I think I may have to re-write the file handling system for it some time. For now - &lt;var&gt;ain&#39;t nobody got time for dat&lt;/var&gt;&lt;/p&gt;
-
-&lt;h4&gt;Code Complexifier&lt;/h4&gt;
-&lt;p&gt;Let’s face it, this project is just a proof of concept and it doesn’t have any real-world uses at all, nobody wan’t their code to be inefficient and if they wanted to make it unreadable and complex, they will most likely are going to use an obfuscator. I probably won’t be working on this project anymore anytime soon…&lt;/p&gt;
-
-&lt;h4&gt;AS Computing Exercises&lt;/h4&gt;
-&lt;p&gt;Doing these exercises aren’t really helping me at all. The exercises are plain and far too easy and therefore boring. Even with my attempts to make them more interesting (as you saw in the blog posts for it). We need something more challenging and interesting, I think.&lt;/p&gt;
-
-&lt;h4&gt;PixelOS&lt;/h4&gt;
-&lt;p&gt;This project is quite interesting so far. I might continue working on it every now and again. I’ve only recently started this project, however (it does not even have a blog post so far), and so I don’t really know if I will end up dropping the project. Let’s wait and find out.&lt;/p&gt;
-
-&lt;h4&gt;Universal Program. I CHOOSE YOU!&lt;/h4&gt;
-&lt;p&gt;My projects for the past few years have been strictly in C#. Let’s try something new! That sounds exciting to me! Recently, I’ve started seeing the positives in Python more and more and there are so many programing languages I want to try out. Let’s do this! My initial breifing does, however, seem a bit ambitious. It might need some toning down.&lt;/p&gt;
-
-&lt;h5&gt;But at the end of the day,&lt;/h5&gt;
-&lt;p&gt;Christmas holidays are comming up. So is a lot of more free time! I think I am going to devote that time to the PixelOS, UniversalProgram and website projects. Ok, i’m focused now!&lt;/p&gt;
-
-&lt;h3&gt;PS&lt;/h3&gt;
-&lt;p&gt;I’ve noticed that my posts are very, very long and I seem to like ranting a lot. I’m going to try and write less or at least split my posts into readable chunks from now on. Also, I’m going to try making stuff about not just coding. I am a fan of some good ol’ poetry, gaming, art, languages, etc as well you know!&lt;/p&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/categories/dotnet/Focus/&quot;&gt;Focus&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on December 08, 2015.&lt;/p&gt;
   </content>
 </entry>
 
