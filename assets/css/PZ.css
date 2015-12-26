@@ -1,3 +1,4 @@
+/*"~-,._.,-~"~-,._.,-~"~-,._.,-~"~-| article.hentry |-,._.,-~"~-,._.,-~"~-,._.,-~"*/
 article.hentry header div.entry-image-index
 {
 	background-repeat: no-repeat;
@@ -35,4 +36,23 @@ article.hentry .read-more{
     box-shadow: none;
     /* margin-top: 10px; */
 
+}
+
+/*"~-,._.,-~"~-,._.,-~"~-,._.,-~"~-| First Child Normal pl0x |-,._.,-~"~-,._.,-~"~-,._.,-~"*/
+
+@media only screen and (min-width: 62.5em)
+#post .entry-content>p:first-child, #page .entry-content>p:first-child {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.3;
+    margin-bottom: 26px;
+    margin-bottom: 1.625rem;
+}
+
+/*"~-,._.,-~"~-,._.,-~"~-,._.,-~"~-| darker text |-,._.,-~"~-,._.,-~"~-,._.,-~"*/
+body {
+    font-family: "Lato",Calibri,Arial,sans-serif;
+    color: rgba(34,34,34,0.95);
+/*                       ^^^^
+*/
 }
