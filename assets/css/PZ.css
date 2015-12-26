@@ -1,0 +1,27 @@
+article.hentry header div.entry-image-index
+{
+	background-repeat: no-repeat;
+	background-size: cover;
+    /*. width: 100%; */
+    height: 50vh;
+    /*. margin-bottom: 5rem; */
+    /*. text-align: center; */
+    background: rgba(17, 17, 17, 0.93) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+/*
+article.hentry header div.entry-image-index a img
+{
+
+    max-width: 100%;
+    . max-height: 100%; 
+    . margin-bottom: 5rem; 
+    . text-align: center; 
+    background: rgba(17, 17, 17, 0.93) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    . background: center; 
+    
+}*/
