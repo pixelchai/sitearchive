@@ -40,7 +40,6 @@ article.hentry .read-more{
 
 /*"~-,._.,-~"~-,._.,-~"~-,._.,-~"~-| First Child Normal pl0x |-,._.,-~"~-,._.,-~"~-,._.,-~"*/
 
-@media only screen and (min-width: 62.5em)
 #post .entry-content>p:first-child, #page .entry-content>p:first-child {
     font-size: 16px;
     font-size: 1rem;
