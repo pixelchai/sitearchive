@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2015-12-27T16:50:13+00:00</updated>
+<updated>2015-12-29T20:35:01+00:00</updated>
 <id>/</id>
 <author>
   <name>PixelZerg</name>
@@ -15,8 +15,8 @@
 
 <entry>
   <title type="html"><![CDATA[OneStepAtATime]]></title>
- <link rel="alternate" type="text/html" href="/categories/dotnet/ppop/OneStepAtATime/" />
-  <id>/categories/dotnet/ppop/OneStepAtATime</id>
+ <link rel="alternate" type="text/html" href="/dotnet/OneStepAtATime/" />
+  <id>/dotnet/OneStepAtATime</id>
   <published>2015-12-11T06:49:48+00:00</published>
   <updated>2015-12-11T06:49:48+00:00</updated>
   <author>
@@ -81,15 +81,15 @@ Keep guessing untill they get the number…&lt;br /&gt;&lt;/p&gt;
 &lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Press any key to continue...&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;GetInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/categories/dotnet/ppop/OneStepAtATime/&quot;&gt;OneStepAtATime&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on December 11, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/dotnet/OneStepAtATime/&quot;&gt;OneStepAtATime&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on December 11, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[s2.1p36 - Money Algorithm!]]></title>
- <link rel="alternate" type="text/html" href="/categories/dotnet/AScompexs21p36/" />
-  <id>/categories/dotnet/AScompexs21p36</id>
+ <link rel="alternate" type="text/html" href="/dotnet/AScompexs21p36/" />
+  <id>/dotnet/AScompexs21p36</id>
   <published>2015-11-28T15:49:08+00:00</published>
   <updated>2015-11-28T15:49:08+00:00</updated>
   <author>
@@ -454,15 +454,15 @@ This is easy, you just need to convert the value and everything to integers and 
 &lt;!-- Ack --&gt;
 &lt;p&gt;&lt;small&gt;&lt;small&gt;&lt;small&gt;&lt;a href=&quot;https://www.flickr.com/photos/wneuheisel/5256103622&quot;&gt;Cover Image&lt;/a&gt; by William Neuheisel. It has not been edited.&lt;/small&gt;&lt;/small&gt;&lt;/small&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/categories/dotnet/AScompexs21p36/&quot;&gt;s2.1p36 - Money Algorithm!&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 28, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/dotnet/AScompexs21p36/&quot;&gt;s2.1p36 - Money Algorithm!&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 28, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[ASComputingExercises - Introduction]]></title>
- <link rel="alternate" type="text/html" href="/categories/dotnet/ASComputingExercises/" />
-  <id>/categories/dotnet/ASComputingExercises</id>
+ <link rel="alternate" type="text/html" href="/dotnet/ASComputingExercises/" />
+  <id>/dotnet/ASComputingExercises</id>
   <published>2015-11-28T12:05:47+00:00</published>
   <updated>2015-11-28T12:05:47+00:00</updated>
   <author>
@@ -500,15 +500,15 @@ This is easy, you just need to convert the value and everything to integers and 
 &lt;!-- Ack --&gt;
 &lt;p&gt;&lt;small&gt;&lt;small&gt;&lt;small&gt;&lt;a href=&quot;https://www.flickr.com/photos/wneuheisel/5256103622&quot;&gt;Cover Image&lt;/a&gt; by William Neuheisel. It has not been edited.&lt;/small&gt;&lt;/small&gt;&lt;/small&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/categories/dotnet/ASComputingExercises/&quot;&gt;ASComputingExercises - Introduction&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 28, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/dotnet/ASComputingExercises/&quot;&gt;ASComputingExercises - Introduction&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 28, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[CodeComplexifier - Complex Booleans]]></title>
- <link rel="alternate" type="text/html" href="/categories/dotnet/Cmplxfr1/" />
-  <id>/categories/dotnet/Cmplxfr1</id>
+ <link rel="alternate" type="text/html" href="/dotnet/Cmplxfr1/" />
+  <id>/dotnet/Cmplxfr1</id>
   <published>2015-11-24T06:42:45+00:00</published>
   <updated>2015-11-24T06:42:45+00:00</updated>
   <author>
@@ -711,15 +711,15 @@ I also made a method to actually parse the condition from a loop/statement:&lt;/
 
 &lt;hr /&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/categories/dotnet/Cmplxfr1/&quot;&gt;CodeComplexifier - Complex Booleans&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 24, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/dotnet/Cmplxfr1/&quot;&gt;CodeComplexifier - Complex Booleans&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 24, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Universal Program - Briefing]]></title>
- <link rel="alternate" type="text/html" href="/categories/dotnet/UniversalProgramBriefing/" />
-  <id>/categories/dotnet/UniversalProgramBriefing</id>
+ <link rel="alternate" type="text/html" href="/dotnet/UniversalProgramBriefing/" />
+  <id>/dotnet/UniversalProgramBriefing</id>
   <published>2015-11-22T03:17:29+00:00</published>
   <updated>2015-11-22T03:17:29+00:00</updated>
   <author>
@@ -770,15 +770,15 @@ I also made a method to actually parse the condition from a loop/statement:&lt;/
 
 &lt;p&gt;Time taken to write: 30 or so min.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/categories/dotnet/UniversalProgramBriefing/&quot;&gt;Universal Program - Briefing&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 22, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/dotnet/UniversalProgramBriefing/&quot;&gt;Universal Program - Briefing&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 22, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Hello]]></title>
- <link rel="alternate" type="text/html" href="/categories/general/Hello/" />
-  <id>/categories/general/Hello</id>
+ <link rel="alternate" type="text/html" href="/general/Hello/" />
+  <id>/general/Hello</id>
   <published>2015-11-18T00:00:00+00:00</published>
   <updated>2015-11-18T00:00:00+00:00</updated>
   <author>
@@ -811,15 +811,15 @@ I also made a method to actually parse the condition from a loop/statement:&lt;/
 
 &lt;p&gt;Woah my writing formed a poem…&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/categories/general/Hello/&quot;&gt;Hello&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 18, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/general/Hello/&quot;&gt;Hello&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 18, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Batch to C# - Info]]></title>
- <link rel="alternate" type="text/html" href="/categories/dotnet/Batch2Csharp/" />
-  <id>/categories/dotnet/Batch2Csharp</id>
+ <link rel="alternate" type="text/html" href="/dotnet/mooman/Batch2Csharp/" />
+  <id>/dotnet/mooman/Batch2Csharp</id>
   <published>2015-10-29T00:00:00+00:00</published>
   <updated>2015-10-29T00:00:00+00:00</updated>
   <author>
@@ -1101,7 +1101,7 @@ The program will not print the command if &lt;code&gt;echo&lt;/code&gt; is off o
 &lt;hr /&gt;
 &lt;!-- Ack --&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/categories/dotnet/Batch2Csharp/&quot;&gt;Batch to C# - Info&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on October 29, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/dotnet/mooman/Batch2Csharp/&quot;&gt;Batch to C# - Info&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on October 29, 2015.&lt;/p&gt;
   </content>
 </entry>
 

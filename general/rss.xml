@@ -1,10 +1,10 @@
 
 	<item>
 	  <title>Hello</title>
-	  <link>/categories/general/Hello/</link>
+	  <link>/general/Hello/</link>
 	  <author></author>
 	  <pubDate>2015-11-18T00:00:00+00:00</pubDate>
-	  <guid>/categories/general/Hello/</guid>
+	  <guid>/general/Hello/</guid>
 	  <description><![CDATA[
 	     <p>This is my 2nd ever proper website.  I have never before done much HTML coding at all. This is my first time using ` Ruby ` too. This website was created with  <code>Jekyll </code> . <strong>x_x</strong></p>
 

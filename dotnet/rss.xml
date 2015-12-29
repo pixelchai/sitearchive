@@ -1,10 +1,10 @@
 
 	<item>
 	  <title>OneStepAtATime</title>
-	  <link>/categories/dotnet/ppop/OneStepAtATime/</link>
+	  <link>/dotnet/OneStepAtATime/</link>
 	  <author></author>
 	  <pubDate>2015-12-11T06:49:48+00:00</pubDate>
-	  <guid>/categories/dotnet/ppop/OneStepAtATime/</guid>
+	  <guid>/dotnet/OneStepAtATime/</guid>
 	  <description><![CDATA[
 	     <p>I’m actually going to do the <code>UniversalProgram</code> project sireously now - but let’s start by taking things one step at a time. As it stands, I’m probably not going to be able to do a wide a range of coding languages that I intended to because I am trying to implement way too many things at once.</p>
 
@@ -67,10 +67,10 @@ Keep guessing untill they get the number…<br /></p>
 
 	<item>
 	  <title>s2.1p36 - Money Algorithm!</title>
-	  <link>/categories/dotnet/AScompexs21p36/</link>
+	  <link>/dotnet/AScompexs21p36/</link>
 	  <author></author>
 	  <pubDate>2015-11-28T15:49:08+00:00</pubDate>
-	  <guid>/categories/dotnet/AScompexs21p36/</guid>
+	  <guid>/dotnet/AScompexs21p36/</guid>
 	  <description><![CDATA[
 	     <p><img src="/assets/poststuff/2/1.PNG" alt="" /></p>
 
@@ -433,10 +433,10 @@ This is easy, you just need to convert the value and everything to integers and 
 
 	<item>
 	  <title>ASComputingExercises - Introduction</title>
-	  <link>/categories/dotnet/ASComputingExercises/</link>
+	  <link>/dotnet/ASComputingExercises/</link>
 	  <author></author>
 	  <pubDate>2015-11-28T12:05:47+00:00</pubDate>
-	  <guid>/categories/dotnet/ASComputingExercises/</guid>
+	  <guid>/dotnet/ASComputingExercises/</guid>
 	  <description><![CDATA[
 	     <p>So here’s an explanation of what these posts are all about and why I made them.</p>
 
@@ -472,10 +472,10 @@ This is easy, you just need to convert the value and everything to integers and 
 
 	<item>
 	  <title>CodeComplexifier - Complex Booleans</title>
-	  <link>/categories/dotnet/Cmplxfr1/</link>
+	  <link>/dotnet/Cmplxfr1/</link>
 	  <author></author>
 	  <pubDate>2015-11-24T06:42:45+00:00</pubDate>
-	  <guid>/categories/dotnet/Cmplxfr1/</guid>
+	  <guid>/dotnet/Cmplxfr1/</guid>
 	  <description><![CDATA[
 	     <p>A new project that I am stating alongside my <a href="/tag/UniversalProgram">Universal Program</a> project!
 This project is going to, essentially, be a code complexifier. Probably wouldn’t exactly be obfuscation, but it will generate code that will most likely be unreadable to the untrained eye.</p>
@@ -676,10 +676,10 @@ I also made a method to actually parse the condition from a loop/statement:</p>
 
 	<item>
 	  <title>Universal Program - Briefing</title>
-	  <link>/categories/dotnet/UniversalProgramBriefing/</link>
+	  <link>/dotnet/UniversalProgramBriefing/</link>
 	  <author></author>
 	  <pubDate>2015-11-22T03:17:29+00:00</pubDate>
-	  <guid>/categories/dotnet/UniversalProgramBriefing/</guid>
+	  <guid>/dotnet/UniversalProgramBriefing/</guid>
 	  <description><![CDATA[
 	     <p>Here’s a cool project i’m starting. The aim is to port a single program into every coding language that I know. This is basically to familiarize myself with coding languages that I haven’t done in a long time. I might even learn new coding languages just for this project. This is going to be great! But first, we must decide what the program must actually be.</p>
 
@@ -728,10 +728,10 @@ I also made a method to actually parse the condition from a loop/statement:</p>
 
 	<item>
 	  <title>Batch to C# - Info</title>
-	  <link>/categories/dotnet/Batch2Csharp/</link>
+	  <link>/dotnet/mooman/Batch2Csharp/</link>
 	  <author></author>
 	  <pubDate>2015-10-29T00:00:00+00:00</pubDate>
-	  <guid>/categories/dotnet/Batch2Csharp/</guid>
+	  <guid>/dotnet/mooman/Batch2Csharp/</guid>
 	  <description><![CDATA[
 	     <p>My first ever coding language was BATCH. Yes, the coding language for MS-DOS. I used it to make some really interesting things!</p>
 
