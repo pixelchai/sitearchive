@@ -40,6 +40,8 @@
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/PZ.css">
+<link rel="stylesheet" href="/assets/css/tabs.css">
+
 <!-- Webfonts -->
 <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
 
@@ -182,7 +184,7 @@ Reading time ~1 minute
 
 <div class="footer-wrapper">
   <footer role="contentinfo">
-    <small><span>&copy; 2015 PixelZerg. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span></small>
+    <small><span>&copy; 2016 PixelZerg. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span></small>
   </footer>
 </div><!-- /.footer-wrapper -->
 
@@ -192,7 +194,18 @@ Reading time ~1 minute
 
 
 
-          
+
+
+<!-- Tabs: -->
+<script src="/assets/js/tabs.js"></script>
+<script>
+  var myTabs = tabs({
+    el: '#tabs',
+    tabNavigationLinks: '.c-tabs-nav__link',
+    tabContentContainers: '.c-tab'
+  });
+  myTabs.init();
+</script>          
 
 </body>
 </html>

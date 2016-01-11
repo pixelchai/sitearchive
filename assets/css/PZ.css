@@ -130,3 +130,8 @@ div.entry-header-home div.header-title div.header-title-wrap h2{
 div.entry-header-home div.header-title{
     height: 100vh;
 }
+
+/*BG colour*/
+html{
+    background-color: #b3b3b3;
+}

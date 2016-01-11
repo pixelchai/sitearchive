@@ -1,0 +1,139 @@
+
+	<item>
+	  <title>BCDDecode</title>
+	  <link>/electronics/BCDDecode/</link>
+	  <author></author>
+	  <pubDate>2016-01-08T00:00:00+00:00</pubDate>
+	  <guid>/electronics/BCDDecode/</guid>
+	  <description><![CDATA[
+	     <p>I have worked on absolutely tonnes of Coding Projects. I realise, however, that I haven’t really done many significant “electronics” projects. A project with actual electricity and components and logic gates etc. Well, let’s change that! Introducing, the <code>BCDDecode</code> project. Today in an epiphanic revelation, a dream was born.</p>
+
+<p>Basically, it’s one of those random projects I suddenly have a huge tendancy to make when i’m bored. This project is basically going to be the recreation of a chip that has existed for a long time: The <code>Seven Segment Decoder Chip</code>, AKA: <code>4511</code>. BUT made with logic gates.</p>
+
+<p>Like I said, this is my first time attempting any fairly major electronics project - I’m a pure coder. The circuit will probably be very inefficient, but let’s see how this goes!</p>
+
+<p>First of all, we want to start by planning out the core foundations of the decoder - the LOGIC. I’m going to use <code>Logic Lab</code> to simulate the core logic of the decoder.</p>
+
+<p>Here’s my basic setup:
+<img src="/assets/poststuff/3/3.PNG" alt="SETUP" /></p>
+
+<p>As you can see, Logic Lab actually already has a BCD Display component. But we’re going to make our own so we’re going to totally ignore it. For now, though, we can use it for debugging purposes (hence the setup).</p>
+
+<p>Ok so first of all, let’s get the logic completely right. For this, I’m going to start with what I am already good at - coding. I’m going to now write a simple program (in C#) that will decode the BCD code, but in such a way that it can be easily adapted into a circuit (so it won’t be the most efficient solution).</p>
+
+<p>I have labeled the above diagram with the variable names used in the script.</p>
+
+<p>Here’s how far I got after a while (not fully done)</p>
+
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Threading.Tasks</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">BCDDecode</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">Program</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">try</span>
+            <span class="p">{</span>
+                <span class="n">Run</span><span class="p">(</span><span class="kt">bool</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="m">0</span><span class="p">]),</span> <span class="kt">bool</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="m">1</span><span class="p">]),</span> <span class="kt">bool</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="m">2</span><span class="p">]),</span> <span class="kt">bool</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="m">3</span><span class="p">]));</span>
+            <span class="p">}</span>
+            <span class="k">catch</span>
+            <span class="p">{</span>
+                <span class="n">List</span><span class="p">&lt;</span><span class="kt">bool</span><span class="p">&gt;</span> <span class="n">input</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="kt">bool</span><span class="p">&gt;();</span>
+                <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Enter input as BCD&quot;</span><span class="p">);</span>
+                <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">chr</span> <span class="k">in</span> <span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">())</span>
+                <span class="p">{</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">chr</span> <span class="p">==</span> <span class="sc">&#39;1&#39;</span><span class="p">)</span>
+                    <span class="p">{</span>
+                        <span class="n">input</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">true</span><span class="p">);</span>
+                    <span class="p">}</span>
+                    <span class="k">else</span>
+                    <span class="p">{</span>
+                        <span class="n">input</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">false</span><span class="p">);</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+                <span class="k">try</span>
+                <span class="p">{</span>
+                    <span class="k">typeof</span><span class="p">(</span><span class="n">Program</span><span class="p">).</span><span class="n">GetMethod</span><span class="p">(</span><span class="s">&quot;Run&quot;</span><span class="p">).</span><span class="n">Invoke</span><span class="p">(</span><span class="k">null</span><span class="p">,</span> <span class="n">input</span><span class="p">.</span><span class="n">Cast</span><span class="p">&lt;</span><span class="kt">object</span><span class="p">&gt;().</span><span class="n">ToArray</span><span class="p">());</span>
+                <span class="p">}</span>
+                <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span> <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">e</span><span class="p">);</span> <span class="p">}</span>
+
+                <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Press any key to go again&quot;</span><span class="p">);</span>
+                <span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();</span>
+                <span class="n">Console</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span>
+                <span class="n">Main</span><span class="p">(</span><span class="n">args</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Run</span><span class="p">(</span><span class="kt">bool</span> <span class="n">I1</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">I2</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">I3</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">I4</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="kt">bool</span> <span class="n">O1</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+            <span class="kt">bool</span> <span class="n">O2</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+            <span class="kt">bool</span> <span class="n">O3</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+            <span class="kt">bool</span> <span class="n">O4</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+            <span class="kt">bool</span> <span class="n">O5</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+            <span class="kt">bool</span> <span class="n">O6</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+            <span class="kt">bool</span> <span class="n">O7</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+
+            <span class="n">O3</span> <span class="p">=</span> <span class="n">I3</span> <span class="p">==</span> <span class="n">I4</span><span class="p">;</span> <span class="c1">//I3 XNOR I4</span>
+            <span class="n">O7</span> <span class="p">=</span> <span class="n">I3</span> <span class="p">==</span> <span class="n">I4</span><span class="p">;</span> <span class="c1">//I3 XNOR I4</span>
+
+            <span class="n">O1</span> <span class="p">=</span> <span class="p">!</span><span class="n">I2</span> <span class="p">&amp;&amp;</span> <span class="p">!</span><span class="n">I1</span> <span class="p">&amp;&amp;</span> <span class="n">I3</span> <span class="p">==</span> <span class="n">I4</span><span class="p">;</span> <span class="c1">//I2 NOR I1 AND T3 XNOR T4</span>
+            <span class="n">O6</span> <span class="p">=</span> <span class="p">!</span><span class="n">I2</span> <span class="p">&amp;&amp;</span> <span class="p">!</span><span class="n">I1</span> <span class="p">&amp;&amp;</span> <span class="n">I3</span> <span class="p">==</span> <span class="n">I4</span><span class="p">;</span> <span class="c1">//I2 NOR I1 AND T3 XNOR T4</span>
+
+            <span class="n">Draw</span><span class="p">(</span><span class="n">O1</span><span class="p">,</span> <span class="n">O2</span><span class="p">,</span> <span class="n">O3</span><span class="p">,</span> <span class="n">O4</span><span class="p">,</span> <span class="n">O5</span><span class="p">,</span> <span class="n">O6</span><span class="p">,</span> <span class="n">O7</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Draw</span><span class="p">(</span><span class="kt">bool</span> <span class="n">O1</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">O2</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">O3</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">O4</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">O5</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">O6</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">O7</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Output:&quot;</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">O1</span><span class="p">)</span> <span class="n">Console</span><span class="p">.</span><span class="n">ForegroundColor</span> <span class="p">=</span> <span class="n">ConsoleColor</span><span class="p">.</span><span class="n">Red</span><span class="p">;</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot; 000 &quot;</span><span class="p">);</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">ResetColor</span><span class="p">();</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">O2</span><span class="p">)</span> <span class="n">Console</span><span class="p">.</span><span class="n">ForegroundColor</span> <span class="p">=</span> <span class="n">ConsoleColor</span><span class="p">.</span><span class="n">Red</span><span class="p">;</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;0   &quot;</span><span class="p">);</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">ResetColor</span><span class="p">();</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">O3</span><span class="p">)</span> <span class="n">Console</span><span class="p">.</span><span class="n">ForegroundColor</span> <span class="p">=</span> <span class="n">ConsoleColor</span><span class="p">.</span><span class="n">Red</span><span class="p">;</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;0&quot;</span><span class="p">+</span><span class="n">Environment</span><span class="p">.</span><span class="n">NewLine</span><span class="p">);</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">ResetColor</span><span class="p">();</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">O2</span><span class="p">)</span> <span class="n">Console</span><span class="p">.</span><span class="n">ForegroundColor</span> <span class="p">=</span> <span class="n">ConsoleColor</span><span class="p">.</span><span class="n">Red</span><span class="p">;</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;0   &quot;</span><span class="p">);</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">ResetColor</span><span class="p">();</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">O3</span><span class="p">)</span> <span class="n">Console</span><span class="p">.</span><span class="n">ForegroundColor</span> <span class="p">=</span> <span class="n">ConsoleColor</span><span class="p">.</span><span class="n">Red</span><span class="p">;</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;0&quot;</span> <span class="p">+</span> <span class="n">Environment</span><span class="p">.</span><span class="n">NewLine</span><span class="p">);</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">ResetColor</span><span class="p">();</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">O4</span><span class="p">)</span> <span class="n">Console</span><span class="p">.</span><span class="n">ForegroundColor</span> <span class="p">=</span> <span class="n">ConsoleColor</span><span class="p">.</span><span class="n">Red</span><span class="p">;</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot; 000 &quot;</span><span class="p">);</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">ResetColor</span><span class="p">();</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">O5</span><span class="p">)</span> <span class="n">Console</span><span class="p">.</span><span class="n">ForegroundColor</span> <span class="p">=</span> <span class="n">ConsoleColor</span><span class="p">.</span><span class="n">Red</span><span class="p">;</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;0   &quot;</span><span class="p">);</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">ResetColor</span><span class="p">();</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">O7</span><span class="p">)</span> <span class="n">Console</span><span class="p">.</span><span class="n">ForegroundColor</span> <span class="p">=</span> <span class="n">ConsoleColor</span><span class="p">.</span><span class="n">Red</span><span class="p">;</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;0&quot;</span> <span class="p">+</span> <span class="n">Environment</span><span class="p">.</span><span class="n">NewLine</span><span class="p">);</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">ResetColor</span><span class="p">();</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">O5</span><span class="p">)</span> <span class="n">Console</span><span class="p">.</span><span class="n">ForegroundColor</span> <span class="p">=</span> <span class="n">ConsoleColor</span><span class="p">.</span><span class="n">Red</span><span class="p">;</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;0   &quot;</span><span class="p">);</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">ResetColor</span><span class="p">();</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">O7</span><span class="p">)</span> <span class="n">Console</span><span class="p">.</span><span class="n">ForegroundColor</span> <span class="p">=</span> <span class="n">ConsoleColor</span><span class="p">.</span><span class="n">Red</span><span class="p">;</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;0&quot;</span> <span class="p">+</span> <span class="n">Environment</span><span class="p">.</span><span class="n">NewLine</span><span class="p">);</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">ResetColor</span><span class="p">();</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">O6</span><span class="p">)</span> <span class="n">Console</span><span class="p">.</span><span class="n">ForegroundColor</span> <span class="p">=</span> <span class="n">ConsoleColor</span><span class="p">.</span><span class="n">Red</span><span class="p">;</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot; 000 &quot;</span><span class="p">);</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">ResetColor</span><span class="p">();</span>
+
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+	  ]]></description>
+	</item>
+
