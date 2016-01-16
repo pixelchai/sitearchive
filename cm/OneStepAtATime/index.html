@@ -5,31 +5,31 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Universal Program - Briefing &#8211; PixelZerg</title>
+<title>OneStepAtATime &#8211; PixelZerg</title>
 <meta name="description" content="A website of games, code, how tos, language, music, 3D modeling and animating, general art, literature, etc. Anything that I, and hopefully you, find interesting.">
 <meta name="keywords" content="">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="/images/PZ/bokeh.jpg">
+<meta name="twitter:image" content="/images/PZ/Fractals/5.jpg">
 
-<meta name="twitter:title" content="Universal Program - Briefing">
+<meta name="twitter:title" content="OneStepAtATime">
 <meta name="twitter:description" content="A website of games, code, how tos, language, music, 3D modeling and animating, general art, literature, etc. Anything that I, and hopefully you, find interesting.">
 <meta name="twitter:creator" content="@pixelzerg">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Universal Program - Briefing">
+<meta property="og:title" content="OneStepAtATime">
 <meta property="og:description" content="A website of games, code, how tos, language, music, 3D modeling and animating, general art, literature, etc. Anything that I, and hopefully you, find interesting.">
-<meta property="og:url" content="/dotnet/UniversalProgramBriefing/">
+<meta property="og:url" content="/cm/OneStepAtATime/">
 <meta property="og:site_name" content="PixelZerg">
 
 
 
 
 
-<link rel="canonical" href="/dotnet/UniversalProgramBriefing/">
+<link rel="canonical" href="/cm/OneStepAtATime/">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="PixelZerg Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -120,6 +120,18 @@
 				<li><a href="/tags/">All Tags</a></li>
 			</ul>
 		</li>
+		<li>
+			<a href="#">Categories</a>
+			 <ul class="dl-submenu">
+			 	 
+			 		<li><a href="/cm">cm</a></li>
+			 	 
+			 		<li><a href="/general">general</a></li>
+			 	 
+			 		<li><a href="/world">world</a></li>
+			 	
+			 </ul>
+		</li>
 <!-- 		<li>
 			<a href="#">MOOO</a>
 			<ul class="dl-submenu">
@@ -136,9 +148,9 @@
 
 
 <div class="entry-header">
-  <div class="image-credit">Image source: <a href="https://www.flickr.com/photos/wneuheisel/5256103622">William Neuheisel</a></div><!-- /.image-credit -->
+  
   <div class="entry-image">
-    <img src="/images/PZ/bokeh.jpg" alt="Universal Program - Briefing">
+    <img src="/images/PZ/Fractals/5.jpg" alt="OneStepAtATime">
   </div><!-- /.entry-image -->
 </div><!-- /.entry-header -->
 
@@ -148,9 +160,9 @@
     <header class="header-title">
       <div class="header-title-wrap">
         
-          <h1 class="entry-title"><a href="/dotnet/UniversalProgramBriefing/" rel="bookmark" title="Universal Program - Briefing">Universal Program - Briefing</a></h1>
+          <h1 class="entry-title"><a href="/cm/OneStepAtATime/" rel="bookmark" title="OneStepAtATime">OneStepAtATime</a></h1>
         
-        <h2><span class="entry-date date published"><time datetime="2015-11-22T03:17:29+00:00">November 22, 2015</time></span></h2>
+        <h2><span class="entry-date date published"><time datetime="2015-12-11T06:49:48+00:00">December 11, 2015</time></span></h2>
         
         <p class="entry-reading-time">
           <i class="fa fa-clock-o"></i>
@@ -161,56 +173,70 @@ Reading time ~1 minute
       </div><!-- /.header-title-wrap -->
     </header>
     <div class="entry-content">
-      <p>Here’s a cool project i’m starting. The aim is to port a single program into every coding language that I know. This is basically to familiarize myself with coding languages that I haven’t done in a long time. I might even learn new coding languages just for this project. This is going to be great! But first, we must decide what the program must actually be.</p>
+      <p>I’m actually going to do the <code>UniversalProgram</code> project sireously now - but let’s start by taking things one step at a time. As it stands, I’m probably not going to be able to do a wide a range of coding languages that I intended to because I am trying to implement way too many things at once.</p>
 
-<h3><u>Stuff That Must be Included</u></h3>
-<h5>Menu</h5>
-<p>The program must contain a menu of some description with a list to select stuff included in the program. The user must be able to interact with the list and select items.</p>
-<ul><li>Orginisation</li><li>User Input</li><li>Printing</li><li>Basic Stuff</li></ul>
+<p>First, let’s start with one basic program - such as a <code>Hello World</code> program - and port it to all of the coding languages I want to try and we’ll expand from there.</p>
 
-<hr />
-<h5>Loading</h5>
-<p>The program must display a loading animation. The loading percentage is also included in the console window’s title.</p>
-<ul><li>Sleeping the Thread</li><li>Displaying Animation</li><li>Basic Text Stuff</li><li>Changing title</li></ul>
+<p>Most programmers will make a <code>Hello World</code> as their first program. I’m not “most programmers”. So let’s come up with a “first program” of our own:</p>
 
-<hr />
-<h5>Hangman</h5>
-<p>There is a VERY BASIC hangman game included.</p>
-<ul><li>List/Array stuff<br /><ul><li>Check if List Contains Item</li><li>Make a list</li></ul></li>
-<li>Looks cool</li><li>Escaping text</li></ul>
+<h3>The Higher or Lower Game</h3>
+<p>This is going to be the first program to be ported into every coding language. It has about the same real-world use as a <code>Hello World</code> program, but it’s just slightly more interesting to make.</p>
 
-<hr />
-<h5>Higher or Lower Game</h5>
-<p>A simple game. A random number is selected and the user must try to guess it. The program tells the user if they got the number right or it will tell them if the number they guessed was too high or too low.</p>
-<ul><li>Number Stuff</li><li>Checking if a number is greater than another number</li><li>parsing string into integer</li></ul>
+<p>You’ve probably heard of or played this game before, but just in case, here’s how it works:</p>
 
-<hr />
-<h5>Rectangle Drawer</h5>
-<p>The user will input X, Y co-ordinates and also Width and Height. The program will draw a rectangle.</p>
-<ul><li>graphics stuff</li><li>Getting User Input</li><li>While loops</li></ul>
+<p>A random number is generated.<br />
+User tries to guess the number.<br />
+Computer tells user if they were too high or too low.<br />
+Keep guessing untill they get the number…<br /></p>
 
-<hr />
-<h5>Libs</h5>
-<p>The program asks the user for some words by their type (verb, adjective, noun, etc) and will then incorporate them into a story. This usually makes funny results. You can also save the generated story as a .txt file or other formats.</p>
-<ul><li>writing to a file</li><li>basic variable usage</li></ul>
+<h3>Pseudocode</h3>
+<p>Here’s a basic implementation of it in pseudocode:</p>
 
-<hr />
-<h3>NB</h3>
-<p>Note that not all of these features will be able to be implemented due to restrictions of the coding language itself and other restrictions. You may notice that the functionality of certain features vary in different coding languages due to said restrictions.</p>
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="n">again</span><span class="p">:</span>
+<span class="k">set</span> <span class="n">num</span> <span class="p">=</span> <span class="n">Rand</span><span class="p">.</span><span class="n">Next</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">1000</span><span class="p">)</span>
+<span class="k">set</span> <span class="n">done</span> <span class="p">=</span> <span class="k">false</span>
+<span class="k">do</span>
+<span class="p">{</span>
+<span class="n">input</span> <span class="p">=</span> <span class="n">GetInput</span><span class="p">().</span><span class="n">ToInteger</span><span class="p">()</span>
+	<span class="k">if</span><span class="p">(</span><span class="n">input</span> <span class="n">greater</span> <span class="n">than</span> <span class="m">9000</span><span class="p">)</span>
+	<span class="p">{</span>
+	<span class="n">print</span><span class="p">(</span><span class="s">&quot;That&#39;s over NINE THOUSAAANNNDD!&quot;</span><span class="p">)</span>
+	<span class="p">}</span>
+	<span class="k">if</span><span class="p">(</span><span class="n">input</span> <span class="n">Equals</span> <span class="n">num</span><span class="p">)</span>
+	<span class="p">{</span>
+	<span class="k">set</span> <span class="n">done</span> <span class="p">=</span> <span class="k">true</span>
+	<span class="n">print</span><span class="p">(</span><span class="s">&quot;Cngrtz&quot;</span><span class="p">)</span>
+	<span class="k">break</span>
+	<span class="p">}</span>
+	<span class="k">if</span><span class="p">(</span><span class="n">input</span> <span class="n">greater</span> <span class="n">than</span> <span class="n">num</span><span class="p">)</span>
+	<span class="p">{</span>
+	<span class="n">print</span><span class="p">(</span><span class="s">&quot;Too high&quot;</span><span class="p">)</span>
+	<span class="p">}</span>
+	<span class="k">if</span><span class="p">(</span><span class="n">input</span> <span class="n">less</span> <span class="n">than</span> <span class="n">num</span><span class="p">)</span>
+	<span class="p">{</span>
+	<span class="n">print</span><span class="p">(</span><span class="s">&quot;Too Low&quot;</span><span class="p">)</span>
+	<span class="p">}</span>
+	
+<span class="p">}</span>
+<span class="k">while</span><span class="p">(</span><span class="n">not</span> <span class="n">done</span><span class="p">)</span>
 
-<hr />
-<!-- footer -->
+<span class="n">print</span><span class="p">(</span><span class="s">&quot;Play again? (y/n)&quot;</span><span class="p">)</span>
+<span class="k">if</span><span class="p">(</span><span class="n">GetInput</span><span class="p">()</span> <span class="p">==</span> <span class="s">&quot;y&quot;</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="k">goto</span> <span class="n">again</span>
+<span class="p">}</span>
 
-<p>Time taken to write: 30 or so min.</p>
+<span class="n">print</span><span class="p">(</span><span class="s">&quot;Press any key to continue...&quot;</span><span class="p">)</span>
+<span class="n">GetInput</span><span class="p">()</span></code></pre></div>
 
       <footer class="entry-meta">
         <span class="entry-tags"></span>
         
         <div class="social-share">
   <ul class="socialcount socialcount-small inline-list">
-    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=/dotnet/UniversalProgramBriefing/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
-    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=/dotnet/UniversalProgramBriefing/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
-    <li class="googleplus"><a href="https://plus.google.com/share?url=/dotnet/UniversalProgramBriefing/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=/cm/OneStepAtATime/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=/cm/OneStepAtATime/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=/cm/OneStepAtATime/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
   </ul>
 </div><!-- /.social-share -->
       </footer>
@@ -219,22 +245,22 @@ Reading time ~1 minute
     <div class="read-more">
   
     <div class="read-more-header">
-      <a href="/general/Hello/" class="read-more-btn">Read More</a>
+      <a href="/cm/AScompexs21p36/" class="read-more-btn">Read More</a>
     </div><!-- /.read-more-header -->
     <div class="read-more-content">
-      <h3><a href="/dotnet/OneStepAtATime/" title="OneStepAtATime">OneStepAtATime</a></h3>
-      <p>I'm actually going to do the `UniversalProgram` project sireously now - but let's start by taking things one step at a time. As it stands...&hellip; <a href="/dotnet/OneStepAtATime/">Continue reading</a></p>
+      <h3><a href="/world/ChineseClassifiers/" title="Chinese Classifiers - 漢語量詞">Chinese Classifiers - 漢語量詞</a></h3>
+      <p>![Biscuits](http://tinyurl.com/z9hhuh9)這是什麼？ 六包餅乾. A fairly simple question with a fairly simple answer. But notice how the answer uses s...&hellip; <a href="/world/ChineseClassifiers/">Continue reading</a></p>
     </div><!-- /.read-more-content -->
   
   <div class="read-more-list">
     
       <div class="list-item">
-        <h4><a href="/dotnet/AScompexs21p36/" title="s2.1p36 - Money Algorithm!">s2.1p36 - Money Algorithm!</a></h4>
+        <h4><a href="/cm/AScompexs21p36/" title="s2.1p36 - Money Algorithm!">s2.1p36 - Money Algorithm!</a></h4>
         <span>Published on November 28, 2015</span>
       </div><!-- /.list-item -->
     
       <div class="list-item">
-        <h4><a href="/dotnet/ASComputingExercises/" title="ASComputingExercises - Introduction">ASComputingExercises - Introduction</a></h4>
+        <h4><a href="/cm/ASComputingExercises/" title="ASComputingExercises - Introduction">ASComputingExercises - Introduction</a></h4>
         <span>Published on November 28, 2015</span>
       </div><!-- /.list-item -->
     
@@ -263,8 +289,8 @@ Reading time ~1 minute
 * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
 */
 var disqus_config = function () {
-this.page.url = pixelzerg.github.io/dotnet/UniversalProgramBriefing/; // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = /dotnet/UniversalProgramBriefing; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = pixelzerg.github.io/cm/OneStepAtATime/; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = /cm/OneStepAtATime; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE

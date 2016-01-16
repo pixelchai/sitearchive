@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/dotnet/OneStepAtATime/</loc>
+    <loc>/world/ChineseClassifiers/</loc>
+    <lastmod>2016-01-16T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>/cm/OneStepAtATime/</loc>
     <lastmod>2015-12-11T06:49:48+00:00</lastmod>
   </url>
   <url>
-    <loc>/dotnet/AScompexs21p36/</loc>
+    <loc>/cm/AScompexs21p36/</loc>
     <lastmod>2015-11-28T15:49:08+00:00</lastmod>
   </url>
   <url>
-    <loc>/dotnet/ASComputingExercises/</loc>
+    <loc>/cm/ASComputingExercises/</loc>
     <lastmod>2015-11-28T12:05:47+00:00</lastmod>
   </url>
   <url>
-    <loc>/dotnet/Cmplxfr1/</loc>
+    <loc>/cm/Cmplxfr1/</loc>
     <lastmod>2015-11-24T06:42:45+00:00</lastmod>
   </url>
   <url>
-    <loc>/dotnet/UniversalProgramBriefing/</loc>
+    <loc>/cm/UniversalProgramBriefing/</loc>
     <lastmod>2015-11-22T03:17:29+00:00</lastmod>
   </url>
   <url>
@@ -25,7 +29,7 @@
     <lastmod>2015-11-18T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>/dotnet/mooman/Batch2Csharp/</loc>
+    <loc>/cm/Batch2Csharp/</loc>
     <lastmod>2015-10-29T00:00:00+00:00</lastmod>
   </url>
   <url>
@@ -44,15 +48,15 @@
     <loc>/about/</loc>
   </url>
   <url>
-    <loc>/dotnet/</loc>
+    <loc>/cm/</loc>
   </url>
   <url>
-    <loc>/dotnet/page2/</loc>
-  </url>
-  <url>
-    <loc>/mooman/</loc>
+    <loc>/cm/page2/</loc>
   </url>
   <url>
     <loc>/general/</loc>
+  </url>
+  <url>
+    <loc>/world/</loc>
   </url>
 </urlset>
