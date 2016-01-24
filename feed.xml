@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-01-16T21:03:00+00:00</updated>
+<updated>2016-01-24T15:11:39+00:00</updated>
 <id>/</id>
 <author>
   <name>PixelZerg</name>
@@ -35,7 +35,7 @@
 
 &lt;p&gt;There are 3 parts to the sentence “六包餅乾”: A number, the classifier and the noun. You can also add a demonstrative and an adjective like so: “&lt;strong&gt;这&lt;/strong&gt;六包&lt;strong&gt;可口&lt;/strong&gt;餅乾” which would mean: “&lt;strong&gt;These&lt;/strong&gt; six &lt;strong&gt;delicious&lt;/strong&gt; biscuits”.&lt;/p&gt;
 
-&lt;p&gt;In this example, you could somewhat loosely translate the classifier (包) to “a pack(et) of” and so translate “六包餅乾” as “Six packs of biscuits”. But this doesn’t really work because this gives the false impression that we have six &lt;strong&gt;packs&lt;/strong&gt; of biscuits as opposed to six individual biscuits. I guess to solve that, you could translate it as “a pack of six biscuits”.&lt;/p&gt;
+&lt;p&gt;In this example, you could somewhat translate the classifier (包) to “a pack(et) of” and so translate “六包餅乾” as “Six packs of biscuits”.&lt;/p&gt;
 
 &lt;p&gt;Once you get to sentences such as “你的紫只猫” - “Your purple cats”, however, it starts getting difficult to translate the classifier into an English word. Literally translated, “只” (the classifier) means “exclusively”. “Your exclusively of cats”… hmm…&lt;/p&gt;
 
