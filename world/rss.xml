@@ -39,8 +39,7 @@
 
 <blockquote><p>天空一片餅乾</p></blockquote>
 
-<center><img src="http://data.whicdn.com/images/108302179/large.gif" alt="Demonstration" /></center>
-<p><br /></p>
+<p><img src="http://data.whicdn.com/images/108302179/large.gif" alt="Demonstration" />&lt;/img&gt;<br /></p>
 
 <p>“天空一片餅乾” translates as “The sky was full of biscuits”. The classifier used in the sentence, “片”, is refering to “the sky” and not the biscuits (which is easy to work out since the classifier is different to “包”). You can use “一” (one) before a classifier to mean “(something) full of (something)”, in this case - a sky full of biscuits. You can also use it to mean “the entire” or “all of”.</p>
 

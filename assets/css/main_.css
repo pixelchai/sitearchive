@@ -713,7 +713,7 @@ header .entry-meta {
 
 @media only screen and (min-width: 920px) {
     #post .entry-content,#page .entry-content {
-        max-width: 800px;
+        max-width: 900px;
         margin: 50px auto 30px;
         padding: 50px 80px;
     }

@@ -38,6 +38,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
+<!-- <link rel="stylesheet" href="/assets/css/screen.css"> -->
+<!-- <link rel="stylesheet" href="/assets/css/ghost.min.css"> -->
 <link rel="stylesheet" href="/assets/css/tabs.css">
 <link rel="stylesheet" href="/assets/css/main_.css">
 <link rel="stylesheet" href="/assets/css/scssdump.css">
@@ -65,13 +67,26 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
 
 
-
-
-
-
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/css/PZ.css">
 <!-- This one is RIIGHT at the bottom because DO NOT OVERRIDE MEE! >:) -->
+<script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  </script>
 </head>
 
 <body id="post-index" class="feature">
@@ -202,7 +217,16 @@
       <h1>PixelZerg</h1>
       <!-- <img src="/images/PZ/G1BigF2BasicShade2RS.png" -->
       
-      <i class="fa fa-angle-down"></i>
+      <a href="#tabs"><i class="fa fa-angle-down" style="
+    font-family: FontAwesome;
+    font-size: 4rem;
+    color: whitesmoke;
+    position: relative;
+    margin-left: 55%;
+    margin-top: 10%;
+    z-index: 10;
+    transform: translateZ(5px);
+"></i></a>
       
     </div><!-- /.header-title-wrap -->
   </div><!-- /.header-title -->
@@ -302,6 +326,24 @@
 
 <div class="o-section">
       <div id="tabs" class="c-tabs">
+        <script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  </script>
+  <!-- scrolling script ^^ -->
         <div class="c-tabs-nav">
           <a href="#" class="c-tabs-nav__link is-active">
             <i class="fa fa-list"></i>
@@ -326,10 +368,151 @@
         <a href="#" class="c-tabs-nav__link">
             <i class="fa fa-film"></i>
             <span>Anime</span>
-          </a></div>
+          </a>
+        </div>
         <div class="c-tab is-active">
           <div class="c-tab__content"><div id="main" role="main">
             
+<article class="hentry">
+   <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2016-01-16T00:00:00+00:00"><a href="/world/ChineseClassifiers/">January 16, 2016</a></time></span><span class="author vcard"><span class="fn"><a href="/about/" title="About PixelZerg">PixelZerg</a></span></span><span> on <a href="/world">world</a>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        
+Reading time ~2 minutes
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+
+      <div class="postimg" style="background-image: url(/images/PZ/Covers/1.png);">
+        <a href="/world/ChineseClassifiers/" title="Chinese Classifiers - 漢語量詞">
+          <!-- <img src="/images/PZ/Covers/1.png" alt="Chinese Classifiers - 漢語量詞"> -->
+        </a>
+      </div><!-- /.entry-image -->
+    
+<div class="pzpost">
+  <header>
+    
+      <h1 class="entry-title"><a href="/world/ChineseClassifiers/" rel="bookmark" title="Chinese Classifiers - 漢語量詞" itemprop="url">Chinese Classifiers - 漢語量詞</a></h1>
+    
+  </header>
+  <div class="entry-content"><p><p><img src="http://tinyurl.com/z9hhuh9" alt="Biscuits" /></p> <p>這是什麼？ 六包餅乾. A fairly simple question with a fairly simple answer. But notice how the answer uses something that doesn’t exist in... <a class="read-more" href="/world/ChineseClassifiers/">Read More &raquo;</a></p></div><!-- /.entry-content -->
+</div>
+</article><!-- /.hentry -->
+
+<article class="hentry">
+   <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2015-12-11T06:49:48+00:00"><a href="/cm/OneStepAtATime/">December 11, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="/about/" title="About PixelZerg">PixelZerg</a></span></span><span> on <a href="/cm">cm</a>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        
+Reading time ~1 minute
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+
+      <div class="postimg" style="background-image: url(/images/PZ/Fractals/5.jpg);">
+        <a href="/cm/OneStepAtATime/" title="OneStepAtATime">
+          <!-- <img src="/images/PZ/Fractals/5.jpg" alt="OneStepAtATime"> -->
+        </a>
+      </div><!-- /.entry-image -->
+    
+<div class="pzpost">
+  <header>
+    
+      <h1 class="entry-title"><a href="/cm/OneStepAtATime/" rel="bookmark" title="OneStepAtATime" itemprop="url">OneStepAtATime</a></h1>
+    
+  </header>
+  <div class="entry-content"><p><p>I’m actually going to do the <code>UniversalProgram</code> project sireously now - but let’s start by taking things one step at a time. As it stands, I’m... <a class="read-more" href="/cm/OneStepAtATime/">Read More &raquo;</a></p></div><!-- /.entry-content -->
+</div>
+</article><!-- /.hentry -->
+
+<article class="hentry">
+   <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2015-11-28T15:49:08+00:00"><a href="/cm/AScompexs21p36/">November 28, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="/about/" title="About PixelZerg">PixelZerg</a></span></span><span> on <a href="/cm">cm</a>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        
+Reading time ~9 minutes
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+
+      <div class="postimg" style="background-image: url(/images/PZ/bokeh.jpg);">
+        <a href="/cm/AScompexs21p36/" title="s2.1p36 - Money Algorithm!">
+          <!-- <img src="/images/PZ/bokeh.jpg" alt="s2.1p36 - Money Algorithm!"> -->
+        </a>
+      </div><!-- /.entry-image -->
+    
+<div class="pzpost">
+  <header>
+    
+      <h1 class="entry-title"><a href="/cm/AScompexs21p36/" rel="bookmark" title="s2.1p36 - Money Algorithm!" itemprop="url">s2.1p36 - Money Algorithm!</a></h1>
+    
+  </header>
+  <div class="entry-content"><p><p><img src="/assets/poststuff/2/1.PNG" alt="" /></p> <p>This chapter seems to talk about basic stuff like what algorithms are and operators. This reminds me of when I was first... <a class="read-more" href="/cm/AScompexs21p36/">Read More &raquo;</a></p></div><!-- /.entry-content -->
+</div>
+</article><!-- /.hentry -->
+
+<article class="hentry">
+   <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2015-11-28T12:05:47+00:00"><a href="/cm/ASComputingExercises/">November 28, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="/about/" title="About PixelZerg">PixelZerg</a></span></span><span> on <a href="/cm">cm</a>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        
+Reading time ~1 minute
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+
+      <div class="postimg" style="background-image: url(/images/PZ/bokeh.jpg);">
+        <a href="/cm/ASComputingExercises/" title="ASComputingExercises - Introduction">
+          <!-- <img src="/images/PZ/bokeh.jpg" alt="ASComputingExercises - Introduction"> -->
+        </a>
+      </div><!-- /.entry-image -->
+    
+<div class="pzpost">
+  <header>
+    
+      <h1 class="entry-title"><a href="/cm/ASComputingExercises/" rel="bookmark" title="ASComputingExercises - Introduction" itemprop="url">ASComputingExercises - Introduction</a></h1>
+    
+  </header>
+  <div class="entry-content"><p><p>So here’s an explanation of what these posts are all about and why I made them.</p> <p>All of posts in this section will be my answers... <a class="read-more" href="/cm/ASComputingExercises/">Read More &raquo;</a></p></div><!-- /.entry-content -->
+</div>
+</article><!-- /.hentry -->
+
+<article class="hentry">
+   <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2015-11-24T06:42:45+00:00"><a href="/cm/Cmplxfr1/">November 24, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="/about/" title="About PixelZerg">PixelZerg</a></span></span><span> on <a href="/cm">cm</a>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        
+Reading time ~4 minutes
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+
+      <div class="postimg" style="background-image: url(/images/PZ/booltree.png);">
+        <a href="/cm/Cmplxfr1/" title="CodeComplexifier - Complex Booleans">
+          <!-- <img src="/images/PZ/booltree.png" alt="CodeComplexifier - Complex Booleans"> -->
+        </a>
+      </div><!-- /.entry-image -->
+    
+<div class="pzpost">
+  <header>
+    
+      <h1 class="entry-title"><a href="/cm/Cmplxfr1/" rel="bookmark" title="CodeComplexifier - Complex Booleans" itemprop="url">CodeComplexifier - Complex Booleans</a></h1>
+    
+  </header>
+  <div class="entry-content"><p><p>A new project that I am stating alongside my <a href="/tag/UniversalProgram">Universal Program</a> project! This project is going to, essentially, be a code complexifier. Probably wouldn’t exactly... <a class="read-more" href="/cm/Cmplxfr1/">Read More &raquo;</a></p></div><!-- /.entry-content -->
+</div>
+</article><!-- /.hentry -->
+
 <article class="hentry">
    <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2015-11-22T03:17:29+00:00"><a href="/cm/UniversalProgramBriefing/">November 22, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="/about/" title="About PixelZerg">PixelZerg</a></span></span><span> on <a href="/cm">cm</a>
@@ -419,17 +602,8 @@ Reading time ~6 minutes
         <div class="c-tab">
           <div class="c-tab__content"><div id="main" role="main">
             
-            <!-- TODO: make it look pretty -->
-                <article class="hentry">
-  <header>
-    
-      <div class="entry-image-index" style="background-image: url(/images/PZ/Fractals/5.jpg);">
-        <a href="/cm/OneStepAtATime/" title="OneStepAtATime">
-          <!-- <img src="/images/PZ/Fractals/5.jpg" alt="OneStepAtATime"> -->
-        </a>
-      </div><!-- /.entry-image -->
-    
-    <div class="entry-meta">
+<article class="hentry">
+   <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2015-12-11T06:49:48+00:00"><a href="/cm/OneStepAtATime/">December 11, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="/about/" title="About PixelZerg">PixelZerg</a></span></span><span> on <a href="/cm">cm</a>
       
       <span class="entry-reading-time">
@@ -439,26 +613,25 @@ Reading time ~1 minute
       </span><!-- /.entry-reading-time -->
       
     </div><!-- /.entry-meta -->
+
+      <div class="postimg" style="background-image: url(/images/PZ/Fractals/5.jpg);">
+        <a href="/cm/OneStepAtATime/" title="OneStepAtATime">
+          <!-- <img src="/images/PZ/Fractals/5.jpg" alt="OneStepAtATime"> -->
+        </a>
+      </div><!-- /.entry-image -->
+    
+<div class="pzpost">
+  <header>
     
       <h1 class="entry-title"><a href="/cm/OneStepAtATime/" rel="bookmark" title="OneStepAtATime" itemprop="url">OneStepAtATime</a></h1>
     
   </header>
-  <div class="entry-content">
-    <p><p>I’m actually going to do the <code>UniversalProgram</code> project sireously now - but let’s start by taking things one step at a time. As it stands, I’m... <a class="read-more" href="/cm/OneStepAtATime/">Read More &raquo;</a></p>
-  </div><!-- /.entry-content -->
+  <div class="entry-content"><p><p>I’m actually going to do the <code>UniversalProgram</code> project sireously now - but let’s start by taking things one step at a time. As it stands, I’m... <a class="read-more" href="/cm/OneStepAtATime/">Read More &raquo;</a></p></div><!-- /.entry-content -->
+</div>
 </article>
             
-            <!-- TODO: make it look pretty -->
-                <article class="hentry">
-  <header>
-    
-      <div class="entry-image-index" style="background-image: url(/images/PZ/bokeh.jpg);">
-        <a href="/cm/AScompexs21p36/" title="s2.1p36 - Money Algorithm!">
-          <!-- <img src="/images/PZ/bokeh.jpg" alt="s2.1p36 - Money Algorithm!"> -->
-        </a>
-      </div><!-- /.entry-image -->
-    
-    <div class="entry-meta">
+<article class="hentry">
+   <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2015-11-28T15:49:08+00:00"><a href="/cm/AScompexs21p36/">November 28, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="/about/" title="About PixelZerg">PixelZerg</a></span></span><span> on <a href="/cm">cm</a>
       
       <span class="entry-reading-time">
@@ -468,26 +641,25 @@ Reading time ~9 minutes
       </span><!-- /.entry-reading-time -->
       
     </div><!-- /.entry-meta -->
+
+      <div class="postimg" style="background-image: url(/images/PZ/bokeh.jpg);">
+        <a href="/cm/AScompexs21p36/" title="s2.1p36 - Money Algorithm!">
+          <!-- <img src="/images/PZ/bokeh.jpg" alt="s2.1p36 - Money Algorithm!"> -->
+        </a>
+      </div><!-- /.entry-image -->
+    
+<div class="pzpost">
+  <header>
     
       <h1 class="entry-title"><a href="/cm/AScompexs21p36/" rel="bookmark" title="s2.1p36 - Money Algorithm!" itemprop="url">s2.1p36 - Money Algorithm!</a></h1>
     
   </header>
-  <div class="entry-content">
-    <p><p><img src="/assets/poststuff/2/1.PNG" alt="" /></p> <p>This chapter seems to talk about basic stuff like what algorithms are and operators. This reminds me of when I was first... <a class="read-more" href="/cm/AScompexs21p36/">Read More &raquo;</a></p>
-  </div><!-- /.entry-content -->
+  <div class="entry-content"><p><p><img src="/assets/poststuff/2/1.PNG" alt="" /></p> <p>This chapter seems to talk about basic stuff like what algorithms are and operators. This reminds me of when I was first... <a class="read-more" href="/cm/AScompexs21p36/">Read More &raquo;</a></p></div><!-- /.entry-content -->
+</div>
 </article>
             
-            <!-- TODO: make it look pretty -->
-                <article class="hentry">
-  <header>
-    
-      <div class="entry-image-index" style="background-image: url(/images/PZ/bokeh.jpg);">
-        <a href="/cm/ASComputingExercises/" title="ASComputingExercises - Introduction">
-          <!-- <img src="/images/PZ/bokeh.jpg" alt="ASComputingExercises - Introduction"> -->
-        </a>
-      </div><!-- /.entry-image -->
-    
-    <div class="entry-meta">
+<article class="hentry">
+   <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2015-11-28T12:05:47+00:00"><a href="/cm/ASComputingExercises/">November 28, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="/about/" title="About PixelZerg">PixelZerg</a></span></span><span> on <a href="/cm">cm</a>
       
       <span class="entry-reading-time">
@@ -497,26 +669,25 @@ Reading time ~1 minute
       </span><!-- /.entry-reading-time -->
       
     </div><!-- /.entry-meta -->
+
+      <div class="postimg" style="background-image: url(/images/PZ/bokeh.jpg);">
+        <a href="/cm/ASComputingExercises/" title="ASComputingExercises - Introduction">
+          <!-- <img src="/images/PZ/bokeh.jpg" alt="ASComputingExercises - Introduction"> -->
+        </a>
+      </div><!-- /.entry-image -->
+    
+<div class="pzpost">
+  <header>
     
       <h1 class="entry-title"><a href="/cm/ASComputingExercises/" rel="bookmark" title="ASComputingExercises - Introduction" itemprop="url">ASComputingExercises - Introduction</a></h1>
     
   </header>
-  <div class="entry-content">
-    <p><p>So here’s an explanation of what these posts are all about and why I made them.</p> <p>All of posts in this section will be my answers... <a class="read-more" href="/cm/ASComputingExercises/">Read More &raquo;</a></p>
-  </div><!-- /.entry-content -->
+  <div class="entry-content"><p><p>So here’s an explanation of what these posts are all about and why I made them.</p> <p>All of posts in this section will be my answers... <a class="read-more" href="/cm/ASComputingExercises/">Read More &raquo;</a></p></div><!-- /.entry-content -->
+</div>
 </article>
             
-            <!-- TODO: make it look pretty -->
-                <article class="hentry">
-  <header>
-    
-      <div class="entry-image-index" style="background-image: url(/images/PZ/booltree.png);">
-        <a href="/cm/Cmplxfr1/" title="CodeComplexifier - Complex Booleans">
-          <!-- <img src="/images/PZ/booltree.png" alt="CodeComplexifier - Complex Booleans"> -->
-        </a>
-      </div><!-- /.entry-image -->
-    
-    <div class="entry-meta">
+<article class="hentry">
+   <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2015-11-24T06:42:45+00:00"><a href="/cm/Cmplxfr1/">November 24, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="/about/" title="About PixelZerg">PixelZerg</a></span></span><span> on <a href="/cm">cm</a>
       
       <span class="entry-reading-time">
@@ -526,26 +697,25 @@ Reading time ~4 minutes
       </span><!-- /.entry-reading-time -->
       
     </div><!-- /.entry-meta -->
+
+      <div class="postimg" style="background-image: url(/images/PZ/booltree.png);">
+        <a href="/cm/Cmplxfr1/" title="CodeComplexifier - Complex Booleans">
+          <!-- <img src="/images/PZ/booltree.png" alt="CodeComplexifier - Complex Booleans"> -->
+        </a>
+      </div><!-- /.entry-image -->
+    
+<div class="pzpost">
+  <header>
     
       <h1 class="entry-title"><a href="/cm/Cmplxfr1/" rel="bookmark" title="CodeComplexifier - Complex Booleans" itemprop="url">CodeComplexifier - Complex Booleans</a></h1>
     
   </header>
-  <div class="entry-content">
-    <p><p>A new project that I am stating alongside my <a href="/tag/UniversalProgram">Universal Program</a> project! This project is going to, essentially, be a code complexifier. Probably wouldn’t exactly... <a class="read-more" href="/cm/Cmplxfr1/">Read More &raquo;</a></p>
-  </div><!-- /.entry-content -->
+  <div class="entry-content"><p><p>A new project that I am stating alongside my <a href="/tag/UniversalProgram">Universal Program</a> project! This project is going to, essentially, be a code complexifier. Probably wouldn’t exactly... <a class="read-more" href="/cm/Cmplxfr1/">Read More &raquo;</a></p></div><!-- /.entry-content -->
+</div>
 </article>
             
-            <!-- TODO: make it look pretty -->
-                <article class="hentry">
-  <header>
-    
-      <div class="entry-image-index" style="background-image: url(/images/PZ/bokeh.jpg);">
-        <a href="/cm/UniversalProgramBriefing/" title="Universal Program - Briefing">
-          <!-- <img src="/images/PZ/bokeh.jpg" alt="Universal Program - Briefing"> -->
-        </a>
-      </div><!-- /.entry-image -->
-    
-    <div class="entry-meta">
+<article class="hentry">
+   <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2015-11-22T03:17:29+00:00"><a href="/cm/UniversalProgramBriefing/">November 22, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="/about/" title="About PixelZerg">PixelZerg</a></span></span><span> on <a href="/cm">cm</a>
       
       <span class="entry-reading-time">
@@ -555,26 +725,25 @@ Reading time ~1 minute
       </span><!-- /.entry-reading-time -->
       
     </div><!-- /.entry-meta -->
+
+      <div class="postimg" style="background-image: url(/images/PZ/bokeh.jpg);">
+        <a href="/cm/UniversalProgramBriefing/" title="Universal Program - Briefing">
+          <!-- <img src="/images/PZ/bokeh.jpg" alt="Universal Program - Briefing"> -->
+        </a>
+      </div><!-- /.entry-image -->
+    
+<div class="pzpost">
+  <header>
     
       <h1 class="entry-title"><a href="/cm/UniversalProgramBriefing/" rel="bookmark" title="Universal Program - Briefing" itemprop="url">Universal Program - Briefing</a></h1>
     
   </header>
-  <div class="entry-content">
-    <p><p>Here’s a cool project i’m starting. The aim is to port a single program into every coding language that I know. This is basically to familiarize... <a class="read-more" href="/cm/UniversalProgramBriefing/">Read More &raquo;</a></p>
-  </div><!-- /.entry-content -->
+  <div class="entry-content"><p><p>Here’s a cool project i’m starting. The aim is to port a single program into every coding language that I know. This is basically to familiarize... <a class="read-more" href="/cm/UniversalProgramBriefing/">Read More &raquo;</a></p></div><!-- /.entry-content -->
+</div>
 </article>
             
-            <!-- TODO: make it look pretty -->
-                <article class="hentry">
-  <header>
-    
-      <div class="entry-image-index" style="background-image: url(/images/PZ/MSDOS.jpg);">
-        <a href="/cm/Batch2Csharp/" title="Batch to C# - Info">
-          <!-- <img src="/images/PZ/MSDOS.jpg" alt="Batch to C# - Info"> -->
-        </a>
-      </div><!-- /.entry-image -->
-    
-    <div class="entry-meta">
+<article class="hentry">
+   <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2015-10-29T00:00:00+00:00"><a href="/cm/Batch2Csharp/">October 29, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="/about/" title="About PixelZerg">PixelZerg</a></span></span><span> on <a href="/cm">cm</a>
       
       <span class="entry-reading-time">
@@ -584,13 +753,21 @@ Reading time ~6 minutes
       </span><!-- /.entry-reading-time -->
       
     </div><!-- /.entry-meta -->
+
+      <div class="postimg" style="background-image: url(/images/PZ/MSDOS.jpg);">
+        <a href="/cm/Batch2Csharp/" title="Batch to C# - Info">
+          <!-- <img src="/images/PZ/MSDOS.jpg" alt="Batch to C# - Info"> -->
+        </a>
+      </div><!-- /.entry-image -->
+    
+<div class="pzpost">
+  <header>
     
       <h1 class="entry-title"><a href="/cm/Batch2Csharp/" rel="bookmark" title="Batch to C# - Info" itemprop="url">Batch to C# - Info</a></h1>
     
   </header>
-  <div class="entry-content">
-    <p><p>My first ever coding language was BATCH. Yes, the coding language for MS-DOS. I used it to make some really interesting things!</p> <p>I once found myself... <a class="read-more" href="/cm/Batch2Csharp/">Read More &raquo;</a></p>
-  </div><!-- /.entry-content -->
+  <div class="entry-content"><p><p>My first ever coding language was BATCH. Yes, the coding language for MS-DOS. I used it to make some really interesting things!</p> <p>I once found myself... <a class="read-more" href="/cm/Batch2Csharp/">Read More &raquo;</a></p></div><!-- /.entry-content -->
+</div>
 </article>
             
           </div></div>
@@ -598,18 +775,8 @@ Reading time ~6 minutes
         <div class="c-tab">
           <div class="c-tab__content"><div id="main" role="main">
             
-
-            <!-- TODO: make it look pretty -->
-                <article class="hentry">
-  <header>
-    
-      <div class="entry-image-index" style="background-image: url(/images/PZ/Covers/1.png);">
-        <a href="/world/ChineseClassifiers/" title="Chinese Classifiers - 漢語量詞">
-          <!-- <img src="/images/PZ/Covers/1.png" alt="Chinese Classifiers - 漢語量詞"> -->
-        </a>
-      </div><!-- /.entry-image -->
-    
-    <div class="entry-meta">
+<article class="hentry">
+   <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2016-01-16T00:00:00+00:00"><a href="/world/ChineseClassifiers/">January 16, 2016</a></time></span><span class="author vcard"><span class="fn"><a href="/about/" title="About PixelZerg">PixelZerg</a></span></span><span> on <a href="/world">world</a>
       
       <span class="entry-reading-time">
@@ -619,13 +786,21 @@ Reading time ~2 minutes
       </span><!-- /.entry-reading-time -->
       
     </div><!-- /.entry-meta -->
+
+      <div class="postimg" style="background-image: url(/images/PZ/Covers/1.png);">
+        <a href="/world/ChineseClassifiers/" title="Chinese Classifiers - 漢語量詞">
+          <!-- <img src="/images/PZ/Covers/1.png" alt="Chinese Classifiers - 漢語量詞"> -->
+        </a>
+      </div><!-- /.entry-image -->
+    
+<div class="pzpost">
+  <header>
     
       <h1 class="entry-title"><a href="/world/ChineseClassifiers/" rel="bookmark" title="Chinese Classifiers - 漢語量詞" itemprop="url">Chinese Classifiers - 漢語量詞</a></h1>
     
   </header>
-  <div class="entry-content">
-    <p><p><img src="http://tinyurl.com/z9hhuh9" alt="Biscuits" /></p> <p>這是什麼？ 六包餅乾. A fairly simple question with a fairly simple answer. But notice how the answer uses something that doesn’t exist in... <a class="read-more" href="/world/ChineseClassifiers/">Read More &raquo;</a></p>
-  </div><!-- /.entry-content -->
+  <div class="entry-content"><p><p><img src="http://tinyurl.com/z9hhuh9" alt="Biscuits" /></p> <p>這是什麼？ 六包餅乾. A fairly simple question with a fairly simple answer. But notice how the answer uses something that doesn’t exist in... <a class="read-more" href="/world/ChineseClassifiers/">Read More &raquo;</a></p></div><!-- /.entry-content -->
+</div>
 </article>
             
           </div></div>
@@ -633,17 +808,8 @@ Reading time ~2 minutes
         <div class="c-tab">
           <div class="c-tab__content"><div id="main" role="main">
             
-            <!-- TODO: make it look pretty -->
-                <article class="hentry">
-  <header>
-    
-      <div class="entry-image-index" style="background-image: url(/images/PZ/cover1.jpg);">
-        <a href="/general/Hello/" title="Hello">
-          <!-- <img src="/images/PZ/cover1.jpg" alt="Hello"> -->
-        </a>
-      </div><!-- /.entry-image -->
-    
-    <div class="entry-meta">
+<article class="hentry">
+   <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2015-11-18T00:00:00+00:00"><a href="/general/Hello/">November 18, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="/about/" title="About PixelZerg">PixelZerg</a></span></span><span> on <a href="/general">general</a>
       
       <span class="entry-reading-time">
@@ -653,24 +819,34 @@ Reading time ~1 minute
       </span><!-- /.entry-reading-time -->
       
     </div><!-- /.entry-meta -->
+
+      <div class="postimg" style="background-image: url(/images/PZ/cover1.jpg);">
+        <a href="/general/Hello/" title="Hello">
+          <!-- <img src="/images/PZ/cover1.jpg" alt="Hello"> -->
+        </a>
+      </div><!-- /.entry-image -->
+    
+<div class="pzpost">
+  <header>
     
       <h1 class="entry-title"><a href="/general/Hello/" rel="bookmark" title="Hello" itemprop="url">Hello</a></h1>
     
   </header>
-  <div class="entry-content">
-    <p><p>This is my 2nd ever proper website. I have never before done much HTML coding at all. This is my first time using ` Ruby `... <a class="read-more" href="/general/Hello/">Read More &raquo;</a></p>
-  </div><!-- /.entry-content -->
+  <div class="entry-content"><p><p>This is my 2nd ever proper website. I have never before done much HTML coding at all. This is my first time using ` Ruby `... <a class="read-more" href="/general/Hello/">Read More &raquo;</a></p></div><!-- /.entry-content -->
+</div>
 </article>
             
           </div></div>
         </div>
         <div class="c-tab">
           <div class="c-tab__content"><div id="main" role="main">
+            <h2>COMMING SOON!</h2>
             
           </div></div>
         </div>
         <div class="c-tab">
           <div class="c-tab__content"><div id="main" role="main">
+            <h2>COMMING SOON!</h2>
             
           </div></div>
         </div>
@@ -685,7 +861,7 @@ Reading time ~1 minute
 
 <!-- MOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO -->
 
-
+<!-- 
 <div class="pagination">
   <ul class="inline-list">
     
@@ -720,12 +896,12 @@ Reading time ~1 minute
     
   </ul>
 </div>
-
+ -->
 <!-- </div>/#main -->
 
 <div class="footer-wrapper">
   <footer role="contentinfo">
-    <small><span>&copy; 2016 PixelZerg. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span></small>
+    <small><span>&copy; 2016 PixelZerg. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>. Site design based on the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span></small>
   </footer>
 </div><!-- /.footer-wrapper -->
 
@@ -735,7 +911,7 @@ Reading time ~1 minute
 
 
 
-
+<!--  -->
 
 <!-- Tabs: -->
 <script src="/assets/js/tabs.js"></script>
