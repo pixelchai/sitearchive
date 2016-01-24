@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2015-12-29T20:35:01+00:00</updated>
+<updated>2016-01-24T20:38:37+00:00</updated>
 <id>/</id>
 <author>
   <name>PixelZerg</name>
@@ -14,9 +14,63 @@
 
 
 <entry>
+  <title type="html"><![CDATA[Chinese Classifiers - 漢語量詞]]></title>
+ <link rel="alternate" type="text/html" href="/world/ChineseClassifiers/" />
+  <id>/world/ChineseClassifiers</id>
+  <published>2016-01-16T00:00:00+00:00</published>
+  <updated>2016-01-16T00:00:00+00:00</updated>
+  <author>
+    <name>PixelZerg</name>
+    <uri></uri>
+    <email>abhinavbhandari4@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;&lt;img src=&quot;http://tinyurl.com/z9hhuh9&quot; alt=&quot;Biscuits&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;這是什麼？ 六包餅乾. A fairly simple question with a fairly simple answer. But notice how the answer uses something that doesn’t exist in European Languages: classifiers (apart from in rare cases).&lt;/p&gt;
+
+&lt;p&gt;First of all, note that the fact that classifiers don’t really exist in English doesn’t necessarily mean that sentences that use them are inexpressable in the English. The above sentences, for example, translate as: “What is this?” and “Six biscuits”&lt;/p&gt;
+
+&lt;p&gt;In Chinese, you can’t really apply a demonstrative to nor quantify a noun directly without using a classifier. For example, in English, you can just say “Six biscuits”. However, in Chinese you would follow this format: “Six (classifier) biscuit”.&lt;/p&gt;
+
+&lt;p&gt;There are 3 parts to the sentence “六包餅乾”: A number, the classifier and the noun. You can also add a demonstrative and an adjective like so: “&lt;strong&gt;这&lt;/strong&gt;六包&lt;strong&gt;可口&lt;/strong&gt;餅乾” which would mean: “&lt;strong&gt;These&lt;/strong&gt; six &lt;strong&gt;delicious&lt;/strong&gt; biscuits”.&lt;/p&gt;
+
+&lt;p&gt;In this example, you could somewhat translate the classifier (包) to “a pack(et) of” and so translate “六包餅乾” as “Six packs of biscuits”.&lt;/p&gt;
+
+&lt;p&gt;Once you get to sentences such as “你的紫只猫” - “Your purple cats”, however, it starts getting difficult to translate the classifier into an English word. Literally translated, “只” (the classifier) means “exclusively”. “Your exclusively of cats”… hmm…&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2&gt;&lt;u&gt;Classifiers Are Awesome&lt;/u&gt;&lt;/h2&gt;
+
+&lt;p&gt;Let’s say you are asked a question: “多少餅乾?” (How many biscuits?).&lt;/p&gt;
+
+&lt;p&gt;Using classifiers, we can answer this question in many fruity ways:&lt;/p&gt;
+
+&lt;h3&gt;&lt;u&gt;No Noun&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;We can just answer simply with “七百包”. Notice how I used the classifier without the noun after it. We’re already talking about biscuits; we don’t need to re-specify them. This is translated as “seven hundered (of them)”.&lt;/p&gt;
+
+&lt;h3&gt;&lt;u&gt;Reduplication&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;You can repeat the classifier to mean “every”. So you could answer with “包包餅乾！” - “Every biscuit!”.&lt;/p&gt;
+
+&lt;h3&gt;&lt;u&gt;Poetic&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;If you feeling especially fruity, you could turn and gaze into the clouds, acquire a deep revelation, having pondered on life the universe on everything, then suddenly turn around, reach your hand towards the the horizons and announce in a meaningful tone:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;天空一片餅乾&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://data.whicdn.com/images/108302179/large.gif&quot; alt=&quot;Demonstration&quot; /&gt;&amp;lt;/img&amp;gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;“天空一片餅乾” translates as “The sky was full of biscuits”. The classifier used in the sentence, “片”, is refering to “the sky” and not the biscuits (which is easy to work out since the classifier is different to “包”). You can use “一” (one) before a classifier to mean “(something) full of (something)”, in this case - a sky full of biscuits. You can also use it to mean “the entire” or “all of”.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/world/ChineseClassifiers/&quot;&gt;Chinese Classifiers - 漢語量詞&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on January 16, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
   <title type="html"><![CDATA[OneStepAtATime]]></title>
- <link rel="alternate" type="text/html" href="/dotnet/OneStepAtATime/" />
-  <id>/dotnet/OneStepAtATime</id>
+ <link rel="alternate" type="text/html" href="/cm/OneStepAtATime/" />
+  <id>/cm/OneStepAtATime</id>
   <published>2015-12-11T06:49:48+00:00</published>
   <updated>2015-12-11T06:49:48+00:00</updated>
   <author>
@@ -81,15 +135,15 @@ Keep guessing untill they get the number…&lt;br /&gt;&lt;/p&gt;
 &lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Press any key to continue...&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;GetInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/dotnet/OneStepAtATime/&quot;&gt;OneStepAtATime&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on December 11, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/cm/OneStepAtATime/&quot;&gt;OneStepAtATime&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on December 11, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[s2.1p36 - Money Algorithm!]]></title>
- <link rel="alternate" type="text/html" href="/dotnet/AScompexs21p36/" />
-  <id>/dotnet/AScompexs21p36</id>
+ <link rel="alternate" type="text/html" href="/cm/AScompexs21p36/" />
+  <id>/cm/AScompexs21p36</id>
   <published>2015-11-28T15:49:08+00:00</published>
   <updated>2015-11-28T15:49:08+00:00</updated>
   <author>
@@ -454,15 +508,15 @@ This is easy, you just need to convert the value and everything to integers and 
 &lt;!-- Ack --&gt;
 &lt;p&gt;&lt;small&gt;&lt;small&gt;&lt;small&gt;&lt;a href=&quot;https://www.flickr.com/photos/wneuheisel/5256103622&quot;&gt;Cover Image&lt;/a&gt; by William Neuheisel. It has not been edited.&lt;/small&gt;&lt;/small&gt;&lt;/small&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/dotnet/AScompexs21p36/&quot;&gt;s2.1p36 - Money Algorithm!&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 28, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/cm/AScompexs21p36/&quot;&gt;s2.1p36 - Money Algorithm!&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 28, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[ASComputingExercises - Introduction]]></title>
- <link rel="alternate" type="text/html" href="/dotnet/ASComputingExercises/" />
-  <id>/dotnet/ASComputingExercises</id>
+ <link rel="alternate" type="text/html" href="/cm/ASComputingExercises/" />
+  <id>/cm/ASComputingExercises</id>
   <published>2015-11-28T12:05:47+00:00</published>
   <updated>2015-11-28T12:05:47+00:00</updated>
   <author>
@@ -500,15 +554,15 @@ This is easy, you just need to convert the value and everything to integers and 
 &lt;!-- Ack --&gt;
 &lt;p&gt;&lt;small&gt;&lt;small&gt;&lt;small&gt;&lt;a href=&quot;https://www.flickr.com/photos/wneuheisel/5256103622&quot;&gt;Cover Image&lt;/a&gt; by William Neuheisel. It has not been edited.&lt;/small&gt;&lt;/small&gt;&lt;/small&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/dotnet/ASComputingExercises/&quot;&gt;ASComputingExercises - Introduction&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 28, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/cm/ASComputingExercises/&quot;&gt;ASComputingExercises - Introduction&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 28, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[CodeComplexifier - Complex Booleans]]></title>
- <link rel="alternate" type="text/html" href="/dotnet/Cmplxfr1/" />
-  <id>/dotnet/Cmplxfr1</id>
+ <link rel="alternate" type="text/html" href="/cm/Cmplxfr1/" />
+  <id>/cm/Cmplxfr1</id>
   <published>2015-11-24T06:42:45+00:00</published>
   <updated>2015-11-24T06:42:45+00:00</updated>
   <author>
@@ -711,15 +765,15 @@ I also made a method to actually parse the condition from a loop/statement:&lt;/
 
 &lt;hr /&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/dotnet/Cmplxfr1/&quot;&gt;CodeComplexifier - Complex Booleans&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 24, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/cm/Cmplxfr1/&quot;&gt;CodeComplexifier - Complex Booleans&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 24, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Universal Program - Briefing]]></title>
- <link rel="alternate" type="text/html" href="/dotnet/UniversalProgramBriefing/" />
-  <id>/dotnet/UniversalProgramBriefing</id>
+ <link rel="alternate" type="text/html" href="/cm/UniversalProgramBriefing/" />
+  <id>/cm/UniversalProgramBriefing</id>
   <published>2015-11-22T03:17:29+00:00</published>
   <updated>2015-11-22T03:17:29+00:00</updated>
   <author>
@@ -770,7 +824,7 @@ I also made a method to actually parse the condition from a loop/statement:&lt;/
 
 &lt;p&gt;Time taken to write: 30 or so min.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/dotnet/UniversalProgramBriefing/&quot;&gt;Universal Program - Briefing&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 22, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/cm/UniversalProgramBriefing/&quot;&gt;Universal Program - Briefing&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 22, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -794,19 +848,10 @@ I also made a method to actually parse the condition from a loop/statement:&lt;/
 &lt;p&gt;Anyway, expect these pages to be filled with any data that I can document. Expect games, code, 3D models, concept art, music - all the weird and wonderful products from a person that has, in recent years,&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;turned away from those leaves, which about tornadoes flurry,&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;towards the midnight ocean vast.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;To the intricately produced gray-faced words which along scurry,&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;having, unyieldingly, been executed fast.&lt;/p&gt;
+  &lt;p&gt;turned away from those leaves, which about tornadoes flurry,&lt;br /&gt;
+ towards the midnight ocean vast.&lt;br /&gt;
+ To the intricately produced gray-faced words which along scurry,&lt;br /&gt;
+ having, unyieldingly, been executed fast.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Woah my writing formed a poem…&lt;/p&gt;
@@ -818,8 +863,8 @@ I also made a method to actually parse the condition from a loop/statement:&lt;/
 
 <entry>
   <title type="html"><![CDATA[Batch to C# - Info]]></title>
- <link rel="alternate" type="text/html" href="/dotnet/mooman/Batch2Csharp/" />
-  <id>/dotnet/mooman/Batch2Csharp</id>
+ <link rel="alternate" type="text/html" href="/cm/Batch2Csharp/" />
+  <id>/cm/Batch2Csharp</id>
   <published>2015-10-29T00:00:00+00:00</published>
   <updated>2015-10-29T00:00:00+00:00</updated>
   <author>
@@ -1101,7 +1146,7 @@ The program will not print the command if &lt;code&gt;echo&lt;/code&gt; is off o
 &lt;hr /&gt;
 &lt;!-- Ack --&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/dotnet/mooman/Batch2Csharp/&quot;&gt;Batch to C# - Info&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on October 29, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/cm/Batch2Csharp/&quot;&gt;Batch to C# - Info&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on October 29, 2015.&lt;/p&gt;
   </content>
 </entry>
 

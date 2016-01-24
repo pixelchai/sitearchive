@@ -21,14 +21,14 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="PixelZerg">
 <meta property="og:description" content="A website of games, code, how tos, language, music, 3D modeling and animating, general art, literature, etc. Anything that I, and hopefully you, find interesting.">
-<meta property="og:url" content="/mooman/index.html">
+<meta property="og:url" content="/cm/page2/index.html">
 <meta property="og:site_name" content="PixelZerg">
 
 
 
 
 
-<link rel="canonical" href="/mooman/">
+<link rel="canonical" href="/cm/page2/">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="PixelZerg Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -37,8 +37,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="/assets/css/PZ.css">
+<!-- <link rel="stylesheet" href="/assets/css/screen.css"> -->
+<!-- <link rel="stylesheet" href="/assets/css/ghost.min.css"> -->
+<link rel="stylesheet" href="/assets/css/tabs.css">
+<link rel="stylesheet" href="/assets/css/main_.css">
+<link rel="stylesheet" href="/assets/css/scssdump.css">
+
 <!-- Webfonts -->
 <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
 
@@ -62,7 +66,9 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
 
 
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<link rel="stylesheet" href="/assets/css/PZ.css">
+<!-- This one is RIIGHT at the bottom because DO NOT OVERRIDE MEE! >:) -->
 </head>
 
 <body id="post-index" >
@@ -112,6 +118,18 @@
 				<li><a href="/tags/">All Tags</a></li>
 			</ul>
 		</li>
+		<li>
+			<a href="#">Categories</a>
+			 <ul class="dl-submenu">
+			 	 
+			 		<li><a href="/cm">cm</a></li>
+			 	 
+			 		<li><a href="/general">general</a></li>
+			 	 
+			 		<li><a href="/world">world</a></li>
+			 	
+			 </ul>
+		</li>
 <!-- 		<li>
 			<a href="#">MOOO</a>
 			<ul class="dl-submenu">
@@ -150,17 +168,17 @@
  <!--   
   
      
-      <li><a href="#dotnet">Dotnet <span>6</span></a></li>
-     
-      <li><a href="#mooman">Mooman <span>1</span></a></li>
+      <li><a href="#cm">Cm <span>6</span></a></li>
      
       <li><a href="#general">General <span>1</span></a></li>
+     
+      <li><a href="#world">World <span>1</span></a></li>
     
   
  -->
 <!-- </ul>  -->
 <!-- MOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO -->
-<!-- /mooman -->
+<!-- /cm/page2 -->
 
 
 <!-- <article class="hentry">
@@ -172,11 +190,11 @@
     
   
      
-      <li><a href="#dotnet"><span><i class="fa fa-file"></i> 6 - </span>Dotnet</a></li>
-     
-      <li><a href="#mooman"><span><i class="fa fa-file"></i> 1 - </span>Mooman</a></li>
+      <li><a href="#cm"><span><i class="fa fa-file"></i> 6 - </span>Cm</a></li>
      
       <li><a href="#general"><span><i class="fa fa-file"></i> 1 - </span>General</a></li>
+     
+      <li><a href="#world"><span><i class="fa fa-file"></i> 1 - </span>World</a></li>
     
   
 
@@ -190,29 +208,6 @@
  
 
 
-<article class="hentry">
-  <header>
-  <h1 class="entry-title" id="mooman">Mooman - 1 <i class="fa fa-file"></i> </h1>
-</header>
-<div class="entry-content">
-  <ul class="post-list">
-      
-    <!-- /   -->
-    
-    <!-- /   -->
-      
-      
-      <li><a href="/dotnet/mooman/Batch2Csharp/"><span class="entry-date"><time datetime="2015-10-29T00:00:00+00:00" itemprop="datePublished">October 29, 2015</time></span>: Batch to C# - Info</a></li>
-      
-      
-      
-    
-    
-    
-  </ul>
-</div>
-</article>
-
  
 
 
@@ -221,7 +216,7 @@
 
 <div class="footer-wrapper">
   <footer role="contentinfo">
-    <small><span>&copy; 2015 PixelZerg. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span></small>
+    <small><span>&copy; 2016 PixelZerg. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>. Site design based on the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span></small>
   </footer>
 </div><!-- /.footer-wrapper -->
 
@@ -231,29 +226,40 @@
 
 
 
+<!-- 
+<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+var disqus_config = function () {
+this.page.url = pixelzerg.github.io/cm/page2/index.html; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = ; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
 
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'hpstrtheme'; // required: replace example with your forum shortname
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
 
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
+s.src = '//pixelzerg.disqus.com/embed.js';
 
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function () {
-            var s = document.createElement('script'); s.async = true;
-            s.type = 'text/javascript';
-            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-        }());
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-          
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+ -->
+
+<!-- Tabs: -->
+<script src="/assets/js/tabs.js"></script>
+<script>
+  var myTabs = tabs({
+    el: '#tabs',
+    tabNavigationLinks: '.c-tabs-nav__link',
+    tabContentContainers: '.c-tab'
+  });
+  myTabs.init();
+</script>          
 
 </body>
 </html>

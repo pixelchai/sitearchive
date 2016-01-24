@@ -37,8 +37,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="/assets/css/PZ.css">
+<!-- <link rel="stylesheet" href="/assets/css/screen.css"> -->
+<!-- <link rel="stylesheet" href="/assets/css/ghost.min.css"> -->
+<link rel="stylesheet" href="/assets/css/tabs.css">
+<link rel="stylesheet" href="/assets/css/main_.css">
+<link rel="stylesheet" href="/assets/css/scssdump.css">
+
 <!-- Webfonts -->
 <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
 
@@ -62,7 +66,9 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
 
 
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<link rel="stylesheet" href="/assets/css/PZ.css">
+<!-- This one is RIIGHT at the bottom because DO NOT OVERRIDE MEE! >:) -->
 </head>
 
 <body id="post-index" >
@@ -112,6 +118,18 @@
 				<li><a href="/tags/">All Tags</a></li>
 			</ul>
 		</li>
+		<li>
+			<a href="#">Categories</a>
+			 <ul class="dl-submenu">
+			 	 
+			 		<li><a href="/cm">cm</a></li>
+			 	 
+			 		<li><a href="/general">general</a></li>
+			 	 
+			 		<li><a href="/world">world</a></li>
+			 	
+			 </ul>
+		</li>
 <!-- 		<li>
 			<a href="#">MOOO</a>
 			<ul class="dl-submenu">
@@ -151,6 +169,9 @@
   	<li><a href="#Batch2CSharp" class="tag"><span class="term">Batch2CSharp</span> <span class="count">1</span></a></li>
   
     
+  	<li><a href="#Chinese" class="tag"><span class="term">Chinese</span> <span class="count">1</span></a></li>
+  
+    
   	<li><a href="#messages" class="tag"><span class="term">messages</span> <span class="count">1</span></a></li>
   
 </ul>
@@ -161,7 +182,17 @@
 	<h2 id="Batch2CSharp" class="tag-heading">Batch2CSharp</h2>
 		<ul>
     
-      <li class="entry-title"><a href="/dotnet/mooman/Batch2Csharp/" title="Batch to C# - Info">Batch to C# - Info</a></li>
+      <li class="entry-title"><a href="/cm/Batch2Csharp/" title="Batch to C# - Info">Batch to C# - Info</a></li>
+    
+		</ul>
+	</article><!-- /.hentry -->
+
+  
+	<article>
+	<h2 id="Chinese" class="tag-heading">Chinese</h2>
+		<ul>
+    
+      <li class="entry-title"><a href="/world/ChineseClassifiers/" title="Chinese Classifiers - 漢語量詞">Chinese Classifiers - 漢語量詞</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
@@ -180,7 +211,7 @@
 
 <div class="footer-wrapper">
   <footer role="contentinfo">
-    <small><span>&copy; 2015 PixelZerg. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span></small>
+    <small><span>&copy; 2016 PixelZerg. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>. Site design based on the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span></small>
   </footer>
 </div><!-- /.footer-wrapper -->
 
@@ -190,7 +221,18 @@
 
 
 
-          
+<!--  -->
+
+<!-- Tabs: -->
+<script src="/assets/js/tabs.js"></script>
+<script>
+  var myTabs = tabs({
+    el: '#tabs',
+    tabNavigationLinks: '.c-tabs-nav__link',
+    tabContentContainers: '.c-tab'
+  });
+  myTabs.init();
+</script>          
 
 </body>
 </html>
