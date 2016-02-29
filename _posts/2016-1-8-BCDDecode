@@ -1,0 +1,136 @@
+---
+layout: posti
+cover: false
+title: BCDDecode
+tags: [electronics,logic,gates,binary,LED,BCD,4511,7 segment decoder,decoder]
+categories: [electronics]
+---
+
+I have worked on absolutely tonnes of Coding Projects. I realise, however, that I haven't really done many significant "electronics" projects. A project with actual electricity and components and logic gates etc. Well, let's change that! Introducing, the `BCDDecode` project. Today in an epiphanic revelation, a dream was born.
+
+Basically, it's one of those random projects I suddenly have a huge tendancy to make when i'm bored. This project is basically going to be the recreation of a chip that has existed for a long time: The `Seven Segment Decoder Chip`, AKA: `4511`. BUT made with logic gates.
+
+Like I said, this is my first time attempting any fairly major electronics project - I'm a pure coder. The circuit will probably be very inefficient, but let's see how this goes!
+
+First of all, we want to start by planning out the core foundations of the decoder - the LOGIC. I'm going to use `Logic Lab` to simulate the core logic of the decoder.
+
+Here's my basic setup:
+![SETUP]({{ site.baseurl }}/assets/poststuff/3/3.PNG)
+
+As you can see, Logic Lab actually already has a BCD Display component. But we're going to make our own so we're going to totally ignore it. For now, though, we can use it for debugging purposes (hence the setup).
+
+Ok so first of all, let's get the logic completely right. For this, I'm going to start with what I am already good at - coding. I'm going to now write a simple program (in C#) that will decode the BCD code, but in such a way that it can be easily adapted into a circuit (so it won't be the most efficient solution).
+
+I have labeled the above diagram with the variable names used in the script.
+
+Here's how far I got after a while (not fully done)
+{% highlight csharp %}
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BCDDecode
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            try
+            {
+                Run(bool.Parse(args[0]), bool.Parse(args[1]), bool.Parse(args[2]), bool.Parse(args[3]));
+            }
+            catch
+            {
+                List<bool> input = new List<bool>();
+                Console.WriteLine("Enter input as BCD");
+                foreach (var chr in Console.ReadLine())
+                {
+                    if (chr == '1')
+                    {
+                        input.Add(true);
+                    }
+                    else
+                    {
+                        input.Add(false);
+                    }
+                }
+                try
+                {
+                    typeof(Program).GetMethod("Run").Invoke(null, input.Cast<object>().ToArray());
+                }
+                catch (Exception e) { Console.WriteLine(e); }
+
+                Console.WriteLine("Press any key to go again");
+                Console.ReadKey();
+                Console.Clear();
+                Main(args);
+            }
+        }
+
+        public static void Run(bool I1, bool I2, bool I3, bool I4)
+        {
+            bool O1 = false;
+            bool O2 = false;
+            bool O3 = false;
+            bool O4 = false;
+            bool O5 = false;
+            bool O6 = false;
+            bool O7 = false;
+
+            O3 = I3 == I4; //I3 XNOR I4
+            O7 = I3 == I4; //I3 XNOR I4
+
+            O1 = !I2 && !I1 && I3 == I4; //I2 NOR I1 AND T3 XNOR T4
+            O6 = !I2 && !I1 && I3 == I4; //I2 NOR I1 AND T3 XNOR T4
+
+            Draw(O1, O2, O3, O4, O5, O6, O7);
+        }
+
+        public static void Draw(bool O1, bool O2, bool O3, bool O4, bool O5, bool O6, bool O7)
+        {
+            Console.Clear();
+            Console.WriteLine("Output:");
+            if (O1) Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(" 000 ");
+            Console.ResetColor();
+
+            if (O2) Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("0   ");
+            Console.ResetColor();
+            if (O3) Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("0"+Environment.NewLine);
+            Console.ResetColor();
+            if (O2) Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("0   ");
+            Console.ResetColor();
+            if (O3) Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("0" + Environment.NewLine);
+            Console.ResetColor();
+
+            if (O4) Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(" 000 ");
+            Console.ResetColor();
+
+            if (O5) Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("0   ");
+            Console.ResetColor();
+            if (O7) Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("0" + Environment.NewLine);
+            Console.ResetColor();
+            if (O5) Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("0   ");
+            Console.ResetColor();
+            if (O7) Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("0" + Environment.NewLine);
+            Console.ResetColor();
+
+            if (O6) Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(" 000 ");
+            Console.ResetColor();
+
+        }
+    }
+}
+{% endhighlight %}
