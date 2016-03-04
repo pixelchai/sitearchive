@@ -12,6 +12,34 @@ article.hentry header div.entry-image-index
     overflow: hidden;
     
 }
+div.entry-header div.entry-image{
+        background-image: Url("/images/PZ/Fractals/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position-y: -50vw; */
+    background-position: center -30vh;
+    background-attachment: fixed;
+        float: left;
+    position: relative;
+    float: left;
+    position: relative;
+        min-height: 0;
+    max-height: 70vh;
+}
+.entry-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    /* margin-left: 25%; */
+    min-width: 100%;
+    /* min-height: 50%; */
+    /* max-width: 100vh; */
+        position: relative;
+            min-height: 0;
+}
 /*
 article.hentry header div.entry-image-index a img
 {
