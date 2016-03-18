@@ -238,9 +238,13 @@ div.c-tabs-nav {
 }
 
 #post-index article {
-    box-shadow: none;
+    /*box-shadow: none;
     border-bottom: #EBF2F6 1.5px solid;
-    padding: 0 0 0 0;
+    padding: 0 0 0 0;*/
+
+    /*layout update 2016*/
+    border-bottom: #EBF2F6 1.5px solid;
+    padding: 5px 5px 5px 5px;
 }
 .main-header {
     position: relative;
@@ -358,7 +362,83 @@ article.hentry {
                 margin-left: 5px;
         }
     }
+
 }
+
+.grid-pad {
+    padding-top: 0;
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+.grid-pad a h2{
+    background-color: darkslategrey;
+    color: whitesmoke;
+    padding-left: 8px;
+    width: 98%;
+}
+.grid-pad a h2:hover{
+    background-color: cadetblue;
+    color: whitesmoke;
+    padding-left: 8px;
+    width: 98%;
+}
+
+article.hentry[vertical="true"] {
+    margin: 0 0 0 0;
+}
+article.hentry[vertical="true"] div.postimg{
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50vh;
+            background: rgba(17, 17, 17, 0.93) no-repeat center center;
+            background-size: cover;
+            overflow: hidden;
+            /* margin: 0 0 0 0; */
+            width: 100%;
+            height: 19vh;
+            position: relative;
+            background-position: 50% 50%;
+            background-size: 200%;
+
+            /*background-image: url(/images/PZ/bokeh.jpg);*/
+    /* background-image: Url("/images/PZ/Fractals/1.jpg"); */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-position-y: -50vw; */
+    /* background-position: center -30vh; */
+    /* background-attachment: fixed; */
+    /* float: left; */
+    /* position: relative; */
+    float: left;
+    position: relative;
+    min-height: 0;
+    max-height: 70vh;
+
+       /* visibility: hidden;
+        position: absolute;*/
+            height: 104px;
+        }
+
+    article.hentry[vertical="true"] div.pzpost{
+        width: 100%;
+        margin-left: 5px;
+    }
+
+
+    article.hentry[vertical="true"] div.entry-meta{
+        visibility: hidden;
+    position: absolute;
+    }
+
+    article.hentry[vertical="true"] div.pzpost header h1.entry-title{
+        font-size: 1.3rem;
+    }
+
+    article.hentry[vertical="true"] div.pzpost div.entry-content{
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
 
 /*POSTOOOOOOOOOOOOOOOOOOOOOOOOO__+_+_+_+_+_+_+_+_+_+_OOOOOOO*/
 .post-head.main-header {
