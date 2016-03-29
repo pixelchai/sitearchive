@@ -1221,3 +1221,7 @@ margin on the iframe, cause it breaks stuff. */
 html, body{
     background-color: white;
 }
+
+h2.subjhead{
+        height: 4vh;
+}
