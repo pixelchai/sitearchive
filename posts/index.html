@@ -44,6 +44,7 @@
 <link rel="stylesheet" href="/assets/css/scssdump.css">
 <link rel="stylesheet" href="/assets/css/accordion.css">
 <link rel="stylesheet" href="/assets/css/simplegrid.css">
+<link rel="stylesheet" href="/assets/css/jquery.floating-social-share.min.css">
 
 <!-- Webfonts -->
 <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
@@ -278,12 +279,30 @@
 <div class="footer-wrapper">
   <footer role="contentinfo">
     <small><span>&copy; 2016 PixelZerg. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>. Site design based on the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span></small>
+
+<script>
+window.onload = function () {
+$("body").floatingSocialShare({
+    place: "top-left", // alternatively content-left, top-right
+    counter: true, // set to false for hiding the counters of buttons
+    buttons: ["facebook", "google-plus", "twitter", "linkedin", "pinterest", "reddit", "tumblr"],  // all of the currently avalaible social buttons
+    title: document.title, // your title, default is current page's title
+    url: window.location.href,  // your url, default is current page's url
+    text: "share with ", // the title of a tags
+    description: $('meta[name="description"]').attr("content"), // your description, default is current page's description
+    media: $('meta[property="og:image"]').attr("content"), // pinterest media
+    popup_width: 400, // the sharer popup width, default is 400px
+    popup_height: 300 // the sharer popup height, default is 300px
+});
+}
+</script>
   </footer>
 </div><!-- /.footer-wrapper -->
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="/assets/js/scripts.min.js"></script>
+<script src="/assets/js/jquery.floating-social-share.min.js"></script>
 
 <!-- Asynchronous Google Analytics snippet -->
 <script>
