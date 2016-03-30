@@ -210,15 +210,18 @@
   
   
   
-    <div class="entry-image">
+    <div class="titleholder">
     
+    <div>
       <h1 style="
     text-align: center;
     vertical-align: middle;
     line-height: 90px;
     /* padding-left: 50%; */
-">PixelZerg
-</h1>
+" class="floating">PixelZerg
+ </h1>
+ </div>
+ <!--
   <i class="fa fa-angle-down" style="
     font-family: FontAwesome;
     font-size: 4rem;
@@ -230,7 +233,7 @@
     display: block;
     vertical-align: middle;
     text-align: center;
-"></i>
+"></i> -->
  
     </div>
   
@@ -243,9 +246,47 @@
 </div><!-- /.entry-header -->
 
 <!-- <div id="main" role="main"> -->
-   
+  <div class="o-section">
+      <div id="tabs" class="c-tabs">
+        <script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  </script>
+<!-- __________________________TABS____________________________ -->
+<div class="c-tabs-nav">
+          <a href="#" class="c-tabs-nav__link">
+            <i class="fa fa-file-code-o"></i>
+            <span>Projects</span>
+          </a>
+          <a href="#" class="c-tabs-nav__link is-active">
+            <i class="fa fa-book"></i>
+            <span>Blog</span>
+          </a>
+        </div>
+<!-- _______________________________TABS______________________________________ -->
+<div class="c-tab">
+<div class="c-tab__content">
+<h1>Comming Soon!</h1>
+</div></div>
+
+<div class="c-tab is-active">
+<div class="c-tab__content">
+ 
 <div class="grid grid-pad">
-  <a href="/cm"><h2 id="cm">Cm »</h2></a>
+  <a href="/cm"><h2 id="cm"class="subjhead">Cm »</h2></a>
     <!-- <ul class="post-list"> -->
       
     
@@ -363,7 +404,7 @@ Reading time ~1 minute
   </div>
  
 <div class="grid grid-pad">
-  <a href="/general"><h2 id="general">General »</h2></a>
+  <a href="/general"><h2 id="general"class="subjhead">General »</h2></a>
     <!-- <ul class="post-list"> -->
       
     
@@ -444,7 +485,7 @@ Reading time ~1 minute
   </div>
  
 <div class="grid grid-pad">
-  <a href="/world"><h2 id="world">World »</h2></a>
+  <a href="/world"><h2 id="world"class="subjhead">World »</h2></a>
     <!-- <ul class="post-list"> -->
       
     
@@ -483,7 +524,9 @@ Reading time ~2 minutes
   <!-- </ul> -->
   </div>
 
+</div></div>
 
+</div></div>
 <!-- </div>/#main -->
 
 <div class="footer-wrapper">

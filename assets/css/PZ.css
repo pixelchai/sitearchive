@@ -104,12 +104,12 @@ div.entry-header-home div.entry-image{
     overflow: hidden;
 
 }
-@media screen and (max-aspect-ratio: 7/5) {
+/* @media screen and (max-aspect-ratio: 7/5) { */
     div.entry-header-home div.entry-image{
         max-height: 100vh;
         min-height: 50vh;
     }
-}
+/* } */
 
 div.entry-header-home{
     width: 100%;
@@ -329,7 +329,7 @@ article.hentry {
     }
     .c-tabs-nav__link {
     padding: 10px 0 5px 0;
-    display: flex;
+    /* display: flex; */
     padding-left: 20px;
     }
     .c-tabs-nav__link i {
@@ -372,13 +372,13 @@ article.hentry {
 }
 
 .grid-pad a h2{
-    background-color: darkslategrey;
+    background-color: #222;
     color: whitesmoke;
     padding-left: 8px;
     width: 98%;
 }
 .grid-pad a h2:hover{
-    background-color: cadetblue;
+    background-color: rgba(14, 52, 72, 0.9);
     color: whitesmoke;
     padding-left: 8px;
     width: 98%;
@@ -1220,4 +1220,79 @@ margin on the iframe, cause it breaks stuff. */
 }
 html, body{
     background-color: white;
+}
+
+h2.subjhead{
+        height: 4vh;
+}
+
+/*______________________ UPDATES TO HOME TITLE _________________ 3/30/2016*/
+div.entry-header-home{
+        padding: 6% 0;
+    background: #222;
+}
+div.titleholder{
+        max-width: 1320px;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    font-size: 0;
+}
+div.titleholder div{
+        /* text-align: center; */
+    font-size: 1.25rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+    /* text-align: left; */
+    width: 100%;
+    text-align: center;
+}
+div.titleholder div h1{
+        /* text-align: center; */
+    /* vertical-align: middle; */
+    /* line-height: 90px; */
+    /* padding-left: 50%; */
+    color: #fff;
+    font-size: 7vw;
+    /* font-weight: bold; */
+    line-height: 1.4;
+    margin-left: 0;
+}
+/*________________________________________________________anim_____________________________________*/
+.floating{
+    /*float: left;*/
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 15px);}
+    to {-webkit-transform: translate(0, -0px);    }    
+}
+    
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 15px);}
+    to {-moz-transform: translate(0, -0px);}    
+}
+
+@media handheld, only screen and (max-width: 767px){
+    .col-2-12{
+        width: 50%;
+        float: left;
+    }
 }

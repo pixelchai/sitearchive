@@ -334,7 +334,7 @@ img {
 
 .c-tabs-nav__link.is-active {
   color: #dc446e;
-  background-color: #e7e7e7;
+  background-color: white;
 }
 
 .c-tabs-nav__link i,
@@ -355,7 +355,7 @@ img {
 
 @media all and (min-width: 720px) {
   .c-tabs-nav__link i {
-    margin-bottom: 12px;
+/*     margin-bottom: 12px; */
     font-size: 22px;
   }
   .c-tabs-nav__link span {
@@ -368,7 +368,7 @@ img {
  */
 .c-tab {
   display: none;
-  background-color: #e7e7e7;
+  /* background-color: #e7e7e7; */
 }
 
 .c-tab.is-active {
