@@ -1223,8 +1223,8 @@ html, body{
 }
 
 h2.subjhead{
-        height: 4vh;
-        font-size: 2.5vh;
+    height: 3rem;
+    font-size: 1.7rem;
 }
 
 /*______________________ UPDATES TO HOME TITLE _________________ 3/30/2016*/
@@ -1295,5 +1295,8 @@ div.titleholder div h1{
     .col-2-12{
         width: 50%;
         float: left;
+    }
+    div.c-tab__content{
+        padding: 0;
     }
 }
