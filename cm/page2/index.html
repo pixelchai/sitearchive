@@ -71,6 +71,23 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/css/PZ.css">
 <!-- This one is RIIGHT at the bottom because DO NOT OVERRIDE MEE! >:) -->
+<script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  </script>
 </head>
 
 <body id="post-index" >
@@ -145,23 +162,42 @@
 	</ul><!-- /.dl-menu -->
 </nav><!-- /.dl-menuwrapper -->
 
-
-<div class="entry-header">
-
+<div class="entry-header-home">
   
-  
-  <div class="header-title">
+    <div class="titleholder">
+    <div>
+      <h1 style="
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    /* padding-left: 50%; */
+" class="floating">PixelZerg
+ </h1>
+ </div>
+ <!--
+  <i class="fa fa-angle-down" style="
+    font-family: FontAwesome;
+    font-size: 4rem;
+    color: whitesmoke;
+    transform: translateZ(5px);
+    position: initial;
+    /* padding-left: 48%; */
+    /* vertical-align: middle; */
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+"></i> -->
+    </div>
+  <!-- <div class="header-title">
     <div class="header-title-wrap">
-      <h1>PixelZerg</h1>
-      <!-- <img src="/images/PZ/G1BigF2BasicShade2RS.png" -->
-      
-      <h2></h2>
-      
-    </div><!-- /.header-title-wrap -->
-  </div><!-- /.header-title -->
+    </div>
+  </div> -->
 </div><!-- /.entry-header -->
 
+
 <div id="main" role="main">
+
+<!-- <div id="main" role="main"> -->
   <!-- <h1 class="category"></h1>
 <ul class="posts">
 
@@ -214,7 +250,9 @@
 
 
 
-</div><!-- /#main -->
+<!-- </div>/#main -->
+
+</div>
 
 <div class="footer-wrapper">
   <footer role="contentinfo">
