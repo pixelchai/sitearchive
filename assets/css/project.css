@@ -1,6 +1,6 @@
 /*pixelzerg is da best woooop woop*/
-
-@media only screen and (min-width: 920px){
+/*big*/
+@media only screen and (min-width: 1080px){
 	#post .entry-content
 	/*, #page .entry-content */
 	{
@@ -8,6 +8,7 @@
 	    margin-left: 10vh;
 	    position: relative;
 	    /*background-color: white;*/
+    	padding-right: 100px;
 	}
 }
 /*
@@ -139,9 +140,10 @@ div.widget-area{
 #post .entry-content
 /*, #page .entry-content */
 {
-        padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 25px;
     font-size: 1.1em;
-    padding-right: 100px;
 }
 
 /*div.content.entry-content{
@@ -158,8 +160,8 @@ div.widget-area{
     margin-top: 11px;
     left: 0;
 }
-
-@media only screen and (max-width: 920px){
+/*small*/
+@media only screen and (max-width: 1080px){
 	.widget .widget-title:before {
 	    width: 100%;
 	}
@@ -173,5 +175,8 @@ div.widget-area{
 	}
 	.main-wrap{
 		width: 100%;
+	}
+	#post .entry-content{
+		padding-right: 0;
 	}
 }

@@ -15,7 +15,7 @@ $(document).ready(function()
 
 $window.scroll(function()
 {
-    if ($(window).width() > 920)
+    if ($(window).width() > 1080)
     {
         if ($window.scrollTop() > offset.top)
         {
