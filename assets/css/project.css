@@ -139,8 +139,9 @@ div.widget-area{
 #post .entry-content
 /*, #page .entry-content */
 {
-    padding: 0;
+        padding: 0;
     font-size: 1.1em;
+    padding-right: 100px;
 }
 
 /*div.content.entry-content{
