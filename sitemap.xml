@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>/projects/animestr/</loc>
+    <lastmod>2016-04-18T00:00:00+01:00</lastmod>
+  </url>
+  <url>
     <loc>/general/OntologicalArgumentWeaknesses/</loc>
     <lastmod>2016-02-23T00:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>/world/ChineseClassifiers/</loc>
     <lastmod>2016-01-16T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>/projects/test%20-%20Copy%20(3)/</loc>
-    <lastmod>2016-01-12T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>/projects/test%20-%20Copy%20(2)/</loc>
-    <lastmod>2016-01-12T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>/projects/test%20-%20Copy/</loc>
-    <lastmod>2016-01-12T00:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>/projects/test/</loc>
@@ -69,8 +61,5 @@
   </url>
   <url>
     <loc>/world/</loc>
-  </url>
-  <url>
-    <loc>/page2/</loc>
   </url>
 </urlset>
