@@ -607,6 +607,7 @@ article.hentry {
     padding-top: 0;
     /* padding-left: 20px; */
     padding-right: 0;
+    padding: 0;
 }
 
 .grid-pad a h2{
@@ -1702,6 +1703,7 @@ img{
         margin-right: 0;
         padding-left: 0px; /* grid-space to left */
         padding-right: 10px; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
+        padding: 0;
     }
     }
 
@@ -1709,6 +1711,7 @@ img{
     .nm{
             margin: 0 0 0 0;
             max-width: none;
+            padding: 0;
     }
 
     /*reset*/
@@ -2219,4 +2222,8 @@ ul.changelog, .changelog ul {
 
 img.mfp-img, button.mfp-close, .lb-nav {
     cursor: pointer;
+}
+
+.grid-pad{
+    padding: 0;
 }
