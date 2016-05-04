@@ -1,44 +1,12 @@
 
 	<item>
-	  <title>TestProject</title>
+	  <title>animestr</title>
 	  <link>/projects/animestr/</link>
 	  <author></author>
 	  <pubDate>2016-04-18T00:00:00+01:00</pubDate>
 	  <guid>/projects/animestr/</guid>
 	  <description><![CDATA[
-	     <p>test this is a test lalala.</p>
-
-<p>Also, here is a short description about bacon. Bacon is really cool and yah!!</p>
-
-<h4 id="features">features</h4>
-<ul>
-  <li>swaginess</li>
-  <li>op</li>
-  <li>cool famalam</li>
-  <li>it’s wot the cool kidz doo</li>
-</ul>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>TestProject</title>
-	  <link>/projects/test/</link>
-	  <author></author>
-	  <pubDate>2016-01-12T00:00:00+00:00</pubDate>
-	  <guid>/projects/test/</guid>
-	  <description><![CDATA[
-	     <p>test this is a test lalala.</p>
-
-<p>Also, here is a short description about bacon. Bacon is really cool and yah!!</p>
-
-<h4 id="features">features</h4>
-<ul>
-  <li>swaginess</li>
-  <li>op</li>
-  <li>cool famalam</li>
-  <li>it’s wot the cool kidz doo</li>
-</ul>
+	     <p>Stream anime on your android!</p>
 
 	  ]]></description>
 	</item>

@@ -1572,7 +1572,7 @@ img{
 
 .pgrid li {
     display: inline-block;
-    width: 440px;
+    width: 240px;
     margin: 0;
     /* padding: 20px; */
     text-align: left;
@@ -2215,4 +2215,8 @@ ul.changelog, .changelog ul {
 .changelog ul{
     color: white;
     padding-left: 10px;
+}
+
+img.mfp-img, button.mfp-close, .lb-nav {
+    cursor: pointer;
 }

@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-04-26T18:30:08+01:00</updated>
+<updated>2016-05-04T22:51:09+01:00</updated>
 <id>/</id>
 <author>
   <name>PixelZerg</name>
@@ -14,7 +14,7 @@
 
 
 <entry>
-  <title type="html"><![CDATA[TestProject]]></title>
+  <title type="html"><![CDATA[animestr]]></title>
  <link rel="alternate" type="text/html" href="/projects/animestr/" />
   <id>/projects/animestr</id>
   <published>2016-04-18T00:00:00+01:00</published>
@@ -25,19 +25,9 @@
     <email>abhinavbhandari4@gmail.com</email>
   </author>
   <content type="html">
-    &lt;p&gt;test this is a test lalala.&lt;/p&gt;
+    &lt;p&gt;Stream anime on your android!&lt;/p&gt;
 
-&lt;p&gt;Also, here is a short description about bacon. Bacon is really cool and yah!!&lt;/p&gt;
-
-&lt;h4 id=&quot;features&quot;&gt;features&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;swaginess&lt;/li&gt;
-  &lt;li&gt;op&lt;/li&gt;
-  &lt;li&gt;cool famalam&lt;/li&gt;
-  &lt;li&gt;it’s wot the cool kidz doo&lt;/li&gt;
-&lt;/ul&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/projects/animestr/&quot;&gt;TestProject&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on April 18, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/projects/animestr/&quot;&gt;animestr&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on April 18, 2016.&lt;/p&gt;
   </content>
 </entry>
 
@@ -121,35 +111,6 @@
 &lt;p&gt;“天空一片餅乾” translates as “The sky was full of biscuits”. The classifier used in the sentence, “片”, is refering to “the sky” and not the biscuits (which is easy to work out since the classifier is different to “包”). You can use “一” (one) before a classifier to mean “(something) full of (something)”, in this case - a sky full of biscuits. You can also use it to mean “the entire” or “all of”.&lt;/p&gt;
 
     &lt;p&gt;&lt;a href=&quot;/world/ChineseClassifiers/&quot;&gt;Chinese Classifiers - 漢語量詞&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on January 16, 2016.&lt;/p&gt;
-  </content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[TestProject]]></title>
- <link rel="alternate" type="text/html" href="/projects/test/" />
-  <id>/projects/test</id>
-  <published>2016-01-12T00:00:00+00:00</published>
-  <updated>2016-01-12T00:00:00+00:00</updated>
-  <author>
-    <name>PixelZerg</name>
-    <uri></uri>
-    <email>abhinavbhandari4@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;test this is a test lalala.&lt;/p&gt;
-
-&lt;p&gt;Also, here is a short description about bacon. Bacon is really cool and yah!!&lt;/p&gt;
-
-&lt;h4 id=&quot;features&quot;&gt;features&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;swaginess&lt;/li&gt;
-  &lt;li&gt;op&lt;/li&gt;
-  &lt;li&gt;cool famalam&lt;/li&gt;
-  &lt;li&gt;it’s wot the cool kidz doo&lt;/li&gt;
-&lt;/ul&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/projects/test/&quot;&gt;TestProject&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on January 12, 2016.&lt;/p&gt;
   </content>
 </entry>
 
