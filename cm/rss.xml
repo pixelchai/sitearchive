@@ -1,71 +1,5 @@
 
 	<item>
-	  <title>OneStepAtATime</title>
-	  <link>/cm/OneStepAtATime/</link>
-	  <author></author>
-	  <pubDate>2015-12-11T06:49:48+00:00</pubDate>
-	  <guid>/cm/OneStepAtATime/</guid>
-	  <description><![CDATA[
-	     <p>I’m actually going to do the <code>UniversalProgram</code> project sireously now - but let’s start by taking things one step at a time. As it stands, I’m probably not going to be able to do a wide a range of coding languages that I intended to because I am trying to implement way too many things at once.</p>
-
-<p>First, let’s start with one basic program - such as a <code>Hello World</code> program - and port it to all of the coding languages I want to try and we’ll expand from there.</p>
-
-<p>Most programmers will make a <code>Hello World</code> as their first program. I’m not “most programmers”. So let’s come up with a “first program” of our own:</p>
-
-<h3>The Higher or Lower Game</h3>
-<p>This is going to be the first program to be ported into every coding language. It has about the same real-world use as a <code>Hello World</code> program, but it’s just slightly more interesting to make.</p>
-
-<p>You’ve probably heard of or played this game before, but just in case, here’s how it works:</p>
-
-<p>A random number is generated.<br />
-User tries to guess the number.<br />
-Computer tells user if they were too high or too low.<br />
-Keep guessing untill they get the number…<br /></p>
-
-<h3>Pseudocode</h3>
-<p>Here’s a basic implementation of it in pseudocode:</p>
-
-<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="n">again</span><span class="p">:</span>
-<span class="k">set</span> <span class="n">num</span> <span class="p">=</span> <span class="n">Rand</span><span class="p">.</span><span class="n">Next</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">1000</span><span class="p">)</span>
-<span class="k">set</span> <span class="n">done</span> <span class="p">=</span> <span class="k">false</span>
-<span class="k">do</span>
-<span class="p">{</span>
-<span class="n">input</span> <span class="p">=</span> <span class="n">GetInput</span><span class="p">().</span><span class="n">ToInteger</span><span class="p">()</span>
-	<span class="k">if</span><span class="p">(</span><span class="n">input</span> <span class="n">greater</span> <span class="n">than</span> <span class="m">9000</span><span class="p">)</span>
-	<span class="p">{</span>
-	<span class="n">print</span><span class="p">(</span><span class="s">&quot;That&#39;s over NINE THOUSAAANNNDD!&quot;</span><span class="p">)</span>
-	<span class="p">}</span>
-	<span class="k">if</span><span class="p">(</span><span class="n">input</span> <span class="n">Equals</span> <span class="n">num</span><span class="p">)</span>
-	<span class="p">{</span>
-	<span class="k">set</span> <span class="n">done</span> <span class="p">=</span> <span class="k">true</span>
-	<span class="n">print</span><span class="p">(</span><span class="s">&quot;Cngrtz&quot;</span><span class="p">)</span>
-	<span class="k">break</span>
-	<span class="p">}</span>
-	<span class="k">if</span><span class="p">(</span><span class="n">input</span> <span class="n">greater</span> <span class="n">than</span> <span class="n">num</span><span class="p">)</span>
-	<span class="p">{</span>
-	<span class="n">print</span><span class="p">(</span><span class="s">&quot;Too high&quot;</span><span class="p">)</span>
-	<span class="p">}</span>
-	<span class="k">if</span><span class="p">(</span><span class="n">input</span> <span class="n">less</span> <span class="n">than</span> <span class="n">num</span><span class="p">)</span>
-	<span class="p">{</span>
-	<span class="n">print</span><span class="p">(</span><span class="s">&quot;Too Low&quot;</span><span class="p">)</span>
-	<span class="p">}</span>
-	
-<span class="p">}</span>
-<span class="k">while</span><span class="p">(</span><span class="n">not</span> <span class="n">done</span><span class="p">)</span>
-
-<span class="n">print</span><span class="p">(</span><span class="s">&quot;Play again? (y/n)&quot;</span><span class="p">)</span>
-<span class="k">if</span><span class="p">(</span><span class="n">GetInput</span><span class="p">()</span> <span class="p">==</span> <span class="s">&quot;y&quot;</span><span class="p">)</span>
-<span class="p">{</span>
-	<span class="k">goto</span> <span class="n">again</span>
-<span class="p">}</span>
-
-<span class="n">print</span><span class="p">(</span><span class="s">&quot;Press any key to continue...&quot;</span><span class="p">)</span>
-<span class="n">GetInput</span><span class="p">()</span></code></pre></div>
-
-	  ]]></description>
-	</item>
-
-	<item>
 	  <title>s2.1p36 - Money Algorithm!</title>
 	  <link>/cm/AScompexs21p36/</link>
 	  <author></author>
@@ -432,45 +366,6 @@ This is easy, you just need to convert the value and everything to integers and 
 	</item>
 
 	<item>
-	  <title>ASComputingExercises - Introduction</title>
-	  <link>/cm/ASComputingExercises/</link>
-	  <author></author>
-	  <pubDate>2015-11-28T12:05:47+00:00</pubDate>
-	  <guid>/cm/ASComputingExercises/</guid>
-	  <description><![CDATA[
-	     <p>So here’s an explanation of what these posts are all about and why I made them.</p>
-
-<p>All of posts in this section will be my answers to exercises from a textbook:
-&gt; AQA Computing AS level - Kerboodle by Sylvia Langfield and Kevin Bond</p>
-
-<p>The book, I feel, teaches a much more basic level of computing knowledge than that I already own and the exercises are similar to the stuff I was making nore than 3 years ago, when my computing knowledge was much more limited. Even so, I will work through the book because I have never really looked at coding/computing in an acadamic sense before - I learnt all the knowledge I have about coding today from making random projects and experimenting a lot. I did coding simply because I thought it was very interesting and fun. Another reason for going through this book anyway would be because I was not able to find any higher level books in my school library, from which I got this book.</p>
-
-<p>In all of the exercises that I do complete in this book, I aim to write appropriate comments and give appropriate names to variables. Since I learnt coding just by experimenting, I don’t usually write comments and I often use variablenames that other coders may not understand. I will make it so that the code for these exercises are easily understandable by other coders and I will refrain from using confusing indentations. i.e, no more of this (not that it is in my coding that much anyway):</p>
-
-<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span>
-<span class="k">new</span> <span class="nf">foo</span><span class="p">((</span>
-<span class="n">banana</span><span class="p">+</span><span class="m">1</span><span class="p">)/(</span>
-<span class="p">(</span><span class="n">moo</span><span class="p">)-(</span><span class="n">noo</span><span class="p">)).</span><span class="n">method</span><span class="p">(</span><span class="n">banana</span><span class="p">,(</span><span class="n">foo</span><span class="p">/</span><span class="n">loo</span><span class="p">),</span><span class="n">gaaaaa</span><span class="p">)</span>
-<span class="p">).</span><span class="n">Get</span><span class="p">()</span>
-<span class="p">)</span></code></pre></div>
-
-<p>In adition, I shall make the programs that I make in this section as efficient as possible, which has never been THAT high of a priority for me (it was prioritised, just not as the <em>highest</em> priority).</p>
-
-<p>NB: The answers to the exercises will be completed in <strong>C#</strong></p>
-
-<hr />
-<!-- footer -->
-
-<p>Time taken to write: 30 or so min.</p>
-
-<hr />
-<!-- Ack -->
-<p><small><small><small><a href="https://www.flickr.com/photos/wneuheisel/5256103622">Cover Image</a> by William Neuheisel. It has not been edited.</small></small></small></p>
-
-	  ]]></description>
-	</item>
-
-	<item>
 	  <title>CodeComplexifier - Complex Booleans</title>
 	  <link>/cm/Cmplxfr1/</link>
 	  <author></author>
@@ -670,58 +565,6 @@ I also made a method to actually parse the condition from a loop/statement:</p>
 <p>Time taken to write: An hour and a bit</p>
 
 <hr />
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Universal Program - Briefing</title>
-	  <link>/cm/UniversalProgramBriefing/</link>
-	  <author></author>
-	  <pubDate>2015-11-22T03:17:29+00:00</pubDate>
-	  <guid>/cm/UniversalProgramBriefing/</guid>
-	  <description><![CDATA[
-	     <p>Here’s a cool project i’m starting. The aim is to port a single program into every coding language that I know. This is basically to familiarize myself with coding languages that I haven’t done in a long time. I might even learn new coding languages just for this project. This is going to be great! But first, we must decide what the program must actually be.</p>
-
-<h3><u>Stuff That Must be Included</u></h3>
-<h5>Menu</h5>
-<p>The program must contain a menu of some description with a list to select stuff included in the program. The user must be able to interact with the list and select items.</p>
-<ul><li>Orginisation</li><li>User Input</li><li>Printing</li><li>Basic Stuff</li></ul>
-
-<hr />
-<h5>Loading</h5>
-<p>The program must display a loading animation. The loading percentage is also included in the console window’s title.</p>
-<ul><li>Sleeping the Thread</li><li>Displaying Animation</li><li>Basic Text Stuff</li><li>Changing title</li></ul>
-
-<hr />
-<h5>Hangman</h5>
-<p>There is a VERY BASIC hangman game included.</p>
-<ul><li>List/Array stuff<br /><ul><li>Check if List Contains Item</li><li>Make a list</li></ul></li>
-<li>Looks cool</li><li>Escaping text</li></ul>
-
-<hr />
-<h5>Higher or Lower Game</h5>
-<p>A simple game. A random number is selected and the user must try to guess it. The program tells the user if they got the number right or it will tell them if the number they guessed was too high or too low.</p>
-<ul><li>Number Stuff</li><li>Checking if a number is greater than another number</li><li>parsing string into integer</li></ul>
-
-<hr />
-<h5>Rectangle Drawer</h5>
-<p>The user will input X, Y co-ordinates and also Width and Height. The program will draw a rectangle.</p>
-<ul><li>graphics stuff</li><li>Getting User Input</li><li>While loops</li></ul>
-
-<hr />
-<h5>Libs</h5>
-<p>The program asks the user for some words by their type (verb, adjective, noun, etc) and will then incorporate them into a story. This usually makes funny results. You can also save the generated story as a .txt file or other formats.</p>
-<ul><li>writing to a file</li><li>basic variable usage</li></ul>
-
-<hr />
-<h3>NB</h3>
-<p>Note that not all of these features will be able to be implemented due to restrictions of the coding language itself and other restrictions. You may notice that the functionality of certain features vary in different coding languages due to said restrictions.</p>
-
-<hr />
-<!-- footer -->
-
-<p>Time taken to write: 30 or so min.</p>
 
 	  ]]></description>
 	</item>

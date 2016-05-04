@@ -4,13 +4,32 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-03-31T17:51:05+01:00</updated>
+<updated>2016-05-04T22:51:09+01:00</updated>
 <id>/</id>
 <author>
   <name>PixelZerg</name>
   <uri>/</uri>
   <email>abhinavbhandari4@gmail.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[animestr]]></title>
+ <link rel="alternate" type="text/html" href="/projects/animestr/" />
+  <id>/projects/animestr</id>
+  <published>2016-04-18T00:00:00+01:00</published>
+  <updated>2016-04-18T00:00:00+01:00</updated>
+  <author>
+    <name>PixelZerg</name>
+    <uri></uri>
+    <email>abhinavbhandari4@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Stream anime on your android!&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/projects/animestr/&quot;&gt;animestr&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on April 18, 2016.&lt;/p&gt;
+  </content>
+</entry>
 
 
 <entry>
@@ -92,79 +111,6 @@
 &lt;p&gt;“天空一片餅乾” translates as “The sky was full of biscuits”. The classifier used in the sentence, “片”, is refering to “the sky” and not the biscuits (which is easy to work out since the classifier is different to “包”). You can use “一” (one) before a classifier to mean “(something) full of (something)”, in this case - a sky full of biscuits. You can also use it to mean “the entire” or “all of”.&lt;/p&gt;
 
     &lt;p&gt;&lt;a href=&quot;/world/ChineseClassifiers/&quot;&gt;Chinese Classifiers - 漢語量詞&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on January 16, 2016.&lt;/p&gt;
-  </content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[OneStepAtATime]]></title>
- <link rel="alternate" type="text/html" href="/cm/OneStepAtATime/" />
-  <id>/cm/OneStepAtATime</id>
-  <published>2015-12-11T06:49:48+00:00</published>
-  <updated>2015-12-11T06:49:48+00:00</updated>
-  <author>
-    <name>PixelZerg</name>
-    <uri></uri>
-    <email>abhinavbhandari4@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;I’m actually going to do the &lt;code&gt;UniversalProgram&lt;/code&gt; project sireously now - but let’s start by taking things one step at a time. As it stands, I’m probably not going to be able to do a wide a range of coding languages that I intended to because I am trying to implement way too many things at once.&lt;/p&gt;
-
-&lt;p&gt;First, let’s start with one basic program - such as a &lt;code&gt;Hello World&lt;/code&gt; program - and port it to all of the coding languages I want to try and we’ll expand from there.&lt;/p&gt;
-
-&lt;p&gt;Most programmers will make a &lt;code&gt;Hello World&lt;/code&gt; as their first program. I’m not “most programmers”. So let’s come up with a “first program” of our own:&lt;/p&gt;
-
-&lt;h3&gt;The Higher or Lower Game&lt;/h3&gt;
-&lt;p&gt;This is going to be the first program to be ported into every coding language. It has about the same real-world use as a &lt;code&gt;Hello World&lt;/code&gt; program, but it’s just slightly more interesting to make.&lt;/p&gt;
-
-&lt;p&gt;You’ve probably heard of or played this game before, but just in case, here’s how it works:&lt;/p&gt;
-
-&lt;p&gt;A random number is generated.&lt;br /&gt;
-User tries to guess the number.&lt;br /&gt;
-Computer tells user if they were too high or too low.&lt;br /&gt;
-Keep guessing untill they get the number…&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3&gt;Pseudocode&lt;/h3&gt;
-&lt;p&gt;Here’s a basic implementation of it in pseudocode:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;n&quot;&gt;again&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Rand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;false&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GetInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ToInteger&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;greater&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;than&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;9000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;That&amp;#39;s over NINE THOUSAAANNNDD!&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Equals&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;true&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Cngrtz&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;greater&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;than&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Too high&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;less&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;than&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Too Low&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Play again? (y/n)&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GetInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;y&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;goto&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;again&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Press any key to continue...&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;GetInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/cm/OneStepAtATime/&quot;&gt;OneStepAtATime&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on December 11, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -543,52 +489,6 @@ This is easy, you just need to convert the value and everything to integers and 
 
 
 <entry>
-  <title type="html"><![CDATA[ASComputingExercises - Introduction]]></title>
- <link rel="alternate" type="text/html" href="/cm/ASComputingExercises/" />
-  <id>/cm/ASComputingExercises</id>
-  <published>2015-11-28T12:05:47+00:00</published>
-  <updated>2015-11-28T12:05:47+00:00</updated>
-  <author>
-    <name>PixelZerg</name>
-    <uri></uri>
-    <email>abhinavbhandari4@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;So here’s an explanation of what these posts are all about and why I made them.&lt;/p&gt;
-
-&lt;p&gt;All of posts in this section will be my answers to exercises from a textbook:
-&amp;gt; AQA Computing AS level - Kerboodle by Sylvia Langfield and Kevin Bond&lt;/p&gt;
-
-&lt;p&gt;The book, I feel, teaches a much more basic level of computing knowledge than that I already own and the exercises are similar to the stuff I was making nore than 3 years ago, when my computing knowledge was much more limited. Even so, I will work through the book because I have never really looked at coding/computing in an acadamic sense before - I learnt all the knowledge I have about coding today from making random projects and experimenting a lot. I did coding simply because I thought it was very interesting and fun. Another reason for going through this book anyway would be because I was not able to find any higher level books in my school library, from which I got this book.&lt;/p&gt;
-
-&lt;p&gt;In all of the exercises that I do complete in this book, I aim to write appropriate comments and give appropriate names to variables. Since I learnt coding just by experimenting, I don’t usually write comments and I often use variablenames that other coders may not understand. I will make it so that the code for these exercises are easily understandable by other coders and I will refrain from using confusing indentations. i.e, no more of this (not that it is in my coding that much anyway):&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;banana&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)/(&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;moo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)-(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;noo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;banana&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gaaaaa&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;In adition, I shall make the programs that I make in this section as efficient as possible, which has never been THAT high of a priority for me (it was prioritised, just not as the &lt;em&gt;highest&lt;/em&gt; priority).&lt;/p&gt;
-
-&lt;p&gt;NB: The answers to the exercises will be completed in &lt;strong&gt;C#&lt;/strong&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;!-- footer --&gt;
-
-&lt;p&gt;Time taken to write: 30 or so min.&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;!-- Ack --&gt;
-&lt;p&gt;&lt;small&gt;&lt;small&gt;&lt;small&gt;&lt;a href=&quot;https://www.flickr.com/photos/wneuheisel/5256103622&quot;&gt;Cover Image&lt;/a&gt; by William Neuheisel. It has not been edited.&lt;/small&gt;&lt;/small&gt;&lt;/small&gt;&lt;/p&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/cm/ASComputingExercises/&quot;&gt;ASComputingExercises - Introduction&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 28, 2015.&lt;/p&gt;
-  </content>
-</entry>
-
-
-<entry>
   <title type="html"><![CDATA[CodeComplexifier - Complex Booleans]]></title>
  <link rel="alternate" type="text/html" href="/cm/Cmplxfr1/" />
   <id>/cm/Cmplxfr1</id>
@@ -795,65 +695,6 @@ I also made a method to actually parse the condition from a loop/statement:&lt;/
 &lt;hr /&gt;
 
     &lt;p&gt;&lt;a href=&quot;/cm/Cmplxfr1/&quot;&gt;CodeComplexifier - Complex Booleans&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 24, 2015.&lt;/p&gt;
-  </content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Universal Program - Briefing]]></title>
- <link rel="alternate" type="text/html" href="/cm/UniversalProgramBriefing/" />
-  <id>/cm/UniversalProgramBriefing</id>
-  <published>2015-11-22T03:17:29+00:00</published>
-  <updated>2015-11-22T03:17:29+00:00</updated>
-  <author>
-    <name>PixelZerg</name>
-    <uri></uri>
-    <email>abhinavbhandari4@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;Here’s a cool project i’m starting. The aim is to port a single program into every coding language that I know. This is basically to familiarize myself with coding languages that I haven’t done in a long time. I might even learn new coding languages just for this project. This is going to be great! But first, we must decide what the program must actually be.&lt;/p&gt;
-
-&lt;h3&gt;&lt;u&gt;Stuff That Must be Included&lt;/u&gt;&lt;/h3&gt;
-&lt;h5&gt;Menu&lt;/h5&gt;
-&lt;p&gt;The program must contain a menu of some description with a list to select stuff included in the program. The user must be able to interact with the list and select items.&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;Orginisation&lt;/li&gt;&lt;li&gt;User Input&lt;/li&gt;&lt;li&gt;Printing&lt;/li&gt;&lt;li&gt;Basic Stuff&lt;/li&gt;&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;h5&gt;Loading&lt;/h5&gt;
-&lt;p&gt;The program must display a loading animation. The loading percentage is also included in the console window’s title.&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;Sleeping the Thread&lt;/li&gt;&lt;li&gt;Displaying Animation&lt;/li&gt;&lt;li&gt;Basic Text Stuff&lt;/li&gt;&lt;li&gt;Changing title&lt;/li&gt;&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;h5&gt;Hangman&lt;/h5&gt;
-&lt;p&gt;There is a VERY BASIC hangman game included.&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;List/Array stuff&lt;br /&gt;&lt;ul&gt;&lt;li&gt;Check if List Contains Item&lt;/li&gt;&lt;li&gt;Make a list&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Looks cool&lt;/li&gt;&lt;li&gt;Escaping text&lt;/li&gt;&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;h5&gt;Higher or Lower Game&lt;/h5&gt;
-&lt;p&gt;A simple game. A random number is selected and the user must try to guess it. The program tells the user if they got the number right or it will tell them if the number they guessed was too high or too low.&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;Number Stuff&lt;/li&gt;&lt;li&gt;Checking if a number is greater than another number&lt;/li&gt;&lt;li&gt;parsing string into integer&lt;/li&gt;&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;h5&gt;Rectangle Drawer&lt;/h5&gt;
-&lt;p&gt;The user will input X, Y co-ordinates and also Width and Height. The program will draw a rectangle.&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;graphics stuff&lt;/li&gt;&lt;li&gt;Getting User Input&lt;/li&gt;&lt;li&gt;While loops&lt;/li&gt;&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;h5&gt;Libs&lt;/h5&gt;
-&lt;p&gt;The program asks the user for some words by their type (verb, adjective, noun, etc) and will then incorporate them into a story. This usually makes funny results. You can also save the generated story as a .txt file or other formats.&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;writing to a file&lt;/li&gt;&lt;li&gt;basic variable usage&lt;/li&gt;&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;h3&gt;NB&lt;/h3&gt;
-&lt;p&gt;Note that not all of these features will be able to be implemented due to restrictions of the coding language itself and other restrictions. You may notice that the functionality of certain features vary in different coding languages due to said restrictions.&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;!-- footer --&gt;
-
-&lt;p&gt;Time taken to write: 30 or so min.&lt;/p&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/cm/UniversalProgramBriefing/&quot;&gt;Universal Program - Briefing&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on November 22, 2015.&lt;/p&gt;
   </content>
 </entry>
 

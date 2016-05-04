@@ -39,13 +39,24 @@
 <!-- For all browsers -->
 <!-- <link rel="stylesheet" href="/assets/css/screen.css"> -->
 <!-- <link rel="stylesheet" href="/assets/css/ghost.min.css"> -->
+
+<!-- Compiled CSS -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.css"> -->
+
+  <!-- Compiled and minified JavaScript -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script> -->
+  <link rel="stylesheet" href="/assets/css/buttons.css">
+  <!-- <link rel="stylesheet" href="/assets/css/lightbox.css"> -->
 <link rel="stylesheet" href="/assets/css/tabs.css">
 <link rel="stylesheet" href="/assets/css/main_.css">
 <link rel="stylesheet" href="/assets/css/scssdump.css">
 <link rel="stylesheet" href="/assets/css/accordion.css">
 <link rel="stylesheet" href="/assets/css/simplegrid.css">
 <link rel="stylesheet" href="/assets/css/jquery.floating-social-share.min.css">
-
+<link rel="stylesheet" href="/assets/css/owl-carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl-theme.css">
+<link rel="stylesheet" href="/assets/css/animate.css">
+<!-- <link rel="stylesheet" href="/assets/css/ghost.min.css"> -->
 <!-- Webfonts -->
 <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
 
@@ -70,6 +81,7 @@
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 <link rel="stylesheet" href="/assets/css/PZ.css">
 <!-- This one is RIIGHT at the bottom because DO NOT OVERRIDE MEE! >:) -->
 <link rel="stylesheet" href="/assets/css/project.css">
@@ -132,6 +144,8 @@
 			 		<li><a href="/general">general</a></li>
 			 	 
 			 		<li><a href="/world">world</a></li>
+			 	 
+			 		<li><a href="/projects">projects</a></li>
 			 	
 			 </ul>
 		</li>
@@ -222,7 +236,8 @@ $("body").floatingSocialShare({
 <script src="/assets/js/scripts.min.js"></script>
 <script src="/assets/js/jquery.floating-social-share.min.js"></script>
 <script src="/assets/js/sticky.js"></script>
-
+<!-- <script src="/assets/js/lightbox.js"></script> -->
+<!-- <script src="/assets/js/jquery.mousewheel.min.js"></script> -->
 <!-- Asynchronous Google Analytics snippet -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -238,6 +253,7 @@ $("body").floatingSocialShare({
 
 <!-- Tabs: -->
 <script src="/assets/js/tabs.js"></script>
+
 <script>
   var myTabs = tabs({
     el: '#tabs',
@@ -245,6 +261,25 @@ $("body").floatingSocialShare({
     tabContentContainers: '.c-tab'
   });
   myTabs.init();
+</script>
+
+
+<!-- smooth scrollin' -->
+<script>
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 </script>          
 
 </body>
