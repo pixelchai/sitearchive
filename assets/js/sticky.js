@@ -15,6 +15,7 @@ $(document).ready(function()
 
 $window.scroll(function()
 {
+    try{
     if ($(window).width() > 1080)
     {
         if ($window.scrollTop() > offset.top)
@@ -29,9 +30,11 @@ $window.scroll(function()
             $sidebar.css('margin-top', '0');
         }
     }
+}catch(e){}
 });
 $(window).resize(function()
 {
+    try{
     if ($(window).height() > $sidebar.height())
     {
         stickyenabled = true;
@@ -41,4 +44,5 @@ $(window).resize(function()
         stickyenabled = false;
         $sidebar.css('margin-top', '0');
     }
+}catch(e){}
 });

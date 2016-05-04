@@ -40,13 +40,24 @@
 <!-- For all browsers -->
 <!-- <link rel="stylesheet" href="/assets/css/screen.css"> -->
 <!-- <link rel="stylesheet" href="/assets/css/ghost.min.css"> -->
+
+<!-- Compiled CSS -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.css"> -->
+
+  <!-- Compiled and minified JavaScript -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script> -->
+  <link rel="stylesheet" href="/assets/css/buttons.css">
+  <!-- <link rel="stylesheet" href="/assets/css/lightbox.css"> -->
 <link rel="stylesheet" href="/assets/css/tabs.css">
 <link rel="stylesheet" href="/assets/css/main_.css">
 <link rel="stylesheet" href="/assets/css/scssdump.css">
 <link rel="stylesheet" href="/assets/css/accordion.css">
 <link rel="stylesheet" href="/assets/css/simplegrid.css">
 <link rel="stylesheet" href="/assets/css/jquery.floating-social-share.min.css">
-
+<link rel="stylesheet" href="/assets/css/owl-carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl-theme.css">
+<link rel="stylesheet" href="/assets/css/animate.css">
+<!-- <link rel="stylesheet" href="/assets/css/ghost.min.css"> -->
 <!-- Webfonts -->
 <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
 
@@ -71,6 +82,7 @@
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 <link rel="stylesheet" href="/assets/css/PZ.css">
 <!-- This one is RIIGHT at the bottom because DO NOT OVERRIDE MEE! >:) -->
 <link rel="stylesheet" href="/assets/css/project.css">
@@ -133,6 +145,8 @@
 			 		<li><a href="/general">general</a></li>
 			 	 
 			 		<li><a href="/world">world</a></li>
+			 	 
+			 		<li><a href="/projects">projects</a></li>
 			 	
 			 </ul>
 		</li>
@@ -148,8 +162,6 @@
   <ul class="dl-submenu">
     
       <li><a href="/cm/AScompexs21p36/">s2.1p36 - Money Algorithm!</a></li>
-    
-      <li><a href="/cm/ASComputingExercises/">ASComputingExercises - Introduction</a></li>
     
   </ul>
 </li>
@@ -604,19 +616,19 @@ This is easy, you just need to convert the value and everything to integers and 
 	<aside class="widget"><h2 class="widget-title">Recent Posts</h2>
 	<ul>
 		
+  		<li><a href="/projects/animestr/">animestr</a></li>
+		
   		<li><a href="/general/OntologicalArgumentWeaknesses/">Weaknesses of Anselm's Ontological Argument for the Existence of God</a></li>
 		
   		<li><a href="/world/ChineseClassifiers/">Chinese Classifiers - 漢語量詞</a></li>
 		
-  		<li><a href="/cm/OneStepAtATime/">OneStepAtATime</a></li>
-		
   		<li><a href="/cm/AScompexs21p36/">s2.1p36 - Money Algorithm!</a></li>
-		
-  		<li><a href="/cm/ASComputingExercises/">ASComputingExercises - Introduction</a></li>
 		
   		<li><a href="/cm/Cmplxfr1/">CodeComplexifier - Complex Booleans</a></li>
 		
-  		<li><a href="/cm/UniversalProgramBriefing/">Universal Program - Briefing</a></li>
+  		<li><a href="/general/Hello/">Hello</a></li>
+		
+  		<li><a href="/cm/Batch2Csharp/">Batch to C# - Info</a></li>
 		
 	</ul>
 	</aside>
@@ -633,6 +645,8 @@ This is easy, you just need to convert the value and everything to integers and 
 	<li><a href="http://pixelzerg.github.io/general">general</a></li>
 	
 	<li><a href="http://pixelzerg.github.io/world">world</a></li>
+	
+	<li><a href="http://pixelzerg.github.io/projects">projects</a></li>
 	
 	</ul>
 	</aside>
@@ -669,7 +683,8 @@ $("body").floatingSocialShare({
 <script src="/assets/js/scripts.min.js"></script>
 <script src="/assets/js/jquery.floating-social-share.min.js"></script>
 <script src="/assets/js/sticky.js"></script>
-
+<!-- <script src="/assets/js/lightbox.js"></script> -->
+<!-- <script src="/assets/js/jquery.mousewheel.min.js"></script> -->
 <!-- Asynchronous Google Analytics snippet -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -706,6 +721,7 @@ $("body").floatingSocialShare({
 
 <!-- Tabs: -->
 <script src="/assets/js/tabs.js"></script>
+
 <script>
   var myTabs = tabs({
     el: '#tabs',
@@ -713,15 +729,34 @@ $("body").floatingSocialShare({
     tabContentContainers: '.c-tab'
   });
   myTabs.init();
+</script>
+
+
+<!-- smooth scrollin' -->
+<script>
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 </script>	        
 
 
 <!-- <aside class="read-next">
   
-  <a class="read-next-story " style="background-image: url(/images/PZ/Fractals/1.jpg)" href="/general/OntologicalArgumentWeaknesses/">
+  <a class="read-next-story " style="background-image: url(/images/PZ/MSDOS.jpg)" href="/projects/animestr/">
             <section class="post">
-                <h2>Weaknesses of Anselm's Ontological Argument for the Existence of God</h2>
-                <p>Guanilo-------Guanilo was one of the earliest critics of Anselm's ontological argument. Guanilo doesn't really specify any fault with the...&hellip;</p>
+                <h2>animestr</h2>
+                <p>Stream anime on your android!&hellip;</p>
             </section>
         </a>
         
@@ -730,20 +765,20 @@ $("body").floatingSocialShare({
 
     <!-- [[! next_post ]] -->
     
-        <a class="read-next-story " style="background-image: url(/images/PZ/Fractals/5.jpg)" href="/cm/OneStepAtATime/">
+        <a class="read-next-story " style="background-image: url(/images/PZ/Covers/1.png)" href="/world/ChineseClassifiers/">
             <section class="post">
-                <h2>OneStepAtATime</h2>
-                <p>I'm actually going to do the `UniversalProgram` project sireously now - but let's start by taking things one step at a time. As it stands...&hellip;</p>
+                <h2>Chinese Classifiers - 漢語量詞</h2>
+                <p>![Biscuits](http://tinyurl.com/z9hhuh9)這是什麼？ 六包餅乾. A fairly simple question with a fairly simple answer. But notice how the answer uses s...&hellip;</p>
             </section>
         </a>
     
     <!-- [[! /next_post ]] -->
     <!-- [[! prev_post ]] -->
     
-        <a class="read-next-story prev " style="background-image: url(/images/PZ/bokeh.jpg)" href="/cm/ASComputingExercises/">
+        <a class="read-next-story prev " style="background-image: url(/images/PZ/booltree.png)" href="/cm/Cmplxfr1/">
             <section class="post">
-                <h2>ASComputingExercises - Introduction</h2>
-                <p>So here’s an explanation of what these posts are all about and why I made them.All of posts in this section will be my answers to exercis...&hellip;</p>
+                <h2>CodeComplexifier - Complex Booleans</h2>
+                <p>A new project that I am stating alongside my Universal Program project!This project is going to, essentially, be a code complexifier. Pro...&hellip;</p>
             </section>
         </a>
     
