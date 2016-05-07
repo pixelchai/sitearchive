@@ -4,13 +4,142 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-05-04T23:13:55+01:00</updated>
+<updated>2016-05-07T17:18:44+01:00</updated>
 <id>/</id>
 <author>
   <name>PixelZerg</name>
   <uri>/</uri>
   <email>abhinavbhandari4@gmail.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[ROTMG TradeBot]]></title>
+ <link rel="alternate" type="text/html" href="/projects/rotmgtradebot/" />
+  <id>/projects/rotmgtradebot</id>
+  <published>2016-05-07T00:00:00+01:00</published>
+  <updated>2016-05-07T00:00:00+01:00</updated>
+  <author>
+    <name>PixelZerg</name>
+    <uri></uri>
+    <email>abhinavbhandari4@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;This is a bot that I made many years ago. It has been almost a year since I quit this game. I did release a bot back then, however, the bot I released was just one of my early prototypes for the numerous other bots that I had. I was working on a “clientless” bot. Before I made the bot clientless, I first made the trade bot logic using K-Relay - where it is easy to debug. Here is the last of my prototypes! I’m not going to release my clientless bot, however, this K-Relay prototype has most of the features of my clientless bot. I’m releasing this because I noticed that there isn’t a decent public trade bot in the ROTMG community anymore since the leading trade bot has been deprecated and has got a fatal bug (from what I have gathered). In fact, from what I understand, the ROTMG community hasn’t had a public trade bot in quite a while. So much so, that people are turning to my rubbish TradeBot v0.1.1 prototype. I have quit ROTMG for quite some time and to put it bluntly, I don’t really care if releasing this bot publicly will ruin the game. So here you have it! I shall also be releasing my source code! :)&lt;br /&gt;&lt;br /&gt;Perspective: The version I am releasing today is build 226, the previous version was build 1&lt;/p&gt;
+
+&lt;h2&gt;Features:&lt;/h2&gt;
+&lt;p&gt;It’s been so long since I used this bot that I don’t even remember the features. Here are the ones I remember:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;User-friendly UI&lt;/li&gt;
+&lt;li&gt;Queue up trades and execute them after each other&lt;/li&gt;
+&lt;li&gt;Uses packets and so is fast and un-scammable&lt;/li&gt;
+&lt;li&gt;Can be minimised and runs in the background&lt;/li&gt;
+&lt;li&gt;Quite reliable - does not need to be checked on and is fully automatic&lt;/li&gt;
+&lt;li&gt;Not very CPU intensive&lt;/li&gt;
+&lt;li&gt;Supports selling and buying multiple types of items (e.g sell 3 dex AND 1 vit)&lt;/li&gt;
+&lt;li&gt;Can give items your own nickname&lt;/li&gt;
+&lt;li&gt;Saving and loading trade queues are supported&lt;/li&gt;
+&lt;li&gt;Can pipe tradebot output to a &quot;converter&quot; or a &quot;storage&quot; bot&lt;/li&gt;
+&lt;li&gt;Can save a &quot;snapshot&quot; of the trade-bot status and load it later - the snapshot saves all the current data such as trade queues, at what index your bots are in the trade queue, the piping of the bots (above), etc but best of all: player position. So when you load a snapshot, your bots automatically move back to that position they were when you saved the snapshot and everything runs exactly as how it was before&lt;/li&gt;
+&lt;li&gt;much more&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Behavior:&lt;/h2&gt;
+&lt;p&gt;This is a TradeBot for ROTMG - written in entirely C#&lt;br /&gt;
+First set up the trade settings and the TradeBot will begin spamming a message to advertise the trade once the settings UI is closed&lt;br /&gt;&lt;br /&gt;
+If there is an incoming trade, the TradeBot will accept it.&lt;br /&gt;
+If the person does not have the item(s) you are looking for, it will be immediately canceled.&lt;br /&gt;
+If the person does, your item(s) will be selected.&lt;br /&gt;
+If the person then selects the item(s) you want - the TradeBot will accept the trade and wait for the other person to accept too.&lt;br /&gt;
+If the person deselects the item you want at any time, the TradeBot will deselect your item.&lt;/p&gt;
+
+&lt;h2&gt;How To Run:&lt;/h2&gt;
+&lt;p&gt;To run this, you will need KrazyShank’s K-Relay&lt;br /&gt;
+Download the .zip file in &lt;code&gt;Releases&lt;/code&gt; above&lt;br /&gt;
+Download it, right click it, go to properties and click “unblock” if there is such option (if not continue)&lt;br /&gt;
+Extract the zip and place ALL the .dll files in your krelay/plugin folder&lt;br /&gt;
+Launch K Relay&lt;br /&gt;
+You must use the Orape client or similar to use this.&lt;br /&gt;
+In the client, choose your server from the main menu and select”Proxy Server” from the list.&lt;br /&gt;
+Enjoy!&lt;/p&gt;
+
+&lt;h2&gt;Commands:&lt;/h2&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span&gt;/tb [stopspam|stop|startspam|start]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;/tb&lt;/code&gt; on its own will bring up the Settings UI (more info on that below)&lt;br /&gt;
+&lt;code&gt;/tb start&lt;/code&gt; and &lt;code&gt;/tb stop&lt;/code&gt; will stop/start the bot and the spamming&lt;br /&gt;
+&lt;code&gt;/tb startspam&lt;/code&gt; and &lt;code&gt;/tb stopspam&lt;/code&gt; will stop/start the bot from spamming (but still accept trades, etc…)&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span&gt;/give&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This command shows the &lt;code&gt;Give&lt;/code&gt; Dialog, in which you can make the bot give some items to another connected client. This was mostly just used during development for debugging but might also come in handy when using the bot.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span&gt;/scamchk&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This is a command to debug the work-in-progress feature which detects if you have been scammed or not (if you have, it will add the person who scammed you to the trading blacklist). This feature does not currently work.
+&lt;br /&gt;&lt;/p&gt;
+&lt;h2&gt;Usage:&lt;/h2&gt;
+&lt;p&gt;Firstly, use the command &lt;code&gt;/tb&lt;/code&gt; in your character to bring up the settings UI for it.
+&lt;img src=&quot;/assets/projstuff/rotmgtradebot/3.png&quot; /&gt;
+Here’s what the UI will look like:
+&lt;img src=&quot;/assets/projstuff/rotmgtradebot/4.png&quot; /&gt;
+You will see that the name of the character you are changing the settings for will be in the bar of the window.&lt;/p&gt;
+&lt;h3&gt;Setting Up Trades:&lt;/h3&gt;
+&lt;p&gt;Click on “new” to add a new trade to the tradequeue, which is displayed in the listbox on the left.&lt;br /&gt; A new empty trade will be added to the tradequeue:
+&lt;img src=&quot;/assets/projstuff/rotmgtradebot/5.png&quot; /&gt;
+&lt;br /&gt;
+Click on the trade to select it. Once it is selected, you can use the buttons at the bottom of the listbox and you can also edit the trade in the panel on the right hand side.
+&lt;img src=&quot;/assets/projstuff/rotmgtradebot/6.png&quot; /&gt;
+&lt;br /&gt;
+Here, you can add things to the sell list and the buy list. The bot will select everything in the sell list and will only accept everything in the buy list when trading. NB: You can adjust how much space the buy list and the sell list by moving the separator.
+&lt;br /&gt;&lt;br /&gt;
+In order to add an item, input the quantity of the item and select an item from the ROTMG item list by pressing the &lt;code&gt;...&lt;/code&gt; button:
+&lt;img src=&quot;/assets/projstuff/rotmgtradebot/7.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;i&gt;NB: You can also search using regex in the search bar!&lt;/i&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+Once you have selected the item and the amount, you have the option to also give it a nickname by simply changing the text in the box (alternatively, you can leave it how it is):
+&lt;img src=&quot;/assets/projstuff/rotmgtradebot/8.png&quot; /&gt;
+Once you are done setting up the item, make sure to add it to the item list using the &lt;code&gt;+&lt;/code&gt;button. If you made a mistake, you can remove it from the item list again by selecting it in the list and clicking the &lt;code&gt;remove&lt;/code&gt; button.
+&lt;br /&gt;&lt;br /&gt;
+Once you have set up the trade, don’t forget to click &lt;code&gt;Apply&lt;/code&gt; at the bottom in order to apply your edits:
+&lt;img src=&quot;/assets/projstuff/rotmgtradebot/9.png&quot; /&gt;
+You will notice that you can now see the trade details in the tradequeue
+&lt;br /&gt;&lt;/p&gt;
+&lt;h3&gt;Saving/Loading&lt;/h3&gt;
+&lt;p&gt;You can use the two buttons at the top of the tradequeue listbox in order to export the tradequeue to a file and also load it again. (BTW: It is exported into a JSON file):
+&lt;img src=&quot;/assets/projstuff/rotmgtradebot/14.png&quot; /&gt;
+&lt;br /&gt;
+To save, just click on &lt;code&gt;Save&lt;/code&gt; and give your tradequeue a name:
+&lt;img src=&quot;/assets/projstuff/rotmgtradebot/10.png&quot; /&gt;
+You can then load it later by selecting it in the dialog that is launched when you press the &lt;code&gt;Load&lt;/code&gt; button:
+&lt;img src=&quot;/assets/projstuff/rotmgtradebot/11.png&quot; /&gt;
+&lt;br /&gt;
+The number next to the two buttons is the current index in the tradequeue (where 0 is the first trade). You can modify that if you wish.
+&lt;br /&gt;&lt;/p&gt;
+&lt;h3&gt;Helper Settings&lt;/h3&gt;
+&lt;p&gt;This is an exciting feature that allows you to pipe (direct) the outputs of your bots to other bots that will handle the items (by either converting them or storing them).
+&lt;br /&gt;&lt;br /&gt;
+For example, you can use this feature to make a setup in which you have 5 trading bots, merching using a cyclical tradequeue (such as the  1def-3dex-1dex;1def-4dex-1def;2dex-2def cycle). The output (1 def) gets given to a Converter bot which converts takes the output of the tradebots and once it has 4 def, converts it to 1 mana. This mana is then passed on to another converter bot which takes 2 mana and converts it into a life. This life (the output of the second converter) then gets distributed among 2 storage bots (storage bots just recieve items and keep them in their inventory).
+&lt;br /&gt;&lt;br /&gt;
+That is exactly what is going on in this picture:
+&lt;a href=&quot;/assets/projstuff/rotmgtradebot/1.png&quot;&gt;
+&lt;img src=&quot;/assets/projstuff/rotmgtradebot/1.png&quot; /&gt;&lt;/a&gt;
+(ooEangoo and Motemakura are the converters and Blxgvtihjc and iiOrothii are storages, the rest are traders)
+&lt;br /&gt;&lt;br /&gt;
+Here’s how to make this kind of setup:&lt;br /&gt;
+In the setting UI, you will notice there is a button &lt;code&gt;Helper Settings&lt;/code&gt;. Clicking on it, will bring up the Helper UI:
+&lt;img src=&quot;/assets/projstuff/rotmgtradebot/13.png&quot; /&gt;
+Use the buttons at the bottom of each list box in order to set up the system as you desire. Don’t forget to press &lt;code&gt;Add&lt;/code&gt; after selecting each client and they will appear in the listbox. Once you are done, check the &lt;code&gt;Enabled&lt;/code&gt; checkbox at the top right of the UI.
+&lt;br /&gt;&lt;/p&gt;
+&lt;h3&gt;Snapshots&lt;/h3&gt;
+&lt;p&gt;Snapshots are saved automatically when the trade bots are running, but if you really need to save a snapshot, you can click the &lt;code&gt;Save Snapshot&lt;/code&gt; button.
+&lt;br /&gt;&lt;br /&gt;
+To load a snapshot, click on the &lt;code&gt;Load Snapshot&lt;/code&gt; button:
+&lt;img src=&quot;/assets/projstuff/rotmgtradebot/12.png&quot; /&gt;
+There may be some snapshots there, even if you did not take them yourself because they are Autosave snapshots. These Autosave snapshots begin with &lt;code&gt;AutosaveSnapshot&lt;/code&gt; then the Year, Month, Day and then the Tick Number and Hash (don’t worry about this, it is just to differentiate the AutoSaves). The Autosave file gets replaced every time there is an Autosave, unless that Autosave Snapshot was not taken today (in other words: Autosave snapshots wont be replaced automatically if they were taken in previous days). Snapshots saved using the &lt;code&gt;Save Snapshot&lt;/code&gt; button will follow the same naming format, except it will begin with &lt;code&gt;Snapshot&lt;/code&gt; rather than &lt;code&gt;AutosaveSnapshot&lt;/code&gt; and will not be replaced by Autosaves.
+&lt;br /&gt;&lt;br /&gt;
+Make sure that you have the same account(s) open as you did when you saved the snapshot (if you don’t - the snapshot data for the accounts that you did have open when taking the snapshot but do not now will be ignored). Your clients will then start moving to the position they where when taking the snapshot (may not always work and you might need to move them yourself) and all the tradequeues,  Helper Setting, etc will be loaded from the snapshot.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/projects/rotmgtradebot/&quot;&gt;ROTMG TradeBot&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;&quot;&gt;PixelZerg&lt;/a&gt; on May 07, 2016.&lt;/p&gt;
+  </content>
+</entry>
 
 
 <entry>

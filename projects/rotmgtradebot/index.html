@@ -1,0 +1,608 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>ROTMG TradeBot &#8211; PixelZerg</title>
+<meta name="description" content="An advanced ROTMG trade bot!">
+<meta name="keywords" content="android, anime">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="/images/PZ/MSDOS.jpg">
+
+<meta name="twitter:title" content="ROTMG TradeBot">
+<meta name="twitter:description" content="An advanced ROTMG trade bot!">
+<meta name="twitter:creator" content="@pixelzerg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ROTMG TradeBot">
+<meta property="og:description" content="An advanced ROTMG trade bot!">
+<meta property="og:url" content="/projects/rotmgtradebot/">
+<meta property="og:site_name" content="PixelZerg">
+
+
+
+
+
+<link rel="canonical" href="/projects/rotmgtradebot/">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="PixelZerg Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<!-- <link rel="stylesheet" href="/assets/css/screen.css"> -->
+<!-- <link rel="stylesheet" href="/assets/css/ghost.min.css"> -->
+
+<!-- Compiled CSS -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.css"> -->
+
+  <!-- Compiled and minified JavaScript -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script> -->
+  <link rel="stylesheet" href="/assets/css/buttons.css">
+  <!-- <link rel="stylesheet" href="/assets/css/lightbox.css"> -->
+<link rel="stylesheet" href="/assets/css/tabs.css">
+<link rel="stylesheet" href="/assets/css/main_.css">
+<link rel="stylesheet" href="/assets/css/scssdump.css">
+<link rel="stylesheet" href="/assets/css/accordion.css">
+<link rel="stylesheet" href="/assets/css/simplegrid.css">
+<link rel="stylesheet" href="/assets/css/jquery.floating-social-share.min.css">
+<link rel="stylesheet" href="/assets/css/owl-carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl-theme.css">
+<link rel="stylesheet" href="/assets/css/animate.css">
+<!-- <link rel="stylesheet" href="/assets/css/ghost.min.css"> -->
+<!-- Webfonts -->
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<link rel="stylesheet" href="/assets/css/PZ.css">
+<!-- This one is RIIGHT at the bottom because DO NOT OVERRIDE MEE! >:) -->
+<link rel="stylesheet" href="/assets/css/project.css">
+<!-- TOO BAD! imma override you!! >:) -->
+</head>
+<div class="project">
+
+<body id="post" class="feature">
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="/">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="/images/PZ/BasicShade2RS.png" alt="PixelZerg photo" class="author-photo">
+					<h4>PixelZerg</h4>
+					<p>cat ducks eat duck cats</p>
+				</li>
+				<li><a href="/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+				<li>
+					<a href="mailto:abhinavbhandari4@gmail.com"><i class="fa fa-fw fa-envelope"></i> Email</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/pixelzerg"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
+				</li>
+				
+				<li>
+					<a href="https://google.com/+pixelzerg"><i class="fa fa-fw fa-google-plus"></i> Google+</a>
+				</li>
+				
+				<li>
+					<a href="https://github.com/pixelzerg"><i class="fa fa-fw fa-github"></i> GitHub</a>
+				</li>
+				<li>
+					<a href="pixelzerg"><i class="fa fa-fw fa-stack-exchange"></i> Stackexchange</a>
+				</li>
+				<li>
+					<a href="https://instagram.com/pixelzerg"><i class="fa fa-fw fa-instagram"></i> Instagram</a>
+				</li>
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="/posts/">All Posts</a></li>
+				<li><a href="/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Categories</a>
+			 <ul class="dl-submenu">
+			 	 
+			 		<li><a href="/cm">cm</a></li>
+			 	 
+			 		<li><a href="/general">general</a></li>
+			 	 
+			 		<li><a href="/world">world</a></li>
+			 	 
+			 		<li><a href="/projects">projects</a></li>
+			 	
+			 </ul>
+		</li>
+<!-- 		<li>
+			<a href="#">MOOO</a>
+			<ul class="dl-submenu">
+				<li><a href="">MOO</a></li>
+			</ul>
+		</li> -->
+<!-- 		
+<li>
+  <a href="#">android</a>
+  <ul class="dl-submenu">
+    
+      <li><a href="/projects/rotmgtradebot/">ROTMG TradeBot</a></li>
+    
+      <li><a href="/projects/animestr/">animestr</a></li>
+    
+  </ul>
+</li>
+
+<li>
+  <a href="#">anime</a>
+  <ul class="dl-submenu">
+    
+      <li><a href="/projects/rotmgtradebot/">ROTMG TradeBot</a></li>
+    
+      <li><a href="/projects/animestr/">animestr</a></li>
+    
+  </ul>
+</li>
+ -->
+
+		<!-- fmoofomeofmoewmfomew -->
+		
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+<div class="entry-header">
+  
+
+  <div class="entry-image" style="background-image: Url(/assets/projstuff/rotmgtradebot/splash.png);">
+  <div class="titleholder project">
+          <div>
+
+            <h1 style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 90px;
+          padding-bottom: 5vh;
+      " class="floating">ROTMG TradeBot</h1>
+          <ul class="hdist">
+          
+          <li>
+          <a class="ghost-button-transition rel" href="#releases"><i class="fa fa-arrow-right"></i> Download .dlls</a>
+          </li>
+          <div id="jsondata" style="display:none;">
+           {"buttontext":"Download .dlls","icon":"/assets/projstuff/rotmgtradebot/icon.png","splash":"/assets/projstuff/rotmgtradebot/splash.png","releases":{"ROTMG TradeBot v1.0.0":{"version":"1.0.0","date":"18/2/2016","platforms":{"Windows":{"link":"https://github.com/PixelZerg/ROTMGTradeBot/releases/download/v1.0.0/ROTMGTradeBot.zip","text":"Download .zip","icon":"fa fa-windows"}}},"ROTMG TradeBot v0.1.1":{"version":"0.1.1","date":"07/11/2015","platforms":{"Windows":{"link":"https://github.com/PixelZerg/ROTMGTradeBot/releases/download/v0.1.1/KRelayTradeBot_mpgh.net.zip","text":"Download .zip","icon":"fa fa-windows"}}}},"info":{"status":"complete","type":"K-Relay Plugin","language":"C#","source":"https://github.com/PixelZerg/ROTMGTradeBot"},"changelog":{"v0.1.1":"https://github.com/PixelZerg/ROTMGTradeBot/releases/tag/v0.1.1","v1.0.0":"https://github.com/PixelZerg/ROTMGTradeBot/releases/tag/v1.0.0"}}
+          </div>
+          <!-- $('.relbutton').append(JSON.parse($("#jsondata").text()).buttontext); -->
+          
+          
+          <li>
+          <a class="ghost-button-transition rel" href="https://github.com/PixelZerg/ROTMGTradeBot"><i class="fa fa-code"></i> Source</a>
+          </li>
+          
+          </ul>
+          <h5 style="
+          text-align: center;
+          vertical-align: middle;
+          color: white;
+      "><i class="fa fa-clock-o"></i> 07 May 2016</h5>
+       </div>
+       
+          </div>
+    <img src="/images/PZ/MSDOS.jpg" alt="ROTMG TradeBot" style="visibility: hidden;">
+
+              
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
+
+
+<div id="main" role="main">
+
+
+
+
+  <div class="grid grid-pad avoid-sbar">
+
+    <!-- <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="/projects/rotmgtradebot/" rel="bookmark" title="ROTMG TradeBot">ROTMG TradeBot</a></h1>
+        
+        <h2><span class="entry-date date published"><time datetime="2016-05-07T00:00:00+01:00">May 07, 2016</time></span></h2>
+        
+        <p class="entry-reading-time">
+          <i class="fa fa-clock-o"></i>
+          
+Reading time ~8 minutes
+        </p>
+        
+      </div>
+    </header> -->
+    <div class="col-9-12">
+    <h1>Releases:</h1>
+
+    <div class="releases-holder" id="releases">
+    
+        <div class="row grid grid-pad">
+          <div class="col-6-10">
+            <h3 class="title">ROTMG TradeBot v1.0.0</h3>
+            <p class="date">18/2/2016 &#8729; Version: 1.0.0</p>
+          </div>
+
+          
+          <div class="col-4-10" style="float: right;">
+            <div class="platform">
+              <span class="side-plat"><i class="fa fa-windows"></i> Windows</span>
+              <a class="button button-inverse rel" style="float: right;" href="https://github.com/PixelZerg/ROTMGTradeBot/releases/download/v1.0.0/ROTMGTradeBot.zip">Download .zip</a>
+            </div>
+          </div>
+          
+        </div>
+    
+        <div class="row grid grid-pad">
+          <div class="col-6-10">
+            <h3 class="title">ROTMG TradeBot v0.1.1</h3>
+            <p class="date">07/11/2015 &#8729; Version: 0.1.1</p>
+          </div>
+
+          
+          <div class="col-4-10" style="float: right;">
+            <div class="platform">
+              <span class="side-plat"><i class="fa fa-windows"></i> Windows</span>
+              <a class="button button-inverse rel" style="float: right;" href="https://github.com/PixelZerg/ROTMGTradeBot/releases/download/v0.1.1/KRelayTradeBot_mpgh.net.zip">Download .zip</a>
+            </div>
+          </div>
+          
+        </div>
+    
+
+    </div>
+
+    <h1>Description:</h1>
+    <p>This is a bot that I made many years ago. It has been almost a year since I quit this game. I did release a bot back then, however, the bot I released was just one of my early prototypes for the numerous other bots that I had. I was working on a “clientless” bot. Before I made the bot clientless, I first made the trade bot logic using K-Relay - where it is easy to debug. Here is the last of my prototypes! I’m not going to release my clientless bot, however, this K-Relay prototype has most of the features of my clientless bot. I’m releasing this because I noticed that there isn’t a decent public trade bot in the ROTMG community anymore since the leading trade bot has been deprecated and has got a fatal bug (from what I have gathered). In fact, from what I understand, the ROTMG community hasn’t had a public trade bot in quite a while. So much so, that people are turning to my rubbish TradeBot v0.1.1 prototype. I have quit ROTMG for quite some time and to put it bluntly, I don’t really care if releasing this bot publicly will ruin the game. So here you have it! I shall also be releasing my source code! :)<br /><br />Perspective: The version I am releasing today is build 226, the previous version was build 1</p>
+
+<h2>Features:</h2>
+<p>It’s been so long since I used this bot that I don’t even remember the features. Here are the ones I remember:</p>
+<ul>
+<li>User-friendly UI</li>
+<li>Queue up trades and execute them after each other</li>
+<li>Uses packets and so is fast and un-scammable</li>
+<li>Can be minimised and runs in the background</li>
+<li>Quite reliable - does not need to be checked on and is fully automatic</li>
+<li>Not very CPU intensive</li>
+<li>Supports selling and buying multiple types of items (e.g sell 3 dex AND 1 vit)</li>
+<li>Can give items your own nickname</li>
+<li>Saving and loading trade queues are supported</li>
+<li>Can pipe tradebot output to a "converter" or a "storage" bot</li>
+<li>Can save a "snapshot" of the trade-bot status and load it later - the snapshot saves all the current data such as trade queues, at what index your bots are in the trade queue, the piping of the bots (above), etc but best of all: player position. So when you load a snapshot, your bots automatically move back to that position they were when you saved the snapshot and everything runs exactly as how it was before</li>
+<li>much more</li>
+</ul>
+
+<h2>Behavior:</h2>
+<p>This is a TradeBot for ROTMG - written in entirely C#<br />
+First set up the trade settings and the TradeBot will begin spamming a message to advertise the trade once the settings UI is closed<br /><br />
+If there is an incoming trade, the TradeBot will accept it.<br />
+If the person does not have the item(s) you are looking for, it will be immediately canceled.<br />
+If the person does, your item(s) will be selected.<br />
+If the person then selects the item(s) you want - the TradeBot will accept the trade and wait for the other person to accept too.<br />
+If the person deselects the item you want at any time, the TradeBot will deselect your item.</p>
+
+<h2>How To Run:</h2>
+<p>To run this, you will need KrazyShank’s K-Relay<br />
+Download the .zip file in <code>Releases</code> above<br />
+Download it, right click it, go to properties and click “unblock” if there is such option (if not continue)<br />
+Extract the zip and place ALL the .dll files in your krelay/plugin folder<br />
+Launch K Relay<br />
+You must use the Orape client or similar to use this.<br />
+In the client, choose your server from the main menu and select”Proxy Server” from the list.<br />
+Enjoy!</p>
+
+<h2>Commands:</h2>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span>/tb [stopspam|stop|startspam|start]</span></code></pre></div>
+<p><code>/tb</code> on its own will bring up the Settings UI (more info on that below)<br />
+<code>/tb start</code> and <code>/tb stop</code> will stop/start the bot and the spamming<br />
+<code>/tb startspam</code> and <code>/tb stopspam</code> will stop/start the bot from spamming (but still accept trades, etc…)<br /></p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span>/give</span></code></pre></div>
+<p>This command shows the <code>Give</code> Dialog, in which you can make the bot give some items to another connected client. This was mostly just used during development for debugging but might also come in handy when using the bot.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span>/scamchk</span></code></pre></div>
+<p>This is a command to debug the work-in-progress feature which detects if you have been scammed or not (if you have, it will add the person who scammed you to the trading blacklist). This feature does not currently work.
+<br /></p>
+<h2>Usage:</h2>
+<p>Firstly, use the command <code>/tb</code> in your character to bring up the settings UI for it.
+<img src="/assets/projstuff/rotmgtradebot/3.png" />
+Here’s what the UI will look like:
+<img src="/assets/projstuff/rotmgtradebot/4.png" />
+You will see that the name of the character you are changing the settings for will be in the bar of the window.</p>
+<h3>Setting Up Trades:</h3>
+<p>Click on “new” to add a new trade to the tradequeue, which is displayed in the listbox on the left.<br /> A new empty trade will be added to the tradequeue:
+<img src="/assets/projstuff/rotmgtradebot/5.png" />
+<br />
+Click on the trade to select it. Once it is selected, you can use the buttons at the bottom of the listbox and you can also edit the trade in the panel on the right hand side.
+<img src="/assets/projstuff/rotmgtradebot/6.png" />
+<br />
+Here, you can add things to the sell list and the buy list. The bot will select everything in the sell list and will only accept everything in the buy list when trading. NB: You can adjust how much space the buy list and the sell list by moving the separator.
+<br /><br />
+In order to add an item, input the quantity of the item and select an item from the ROTMG item list by pressing the <code>...</code> button:
+<img src="/assets/projstuff/rotmgtradebot/7.png" /></p>
+<center><i>NB: You can also search using regex in the search bar!</i></center>
+<p><br /><br />
+Once you have selected the item and the amount, you have the option to also give it a nickname by simply changing the text in the box (alternatively, you can leave it how it is):
+<img src="/assets/projstuff/rotmgtradebot/8.png" />
+Once you are done setting up the item, make sure to add it to the item list using the <code>+</code>button. If you made a mistake, you can remove it from the item list again by selecting it in the list and clicking the <code>remove</code> button.
+<br /><br />
+Once you have set up the trade, don’t forget to click <code>Apply</code> at the bottom in order to apply your edits:
+<img src="/assets/projstuff/rotmgtradebot/9.png" />
+You will notice that you can now see the trade details in the tradequeue
+<br /></p>
+<h3>Saving/Loading</h3>
+<p>You can use the two buttons at the top of the tradequeue listbox in order to export the tradequeue to a file and also load it again. (BTW: It is exported into a JSON file):
+<img src="/assets/projstuff/rotmgtradebot/14.png" />
+<br />
+To save, just click on <code>Save</code> and give your tradequeue a name:
+<img src="/assets/projstuff/rotmgtradebot/10.png" />
+You can then load it later by selecting it in the dialog that is launched when you press the <code>Load</code> button:
+<img src="/assets/projstuff/rotmgtradebot/11.png" />
+<br />
+The number next to the two buttons is the current index in the tradequeue (where 0 is the first trade). You can modify that if you wish.
+<br /></p>
+<h3>Helper Settings</h3>
+<p>This is an exciting feature that allows you to pipe (direct) the outputs of your bots to other bots that will handle the items (by either converting them or storing them).
+<br /><br />
+For example, you can use this feature to make a setup in which you have 5 trading bots, merching using a cyclical tradequeue (such as the  1def-3dex-1dex;1def-4dex-1def;2dex-2def cycle). The output (1 def) gets given to a Converter bot which converts takes the output of the tradebots and once it has 4 def, converts it to 1 mana. This mana is then passed on to another converter bot which takes 2 mana and converts it into a life. This life (the output of the second converter) then gets distributed among 2 storage bots (storage bots just recieve items and keep them in their inventory).
+<br /><br />
+That is exactly what is going on in this picture:
+<a href="/assets/projstuff/rotmgtradebot/1.png">
+<img src="/assets/projstuff/rotmgtradebot/1.png" /></a>
+(ooEangoo and Motemakura are the converters and Blxgvtihjc and iiOrothii are storages, the rest are traders)
+<br /><br />
+Here’s how to make this kind of setup:<br />
+In the setting UI, you will notice there is a button <code>Helper Settings</code>. Clicking on it, will bring up the Helper UI:
+<img src="/assets/projstuff/rotmgtradebot/13.png" />
+Use the buttons at the bottom of each list box in order to set up the system as you desire. Don’t forget to press <code>Add</code> after selecting each client and they will appear in the listbox. Once you are done, check the <code>Enabled</code> checkbox at the top right of the UI.
+<br /></p>
+<h3>Snapshots</h3>
+<p>Snapshots are saved automatically when the trade bots are running, but if you really need to save a snapshot, you can click the <code>Save Snapshot</code> button.
+<br /><br />
+To load a snapshot, click on the <code>Load Snapshot</code> button:
+<img src="/assets/projstuff/rotmgtradebot/12.png" />
+There may be some snapshots there, even if you did not take them yourself because they are Autosave snapshots. These Autosave snapshots begin with <code>AutosaveSnapshot</code> then the Year, Month, Day and then the Tick Number and Hash (don’t worry about this, it is just to differentiate the AutoSaves). The Autosave file gets replaced every time there is an Autosave, unless that Autosave Snapshot was not taken today (in other words: Autosave snapshots wont be replaced automatically if they were taken in previous days). Snapshots saved using the <code>Save Snapshot</code> button will follow the same naming format, except it will begin with <code>Snapshot</code> rather than <code>AutosaveSnapshot</code> and will not be replaced by Autosaves.
+<br /><br />
+Make sure that you have the same account(s) open as you did when you saved the snapshot (if you don’t - the snapshot data for the accounts that you did have open when taking the snapshot but do not now will be ignored). Your clients will then start moving to the position they where when taking the snapshot (may not always work and you might need to move them yourself) and all the tradequeues,  Helper Setting, etc will be loaded from the snapshot.</p>
+
+
+    </div>
+    <div class="col-3-12">
+    <h1>Info:</h1>
+    <p>
+    
+    <strong>status</strong>: complete<br>
+    
+    <strong>type</strong>: K-Relay Plugin<br>
+    
+    <strong>language</strong>: C#<br>
+    
+    <strong>source</strong>: <a href="https://github.com/PixelZerg/ROTMGTradeBot">click here</a><br>
+    
+    </p>
+    </div>
+    <div class="col-3-12">
+    <h1>Changelog:</h1>
+    <!-- recursive function -->
+    <!-- (comming soon) -->
+        <ul class="cd-accordion-menu changelog">
+        </ul>
+
+        <script>
+        // recursive javascript script: https://jsfiddle.net/pixelzerg/9nvt8g7v/
+            //var json = jsonn.data.changelog;
+
+            function randomString() {
+              return Math.random().toString(36).slice(2);
+            }
+
+            function jsonToHtml(o) {
+              var s = '';
+              for (var a in o) {
+                if (typeof o[a] == 'object') {
+                  var gname = randomString();
+                  s += "<li class=\"has-children\">\r\n\t\t<input type=\"checkbox\" id=\"" + gname + "\" checked>\r\n\t\t<label for=\"" + gname + "\">" + a + "<\/label>\r\n \r\n  \t\t<ul>"
+                  s += jsonToHtml(o[a]) + "<\/ul>\r\n<\/li>";
+                } else {
+                  var gname = randomString();
+                  s += "<li class=\"has-children\">\r\n\t\t<input type=\"checkbox\" id=\"" + gname + "\" checked>\r\n\t\t<label for=\"" + gname + "\">" + a + "<\/label>\r\n \r\n  \t\t<ul>"
+                  s += o[a] + "<\/ul>\r\n<\/li>";
+                } //end if
+              } //end for
+              return s;
+            }
+
+            $(".changelog").html(jsonToHtml(JSON.parse($("#jsondata").text()).changelog));
+            $(".changelog label").trigger("click"); //close everything
+        </script>
+    </div>
+
+  </div><!-- /grid pad -->
+
+  <footer class="entry-meta">
+        <span class="entry-tags"><a href="/tags/#android" title="Pages tagged android" class="tag"><span class="term">android</span></a><a href="/tags/#anime" title="Pages tagged anime" class="tag"><span class="term">anime</span></a></span>
+
+         -->
+        <div class="social-share">
+  <ul class="socialcount socialcount-small inline-list">
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://pixelzerg.github.io/projects/rotmgtradebot/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://pixelzerg.github.io/projects/rotmgtradebot/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=http://pixelzerg.github.io/projects/rotmgtradebot/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+  </ul>
+</div><!-- /.social-share -->
+      </footer>
+      <div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//pixelzerg.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div><!-- /#main -->
+
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <small><span>&copy; 2016 PixelZerg. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>. Site design based on the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span></small>
+
+<script>
+window.onload = function () {
+$("body").floatingSocialShare({
+    place: "top-left", // alternatively content-left, top-right
+    counter: true, // set to false for hiding the counters of buttons
+    buttons: ["facebook", "google-plus", "twitter", "linkedin", "pinterest", "reddit", "tumblr"],  // all of the currently avalaible social buttons
+    title: document.title, // your title, default is current page's title
+    url: window.location.href,  // your url, default is current page's url
+    text: "share with ", // the title of a tags
+    description: $('meta[name="description"]').attr("content"), // your description, default is current page's description
+    media: $('meta[property="og:image"]').attr("content"), // pinterest media
+    popup_width: 400, // the sharer popup width, default is 400px
+    popup_height: 300 // the sharer popup height, default is 300px
+});
+}
+</script>
+  </footer>
+</div><!-- /.footer-wrapper -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+<script src="/assets/js/jquery.floating-social-share.min.js"></script>
+<script src="/assets/js/sticky.js"></script>
+<!-- <script src="/assets/js/lightbox.js"></script> -->
+<!-- <script src="/assets/js/jquery.mousewheel.min.js"></script> -->
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70240671-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- <div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//pixelzerg.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript> -->
+
+<!-- Tabs: -->
+<script src="/assets/js/tabs.js"></script>
+
+<script>
+  var myTabs = tabs({
+    el: '#tabs',
+    tabNavigationLinks: '.c-tabs-nav__link',
+    tabContentContainers: '.c-tab'
+  });
+  myTabs.init();
+</script>
+
+
+<!-- smooth scrollin' -->
+<script>
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>	        
+
+
+<!-- <aside class="read-next">
+  
+  <a class="read-next-story " style="background-image: url(/images/PZ/MSDOS.jpg)" href="/projects/animestr/">
+            <section class="post">
+                <h2>animestr</h2>
+                <p>Stream anime on your android!&hellip;</p>
+            </section>
+        </a>
+        
+</aside> -->
+
+</body>
+</div>
+</html>
