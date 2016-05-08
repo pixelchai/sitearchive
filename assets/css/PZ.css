@@ -2227,3 +2227,7 @@ img.mfp-img, button.mfp-close, .lb-nav {
 .grid-pad{
     padding-right: 0;
 }
+
+p {
+    overflow: auto;
+}
