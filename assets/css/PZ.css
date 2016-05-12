@@ -1543,7 +1543,7 @@ div.titleholder div h1{
 /*disqus box rem*/
 #post #disqus_thread, #page #disqus_thread {
     box-shadow: none;
-    background-color: white;
+    background-color: transparent;
     position: relative;
     height: auto;
     padding: 0;
@@ -2129,6 +2129,7 @@ ul.changelog, .changelog ul {
     padding-bottom: 10px;
 
 }
+}
 /*def*/
 
 @media handheld, only screen and (min-width: 766px) {
@@ -2208,6 +2209,7 @@ ul.changelog, .changelog ul {
     color: white;
     padding-left: 10px;
 }
+
 }
 
 /*override:*/
@@ -2230,4 +2232,38 @@ img.mfp-img, button.mfp-close, .lb-nav {
 
 p {
     overflow: auto;
+}
+
+iframe{
+    border: 1px solid transparent;
+    width: 100%;
+    min-height: 60vh;
+    margin: initial;
+    display: initial;
+}
+
+.icontent{
+    padding: 0 50px 0 50px;
+    padding-top: 5vh;
+}
+
+@media handheld, only screen and (max-width: 961px) {
+    .icontent{
+    padding: 0;
+}
+    }
+#disqus_thread{
+        padding: 10px;
+}
+
+/*------------------------------------------------------------------------------------- the dark theme -----------------------------------------------------------------------------------------*/
+html.theme-dark footer, html.theme-dark div#main, html.theme-dark, html.theme-dark body {
+background-color: rgba(34,34,34,0.95);
+}
+html.theme-dark h1, html.theme-dark h2, html.theme-dark h3, html.theme-dark h4, html.theme-dark h5, html.theme-dark h6, html.theme-dark p, html.theme-dark span{
+    color: rgba(250, 250, 250, 0.7);
+}
+
+.latex{
+        font-size: 1.5em;
 }

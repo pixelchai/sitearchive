@@ -1,5 +1,25 @@
 
 	<item>
+	  <title>picalc</title>
+	  <link>/projects/picalc/</link>
+	  <author></author>
+	  <pubDate>2016-05-10T00:00:00+01:00</pubDate>
+	  <guid>/projects/picalc/</guid>
+	  <description><![CDATA[
+	     <p>This calculator uses the Bailey–Borwein–Plouffe formula:</p>
+<div class="latex" id="1"></div>
+<script>
+katex.render("\\pi=\\sum_{k=0}^\\infty\\left[\\frac1{16^k}\\left(\\frac4{8k+1}-\\frac2{8k+4}-\\frac1{8k+5}-\\frac1{8k+6}\\right)\\right]", $(".latex#1")[0]);
+</script>
+
+<p>This formula converges quite fast. The calculator shows every stage in the summation as k changes from 0 to infinity. You probably won’t need to use pi to such an accuracy and even if you did, you can easily find pre-computed values of pi on the Internet. The computer calculating pi in this way looks pretty cool, either way.
+<br /><br />
+Digits that are greyed out are the digits that are still being computed and are just rough, non-final values. The darker digits are digits that have finished being computed and is definitely the digit for that position in pi. Once you have calculated 5,750 digits (most people will probably have left WAY before this time), all of the next digits will be grey since that is the length of the pre-computed string that is used to verify the result (just saying this to save you A LOT of time in-case you wanted to find out manually).</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>ROTMG TradeBot</title>
 	  <link>/projects/rotmgtradebot/</link>
 	  <author></author>
