@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-05-21T23:45:46+01:00</updated>
+<updated>2016-05-21T23:58:14+01:00</updated>
 <id>/</id>
 <author>
   <name>PixelZerg</name>
@@ -69,7 +69,21 @@ $(&#39;.titleholder .ghost-button-transition&#39;).attr(&quot;class&quot;,&quot;
     <email>abhinavbhandari4@gmail.com</email>
   </author>
   <content type="html">
-    &lt;p&gt;This calculator uses the Bailey–Borwein–Plouffe formula:&lt;/p&gt;
+    &lt;style&gt;
+	.entry-image:after{
+		background-color: transparent;
+	}
+	.titleholder div h1,.titleholder div h5{
+		color: gray;
+	}
+&lt;/style&gt;
+
+&lt;script&gt;
+$(&#39;.titleholder div h1&#39;).css(&quot;color&quot;,&quot;gray&quot;);
+$(&#39;.titleholder div h5&#39;).css(&quot;color&quot;,&quot;gray&quot;);
+&lt;/script&gt;
+
+&lt;p&gt;This calculator uses the Bailey–Borwein–Plouffe formula:&lt;/p&gt;
 &lt;div class=&quot;latex&quot; id=&quot;1&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
 katex.render(&quot;\\pi=\\sum_{k=0}^\\infty\\left[\\frac1{16^k}\\left(\\frac4{8k+1}-\\frac2{8k+4}-\\frac1{8k+5}-\\frac1{8k+6}\\right)\\right]&quot;, $(&quot;.latex#1&quot;)[0]);

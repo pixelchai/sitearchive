@@ -189,7 +189,7 @@
 <div class="entry-header">
   
 
-  <div class="entry-image" style="background-image: Url(/assets/projstuff/picalc/icon.png);">
+  <div class="entry-image" style="background-image: Url(/assets/projstuff/picalc/splash.png);">
   <div class="titleholder project">
           <div>
 
@@ -203,11 +203,8 @@
           
           
           </ul>
-          <h5 style="
-          text-align: center;
-          vertical-align: middle;
-          color: white;
-      "><i class="fa fa-clock-o"></i> 10 May 2016</h5>
+          
+          
        </div>
        
           </div>
@@ -250,7 +247,21 @@ Reading time ~1 minute
 
     <h1>Description:</h1>
     <div>
-    <p>This calculator uses the Bailey–Borwein–Plouffe formula:</p>
+    <style>
+	.entry-image:after{
+		background-color: transparent;
+	}
+	.titleholder div h1,.titleholder div h5{
+		color: gray;
+	}
+</style>
+
+<script>
+$('.titleholder div h1').css("color","gray");
+$('.titleholder div h5').css("color","gray");
+</script>
+
+<p>This calculator uses the Bailey–Borwein–Plouffe formula:</p>
 <div class="latex" id="1"></div>
 <script>
 katex.render("\\pi=\\sum_{k=0}^\\infty\\left[\\frac1{16^k}\\left(\\frac4{8k+1}-\\frac2{8k+4}-\\frac1{8k+5}-\\frac1{8k+6}\\right)\\right]", $(".latex#1")[0]);
