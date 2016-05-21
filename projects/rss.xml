@@ -1,5 +1,27 @@
 
 	<item>
+	  <title>mathvis</title>
+	  <link>/projects/mathvis/</link>
+	  <author></author>
+	  <pubDate>2016-05-21T00:00:00+01:00</pubDate>
+	  <guid>/projects/mathvis/</guid>
+	  <description><![CDATA[
+	     <p>Write an equation in the input box above and see the equation visualised!
+<br />The formatting is rather standard: +, -, *, /, ^ are the currently supported operators.
+<br />When using the ^ (to the power) operator, the power you are raising to must always be enclosed in brackets. E.g: 4^(5+3)</p>
+
+<p>This is a demo showing my maths equations parsing algorithm. The output is recursively generated.
+<br />I will most likely use this algorithm in some of my other projects.
+<br />I hope it’s of use to someone!</p>
+
+<p>Here’s what was going on in my mind as I was figuring out how to tackle this problem:</p>
+
+<p><img src="/assets/projstuff/mathvis/1.jpg" style="width: 550px;" /></p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>picalc</title>
 	  <link>/projects/picalc/</link>
 	  <author></author>
