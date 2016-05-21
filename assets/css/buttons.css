@@ -302,6 +302,31 @@
 }
 
 /*
+ * Simple Transition Effect inv
+ */
+.ghost-button-inv {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: black;
+  border: 2px solid black;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+.ghost-button-inv:hover,
+.ghost-button-inv:active {
+  background-color: #fff;
+  color: #000;
+  -webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+
+/*
  * Thick Border
  */
 .ghost-button-thick-border {
@@ -440,3 +465,4 @@
               height 0.1s ease-in,
               line-height 0.1s ease-in;
 }
+

@@ -222,11 +222,45 @@
 </nav><!-- /.dl-menuwrapper -->
 
 
+<div class="entry-header">
+  
 
+  <div class="entry-image" style="background-image: Url(/assets/projstuff/mathvis/splash.jpg);">
+  <div class="titleholder project">
+          <div>
+
+            <h1 style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 90px;
+          padding-bottom: 5vh;
+      " class="floating">mathvis</h1>
+          <ul class="hdist">
+          
+          
+          <li>
+          <a class="ghost-button-transition rel" href="/assets/projstuff/mathvis/mathvis.js"><i class="fa fa-code"></i> Source</a>
+          </li>
+          
+          </ul>
+          <h5 style="
+          text-align: center;
+          vertical-align: middle;
+          color: white;
+      "><i class="fa fa-clock-o"></i> 21 May 2016</h5>
+       </div>
+       
+          </div>
+    <img src="/images/" alt="mathvis" style="visibility: hidden;">
+
+              
+  </div><!-- /.entry-image -->
+  </div>
+  
 <div class="entry-header icontent">
 <iframe src="/assets/projstuff/mathvis/index.html" id="iframe"></iframe>
-
-</div><!-- /.entry-header -->
+</div>
+  
 
 
 <div id="main" role="main">
@@ -256,7 +290,22 @@ Reading time ~1 minute
 
     <h1>Description:</h1>
     <div>
-    <p>Write an equation in the input box above and see the equation visualised!
+    <style>
+	.entry-image:after{
+		background-color: transparent;
+	}
+	.titleholder div h1,.titleholder div h5{
+		color: gray;
+	}
+</style>
+
+<script>
+$('.titleholder div h1').css("color","gray");
+$('.titleholder div h5').css("color","gray");
+$('.titleholder .ghost-button-transition').attr("class","ghost-button-inv rel");
+</script>
+
+<p>Write an equation in the input box above and see the equation visualised!
 <br />The formatting is rather standard: +, -, *, /, ^ are the currently supported operators.
 <br />When using the ^ (to the power) operator, the power you are raising to must always be enclosed in brackets. E.g: 4^(5+3)</p>
 
@@ -279,6 +328,8 @@ Reading time ~1 minute
     <strong>type</strong>: Interactive<br>
     
     <strong>languages</strong>: javascript, css, HTML<br>
+    
+    <strong>source</strong>: <a href="/assets/projstuff/mathvis/mathvis.js">click here</a><br>
     
     </p>
     </div>
