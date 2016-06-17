@@ -2267,3 +2267,17 @@ html.theme-dark h1, html.theme-dark h2, html.theme-dark h3, html.theme-dark h4, 
 .latex{
         font-size: 1.5em;
 }
+
+.tag-heading {
+    margin-top: 0;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+table thead{
+  background-color: gainsboro;
+}
+
+tr.gray, tr.gray *{
+    color: rgba(0, 0, 0, 0.15);
+}

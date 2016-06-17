@@ -1,85 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/projects/mathvis/</loc>
+    <loc>http://pixelzerg.github.io/projects/mathvis/</loc>
     <lastmod>2016-05-21T00:00:00+01:00</lastmod>
   </url>
   <url>
-    <loc>/projects/picalc/</loc>
+    <loc>http://pixelzerg.github.io/projects/picalc/</loc>
     <lastmod>2016-05-10T00:00:00+01:00</lastmod>
   </url>
   <url>
-    <loc>/projects/rotmgtradebot/</loc>
+    <loc>http://pixelzerg.github.io/projects/rotmgtradebot/</loc>
     <lastmod>2016-05-07T00:00:00+01:00</lastmod>
   </url>
   <url>
-    <loc>/projects/animestr/</loc>
+    <loc>http://pixelzerg.github.io/projects/animestr/</loc>
     <lastmod>2016-04-18T00:00:00+01:00</lastmod>
   </url>
   <url>
-    <loc>/general/OntologicalArgumentWeaknesses/</loc>
+    <loc>http://pixelzerg.github.io/general/OntologicalArgumentWeaknesses/</loc>
     <lastmod>2016-02-23T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>/world/ChineseClassifiers/</loc>
+    <loc>http://pixelzerg.github.io/world/ChineseClassifiers/</loc>
     <lastmod>2016-01-16T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>/cm/AScompexs21p36/</loc>
+    <loc>http://pixelzerg.github.io/cm/AScompexs21p36/</loc>
     <lastmod>2015-11-28T15:49:08+00:00</lastmod>
   </url>
   <url>
-    <loc>/cm/Cmplxfr1/</loc>
+    <loc>http://pixelzerg.github.io/cm/Cmplxfr1/</loc>
     <lastmod>2015-11-24T06:42:45+00:00</lastmod>
   </url>
   <url>
-    <loc>/general/Hello/</loc>
+    <loc>http://pixelzerg.github.io/general/Hello/</loc>
     <lastmod>2015-11-18T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>/cm/Batch2Csharp/</loc>
+    <loc>http://pixelzerg.github.io/cm/Batch2Csharp/</loc>
     <lastmod>2015-10-29T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>/404.html</loc>
+    <loc>http://pixelzerg.github.io/404.html</loc>
   </url>
   <url>
-    <loc>/posts/</loc>
+    <loc>http://pixelzerg.github.io/acknowledgements/</loc>
   </url>
   <url>
-    <loc>/</loc>
+    <loc>http://pixelzerg.github.io/</loc>
   </url>
   <url>
-    <loc>/tags/</loc>
+    <loc>http://pixelzerg.github.io/tags/</loc>
   </url>
   <url>
-    <loc>/blog/</loc>
+    <loc>http://pixelzerg.github.io/posts/</loc>
   </url>
   <url>
-    <loc>/about/</loc>
+    <loc>http://pixelzerg.github.io/blog/</loc>
   </url>
   <url>
-    <loc>/cm/</loc>
+    <loc>http://pixelzerg.github.io/about/</loc>
   </url>
   <url>
-    <loc>/general/</loc>
+    <loc>http://pixelzerg.github.io/cm/</loc>
   </url>
   <url>
-    <loc>/world/</loc>
+    <loc>http://pixelzerg.github.io/general/</loc>
   </url>
   <url>
-    <loc>/projects/</loc>
+    <loc>http://pixelzerg.github.io/world/</loc>
   </url>
   <url>
-    <loc>/assets/projstuff/mathvis/index.html</loc>
+    <loc>http://pixelzerg.github.io/projects/</loc>
+  </url>
+  <url>
+    <loc>http://pixelzerg.github.io/assets/projstuff/mathvis/index.html</loc>
     <lastmod>2016-05-21T23:45:44+01:00</lastmod>
   </url>
   <url>
-    <loc>/assets/projstuff/picalc/index.html</loc>
+    <loc>http://pixelzerg.github.io/assets/projstuff/picalc/index.html</loc>
     <lastmod>2016-05-12T20:36:16+01:00</lastmod>
   </url>
   <url>
-    <loc>/googled89a84c7e0f0e0f4.html</loc>
+    <loc>http://pixelzerg.github.io/googled89a84c7e0f0e0f4.html</loc>
     <lastmod>2016-06-03T23:53:48+01:00</lastmod>
   </url>
 </urlset>
