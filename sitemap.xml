@@ -47,16 +47,19 @@
     <loc>http://pixelzerg.github.io/acknowledgements/</loc>
   </url>
   <url>
-    <loc>http://pixelzerg.github.io/</loc>
+    <loc>http://pixelzerg.github.io/pm/</loc>
   </url>
   <url>
-    <loc>http://pixelzerg.github.io/tags/</loc>
+    <loc>http://pixelzerg.github.io/blog/</loc>
   </url>
   <url>
     <loc>http://pixelzerg.github.io/posts/</loc>
   </url>
   <url>
-    <loc>http://pixelzerg.github.io/blog/</loc>
+    <loc>http://pixelzerg.github.io/tags/</loc>
+  </url>
+  <url>
+    <loc>http://pixelzerg.github.io/</loc>
   </url>
   <url>
     <loc>http://pixelzerg.github.io/about/</loc>
