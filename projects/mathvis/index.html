@@ -84,6 +84,7 @@
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" href="/assets/css/PZ.css">
 <!-- This one is RIIGHT at the bottom because DO NOT OVERRIDE MEE! >:) -->
@@ -91,14 +92,16 @@
 <!-- TOO BAD! imma override you!! >:) -->
 </head>
 <div class="project">
-
+<div id="jsondata" style="display:none;">
+           {"buttontext":"Go","icon":"/assets/projstuff/mathvis/icon.jpg","splash":"/assets/projstuff/mathvis/splash.jpg","info":{"status":"omptimisation pending","type":"Interactive","languages":"javascript, css, HTML","buttons":{"<i class=\"fa fa-code\"></i>source":"/assets/projstuff/mathvis/mathvis.js"}}}
+          </div>
 <body id="post" >
 
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
 	<button class="dl-trigger">Open Menu</button>
 	<ul class="dl-menu">
-		<li><a href="http://pixelzerg.github.io/">Home</a></li>
+		<li><a href="/">Home</a></li>
 		<li>
 			<a href="#">About</a>
 			<ul class="dl-submenu">
@@ -235,15 +238,14 @@
           text-align: center;
           vertical-align: middle;
           line-height: 90px;
-          padding-bottom: 5vh;
+          /*padding-bottom: 5vh;*/
       " class="floating">mathvis</h1>
           <ul class="hdist">
-          
-          
-          <li>
-          <a class="ghost-button-transition rel" href="/assets/projstuff/mathvis/mathvis.js"><i class="fa fa-code"></i> Source</a>
-          </li>
-          
+
+
+                    
+
+
           </ul>
           
           <h5 style="
@@ -266,6 +268,56 @@
 </div>
   
 
+<div class="buttons">
+<div class="c-tabs-nav">
+
+
+
+
+          <a href="/assets/projstuff/mathvis/mathvis.js" class="c-tabs-nav__link"><i class="fa fa-code"></i><span>source</span></a>
+
+
+</div>  
+</div>
+<div class="buttonsafter"></div>
+<script>
+//by Affixed Header Script PixelZerg
+function getPosition(element) {
+    var xPosition = 0;
+    var yPosition = 0;
+
+    while(element) {
+        xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
+        yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
+        element = element.offsetParent;
+    }
+
+    return { x: xPosition, y: yPosition };
+}
+function affix(selector, offset){
+var scrollthresh = null;
+$(selector).after("<div></div>");
+  $(function(){
+    $(window).scroll(function(){
+      var buttons = $(selector);
+      if(scrollthresh == null && getPosition(buttons[0]).y < offset){
+        buttons.addClass("affix");
+        buttons.next().height(buttons.height());
+        scrollthresh = window.pageYOffset || document.documentElement.scrollTop;;
+      }
+      else if(scrollthresh !== null){
+        var curscroll = window.pageYOffset || document.documentElement.scrollTop;
+        if(curscroll < scrollthresh){
+          buttons.next().height(0);
+          buttons.removeClass("affix");
+          scrollthresh = null;
+        }
+      }
+    });
+  });
+}
+affix(".buttons",0);
+</script>
 
 <div id="main" role="main">
 
@@ -325,17 +377,28 @@ $('.titleholder .ghost-button-transition').attr("class","ghost-button-inv rel");
     </div>
     <div class="col-3-12">
     <h1>Info:</h1>
-    <p>
+    
     
     <strong>status</strong>: omptimisation pending<br>
     
+    
+    
     <strong>type</strong>: Interactive<br>
+    
+    
     
     <strong>languages</strong>: javascript, css, HTML<br>
     
-    <strong>source</strong>: <a href="/assets/projstuff/mathvis/mathvis.js">click here</a><br>
     
-    </p>
+    
+    
+    
+    <div class="noglyphs">
+    
+    <strong><i class="fa fa-code"></i>source</strong>: <a href="/assets/projstuff/mathvis/mathvis.js">click here</a><br>
+    
+    </div>
+    
     </div>
     
 
@@ -475,10 +538,10 @@ $(function() {
 
 <!-- <aside class="read-next">
   
-  <a class="read-next-story no-cover" href="/projects/picalc/">
+  <a class="read-next-story no-cover" href="/neuroocr/">
             <section class="post">
-                <h2>picalc</h2>
-                <p>Calculate the value of Pi online!</p>
+                <h2>Neuroocr</h2>
+                <p>The aim of the NeuroOCR project is to produce an artificial neural network capable of learning to recognise different characters (the low...&hellip;</p>
             </section>
         </a>
         

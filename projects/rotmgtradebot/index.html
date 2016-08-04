@@ -85,6 +85,7 @@
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" href="/assets/css/PZ.css">
 <!-- This one is RIIGHT at the bottom because DO NOT OVERRIDE MEE! >:) -->
@@ -92,14 +93,16 @@
 <!-- TOO BAD! imma override you!! >:) -->
 </head>
 <div class="project">
-
+<div id="jsondata" style="display:none;">
+           {"buttontext":"Download .dlls","icon":"/assets/projstuff/rotmgtradebot/icon.png","splash":"/assets/projstuff/rotmgtradebot/splash.png","releases":{"ROTMG TradeBot v1.0.0":{"version":"1.0.0","date":"18/2/2016","platforms":{"Windows":{"link":"https://github.com/PixelZerg/ROTMGTradeBot/releases/download/v1.0.0/ROTMGTradeBot.zip","text":"Download .zip","icon":"fa fa-windows"}}},"ROTMG TradeBot v0.1.1":{"version":"0.1.1","date":"07/11/2015","platforms":{"Windows":{"link":"https://github.com/PixelZerg/ROTMGTradeBot/releases/download/v0.1.1/KRelayTradeBot_mpgh.net.zip","text":"Download .zip","icon":"fa fa-windows"}}}},"info":{"status":"complete","type":"K-Relay Plugin","language":"C#","buttons":{"<i class=\"fa fa-code\"></i>source":"https://github.com/PixelZerg/ROTMGTradeBot"}},"changelog":{"v0.1.1":["https://github.com/PixelZerg/ROTMGTradeBot/releases/tag/v0.1.1"],"v1.0.0":["https://github.com/PixelZerg/ROTMGTradeBot/releases/tag/v1.0.0"]}}
+          </div>
 <body id="post" class="feature">
 
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
 	<button class="dl-trigger">Open Menu</button>
 	<ul class="dl-menu">
-		<li><a href="http://pixelzerg.github.io/">Home</a></li>
+		<li><a href="/">Home</a></li>
 		<li>
 			<a href="#">About</a>
 			<ul class="dl-submenu">
@@ -202,23 +205,14 @@
           text-align: center;
           vertical-align: middle;
           line-height: 90px;
-          padding-bottom: 5vh;
+          /*padding-bottom: 5vh;*/
       " class="floating">ROTMG TradeBot</h1>
           <ul class="hdist">
-          
-          <li>
-          <a class="ghost-button-transition rel" href="#releases"><i class="fa fa-arrow-right"></i> Download .dlls</a>
-          </li>
-          <div id="jsondata" style="display:none;">
-           {"buttontext":"Download .dlls","icon":"/assets/projstuff/rotmgtradebot/icon.png","splash":"/assets/projstuff/rotmgtradebot/splash.png","releases":{"ROTMG TradeBot v1.0.0":{"version":"1.0.0","date":"18/2/2016","platforms":{"Windows":{"link":"https://github.com/PixelZerg/ROTMGTradeBot/releases/download/v1.0.0/ROTMGTradeBot.zip","text":"Download .zip","icon":"fa fa-windows"}}},"ROTMG TradeBot v0.1.1":{"version":"0.1.1","date":"07/11/2015","platforms":{"Windows":{"link":"https://github.com/PixelZerg/ROTMGTradeBot/releases/download/v0.1.1/KRelayTradeBot_mpgh.net.zip","text":"Download .zip","icon":"fa fa-windows"}}}},"info":{"status":"complete","type":"K-Relay Plugin","language":"C#","source":"https://github.com/PixelZerg/ROTMGTradeBot"},"changelog":{"v0.1.1":"https://github.com/PixelZerg/ROTMGTradeBot/releases/tag/v0.1.1","v1.0.0":"https://github.com/PixelZerg/ROTMGTradeBot/releases/tag/v1.0.0"}}
-          </div>
-          <!-- $('.relbutton').append(JSON.parse($("#jsondata").text()).buttontext); -->
-          
-          
-          <li>
-          <a class="ghost-button-transition rel" href="https://github.com/PixelZerg/ROTMGTradeBot"><i class="fa fa-code"></i> Source</a>
-          </li>
-          
+
+
+                    
+
+
           </ul>
           
           <h5 style="
@@ -237,6 +231,60 @@
   </div>
   
 
+<div class="buttons">
+<div class="c-tabs-nav">
+
+          <a href="#releases" class="c-tabs-nav__link">
+            <i class="fa fa-arrow-right"></i><span>Download .dlls</span>
+          </a>
+
+
+
+
+          <a href="https://github.com/PixelZerg/ROTMGTradeBot" class="c-tabs-nav__link"><i class="fa fa-code"></i><span>source</span></a>
+
+
+</div>  
+</div>
+<div class="buttonsafter"></div>
+<script>
+//by Affixed Header Script PixelZerg
+function getPosition(element) {
+    var xPosition = 0;
+    var yPosition = 0;
+
+    while(element) {
+        xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
+        yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
+        element = element.offsetParent;
+    }
+
+    return { x: xPosition, y: yPosition };
+}
+function affix(selector, offset){
+var scrollthresh = null;
+$(selector).after("<div></div>");
+  $(function(){
+    $(window).scroll(function(){
+      var buttons = $(selector);
+      if(scrollthresh == null && getPosition(buttons[0]).y < offset){
+        buttons.addClass("affix");
+        buttons.next().height(buttons.height());
+        scrollthresh = window.pageYOffset || document.documentElement.scrollTop;;
+      }
+      else if(scrollthresh !== null){
+        var curscroll = window.pageYOffset || document.documentElement.scrollTop;
+        if(curscroll < scrollthresh){
+          buttons.next().height(0);
+          buttons.removeClass("affix");
+          scrollthresh = null;
+        }
+      }
+    });
+  });
+}
+affix(".buttons",0);
+</script>
 
 <div id="main" role="main">
 
@@ -262,9 +310,10 @@ Reading time ~8 minutes
     </header> -->
     <div class="col-9-12">
     
+    <div id="releases"></div>
     <h1>Releases:</h1>
 
-    <div class="releases-holder" id="releases">
+    <div class="releases-holder">
     
         <div class="row grid grid-pad">
           <div class="col-6-10">
@@ -420,17 +469,28 @@ Make sure that you have the same account(s) open as you did when you saved the s
     </div>
     <div class="col-3-12">
     <h1>Info:</h1>
-    <p>
+    
     
     <strong>status</strong>: complete<br>
     
+    
+    
     <strong>type</strong>: K-Relay Plugin<br>
+    
+    
     
     <strong>language</strong>: C#<br>
     
-    <strong>source</strong>: <a href="https://github.com/PixelZerg/ROTMGTradeBot">click here</a><br>
     
-    </p>
+    
+    
+    
+    <div class="noglyphs">
+    
+    <strong><i class="fa fa-code"></i>source</strong>: <a href="https://github.com/PixelZerg/ROTMGTradeBot">click here</a><br>
+    
+    </div>
+    
     </div>
     
     <div class="col-3-12">
@@ -453,13 +513,17 @@ Make sure that you have the same account(s) open as you did when you saved the s
               for (var a in o) {
                 if (typeof o[a] == 'object') {
                   var gname = randomString();
-                  s += "<li class=\"has-children\" jsontype=\""+typeof(o[a])+"\">\r\n\t\t<input type=\"checkbox\" id=\"" + gname + "\" checked>\r\n\t\t<label for=\"" + gname + "\">" + a + "<\/label>\r\n \r\n  \t\t<ul>"
+                  s += "<li class=\"has-children\" jsontype=\""+typeof(o[a])+"\">\r\n\t\t<input type=\"checkbox\" id=\"" + gname + "\" checked>\r\n\t\t<label for=\"" + gname + "\">" + a + "<\/label>\r\n \r\n  \t\t<ul>";
                   s += jsonToHtml(o[a]) + "<\/ul>\r\n<\/li>";
                 } else {
                   var gname = randomString();
                 //  s += "<li class=\"has-children\" jsontype=\""+typeof(o[a])+"\">\r\n\t\t<input type=\"checkbox\" id=\"" + gname + "\" checked>\r\n\t\t<label for=\"" + gname + "\">" + a + "<\/label>\r\n \r\n  \t\t<ul>"
                 //  s += o[a] + "<\/ul>\r\n<\/li>";
-                  s+= "<li style=\"list-style: initial;list-style-position: inside;\">"+o[a]+"<\/li>"
+                if(!o[a].startsWith("http")){
+                  s+= "<li style=\"list-style: initial;list-style-position: inside;\">"+o[a]+"<\/li>";
+                }else{
+                  s+="<li style=\"list-style: initial;list-style-position: inside;\"><a href=\""+o[a]+"\">"+"Click Here"+"<\/a><\/li>";
+                }
                 } //end if
               } //end for
               return s;
@@ -607,10 +671,10 @@ $(function() {
 
 <!-- <aside class="read-next">
   
-  <a class="read-next-story no-cover" href="/projects/mathvis/">
+  <a class="read-next-story no-cover" href="/neuroocr/">
             <section class="post">
-                <h2>mathvis</h2>
-                <p>Visualise your mathematical equations!</p>
+                <h2>Neuroocr</h2>
+                <p>The aim of the NeuroOCR project is to produce an artificial neural network capable of learning to recognise different characters (the low...&hellip;</p>
             </section>
         </a>
         
