@@ -2330,6 +2330,11 @@ div#releases{
     padding-left: 150px;
     padding-right: 150px;
   }
+  .entry-header-home div.titleholder div h1 {
+    font-size: 52px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 @media only screen and (min-width: 1434px) {
