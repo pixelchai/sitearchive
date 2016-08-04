@@ -4,13 +4,53 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://pixelzerg.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://pixelzerg.github.io" />
-<updated>2016-07-14T22:40:15+01:00</updated>
+<updated>2016-08-04T22:22:30+01:00</updated>
 <id>http://pixelzerg.github.io/</id>
 <author>
   <name>PixelZerg</name>
   <uri>http://pixelzerg.github.io/</uri>
   <email>abhinavbhandari4@gmail.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Neuroocr]]></title>
+ <link rel="alternate" type="text/html" href="http://pixelzerg.github.io/neuroocr/" />
+  <id>http://pixelzerg.github.io/neuroocr</id>
+  <published>2016-07-18T00:00:00+01:00</published>
+  <updated>2016-07-18T00:00:00+01:00</updated>
+  <author>
+    <name>PixelZerg</name>
+    <uri>http://pixelzerg.github.io</uri>
+    <email>abhinavbhandari4@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;The aim of the NeuroOCR project is to produce an artificial neural network capable of learning to recognise different characters (the lowercase and uppercase alphabet as well as the numbers), i.e., approximate the correct 6 Bit binary representation of a hand drawn character inputted as a bitmap image. In achieving this, create a versatile Multi-Layered Neural Network library and implement a supervised backpropagation artificial neural network. Or to put it simply, teach a computer to read.&lt;/p&gt;
+
+&lt;p&gt;First of all, to understand how this program works, you must understand the beauty of the supervised backpropagtion neural network. Let me give you a basic introduction to neural networks.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-a-neural-network&quot;&gt;What is a Neural Network?&lt;/h2&gt;
+
+&lt;p&gt;In simple terms, a Supervised Artificial Neural Network is a model, inspired by biological neural networks, with which you can “teach” a computer to approximate a function by “learning” from datasets of inputs and their corresponding outputs (these inputs and outputs are generally 1 or 0 values). In other words, given inputs and their corresponding outputs, the neural network can “learn” to approximate the function that results in those outputs from those inputs.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-do-they-work&quot;&gt;How do they Work?&lt;/h2&gt;
+&lt;p&gt;An artificial neural network consists of neurons that are arranged in neuron layers. They can be visualised as shown in the diagram (you can have multiple hidden layers):
+&lt;img src=&quot;/assets/projstuff/neuroocr/diagram.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;small&gt;Image source: MDPI AG (Basel, Switzerland) &lt;a href=&quot;http://www.mdpi.com/2073-4441/7/8/4232/htm&quot;&gt;link to paper&lt;/a&gt;&lt;/small&gt;&lt;/center&gt;
+
+&lt;p&gt;Each neuron &lt;span class=&quot;k1&quot;&gt;&lt;/span&gt; has a number of inputs and outputs. The inputs to that neuron are modified by a weight &lt;span class=&quot;k2&quot;&gt;&lt;/span&gt; which can reduce or increase the input value (these weights start off as small, random values – this is to increase neural network training efficiency). To calculate the output of a particular neuron, all of the modified inputs to a the neuron are summed, resulting in the internal value &lt;span class=&quot;k3&quot;&gt;&lt;/span&gt;, which is then biased using an Activation Function (&lt;span class=&quot;k4&quot;&gt;&lt;/span&gt;). The activation function, in my case, is the sigmoid function &lt;span class=&quot;k5&quot;&gt;&lt;/span&gt;. Another commonly used activation function is the threshold function, &lt;span class=&quot;k6&quot;&gt;&lt;/span&gt;
+&lt;script&gt;
+katex.render(&quot;X_n&quot;, $(&#39;.k1&#39;)[0]);
+katex.render(&quot;W_{nj}&quot;, $(&#39;.k2&#39;)[0]);
+katex.render(&quot;U_j&quot;, $(&#39;.k3&#39;)[0]);
+katex.render(&quot;\\varphi&quot;, $(&#39;.k4&#39;)[0]);
+katex.render(&quot;f(x)=\\frac1{1+e^{-\\beta x}}&quot;, $(&#39;.k5&#39;)[0]);
+katex.render(&quot;f(x)=\\left\\{\\begin{array}{l}0\\;if\\;0\&amp;gt;x\\\\1\\;if\\;x\\geqslant0\\end{array}\\right.&quot;, $(&#39;.k6&#39;)[0]);
+&lt;/script&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://pixelzerg.github.io/neuroocr/&quot;&gt;Neuroocr&lt;/a&gt; was originally published by PixelZerg at &lt;a href=&quot;http://pixelzerg.github.io&quot;&gt;PixelZerg&lt;/a&gt; on July 18, 2016.&lt;/p&gt;
+  </content>
+</entry>
 
 
 <entry>

@@ -246,7 +246,7 @@ div.entry-header div.entry-image{
         float: left;
         position: relative;
         min-height: 0;
-        max-height: 62vh;
+        max-height: 50vh;
 }
 .entry-image img {
     position: absolute;
@@ -440,7 +440,7 @@ html{
 }
 
 .c-tabs-nav__link.is-active {
-    color: rgba(34,34,34,0.8);
+    color: rgba(34,34,34,1);
 }
 
 /*---------QUOTES----*/
@@ -468,7 +468,7 @@ blockquote p {
 background-color: white;
 }
 .c-tabs-nav__link {
-background-color: rgba(34,34,34,0.8);
+background-color: rgba(34,34,34,1);
 }
 
 div.c-tabs-nav {
@@ -1551,10 +1551,15 @@ div.titleholder div h1{
 
 a:visited {
     color: black;
+    /* text-decoration: underline; */
 }
 a {
     text-decoration: none;
-    color: rgba(85,85,85,0.8);
+    color: rgb(0, 0, 0);
+    /* text-decoration: underline; */
+}
+a:hover{
+  text-decoration: underline;
 }
 img{
     display: block;
@@ -1670,7 +1675,7 @@ img{
 }
 
 .cs-style-3 a {
-    height: 100px;
+    height: 110px;
     width: 100%;
     top: auto;
     bottom: 0;
@@ -2280,4 +2285,61 @@ table thead{
 
 tr.gray, tr.gray *{
     color: rgba(0, 0, 0, 0.15);
+}
+
+a.ghost-button-transition:visited{
+color: #fff;
+}
+a.ghost-button-transition:hover{
+color: #222;
+}
+
+.noglyphs i:before{
+  content: "";
+}
+
+p{
+  overflow: hidden;
+}
+
+.buttons .c-tabs-nav {
+    background-color: #191919;
+}
+
+.affix {
+      top: 0;
+      width: 100%;
+      position: fixed;
+      z-index: 999;
+  }
+
+div#releases{
+      position: relative;
+    width: 100%;
+    padding-top: 66px;
+    margin-top: -66px;
+}
+
+@media only screen and (max-width: 767px) {
+  div.entry-header div.entry-image {
+    background-attachment: initial;
+    background-position: 0;
+  }
+  div.titleholder div h1 {
+    font-size: 52px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+@media only screen and (min-width: 1434px) {
+  div.titleholder div h1 {
+    font-size: 100px;
+  }
+}
+
+@media only screen and (max-height: 540px) {
+  div.entry-header div.entry-image {
+    max-height: 270px;
+}
 }
