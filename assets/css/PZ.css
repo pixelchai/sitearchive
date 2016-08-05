@@ -1611,8 +1611,9 @@ img{
 
 .pgrid a h3 {
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     color: #fff;
+    /* padding-bottom: 2%; */
 }
 
 /*.pgrid a span:before {
@@ -1639,7 +1640,7 @@ img{
 }
 .no-touch .cs-style-3 figure a,
 .cs-style-3 figure a {
-    opacity: 1;
+    opacity: 0.93;
     transform: translateY(0px);
     transition: transform 0.4s, opacity 0.1s, background-color 0.3s;
 }
@@ -1648,6 +1649,7 @@ img{
 
 .cs-style-3 figure {
     overflow: hidden;
+    padding: 0;
 }
 
 .cs-style-3 figure .img {
@@ -1660,20 +1662,20 @@ img{
 }
 
 .cs-style-3 a.linkbox {
-    height: 110px;
+    height: 35%;
     width: 100%;
     top: auto;
     bottom: 0;
-    opacity: 0;
-    transform: translateY(100%);
-    transition: transform 0.4s, opacity 0.1s, background-color 0.3s;
+    opacity: 0.93;
+    transform: translateY(50%);
+    transition: transform 0.2s, opacity 0.1s, background-color 0.3s;
 }
 
 .no-touch .cs-style-3 figure:hover a,
 .cs-style-3 figure.cs-hover a {
-    opacity: 1;
+    opacity: 0.93;
     transform: translateY(0px);
-    transition: transform 0.4s, opacity 0.1s, background-color 0.3s;
+    transition: transform 0.2s, opacity 0.1s, background-color 0.3s;
 }
 
 .cs-style-3 a a {
@@ -2364,7 +2366,7 @@ div#releases{
 
 .no-touch .cs-style-3 figure:hover .projimg,
 .cs-style-3 figure.cs-hover img {
-    transform: translateY(-50px);
+/*     transform: translateY(-50px); */
 }
 
 .cs-style-3 a.imglink{
@@ -2436,4 +2438,8 @@ div#releases{
       background-position-x: 0;
     }
 
+}
+
+.linkbox h3{
+  padding-bottom: 2%;
 }
