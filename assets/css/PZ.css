@@ -1579,7 +1579,7 @@ img{
 
 .pgrid li {
     display: inline-block;
-    width: 340px;
+    /*width: 340px;*/
     margin: 0;
     padding: 5px;
     text-align: left;
@@ -1626,22 +1626,6 @@ img{
     display: inline-block;
     background: #ed4e6e;
     color: #fff;*/
-}
-
-@media screen and (max-width: 500px) {
-    .pgrid {
-        padding: 0 0 0 0;
-        max-width: 1300px;
-    margin: 0 auto;
-    list-style: none;
-    text-align: center;
-    }
-    .pgrid li {
-        width: 100%;
-        /*min-width: 300px;*/
-            padding: 0;
-    }
-
 }
 
 @media screen and (max-width: 960px) {
@@ -2365,8 +2349,8 @@ div#releases{
     position: relative;
     /* float: left; */
     position: relative;
-    min-height: 340px;
-    min-width: 340px;
+    min-height: 370px;
+    min-width: 370px;
     /* max-height: 50vh; */
     /* background-position-x: 50%; */
     background-attachment: initial;
@@ -2387,4 +2371,69 @@ div#releases{
   background: transparent;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 961px) {
+  .nm {
+    padding: 0;
+}
+  }
+
+  @media screen and (max-width: 804px) {
+  .projimg{
+      min-height: 300px;
+      min-width: 300px;
+    }
+  }
+
+   @media screen and (max-width: 623px) {
+  .projimg{
+          min-height: 370px;
+    min-width: 370px;
+    }
+  }
+  
+
+@media screen and (max-width: 425px) {
+    .pgrid {
+        padding: 0 0 0 0;
+        max-width: 1300px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+    }
+    .pgrid li {
+        width: 100%;
+        /*min-width: 300px;*/
+            padding: 0;
+                padding-left: 3vw;
+    padding-right: 3vw;
+    }
+    .projimg{
+          min-height: 94vw;
+    background-size: 94vw;
+      background-position-x: 0;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .pgrid {
+        padding: 0 0 0 0;
+        max-width: 1300px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+    }
+    .pgrid li {
+        width: 100%;
+        /*min-width: 300px;*/
+            padding: 0;
+    }
+    .projimg{
+      min-height: 100vw;
+      background-size: 100vw;
+      background-position-x: 0;
+    }
+
 }
