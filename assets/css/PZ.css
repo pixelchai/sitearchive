@@ -2229,14 +2229,14 @@ p {
 iframe{
     border: 1px solid transparent;
     width: 100%;
-    min-height: 60vh;
+    /* min-height: 60vh; */
     margin: initial;
     display: initial;
 }
 
 .icontent{
-    padding: 0 50px 0 50px;
-    padding-top: 5vh;
+    padding: 0 5px 0 50px;
+    padding-top: 1vh;
 }
 
 @media handheld, only screen and (max-width: 961px) {
