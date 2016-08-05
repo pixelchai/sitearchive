@@ -1668,14 +1668,14 @@ img{
     bottom: 0;
     opacity: 0.93;
     transform: translateY(50%);
-    transition: transform 0.2s, opacity 0.1s, background-color 0.3s;
+    transition: transform 0.3s, opacity 0.1s, background-color 0.3s;
 }
 
 .no-touch .cs-style-3 figure:hover a,
 .cs-style-3 figure.cs-hover a {
     opacity: 0.93;
     transform: translateY(0px);
-    transition: transform 0.2s, opacity 0.1s, background-color 0.3s;
+    transition: transform 0.3s, opacity 0.1s, background-color 0.3s;
 }
 
 .cs-style-3 a a {
