@@ -1531,7 +1531,7 @@ div.titleholder div h1{
     to {-moz-transform: translate(0, -0px);}    
 }
 
-@media handheld, only screen and (max-width: 767px){
+@media handheld, only screen and (max-width: 787px){
     .col-2-12{
         width: 50%;
         float: left;
@@ -2379,20 +2379,20 @@ div#releases{
 }
   }
 
-  @media screen and (max-width: 804px) {
+  @media screen and (max-width: 822px) {
   .projimg{
       min-height: 300px;
       min-width: 300px;
     }
   }
 
-   @media screen and (max-width: 623px) {
+   @media screen and (max-width: 640px) {
   .projimg{
           min-height: 370px;
     min-width: 370px;
     }
   }
-  
+
 
 @media screen and (max-width: 425px) {
     .pgrid {
