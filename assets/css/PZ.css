@@ -2443,3 +2443,11 @@ div#releases{
 .linkbox h3{
   padding-bottom: 2%;
 }
+
+.linkbox:hover {
+text-decoration: none;
+}
+
+.linkbox:hover h3{
+  text-decoration: underline;
+}
