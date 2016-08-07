@@ -1604,6 +1604,7 @@ img{
     padding: 20px;
     background: rgba(34,34,34,1);
     color: whitesmoke;
+    padding-top: 4%;
 }
 .pgrid a:hover {
     background-color: rgba(14, 52, 72, 1);
@@ -2441,7 +2442,7 @@ div#releases{
 }
 
 .linkbox h3{
-  padding-bottom: 2%;
+  padding-bottom: 3%;
 }
 
 .linkbox:hover {
