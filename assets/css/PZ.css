@@ -2689,3 +2689,20 @@ padding: 0 6vw 0 6vw;
 .lay-2-2-2-3-2{
   display: flex;
 }
+
+.lay-2-2-2-3-2 h3{
+    line-height: 95%;
+}
+
+.lay-2-2-2-3-2 .b3{
+    height: 500px;
+    padding-left: 10px;
+}
+
+.lay-1-4-2{
+  display: flex;
+}
+
+.lay-1-4-2 .b4{
+  height: 500px;
+}

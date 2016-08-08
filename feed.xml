@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://pixelzerg.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://pixelzerg.github.io" />
-<updated>2016-08-08T14:38:07+01:00</updated>
+<updated>2016-08-08T15:57:13+01:00</updated>
 <id>http://pixelzerg.github.io/</id>
 <author>
   <name>PixelZerg</name>
@@ -298,13 +298,13 @@ Make sure that you have the same account(s) open as you did when you saved the s
     <email>abhinavbhandari4@gmail.com</email>
   </author>
   <content type="html">
-    &lt;h2 id=&quot;guanilo&quot;&gt;Guanilo&lt;/h2&gt;
+    &lt;h2 id=&quot;gaunilo&quot;&gt;Gaunilo&lt;/h2&gt;
 
-&lt;p&gt;Guanilo was one of the earliest critics of Anselm’s ontological argument. Guanilo doesn’t really specify any fault with the argument itself but argued that the argument is incorrect due to it’s genericity - i.e “God” can be replaced by almost anything.&lt;/p&gt;
+&lt;p&gt;Gaunilo was one of the earliest critics of Anselm’s ontological argument. Gaunilo doesn’t really specify any fault with the argument itself but argued that the argument is incorrect due to it’s genericity - i.e “God” can be replaced by almost anything.&lt;/p&gt;
 
 &lt;p&gt;When I heard about Anselm’s Argument for the first time, I must admit - I immediately had a revelation about the “Greatest Cookie Possible” - i.e the “Cookie than which no greater can exist”. I experienced an epiphany that this cookie would be even greater if it existed in the real world and not in just my imagination. In fact, it would be much better if it was right in front of me and I could eat it. As I reached to take a bite, I awoke from the false reality I had created and rather than a giant, heavenly cookie, I was greeted with curious expressions from my classmates.&lt;/p&gt;
 
-&lt;p&gt;This must have been how Guanilo felt when he envisioned a perfect island. Guanilo says that according to Anselm’s argument, the island (or, if you prefer, giant cookie) must exist. Since it does not actually exist, this must mean that Anselm’s argument is incorrect.&lt;/p&gt;
+&lt;p&gt;This must have been how Gaunilo felt when he envisioned a perfect island. Gaunilo says that according to Anselm’s argument, the island (or, if you prefer, giant cookie) must exist. Since it does not actually exist, this must mean that Anselm’s argument is incorrect.&lt;/p&gt;
 
 &lt;p&gt;Well clearly this is one of the weaker negatives of the argument since - especially in my argument for the existence of the “Cookie than which no greater can exist” - the definition of greatness is subjective. I stated, for example, that “it would be much better if it was right in front of me and I could eat it”. This is better for me but definitely not better for the cookie.&lt;/p&gt;
 
@@ -333,7 +333,7 @@ Make sure that you have the same account(s) open as you did when you saved the s
 
 &lt;p&gt;First of all, note that the fact that classifiers don’t really exist in English doesn’t necessarily mean that sentences that use them are inexpressable in the English. The above sentences, for example, translate as: “What is this?” and “Six biscuits”&lt;/p&gt;
 
-&lt;p&gt;In Chinese, you can’t really apply a demonstrative to nor quantify a noun directly without using a classifier. For example, in English, you can just say “Six biscuits”. However, in Chinese you would follow this format: “Six (classifier) biscuit”.&lt;/p&gt;
+&lt;p&gt;In Chinese, you can’t really apply a demonstrative to quantify a noun directly without using a classifier. For example, in English, you can just say “Six biscuits”. However, in Chinese you would follow this format: “Six (classifier) biscuit”.&lt;/p&gt;
 
 &lt;p&gt;There are 3 parts to the sentence “六包餅乾”: A number, the classifier and the noun. You can also add a demonstrative and an adjective like so: “&lt;strong&gt;这&lt;/strong&gt;六包&lt;strong&gt;可口&lt;/strong&gt;餅乾” which would mean: “&lt;strong&gt;These&lt;/strong&gt; six &lt;strong&gt;delicious&lt;/strong&gt; biscuits”.&lt;/p&gt;
 
@@ -965,7 +965,7 @@ I also made a method to actually parse the condition from a loop/statement:&lt;/
     <email>abhinavbhandari4@gmail.com</email>
   </author>
   <content type="html">
-    &lt;p&gt;This is my 2nd ever proper website.  I have never before done much HTML coding at all. This is my first time using ` Ruby ` too. This website was created with  &lt;code&gt;Jekyll &lt;/code&gt; . &lt;strong&gt;x_x&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;This is my first ever proper website.  I have never before done much HTML coding at all. This is my first time using ` Ruby ` too. This website was created with  &lt;code&gt;Jekyll &lt;/code&gt; . &lt;strong&gt;x_x&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;I am however, quite experienced with object-orientated coding languages - if I do say so myself. I’ve been coding ever since I can remember, my language of choice, currently being C# &amp;amp; JAVA. I’ve been doing C# for the best part of 2 or 3 years now.&lt;/p&gt;
 
