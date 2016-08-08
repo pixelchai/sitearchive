@@ -1,6 +1,10 @@
  @import url(https://fonts.googleapis.com/css?family=Roboto);
  @import url(https://fonts.googleapis.com/css?family=Raleway:300,400);
 
+div#main{
+  background-color: white;
+}
+
 @media only screen and (min-width: 0) {
   html {
     font-size: 14px;
@@ -465,9 +469,7 @@ blockquote p {
   display: inline;
 }
 /*blockquote:after { color: #ccc; content: close-quote; font-size: 4em; line-height: 0.1em; margin-right: 0.25em; vertical-align: -0.4em; }*/
-.c-tab {
-background-color: white;
-}
+.c-tab {background-color: inherit;}
 .c-tabs-nav__link {
 background-color: rgba(34,34,34,1);
 }
@@ -526,7 +528,7 @@ article.hentry .pzpost .entry-content p img {
     display: none;
 }
 body{
-    background-color: white;
+    background-color: inherit;
 }
 div.pzpost {
     margin-left: 290px;
@@ -2569,7 +2571,7 @@ padding: 0 6vw 0 6vw;
 }
 .tab-content .tab.active{
     visibility: visible;
-    display: flex;
+    display: block;
 }
 
 .homegrid{
@@ -2608,7 +2610,22 @@ padding: 0 6vw 0 6vw;
   width: 25%;
 }
 
-.csmall{height: 50%;width: 100%;padding: 0 3% 5%;}
+
+.csmall{
+  height: 50%;width: 100%;padding: 0 3% 5%;
+}
+
+.pzblock{
+  background-color: #fff;
+  box-shadow: 0 0 0 0,0 6px 12px rgba(34,34,34,0.1);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px 15px;
+  overflow: hidden;
+  position: relative;
+}
 
 .cimg {
     height: 80%;
@@ -2643,4 +2660,28 @@ padding: 0 6vw 0 6vw;
 
 .clarge h6 img{
   display: none;
+}
+
+.pzblock .cimg{
+  border-radius: 6px;
+}
+
+.pzblock.clarge{
+  padding: 2%;
+}
+
+/* You read the lay like this: (width-height)-(width-height)-(etc...)*/
+
+.lay-3-2-1-2{
+  display: flex;
+}
+
+.lay-3-2-1-2 .csmall.pzblock{
+  margin-bottom: 10px;
+}
+
+.lay-3-2-1-2 .b3{
+    height: 500px;
+    padding-right: 10px;
+    margin-bottom: -9px;
 }
