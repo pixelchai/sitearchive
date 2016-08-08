@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:300);
+.node p { font-size: 15px; line-height: 20px; font-weight: bold; padding: 3px; margin: 0; }
+.Treant-loaded{
+	    height: auto;
+    width: 100%;
+    margin: 5px;
+    margin: 5px auto;
+    border: 3px solid #DDD;
+    border-radius: 3px;
+}
+#TreeContainer{
+	    height: 90vh;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 2px solid #FFFFFF;
+    font-family: 'Source Code Pro';
+    background-color: whitesmoke;
+    word-wrap: break-word;
+    border: 2px solid #9e9e9e;
+}
+
+.node {
+font-family: 'Source Code Pro';
+ color: #9E9E9E; border: 2px solid #C8C8C8; border-radius: 3px; }
+
+ input#input{
+ 	    display: table;
+    margin: 0 auto;
+    width: 40vw;
+ }
