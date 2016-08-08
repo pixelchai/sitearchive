@@ -247,6 +247,7 @@ div.entry-header div.entry-image{
         position: relative;
         min-height: 0;
         max-height: 50vh;
+        background-position-x: 50%;
 }
 .entry-image img {
     position: absolute;
@@ -514,6 +515,8 @@ div.c-tabs-nav {
     transform: translateX(-50%);
 }
 .footer-wrapper {
+      float: right;
+    width: 100%;
     margin: 0;
     text-align: center;
     color: rgba(85,85,85,0.8);
@@ -1530,7 +1533,7 @@ div.titleholder div h1{
     to {-moz-transform: translate(0, -0px);}    
 }
 
-@media handheld, only screen and (max-width: 767px){
+@media handheld, only screen and (max-width: 787px){
     .col-2-12{
         width: 50%;
         float: left;
@@ -1578,9 +1581,9 @@ img{
 
 .pgrid li {
     display: inline-block;
-    width: 340px;
+    /*width: 340px;*/
     margin: 0;
-    /* padding: 20px; */
+    padding: 5px;
     text-align: left;
     position: relative;
 }
@@ -1603,6 +1606,7 @@ img{
     padding: 20px;
     background: rgba(34,34,34,1);
     color: whitesmoke;
+    padding-top: 4%;
 }
 .pgrid a:hover {
     background-color: rgba(14, 52, 72, 1);
@@ -1610,8 +1614,9 @@ img{
 
 .pgrid a h3 {
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     color: #fff;
+    /* padding-bottom: 2%; */
 }
 
 /*.pgrid a span:before {
@@ -1627,23 +1632,7 @@ img{
     color: #fff;*/
 }
 
-@media screen and (max-width: 500px) {
-    .pgrid {
-        padding: 0 0 0 0;
-        max-width: 1300px;
-    margin: 0 auto;
-    list-style: none;
-    text-align: center;
-    }
-    .pgrid li {
-        width: 100%;
-        /*min-width: 300px;*/
-            padding: 0;
-    }
-
-}
-
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 960px) {
     /*act like it is hovered*/
     .cs-style-3 figure .img {
     transform: translateY(-50px);
@@ -1654,7 +1643,7 @@ img{
 }
 .no-touch .cs-style-3 figure a,
 .cs-style-3 figure a {
-    opacity: 1;
+    opacity: 0.93;
     transform: translateY(0px);
     transition: transform 0.4s, opacity 0.1s, background-color 0.3s;
 }
@@ -1663,6 +1652,7 @@ img{
 
 .cs-style-3 figure {
     overflow: hidden;
+    padding: 0;
 }
 
 .cs-style-3 figure .img {
@@ -1674,21 +1664,21 @@ img{
     transform: translateY(-50px);
 }
 
-.cs-style-3 a {
-    height: 110px;
+.cs-style-3 a.linkbox {
+    height: 35%;
     width: 100%;
     top: auto;
     bottom: 0;
-    opacity: 0;
-    transform: translateY(100%);
-    transition: transform 0.4s, opacity 0.1s, background-color 0.3s;
+    opacity: 0.93;
+    transform: translateY(50%);
+    transition: transform 0.3s, opacity 0.1s, background-color 0.3s;
 }
 
 .no-touch .cs-style-3 figure:hover a,
 .cs-style-3 figure.cs-hover a {
-    opacity: 1;
+    opacity: 0.93;
     transform: translateY(0px);
-    transition: transform 0.4s, opacity 0.1s, background-color 0.3s;
+    transition: transform 0.3s, opacity 0.1s, background-color 0.3s;
 }
 
 .cs-style-3 a a {
@@ -2035,22 +2025,22 @@ ul.hdist{
     padding-right: 10px;
 }
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
   .avoid-sbar{
     padding-left: 15px;
   }
-}
-@media only screen and (min-width: 961px) {
+} */
+/* @media only screen and (min-width: 961px) {
   .avoid-sbar{
     padding-left: 54px;
   }
-}
-@media only screen and (min-width: 1139px){
+} */
+/* @media only screen and (min-width: 1139px){
     .avoid-sbar{
     padding-left: 51px;
   }
-}
-  @media only screen and (min-width: 1142px){
+} */
+  @media only screen and (min-width: 961px){
     .avoid-sbar{
     padding-left: 48px;
   }
@@ -2242,14 +2232,14 @@ p {
 iframe{
     border: 1px solid transparent;
     width: 100%;
-    min-height: 60vh;
+    /* min-height: 60vh; */
     margin: initial;
     display: initial;
 }
 
 .icontent{
-    padding: 0 50px 0 50px;
-    padding-top: 5vh;
+    padding: 0 5px 0 50px;
+    padding-top: 1vh;
 }
 
 @media handheld, only screen and (max-width: 961px) {
@@ -2324,11 +2314,17 @@ div#releases{
   div.entry-header div.entry-image {
     background-attachment: initial;
     background-position: 0;
+    background-position-x: 50%;
   }
   div.titleholder div h1 {
     font-size: 52px;
     padding-left: 150px;
     padding-right: 150px;
+  }
+  .entry-header-home div.titleholder div h1 {
+    font-size: 52px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -2342,4 +2338,309 @@ div#releases{
   div.entry-header div.entry-image {
     max-height: 270px;
 }
+}
+
+.projimg{
+      background-image: Url(/assets/images/bokeh.jpg);
+    /* max-height: 340px; */
+    /* max-width: 340px; */
+    /* background-image: Url("/images/PZ/Fractals/1.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position-y: -50vw; */
+    background-position: center -30vh;
+    background-attachment: fixed;
+    /* float: left; */
+    position: relative;
+    /* float: left; */
+    position: relative;
+    min-height: 370px;
+    min-width: 370px;
+    /* max-height: 50vh; */
+    /* background-position-x: 50%; */
+    background-attachment: initial;
+    background-position: 0;
+    background-position-x: 50%;
+}
+
+.cs-style-3 figure .projimg {
+    transition: transform 0.4s;
+}
+
+.no-touch .cs-style-3 figure:hover .projimg,
+.cs-style-3 figure.cs-hover img {
+/*     transform: translateY(-50px); */
+}
+
+.cs-style-3 a.imglink{
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 961px) {
+  .nm {
+    padding: 0;
+}
+  }
+
+  @media screen and (max-width: 822px) {
+  .projimg{
+      min-height: 300px;
+      min-width: 300px;
+    }
+  }
+
+   @media screen and (max-width: 640px) {
+  .projimg{
+          min-height: 370px;
+    min-width: 370px;
+    }
+  }
+
+
+@media screen and (max-width: 425px) {
+    .pgrid {
+        padding: 0 0 0 0;
+        max-width: 1300px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+    }
+    .pgrid li {
+        width: 100%;
+        /*min-width: 300px;*/
+            padding: 0;
+                padding-left: 3vw;
+    padding-right: 3vw;
+    }
+    .projimg{
+          min-height: 94vw;
+    background-size: 94vw;
+      background-position-x: 0;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .pgrid {
+        padding: 0 0 0 0;
+        max-width: 1300px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+    }
+    .pgrid li {
+        width: 100%;
+        /*min-width: 300px;*/
+            padding: 0;
+    }
+    .projimg{
+      min-height: 100vw;
+      background-size: 100vw;
+      background-position-x: 0;
+    }
+
+}
+
+.linkbox h3{
+  padding-bottom: 3%;
+}
+
+.linkbox:hover {
+text-decoration: none;
+}
+
+.linkbox:hover h3{
+  text-decoration: underline;
+}
+@media screen and (min-width: 1280px) {
+  .icontent iframe{
+padding: 0 6vw 0 6vw;
+}
+}
+
+/*OWL TABS WOOOOO*/
+.tabs.owl-carousel {
+    margin-top: 0;
+    padding: 0;
+    background-color: rgb(55, 55, 55);
+}
+
+.tabs .owl-stage-outer {
+    padding: 0;
+    background-color: rgba(34,34,34,1);
+    margin: 0 35px 0 35px;
+}
+
+.tabs .owl-nav * {
+    color: whitesmoke;
+}
+
+.tabs .owl-stage {
+    background-color: rgba(34,34,34,1);
+}
+
+.tabs .owl-item.cloned {
+    background-color: rgba(34,34,34,1);
+}
+
+.tabs .item {
+    display: inline-block;
+    padding: 10px 20px;
+    white-space: nowrap;
+    transition: all 0.3s ease-in;
+     border-bottom: 4px solid transparent; 
+    color: whitesmoke;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.tabs .item a {
+    color: whitesmoke;
+}
+
+.tabs .owl-prev {
+    position: absolute;
+    /* float: left; */
+    left: -5px;
+    top: -5px;
+}
+
+.tabs .owl-controls {
+    height: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.tabs .owl-nav {
+    height: 0;
+    width: 100%;
+}
+
+.tabs .owl-next {
+    position: absolute;
+    /* float: left; */
+    right: -5px;
+    top: -5px;
+}
+
+.tabs .owl-nav [class*='owl-']:hover {
+  background: rgb(25, 25, 25);
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 962px) {
+        .tabs .owl-stage-outer {
+        margin: 0 35px 0 84px;
+    }
+    .tabs .owl-prev {
+        position: absolute;
+        left: 44px;
+        top: -5px;
+    }
+}  
+
+.tabs .owl-nav [class*='owl-'] {
+    color: whitesmoke;
+    font-size: 17px;
+    margin: 5px;
+    padding: 11px 12px;
+    /* background: #d6d6d6; */
+    display: inline-block;
+    cursor: pointer;
+    /* -webkit-border-radius: 3px; */
+    -moz-border-radius: 3px;
+    /* border-radius: 3px; */
+    height: 48px;
+    width: 35px;
+}
+
+.tabs .item:hover {
+    /*background-color: black;*/
+    border-bottom: white solid 4px;
+    text-decoration: none;
+}
+
+.tab-content .tab{
+  visibility: hidden;
+  display: none;
+}
+.tab-content .tab.active{
+    visibility: visible;
+    display: flex;
+}
+
+.homegrid{
+  padding: 1.5rem;
+  margin: 0px auto;
+  max-width: 1360px;
+}
+
+/*@media only screen and (min-width: 1440px) {
+.homegrid{
+  padding: 0 7vw;
+}
+}*/
+
+.float{
+  float: left;
+  width: 100%;
+}
+
+.block{
+    display: inline-block;
+    /* align-items: stretch; */
+    vertical-align: top;
+}
+
+.b4{
+  width: 100%;
+}
+.b3{
+  width: 75%;
+}
+.b2{
+  width: 50%;
+}
+.b1{
+  width: 25%;
+}
+
+.csmall{height: 50%;width: 100%;padding: 0 3% 5%;}
+
+.cimg {
+    height: 80%;
+    background-image: Url(/assets/images/bokeh.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 80%;
+    min-width: 100%;
+    background-attachment: initial;
+    background-position: 0;
+    background-position-x: 50%;
+    border-top: rgba(162,162,162,1) solid 3px;
+}
+
+.csmall h4{
+  margin: 5px 0;
+  line-height: 90%;
+}
+
+.clarge{
+  height: 100%;
+  width: 100%;
+  padding: 0 1% 1%;
+}
+
+.clarge .cimg{
+  height: 70%;
+  min-height: 70%;
+}
+
+.clarge h6 img{
+  display: none;
 }

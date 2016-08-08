@@ -4170,7 +4170,7 @@ svg:not(:root) {
     perspective-origin: 50% 200%;
 }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 786px) {
     .dl-menuwrapper {
         position: fixed;
         max-width: 175px;
@@ -4209,7 +4209,7 @@ svg:not(:root) {
     opacity: .6;
 }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 786px) {
     .dl-menuwrapper button {
         -webkit-border-top-right-radius: 3px;
         -webkit-border-bottom-right-radius: 3px;
@@ -4341,7 +4341,7 @@ svg:not(:root) {
     backface-visibility: hidden;
 }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 786px) {
     .dl-menuwrapper .dl-menu {
         -webkit-border-top-right-radius: 3px;
         -webkit-border-bottom-right-radius: 3px;
@@ -4564,7 +4564,7 @@ svg:not(:root) {
     position: initial;
 }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 786px) {
     .no-js .dl-menuwrapper {
         position: absolute;
     }

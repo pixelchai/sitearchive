@@ -1,8 +1,6 @@
 <!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js theme-" lang="en"><!--<![endif]-->
+
+<html lang="en" theme="">
 <head>
 <meta charset="utf-8">
 <title>ROTMG TradeBot &#8211; PixelZerg</title>
@@ -202,9 +200,15 @@
           <div>
 
             <h1 style="
-          text-align: center;
-          vertical-align: middle;
-          line-height: 90px;
+              text-align: center;
+              vertical-align: middle;
+              line-height: 90px;
+              /* padding-bottom: 5vh; */
+              /* overflow: scroll; */
+              overflow-wrap: break-word;
+              /* color: black; */
+              padding-left: 150px;
+              padding-right: 150px;
           /*padding-bottom: 5vh;*/
       " class="floating">ROTMG TradeBot</h1>
           <ul class="hdist">
@@ -224,7 +228,7 @@
        </div>
        
           </div>
-    <img src="http://pixelzerg.github.io/images/PZ/MSDOS.jpg" alt="ROTMG TradeBot" style="visibility: hidden;">
+    <!-- <img src="http://pixelzerg.github.io/images/PZ/MSDOS.jpg" alt="ROTMG TradeBot" style="visibility: hidden;"> -->
 
               
   </div><!-- /.entry-image -->
@@ -248,7 +252,7 @@
 </div>
 <div class="buttonsafter"></div>
 <script>
-//by Affixed Header Script PixelZerg
+//Affixed Header Script by PixelZerg
 function getPosition(element) {
     var xPosition = 0;
     var yPosition = 0;
@@ -264,8 +268,7 @@ function getPosition(element) {
 function affix(selector, offset){
 var scrollthresh = null;
 $(selector).after("<div></div>");
-  $(function(){
-    $(window).scroll(function(){
+var func = function(){
       var buttons = $(selector);
       if(scrollthresh == null && getPosition(buttons[0]).y < offset){
         buttons.addClass("affix");
@@ -280,8 +283,13 @@ $(selector).after("<div></div>");
           scrollthresh = null;
         }
       }
-    });
+    }
+
+  $(function(){
+    $(window).scroll(func);
   });
+
+  setInterval(func,500);
 }
 affix(".buttons",0);
 </script>
@@ -309,47 +317,6 @@ Reading time ~8 minutes
       </div>
     </header> -->
     <div class="col-9-12">
-    
-    <div id="releases"></div>
-    <h1>Releases:</h1>
-
-    <div class="releases-holder">
-    
-        <div class="row grid grid-pad">
-          <div class="col-6-10">
-            <h3 class="title">ROTMG TradeBot v1.0.0</h3>
-            <p class="date">18/2/2016 &#8729; Version: 1.0.0</p>
-          </div>
-
-          
-          <div class="col-4-10" style="float: right;">
-            <div class="platform">
-              <span class="side-plat"><i class="fa fa-windows"></i> Windows</span>
-              <a class="button button-inverse rel" style="float: right;" href="https://github.com/PixelZerg/ROTMGTradeBot/releases/download/v1.0.0/ROTMGTradeBot.zip">Download .zip</a>
-            </div>
-          </div>
-          
-        </div>
-    
-        <div class="row grid grid-pad">
-          <div class="col-6-10">
-            <h3 class="title">ROTMG TradeBot v0.1.1</h3>
-            <p class="date">07/11/2015 &#8729; Version: 0.1.1</p>
-          </div>
-
-          
-          <div class="col-4-10" style="float: right;">
-            <div class="platform">
-              <span class="side-plat"><i class="fa fa-windows"></i> Windows</span>
-              <a class="button button-inverse rel" style="float: right;" href="https://github.com/PixelZerg/ROTMGTradeBot/releases/download/v0.1.1/KRelayTradeBot_mpgh.net.zip">Download .zip</a>
-            </div>
-          </div>
-          
-        </div>
-    
-
-    </div>
-    
 
     <h1>Description:</h1>
     <div>
@@ -466,7 +433,51 @@ There may be some snapshots there, even if you did not take them yourself becaus
 Make sure that you have the same account(s) open as you did when you saved the snapshot (if you don’t - the snapshot data for the accounts that you did have open when taking the snapshot but do not now will be ignored). Your clients will then start moving to the position they where when taking the snapshot (may not always work and you might need to move them yourself) and all the tradequeues,  Helper Setting, etc will be loaded from the snapshot.</p>
 
     </div>
+
+    
+    <div id="releases"></div>
+    <h1>Releases:</h1>
+
+    <div class="releases-holder">
+    
+        <div class="row grid grid-pad">
+          <div class="col-6-10">
+            <h3 class="title">ROTMG TradeBot v1.0.0</h3>
+            <p class="date">18/2/2016 &#8729; Version: 1.0.0</p>
+          </div>
+
+          
+          <div class="col-4-10" style="float: right;">
+            <div class="platform">
+              <span class="side-plat"><i class="fa fa-windows"></i> Windows</span>
+              <a class="button button-inverse rel" style="float: right;" href="https://github.com/PixelZerg/ROTMGTradeBot/releases/download/v1.0.0/ROTMGTradeBot.zip">Download .zip</a>
+            </div>
+          </div>
+          
+        </div>
+    
+        <div class="row grid grid-pad">
+          <div class="col-6-10">
+            <h3 class="title">ROTMG TradeBot v0.1.1</h3>
+            <p class="date">07/11/2015 &#8729; Version: 0.1.1</p>
+          </div>
+
+          
+          <div class="col-4-10" style="float: right;">
+            <div class="platform">
+              <span class="side-plat"><i class="fa fa-windows"></i> Windows</span>
+              <a class="button button-inverse rel" style="float: right;" href="https://github.com/PixelZerg/ROTMGTradeBot/releases/download/v0.1.1/KRelayTradeBot_mpgh.net.zip">Download .zip</a>
+            </div>
+          </div>
+          
+        </div>
+    
+
     </div>
+    
+    </div>
+
+
     <div class="col-3-12">
     <h1>Info:</h1>
     

@@ -1,8 +1,6 @@
 <!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js theme-" lang="en"><!--<![endif]-->
+
+<html lang="en" theme="">
 <head>
 <meta charset="utf-8">
 <title>animestr &#8211; PixelZerg</title>
@@ -202,9 +200,15 @@
           <div>
 
             <h1 style="
-          text-align: center;
-          vertical-align: middle;
-          line-height: 90px;
+              text-align: center;
+              vertical-align: middle;
+              line-height: 90px;
+              /* padding-bottom: 5vh; */
+              /* overflow: scroll; */
+              overflow-wrap: break-word;
+              /* color: black; */
+              padding-left: 150px;
+              padding-right: 150px;
           /*padding-bottom: 5vh;*/
       " class="floating">animestr</h1>
           <ul class="hdist">
@@ -224,7 +228,7 @@
        </div>
        
           </div>
-    <img src="http://pixelzerg.github.io/images/PZ/MSDOS.jpg" alt="animestr" style="visibility: hidden;">
+    <!-- <img src="http://pixelzerg.github.io/images/PZ/MSDOS.jpg" alt="animestr" style="visibility: hidden;"> -->
 
               
   </div><!-- /.entry-image -->
@@ -248,7 +252,7 @@
 </div>
 <div class="buttonsafter"></div>
 <script>
-//by Affixed Header Script PixelZerg
+//Affixed Header Script by PixelZerg
 function getPosition(element) {
     var xPosition = 0;
     var yPosition = 0;
@@ -264,8 +268,7 @@ function getPosition(element) {
 function affix(selector, offset){
 var scrollthresh = null;
 $(selector).after("<div></div>");
-  $(function(){
-    $(window).scroll(function(){
+var func = function(){
       var buttons = $(selector);
       if(scrollthresh == null && getPosition(buttons[0]).y < offset){
         buttons.addClass("affix");
@@ -280,8 +283,13 @@ $(selector).after("<div></div>");
           scrollthresh = null;
         }
       }
-    });
+    }
+
+  $(function(){
+    $(window).scroll(func);
   });
+
+  setInterval(func,500);
 }
 affix(".buttons",0);
 </script>
@@ -351,6 +359,13 @@ Reading time ~1 minute
       </div>
     </header> -->
     <div class="col-9-12">
+
+    <h1>Description:</h1>
+    <div>
+    <p>Stream anime on your android!</p>
+
+    </div>
+
     
     <div id="releases"></div>
     <h1>Releases:</h1>
@@ -376,13 +391,9 @@ Reading time ~1 minute
 
     </div>
     
-
-    <h1>Description:</h1>
-    <div>
-    <p>Stream anime on your android!</p>
-
     </div>
-    </div>
+
+
     <div class="col-3-12">
     <h1>Info:</h1>
     
