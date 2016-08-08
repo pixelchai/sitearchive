@@ -2760,12 +2760,39 @@ color: black;
     padding-left: 10px;
 }
 
+@media only screen and (max-width: 700px) {
+  .lay-2-2-2-3-2{
+    display: table;
+  }
+  .lay-2-2-2-3-2 .clarge {
+      height: auto;
+  }
+  .lay-2-2-2-3-2 .clarge .cimg {
+      height: 250px;
+      min-height: 250px;
+  }
+  .lay-2-2-2-3-2 .b2, .lay-2-2-2-3-2 .b3 {
+      padding-left: 0;
+      width: 100%;
+  }
+}
+
 .lay-1-4-2{
   display: flex;
 }
 
 .lay-1-4-2 .b4{
   height: 500px;
+}
+
+@media only screen and (max-width: 700px) {
+  .lay-1-4-2 .clarge {
+      height: auto;
+  }
+  .lay-1-4-2 .clarge .cimg {
+      height: 250px;
+      min-height: 250px;
+  }
 }
 
 .lay-5-2-2-1-2-1-2{
