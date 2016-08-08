@@ -2680,6 +2680,11 @@ color: black;
 
 /* You read the lay like this: (post no)-(width-height)-(width-height)-(etc...)*/
 
+[class^='lay-'], [class*='lay-']{
+    display: flex;
+    padding-bottom: 20px;
+}
+
 .lay-3-3-2-1-2{
   display: flex;
 }
@@ -2713,4 +2718,26 @@ color: black;
 
 .lay-1-4-2 .b4{
   height: 500px;
+}
+
+.lay-5-2-2-1-2-1-2{
+  display: flex;
+}
+
+.lay-5-2-2-1-2-1-2 .b2{
+      height: 500px;
+      margin-bottom: -20px;
+      padding-right: 10px;
+}
+
+.lay-5-2-2-1-2-1-2 + .seperator{
+      height: 20px;
+}
+
+.lay-5-2-2-1-2-1-2 .b1 {
+      padding-right: 10px;
+}
+
+.homegrid .seperator{
+  height: 10px;
 }
