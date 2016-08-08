@@ -367,7 +367,7 @@
   
   
     
-    <div class="lay-3-2-1-2">
+    <div class="lay-3-3-2-1-2">
     <!--      3         -->
       <div class="block b3">
         <div class="block clarge pzblock">
@@ -391,7 +391,7 @@
       
     </div>
       
-  </div>
+    </div>
   
   
   
@@ -410,11 +410,13 @@
   
     
   
-  <!--      2         -->
-    <div class="block b2"></div>
-    <div class="block b3"></div>
+  <div class="lay-2-2-2-3-2">
+    <!--      2         -->
+    <div class="block b2" style="height: 500px; background: red;"></div>
+    <div class="block b3" style="height: 500px; background: blue;"></div>
     
     
+  </div>
   
   
   
@@ -646,22 +648,22 @@ $(".item").on('click', function(){
              }
             // console.log(index);
             updateHash($(".owl-item")[index].childNodes[0].innerText);
-            // var targetTab = $(".tab-content .tab")[index];
-            // $(targetTab).addClass("active").siblings().removeClass("active");
-            // noupdt = true;
-            // var i = index;
-            // while(curindex != i){
-            //   if(curindex>i){
-            //     $(".owl-prev").trigger("click");
-            //     curindex--;
-            //   } else if(curindex < i){
-            //     $(".owl-next").trigger("click");
-            //     curindex++;
-            //   }else{
-            //     break;
-            //   }
-            // }
-            // noupdt=false;
+            var targetTab = $(".tab-content .tab")[index];
+            $(targetTab).addClass("active").siblings().removeClass("active");
+            noupdt = true;
+            var i = index;
+            while(curindex != i){
+              if(curindex>i){
+                $(".owl-prev").trigger("click");
+                curindex--;
+              } else if(curindex < i){
+                $(".owl-next").trigger("click");
+                curindex++;
+              }else{
+                break;
+              }
+            }
+            noupdt=false;
       });
 
 function updateHash(name){
@@ -683,7 +685,7 @@ if(!name)return;
       break;
     }
   }
-console.log(name + " - "+index);
+// console.log(name + " - "+index);
   var targetTab = $(".tab-content .tab")[index];
             $(targetTab).addClass("active").siblings().removeClass("active");
             noupdt = true;

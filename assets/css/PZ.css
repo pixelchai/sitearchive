@@ -2670,18 +2670,22 @@ padding: 0 6vw 0 6vw;
   padding: 2%;
 }
 
-/* You read the lay like this: (width-height)-(width-height)-(etc...)*/
+/* You read the lay like this: (post no)-(width-height)-(width-height)-(etc...)*/
 
-.lay-3-2-1-2{
+.lay-3-3-2-1-2{
   display: flex;
 }
 
-.lay-3-2-1-2 .csmall.pzblock{
+.lay-3-3-2-1-2 .csmall.pzblock{
   margin-bottom: 10px;
 }
 
-.lay-3-2-1-2 .b3{
+.lay-3-3-2-1-2 .b3{
     height: 500px;
     padding-right: 10px;
     margin-bottom: -9px;
+}
+
+.lay-2-2-2-3-2{
+  display: flex;
 }
