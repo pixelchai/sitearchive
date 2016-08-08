@@ -2699,6 +2699,54 @@ color: black;
     margin-bottom: -9px;
 }
 
+@media only screen and (max-width: 960px) {
+  .lay-3-3-2-1-2{
+    display: table;
+  }
+  .lay-3-3-2-1-2 .b3{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .lay-3-3-2-1-2 .b1{
+    width: 100%;
+    display: flex;
+  }
+  .lay-3-3-2-1-2 .csmall{
+    height: 250px;
+    width: 50%;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .homegrid{
+    padding: 0;
+  }
+
+  .lay-3-3-2-1-2 .clarge{
+    height: auto;
+    margin-bottom: 0;
+  }
+  .lay-3-3-2-1-2 .clarge .cimg {
+      height: 250px;
+      min-height: 250px;
+  }
+  .lay-3-3-2-1-2 .b3 {
+      height: auto;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .lay-3-3-2-1-2 .b1{
+    display: block;
+  }
+
+  .lay-3-3-2-1-2 .csmall{
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
 .lay-2-2-2-3-2{
   display: flex;
 }
@@ -2741,3 +2789,4 @@ color: black;
 .homegrid .seperator{
   height: 10px;
 }
+
